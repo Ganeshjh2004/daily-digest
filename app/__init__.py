@@ -1,0 +1,2 @@
+"""Daily Digest pipeline package."""
+
