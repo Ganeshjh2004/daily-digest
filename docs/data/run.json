@@ -1,10 +1,19 @@
 {
-  "run_id": "sample-run",
-  "status": "success",
-  "started_at": "2026-10-17T07:59:50Z",
-  "finished_at": "2026-10-17T08:00:00Z",
-  "model": "deterministic-fake",
-  "duration_s": 10.0,
-  "metrics": {"feeds_total": 1, "feeds_ok": 1, "items_parsed": 1, "items_unique": 1, "summaries_ok": 3, "summaries_failed": 0},
-  "errors": []
+  "duration_s": 363.773,
+  "errors": [],
+  "finished_at": "2026-10-19T10:43:41.374358Z",
+  "metrics": {
+    "duration_s": 363.773,
+    "feeds_ok": 12,
+    "feeds_total": 12,
+    "items_parsed": 3105,
+    "items_unique": 3003,
+    "summaries_failed": 0,
+    "summaries_ok": 45,
+    "tokens_total": 0
+  },
+  "model": "openai/gpt-oss-20b",
+  "run_id": "bd1dc22f41c34a71b2f92677b2e85a2c",
+  "started_at": "2026-10-19T10:37:37.601842Z",
+  "status": "success"
 }

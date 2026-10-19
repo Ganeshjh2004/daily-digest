@@ -1,6 +1,339 @@
 {
   "articles": [
     {
+      "id": "592b287e400cc7af390b789edb9848cf00aef3c932a3407ab78d72937dbca0e0",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces a self-consistency framework that uses diffusion-sampled reasoning trajectories and a reward model to score intermediate steps.",
+            "The framework stitches top-scoring steps across trajectories into a composite rationale, then recomputes the final answer, separating exploration from evaluation.",
+            "Applied to math and coding benchmarks, the method boosts accuracy up to 23.8% without training, especially on harder problems."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The paper introduces a method that uses diffusion language models to generate many short reasoning steps, then picks the best ones.",
+            "Each step is scored by a reward model, and the top steps from different runs are stitched together to form a new, stronger explanation.",
+            "The stitched explanation is used to recompute the final answer, boosting accuracy on math and coding tasks by up to 23.8% without extra training."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Diffusion LM samples many low\u2011cost reasoning chains; each intermediate step is scored by a process reward model (PRM).",
+            "Highest\u2011scoring steps from different trajectories are stitched into a composite rationale, then a final solver recomputes the answer.",
+            "Training\u2011free, reward\u2011guided stitching boosts accuracy up to 23.8% on six math and coding benchmarks, especially on harder problems."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Test-Time Scaling with Diffusion Language Models via Reward-Guided Stitching",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2602.22871"
+    },
+    {
+      "id": "5a37fac8855312255045a847fb068fdd8c5ff3c1ffd79da7595ec9b4f5cfb1e1",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AOI is a multi\u2011agent framework that turns failed operational trajectories into training signals for autonomous cloud diagnosis.",
+            "It employs GRPO for preference\u2011based learning, a read\u2011write separated execution architecture, and a closed\u2011loop evolver to mine failures.",
+            "On the AIOpsLab benchmark, AOI reaches 66.3% best@5 success, outpacing the prior 41.9% by 24.4 points."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AOI is a multi\u2011agent system that turns failed operations into learning signals for autonomous cloud diagnosis, improving reliability without exposing sensitive data.",
+            "It uses Group Relative Policy Optimization (GRPO), tweaking actions based on group performance, to teach models, observation, reasoning, and action to keep environments safe.",
+            "On the AIOpsLab benchmark, AOI reaches 66.3% success on 86 tasks, beating previous best (41.9%) by 24.4 points."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AOI: multi\u2011agent framework turning operations into trajectory learning under security constraints, using GRPO\u2011based diagnostic models for preference\u2011based learning without sensitive data exposure.",
+            "Read\u2011write separated execution splits observation, reasoning, action phases, enabling safe learning while preventing unauthorized state mutation in permission\u2011governed environments.",
+            "Failure Trajectory Closed\u2011Loop Evolver mines unsuccessful paths, converting them into corrective supervision, boosting AOI runtime to 66.3% best@5 on 86 tasks (vs 41.9% prior)."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "AOI: Turning Failed Trajectories into Training Signals for Autonomous Cloud Diagnosis",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "Cloud"
+      ],
+      "url": "https://arxiv.org/abs/2603.03378"
+    },
+    {
+      "id": "6435a7f7dfd0d37b10ae5e3b6380c210a004286cfeaf3622b1510497fa6df6ff",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Agentic AI enables cloud workflows where autonomous agents reason, invoke tools, modify infra, deploy services, verify outcomes, adapt over long tasks.",
+            "Framework separates graph engineering (workflow progression & verification), loop engineering (diagnosis, repair, retry), and agent harness engineering (zero-trust execution via identity, policy, isolation).",
+            "Evaluation on Google Cloud shows validated code repos, controlled execution, evidence-gated progression, operational deployment, and bounded recovery."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Agentic AI lets autonomous agents manage cloud tasks, from planning to deployment, by reasoning about state and using authorized tools.",
+            "The framework splits work into graph engineering (workflow steps and checks), loop engineering (bounded fixes and retries), and agent harness (zero\u2011trust security).",
+            "Tested on Google Cloud, it shows complete code repos, safe execution, evidence\u2011based progress, and limited recovery within set limits."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Graph engineering defines long\u2011horizon workflow progression and verification\u2011dependent transitions, enabling machine\u2011checkable repository and deployment evidence.",
+            "Loop engineering supplies bounded diagnosis, repair, re\u2011planning, retry, and re\u2011verification, constraining failure recovery within explicit operational bounds and termination criteria.",
+            "Agent harness engineering enforces zero\u2011trust execution via identity, authorization, policy\u2011scoped capabilities, isolation, and runtime safeguards, validated on Google Cloud with evidence\u2011gated progression."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Towards Agentic Cloud Engineering: Graph and Loop Engineering with a Zero-Trust Agent Harness",
+      "topics": [
+        "AI Agents",
+        "System Design",
+        "DevOps",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2609.00050"
+    },
+    {
+      "id": "6978b90b4bc501c2fc068025cdc5247ee47783d12b13385dfb4fc60c1417d8e8",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Difflet is a serving engine for diffusion transformer models on AWS Trainium, sharing a single compilation backend across five pipelines.",
+            "It splits attention across cores by head, uses a host controller to decide per denoising step whether to run the denoiser or reuse cached output.",
+            "Across five image and video families, fused attention speeds denoiser steps 1.2\u20134.3\u00d7 over PyTorch/XLA, and resident serving is 1.5\u20133.4\u00d7 faster than reloading weights."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Difflet is a fast inference engine for diffusion transformer models on AWS Trainium, sharing a single compilation backend across five pipelines.",
+            "It splits joint attention across cores by head, and a host controller decides each denoising step whether to run the denoiser or reuse earlier output.",
+            "The system speeds up denoiser steps 1.2\u20134.3\u00d7 over PyTorch/XLA and makes resident serving 1.5\u20133.4\u00d7 faster than reloading weights for each generation."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Difflet compiles all diffusion components ahead of time on AWS Trainium2, sharing a single backend across five pipelines, splitting joint attention by head across cores.",
+            "A host controller and device\u2011side probe decide per denoising step whether to run the denoiser or reuse cached output, keeping programs resident across requests.",
+            "Fused attention yields 1.2\u20134.3\u00d7 speedups over PyTorch/XLA, enabling 32.8k\u2011token attention compilation and 1.5\u20133.4\u00d7 faster resident serving versus weight\u2011reload runs."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Cloud"
+      ],
+      "url": "https://arxiv.org/abs/2610.23047"
+    },
+    {
+      "id": "9981158b40cac6bc869147fa06f755db97459088a72a5588e07d7160bfbe8d05",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LoongSage is a lightweight (\u224814K lines) agent-native RL framework for LLMs, built on Megatron and SGLang, enabling high\u2011efficiency, fully asynchronous training.",
+            "It centralizes orchestration in one controller, uses Ray actors for GPU components, and introduces AgentFlow, sliding\u2011window staleness control, and TransferMesh for fast weight routing.",
+            "The framework includes a memory\u2011efficient Teacher Manager supporting Multi\u2011Teacher On\u2011Policy Distillation, and has been evaluated across four full training runs."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LoongSage is a lightweight, fully asynchronous RL framework for large language models, built on Megatron and SGLang, with a single controller and Ray actors.",
+            "It introduces AgentFlow to run both white\u2011box and black\u2011box agents, sliding\u2011window strategies to limit trajectory staleness, and TransferMesh for fast weight sync.",
+            "A memory\u2011efficient Teacher Manager enables multi\u2011teacher on\u2011policy distillation, and the system was tested in four full training runs."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LoongSage: 14K\u2011line, fully asynchronous RL framework built on Megatron and SGLang, centralizing orchestration in one controller and using Ray actors for GPU components.",
+            "Introduces AgentFlow for unified white\u2011/black\u2011box agent execution, sliding\u2011window trajectory staleness control, and TransferMesh topology\u2011aware weight routing for fastest transport.",
+            "Features memory\u2011efficient Teacher Manager enabling Multi\u2011Teacher On\u2011Policy Distillation, with extensive evaluation across four full training runs on frontier LLMs."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LoongSage: A Production-Grade, High-Efficiency Agentic RL Framework for Frontier LLMs with Validated Recipes",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.16352"
+    },
+    {
+      "id": "e6051a1cdf20a8b68b736c9b385b06c39e42c159a2dba707c3f7055d2181af5a",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "WebCoder is a general frontend development agent trained via artifact\u2011grounded agentic reinforcement learning, evaluating actions by their impact on a shared executable artifact.",
+            "The Webdev\u2011World environment integrates code editing, execution, browser inspection, and on\u2011demand skills, with a verifier delivering terminal rewards based on task satisfaction.",
+            "WebCoder\u201127B, evaluated on Webdev\u2011Bench, improves requirement satisfaction from 64.8% to higher, demonstrating effectiveness of the proposed training and evaluation framework."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "WebCoder is a frontend development agent that learns to write, modify, and fix code by evaluating its impact on a running application.",
+            "It uses Webdev-World, letting the agent edit code, run the app, inspect the browser, and call skills while keeping project state.",
+            "A verifier rewards only when the final app meets the task, and intermediate progress spreads credit to improve learning on long action sequences."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "WebCoder trains a general frontend agent via artifact\u2011grounded agentic reinforcement learning, evaluating actions by their impact on a shared executable artifact.",
+            "Webdev\u2011World combines code editing, app execution, browser inspection, and on\u2011demand skills, preserving state; a verifier supplies terminal rewards and redistributes intermediate advantage.",
+            "Context compaction and message\u2011tree sampling extend training beyond one context window; Webdev\u2011Bench shows WebCoder\u201127B raises requirement satisfaction from 64.8 on Qwen3.8\u201127B."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.23104"
+    },
+    {
+      "id": "df14438cc8c1153365c273acbe1954c2d0770d9a31830386cd21f313ff50e9e9",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "TP constrain transformer architecture to extract readable Python code, revealing learned computations beyond token accuracy.",
+            "Study shows token accuracy can mask incorrect full outputs; program inspection uncovers failures and guides data augmentation, improving sequence accuracy.",
+            "Training dynamics and constraints can cause late-stage accuracy drops; careful inspection and data expansion help achieve exhaustive correctness on bounded tasks."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "TP constrains Transformers to produce readable Python code, revealing learned computations but token accuracy can mask wrong full answers.",
+            "Study on nine algorithmic tasks shows token accuracy differs from full sequence accuracy; program inspection uncovers hidden failures and guides better training data.",
+            "Adding larger count examples improved counting task accuracy; TP training can cause late accuracy drops, and constraints affect model performance."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "TP constrains Transformers to produce extractable Python code, revealing learned computations beyond token accuracy.",
+            "Program inspection uncovers hidden errors: e.g., a counting TP had 100% token accuracy but omitted correct labels; retraining with larger counts fixed exhaustive evaluation.",
+            "TP training can incur late\u2011stage accuracy loss; frequency\u2011ranking tasks show how correct counts can still yield wrong outputs, guiding data\u2011augmentation adjustments."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "What Accuracy Hides In Learned Transformer Programs",
+      "topics": [
+        "LLMs",
+        "Python",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.22891"
+    },
+    {
+      "id": "8905a53e7722afbe56eddf45c96764c19f36f2e3bc9f9c33a56e026e6d942d7f",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "SPLIT allocates test-time compute among sampling, model choice, and verification using a pilot dataset and an exact probability formula.",
+            "The method accounts for task difficulty, shared blind spots, and verifier correlations, fitting parameters via empirical Bayes.",
+            "Across 7 benchmarks and 26 models, SPLIT achieves near-optimal accuracy, outperforming rule-of-thumb baselines by up to 2.5 points."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "SPLIT uses a small pilot set to decide how many model outputs to generate and how much compute to spend on checking them, boosting accuracy.",
+            "It calculates the chance of a correct answer by modeling accept/reject and top\u2011score selection, accounting for task difficulty, shared blind spots, and correlated verifier errors.",
+            "Across 7 benchmarks and 175 agent systems, SPLIT outperforms rule\u2011of\u2011thumb budgets, staying within 0.8% of the best hindsight allocation, while fixed rules lose \u22652.5%."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "SPLIT uses an accept/reject & top\u2011score probability formula, fitted via empirical Bayes on a labeled pilot to allocate compute among sampling, mixing, and verification.",
+            "It models task difficulty, shared blind spots, and correlated verifier calls, enabling budget planning across 7 benchmarks, 26 models, 175 agents, and 6 verifiers.",
+            "In experiments, SPLIT achieves within 0.02\u20130.8 pp of hindsight\u2011optimal allocation, outperforming rule\u2011of\u2011thumb baselines that lose \u22652.5 pp in some settings."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Sample, Mix, or Verify? Allocating Test-Time Compute under Imperfect Verifiers",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.23255"
+    },
+    {
       "id": "c30547bb7e55a3e8d28b2dadd9c07837e3d27a41969cc0e9d16b48bc8ab548cf",
       "image_url": null,
       "published_at": "2026-10-16T16:01:02Z",
@@ -44,6 +377,47 @@
       "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
     },
     {
+      "id": "f69a57c8fec3e131561ddabaf5a202eca596b254c94244349e9a85e4ab2020ac",
+      "image_url": null,
+      "published_at": "2026-10-14T20:02:22Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Netflix built a centralized Foundation Model to replace multiple specialized personalization models, aiming to reduce maintenance and leverage large-scale user data.",
+            "Three integration methods\u2014embeddings, subgraph, and fine\u2011tuning\u2014were tested to meet varying latency, tech stack, and model\u2011usage needs across teams.",
+            "The article highlights the practical gap in deploying large transformer models and shares Netflix\u2019s experimental results for production integration."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Netflix built a central Foundation Model to replace many specialized personalization models, learning from large user histories and content data.",
+            "They tested three integration methods\u2014embeddings, subgraph, fine\u2011tuning\u2014choosing based on latency, tech stack, and power usage.",
+            "The article explains how these methods fit into production systems, bridging research gaps between theory and practice."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Netflix built a large transformer-based Foundation Model to centralize member preference learning from extensive user interaction histories and content data, replacing multiple specialized homepage models.",
+            "Three integration strategies were tested: embeddings, subgraph, and fine\u2011tuning, chosen to meet differing latency, tech\u2011stack, and model\u2011power requirements across teams.",
+            "The blog highlights the lack of practical guidance for deploying large models in production and documents lessons from integrating the Foundation Model into personalization systems."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Integrating Netflix\u2019s Foundation Model into Personalization applications",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "Backend"
+      ],
+      "url": "https://netflixtechblog.com/integrating-netflixs-foundation-model-into-personalization-applications-cf176b5860eb?source=rss----2615bd06b42e---4"
+    },
+    {
       "id": "3c8ef4ebd570790c54a38e439bedb05847367e8402b625bb72ffb622b2520a70",
       "image_url": null,
       "published_at": "2026-10-14T19:56:08Z",
@@ -84,6 +458,48 @@
         "Productivity"
       ],
       "url": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60?source=rss----2615bd06b42e---4"
+    },
+    {
+      "id": "1317f60af3fc428ebe427d5cbf92ccd2cdf2eebf0e60ab7e2a3d204a8ceb8e19",
+      "image_url": null,
+      "published_at": "2026-10-14T19:51:35Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Netflix\u2019s Ads Event Publisher centralizes ad telemetry, enriches it with campaign context, and streams unified events to downstream systems while protecting member privacy.",
+            "Part II details the enrichment box, explaining why it was rebuilt to support live\u2011stream ads, de\u2011duplication, and richer data signals.",
+            "The redesign replaces database lookups with a real\u2011time streaming join in Apache Flink, enabling stateful processing and immediate event enrichment."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Netflix\u2019s Ads Event pipeline gathers ad telemetry, enriches it with campaign details, and publishes a single, unified stream for billing, metrics, and reporting.",
+            "This post explains the enrichment component, rebuilt with stateful stream processing that replaces a database lookup with a real\u2011time join in Apache Flink.",
+            "The redesign enables ads on live streams, removes duplicate events, and adds richer data signals for better measurement and reporting."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Centralized Ads Event Publisher collects ad telemetry, enriches with ad context, publishes unified stream to downstream consumers.",
+            "Rebuilt enrichment with stateful stream processing in Apache Flink, replacing database lookups with real\u2011time streaming joins.",
+            "Pipeline supports live\u2011stream ads, de\u2011duplication, richer signals, while encrypting member PII per Netflix privacy/security practices."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Behind the Scenes: Evolving Netflix\u2019s Ads Event Pipeline for Live \u2014 Part II",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/behind-the-scenes-evolving-netflixs-ads-event-pipeline-for-live-part-ii-826ebf9ad9fb?source=rss----2615bd06b42e---4"
     },
     {
       "id": "e5d87b51d49b9e4da356b3af6a4e68906ca95ee6699797512e42160904369fc2",
@@ -173,6 +589,47 @@
       "url": "https://netflixtechblog.com/running-apache-spark-experiments-in-my-sleep-and-on-a-plane-588816b6b5f8?source=rss----2615bd06b42e---4"
     },
     {
+      "id": "ec93ced270b0c65e467a5c6a47b9e527f4fee2b27caf8a973f274eb886a8bc39",
+      "image_url": null,
+      "published_at": "2026-10-14T19:48:20Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Stratum is Netflix\u2019s serverless media platform that schedules OCI container jobs on Titus for encoding, packaging, and quality tasks across diverse content types.",
+            "Engineers set CPU, memory, disk, and network limits in YAML, but manual tuning struggles with infrastructure changes, causing over\u2011provisioning or drift.",
+            "The article discusses automated right\u2011sizing to maintain optimal resource allocation and reduce inefficiencies in high\u2011throughput media workloads."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Stratum is Netflix\u2019s serverless media platform that runs containerized jobs (OCI images (container packages)) on the Titus compute system for encoding, packaging, and quality tasks.",
+            "Engineers set CPU, memory, disk, and network limits in a YAML file; keeping these values right is hard because infrastructure and workloads change.",
+            "Over\u2011provisioned or drifting configs waste resources and can hurt performance, so Stratum needs automated right\u2011sizing to adapt to content types like podcasts or live events."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Stratum, Netflix\u2019s serverless media platform, runs OCI\u2011packaged functions as batch jobs on Titus, handling encoding, packaging, inspection, and AI workloads across millions of containers daily.",
+            "Developers set CPU, memory, disk, and network limits in YAML; manual tuning is hard due to infrastructure changes, leading to over\u2011provisioning and drift.",
+            "The article explores automated right\u2011sizing techniques to adjust container resources, improving efficiency as new content formats (podcasts, live events, ads) enter the catalog."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Netflix Stratum Media Processing: Automated Container Right-Sizing",
+      "topics": [
+        "System Design",
+        "Cloud",
+        "Productivity",
+        "Backend"
+      ],
+      "url": "https://netflixtechblog.com/netflix-stratum-media-processing-automated-container-right-sizing-ddf9aa68a801?source=rss----2615bd06b42e---4"
+    },
+    {
       "id": "ee6df3f0028687147a0dc01c97b22c0bf07d9c5fe83e4e152eab01ad7c08d237",
       "image_url": null,
       "published_at": "2026-10-13T13:35:00Z",
@@ -214,14 +671,14 @@
       "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
     }
   ],
-  "generated_at": "2026-10-17T11:51:20.495239Z",
+  "generated_at": "2026-10-19T10:43:41.374358Z",
   "topic_counts": {
-    "AI Agents": 5,
-    "Backend": 5,
-    "Cloud": 2,
-    "Other": 7,
-    "Productivity": 4,
-    "System Design": 5
+    "AI Agents": 11,
+    "Backend": 12,
+    "LLMs": 10,
+    "Machine Learning": 10,
+    "Other": 20,
+    "System Design": 15
   },
   "topics": [
     "AI Agents",
