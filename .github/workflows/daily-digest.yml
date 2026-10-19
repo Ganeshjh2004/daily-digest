@@ -4,8 +4,8 @@
 # Commits changed data files and serves the result via GitHub Pages (docs/).
 #
 # Required setup (one-time, in repo Settings → Secrets and variables → Actions):
-#   Secret : GROQ_API_KEY   — your Groq API key
-#   Variable: GROQ_MODEL    — Groq model ID (e.g. llama3-8b-8192)
+#   Secret  : GROQ_API_KEY — your Groq API key
+#   Variable: GROQ_MODEL   — Groq model ID (e.g. openai/gpt-oss-20b)
 
 name: Daily Digest
 
@@ -22,11 +22,10 @@ concurrency:
   group: daily-digest
   cancel-in-progress: false   # never cancel a running digest; queue instead
 
-timeout-minutes: 15
-
 jobs:
   run-digest:
     runs-on: ubuntu-latest
+    timeout-minutes: 15       # must be inside the job, not at the top level
 
     steps:
       # ── 1. Checkout ────────────────────────────────────────────────────────
@@ -39,9 +38,9 @@ jobs:
         with:
           enable-cache: true
 
-      # ── 3. Install project dependencies ────────────────────────────────────
+      # ── 3. Install project dependencies (exactly as locked) ────────────────
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --frozen
 
       # ── 4. Run the pipeline ────────────────────────────────────────────────
       #   Secrets are scoped to this single step only (rule A-1).
@@ -53,22 +52,22 @@ jobs:
           GROQ_MODEL: ${{ vars.GROQ_MODEL }}
         run: uv run python -m app.cli run
 
-      # ── 5. Copy UI data files to docs/ ─────────────────────────────────────
-      - name: Copy data to docs/data/
-        run: |
-          mkdir -p docs/data
-          cp data/digest.json docs/data/digest.json
-          cp data/run.json    docs/data/run.json
-
-      # ── 6. Abort if the run status is "failed" (do not commit) ────────────
+      # ── 5. Abort if the run status is "failed" (do not commit) ─────────────
       - name: Check run status
         run: |
-          STATUS=$(python -c "import json; d=json.load(open('data/run.json')); print(d.get('status',''))")
+          STATUS=$(uv run python -c "import json; d=json.load(open('data/run.json')); print(d.get('status',''))")
           echo "Pipeline status: $STATUS"
           if [ "$STATUS" = "failed" ]; then
             echo "::error::Pipeline status is 'failed'. Nothing will be committed."
             exit 1
           fi
+
+      # ── 6. Copy UI data files to docs/data/ ────────────────────────────────
+      - name: Copy data to docs/data/
+        run: |
+          mkdir -p docs/data
+          cp data/digest.json docs/data/digest.json
+          cp data/run.json    docs/data/run.json
 
       # ── 7. Commit only if the expected files changed ───────────────────────
       #   Explicit paths only — never git add -A (rule A-7).
@@ -88,5 +87,6 @@ jobs:
             echo "No data files changed — skipping commit."
           else
             git commit -m "chore: update digest [skip ci]"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
             git push
           fi
