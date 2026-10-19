@@ -65,10 +65,10 @@
 **Tests:** schema validation (3 bullets), retry once then `failed`, short text gives `insufficient_content` with no LLM call, **second run makes zero LLM calls**, prompt-injection fixture, old files untouched when a run fails before saving, `digest.json` matches `DESIGN.md` Section 8.
 
 **Done when**
-- [ ] `python -m app.cli run` creates the three JSON files
-- [ ] Running twice makes zero LLM calls the second time
-- [ ] Every selected article has 3 bullets in all 3 tones (or a clear status)
-- [ ] Tests pass using a fake LLM only
+- [x] `python -m app.cli run` creates the three JSON files
+- [x] Running twice makes zero LLM calls the second time
+- [x] Every selected article has 3 bullets in all 3 tones (or a clear status)
+- [x] Tests pass using a fake LLM only
 
 **Prompt for the AI**
 > Read all five docs. Implement **Phase 2 only**. Use a fake LLM in tests. Output goes to the JSON files in `data/`; no server and no database.
@@ -87,11 +87,11 @@
 - Responsive layout (single column below 1100px).
 
 **Done when**
-- [ ] Opening `docs/` through `python -m http.server` shows the digest from JSON
-- [ ] Topics, search, sort, tone, and bookmarks work without a reload
-- [ ] Loading, error, empty, no-match, partial, failed, and stale states are handled
-- [ ] No `innerHTML` with dynamic data
-- [ ] Usable on a phone and by keyboard
+- [x] Opening `docs/` through `python -m http.server` shows the digest from JSON
+- [x] Topics, search, sort, tone, and bookmarks work without a reload
+- [x] Loading, error, empty, no-match, partial, failed, and stale states are handled
+- [x] No `innerHTML` with dynamic data
+- [x] Usable on a phone and by keyboard
 
 **Prompt for the AI**
 > Read all five docs. Implement **Phase 3 only**. Plain HTML, CSS, and vanilla JS. Follow DESIGN.md exactly. Render all data with textContent.

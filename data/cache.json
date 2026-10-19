@@ -1,0 +1,687 @@
+{
+  "items": {
+    "258958982f47942bdfb5d01dbc5ffc66088ef38669f94a7b6dc5ce70c634bf87": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-10-14T19:49:11Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Running Apache Spark experiments in my sleep (and on a plane).",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Running Apache Spark experiments in my sleep (and on a plane).",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Running Apache Spark experiments in my sleep (and on a plane).",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Running Apache Spark experiments in my sleep (and on a plane)",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/running-apache-spark-experiments-in-my-sleep-and-on-a-plane-588816b6b5f8?source=rss----2615bd06b42e---4"
+    },
+    "3c8ef4ebd570790c54a38e439bedb05847367e8402b625bb72ffb622b2520a70": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-10-14T19:56:08Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60?source=rss----2615bd06b42e---4"
+    },
+    "46fcf5bb7b99520f1816e2b783a8be714e81f0b319fca3a31d07e256a8f0729d": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-09-11T10:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Rapidly scaling online storage to serve over 1 billion ChatGPT users.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Rapidly scaling online storage to serve over 1 billion ChatGPT users.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Rapidly scaling online storage to serve over 1 billion ChatGPT users.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users",
+      "topics": [
+        "Python",
+        "Backend",
+        "System Design",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one"
+    },
+    "4a8d9cab167520f5633827eb6450f41e5df857c6338a93717c53330eff5525f2": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-05-13T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.36: Advancing Workload-Aware Scheduling.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.36: Advancing Workload-Aware Scheduling.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36: Advancing Workload-Aware Scheduling.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: Advancing Workload-Aware Scheduling",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/13/kubernetes-v1-36-advancing-workload-aware-scheduling/"
+    },
+    "50f31b94c19898a3b6f1ac5cd3bb0d2788b222dae330c85b980e0e3f1a6964eb": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-10-05T18:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Scaling Kubernetes Workloads with Node Swap.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Scaling Kubernetes Workloads with Node Swap.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Scaling Kubernetes Workloads with Node Swap.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Scaling Kubernetes Workloads with Node Swap",
+      "topics": [
+        "AI Agents",
+        "Python",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "DevOps",
+        "Cloud"
+      ],
+      "url": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/"
+    },
+    "51aaf081823175d3b5f124a125717004208533c5a188f2d7488dedbc6aa2fa42": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-09-22T18:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Spotlight on SIG Apps.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Spotlight on SIG Apps.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Spotlight on SIG Apps.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Spotlight on SIG Apps",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/"
+    },
+    "73d164d48488f1d858c100d396eb88e5c6d397294345768e68888e74eadf7275": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-09-08T15:22:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Fragments: September 8.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Fragments: September 8.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Fragments: September 8.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: September 8",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Machine Learning",
+        "DevOps",
+        "Productivity",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-09-08.html"
+    },
+    "8f555fe918e1ef562b9b3769e757148513a55555e3c563d9d3d7c251bab620e8": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-04-22T10:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Speeding up agentic workflows with WebSockets in the Responses API.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Speeding up agentic workflows with WebSockets in the Responses API.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Speeding up agentic workflows with WebSockets in the Responses API.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Speeding up agentic workflows with WebSockets in the Responses API",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets"
+    },
+    "b32e9b847135398762b9f07d35cf91524321a4ec5b7684b5ff2392213918b73a": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-09-10T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introducing the Agents API.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introducing the Agents API.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introducing the Agents API.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Introducing the Agents API",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "Cloud",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/introducing-the-agents-api"
+    },
+    "ba0a9a99818db13bcbf97218debbb454a8b0f2ca52ffa57b36f557140c9a8ca0": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-08-18T15:04:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Fragments: August 18.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Fragments: August 18.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Fragments: August 18.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: August 18",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-08-18.html"
+    },
+    "c30547bb7e55a3e8d28b2dadd9c07837e3d27a41969cc0e9d16b48bc8ab548cf": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-10-16T16:01:02Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
+    },
+    "e5d87b51d49b9e4da356b3af6a4e68906ca95ee6699797512e42160904369fc2": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-10-14T19:50:17Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Netflix Conductor: The Next Chapter.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Netflix Conductor: The Next Chapter.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Netflix Conductor: The Next Chapter.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Netflix Conductor: The Next Chapter",
+      "topics": [
+        "AI Agents",
+        "Python",
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/netflix-conductor-the-next-chapter-41ad21067649?source=rss----2615bd06b42e---4"
+    },
+    "e89b4b1882ad157fe48bb3c6d1548da8f90190761857f99751de17036483ac98": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-08-26T00:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.37: Garhwal.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37: Garhwal.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37: Garhwal.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: Garhwal",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "DevOps",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/"
+    },
+    "ee6df3f0028687147a0dc01c97b22c0bf07d9c5fe83e4e152eab01ad7c08d237": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-10-13T13:35:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Are Harnesses Worth the Cost?.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Are Harnesses Worth the Cost?.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Are Harnesses Worth the Cost?.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Are Harnesses Worth the Cost?",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
+    },
+    "fafe571b74e06e1fdde720a3b727b1e294879be407fcc7945a9a32655fe9cc4f": {
+      "image_url": null,
+      "last_seen": "2026-10-17T11:51:20.495239Z",
+      "published_at": "2026-10-05T04:28:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Fragments: October 4.",
+            "Development summary in the balanced tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Fragments: October 4.",
+            "Development summary in the beginner friendly tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Fragments: October 4.",
+            "Development summary in the technical tone.",
+            "Generated locally without contacting an external model."
+          ],
+          "model": "deterministic-fake",
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: October 4",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Python",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-10-04.html"
+    }
+  },
+  "version": 1
+}

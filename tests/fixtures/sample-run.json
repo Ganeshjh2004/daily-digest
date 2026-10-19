@@ -1,0 +1,19 @@
+{
+  "run_id": "sample-run",
+  "status": "success",
+  "started_at": "2026-10-17T07:59:50Z",
+  "finished_at": "2026-10-17T08:00:00Z",
+  "model": "deterministic-fake",
+  "duration_s": 10.0,
+  "metrics": {
+    "feeds_total": 1,
+    "feeds_ok": 1,
+    "items_parsed": 1,
+    "items_unique": 1,
+    "summaries_ok": 3,
+    "summaries_failed": 0,
+    "tokens_total": 0,
+    "duration_s": 10.0
+  },
+  "errors": []
+}

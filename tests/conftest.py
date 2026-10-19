@@ -7,7 +7,12 @@ from app.config import Settings
 
 @pytest.fixture
 def settings() -> Settings:
-    return Settings(feed_timeout_s=1, max_feed_bytes=2_000_000, max_redirects=3)
+    return Settings(
+        _env_file=None,
+        feed_timeout_s=1,
+        max_feed_bytes=2_000_000,
+        max_redirects=3,
+    )
 
 
 @pytest.fixture

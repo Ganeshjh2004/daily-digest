@@ -118,10 +118,13 @@ class PipelineState(TypedDict):
     run_id: str
     started_at: str
     feeds: list[dict]
+    topic_keywords: dict[str, list[str]]
+    default_topics: dict[str, str | None]
     raw_items: list[dict]
     articles: list[Article]          # deduped and topic-tagged
     selected: list[Article]          # up to MAX_ARTICLES_PER_RUN
     summaries: list[Summary]         # new summaries from this run
+    cache: dict                      # validated cache loaded before graph invocation
     retry_count: int
     errors: Annotated[list[str], operator.add]   # reducer: errors accumulate
     metrics: RunMetrics
@@ -339,7 +342,7 @@ daily-digest/
 - **URL normalization:** lowercase host, drop `utm_*`, `ref`, `fbclid`, remove fragments and trailing slash. `id = sha256(normalized_url)`.
 - **Title dedupe:** lowercase, strip punctuation and extra spaces; keep the earliest item.
 - **Topic tagging:** an article gets every topic with at least one keyword hit (whole-word match) in `title + description`.
-- **Selection:** sort by number of matched topics, then newest; skip articles whose three tones are cached with `ok`; take the first `MAX_ARTICLES_PER_RUN`.
+- **Selection:** sort by number of matched topics, then newest; skip articles whose three tones are cached with `ok`; keep at most 4 articles per source; take the first `MAX_ARTICLES_PER_RUN`.
 - **Topic counts:** count articles per topic in `digest.json`; keep the top 5 and sum the rest as `Other`.
 
 ## 11. Testing Strategy
