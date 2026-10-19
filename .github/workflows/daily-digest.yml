@@ -1,0 +1,92 @@
+# .github/workflows/daily-digest.yml
+#
+# Runs the Daily Digest pipeline on a daily cron schedule and on demand.
+# Commits changed data files and serves the result via GitHub Pages (docs/).
+#
+# Required setup (one-time, in repo Settings → Secrets and variables → Actions):
+#   Secret : GROQ_API_KEY   — your Groq API key
+#   Variable: GROQ_MODEL    — Groq model ID (e.g. llama3-8b-8192)
+
+name: Daily Digest
+
+on:
+  schedule:
+    # 08:00 UTC every day — must match SCHEDULE_UTC_HOUR = 8 in docs/config.js
+    - cron: "0 8 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write   # needed to commit data files; nothing else
+
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false   # never cancel a running digest; queue instead
+
+timeout-minutes: 15
+
+jobs:
+  run-digest:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Checkout ────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Install uv ──────────────────────────────────────────────────────
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      # ── 3. Install project dependencies ────────────────────────────────────
+      - name: Install dependencies
+        run: uv sync
+
+      # ── 4. Run the pipeline ────────────────────────────────────────────────
+      #   Secrets are scoped to this single step only (rule A-1).
+      #   Never echoed or printed (rule A-2).
+      - name: Run pipeline
+        id: pipeline
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GROQ_MODEL: ${{ vars.GROQ_MODEL }}
+        run: uv run python -m app.cli run
+
+      # ── 5. Copy UI data files to docs/ ─────────────────────────────────────
+      - name: Copy data to docs/data/
+        run: |
+          mkdir -p docs/data
+          cp data/digest.json docs/data/digest.json
+          cp data/run.json    docs/data/run.json
+
+      # ── 6. Abort if the run status is "failed" (do not commit) ────────────
+      - name: Check run status
+        run: |
+          STATUS=$(python -c "import json; d=json.load(open('data/run.json')); print(d.get('status',''))")
+          echo "Pipeline status: $STATUS"
+          if [ "$STATUS" = "failed" ]; then
+            echo "::error::Pipeline status is 'failed'. Nothing will be committed."
+            exit 1
+          fi
+
+      # ── 7. Commit only if the expected files changed ───────────────────────
+      #   Explicit paths only — never git add -A (rule A-7).
+      - name: Commit and push if data changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            data/cache.json \
+            data/digest.json \
+            data/run.json \
+            docs/data/digest.json \
+            docs/data/run.json
+
+          if git diff --cached --quiet; then
+            echo "No data files changed — skipping commit."
+          else
+            git commit -m "chore: update digest [skip ci]"
+            git push
+          fi
