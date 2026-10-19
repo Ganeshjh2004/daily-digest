@@ -1,0 +1,43 @@
+# .github/workflows/ci.yml
+#
+# CI: lint and test on every pull request and push to main.
+# No secrets required. Uses pull_request (not pull_request_target) so
+# fork PRs cannot access secrets (rule A-5).
+
+name: CI
+
+on:
+  pull_request: {}
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read   # narrowest permission needed (rule A-3)
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # ── 1. Checkout ────────────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Install uv ──────────────────────────────────────────────────────
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      # ── 3. Install all dependencies including dev extras ───────────────────
+      - name: Install dependencies (with dev extras)
+        run: uv sync --all-extras
+
+      # ── 4. Lint ────────────────────────────────────────────────────────────
+      - name: Lint with ruff
+        run: uv run ruff check .
+
+      # ── 5. Test ────────────────────────────────────────────────────────────
+      - name: Run pytest
+        run: uv run pytest
