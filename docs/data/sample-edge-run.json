@@ -1,0 +1,10 @@
+{
+  "run_id": "edge-run",
+  "status": "partial",
+  "started_at": "2026-10-17T07:59:50Z",
+  "finished_at": "2026-10-17T08:00:00Z",
+  "model": "deterministic-fake",
+  "duration_s": 10.0,
+  "metrics": {"feeds_total": 12, "feeds_ok": 10, "items_parsed": 2, "items_unique": 2, "summaries_ok": 3, "summaries_failed": 2},
+  "errors": ["Two feeds were unavailable."]
+}

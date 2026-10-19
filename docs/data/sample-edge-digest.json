@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-17T08:00:00Z",
+  "topics": ["AI Agents", "LLMs", "Python", "Backend", "System Design", "Machine Learning", "DevOps", "Cloud", "Productivity"],
+  "topic_counts": {"AI Agents": 3, "LLMs": 2, "Python": 1, "Other": 2},
+  "articles": [
+    {
+      "id": "edge-null-image",
+      "title": "A deliberately very long article title demonstrates how the dashboard clamps titles without breaking a compact card layout for readers",
+      "url": "https://example.com/long-title",
+      "source": "Example RSS",
+      "source_type": "rss",
+      "published_at": "2026-10-17T07:00:00Z",
+      "topics": ["AI Agents", "LLMs"],
+      "image_url": null,
+      "summaries": {"balanced": {"status": "ok", "bullets": ["A placeholder thumbnail appears when feeds provide no image.", "The card keeps its shape with a long title.", "Balanced summary remains available."]}, "technical": {"status": "ok", "bullets": ["The layout uses line clamping for article headings.", "The placeholder is chosen from topic colors.", "The summary schema contains three short bullets."]}}
+    },
+    {
+      "id": "edge-failed-summary",
+      "title": "Unavailable technical summary sample",
+      "url": "javascript:unsafe",
+      "source": "Untrusted Feed",
+      "source_type": "hn",
+      "published_at": "2026-10-16T08:00:00Z",
+      "topics": ["Python"],
+      "image_url": null,
+      "summaries": {"balanced": {"status": "failed", "bullets": []}, "technical": {"status": "failed", "bullets": []}, "beginner_friendly": {"status": "ok", "bullets": ["This card tests safe handling of an invalid link.", "Unavailable summaries get a clear message.", "The title stays plain text."]}}
+    }
+  ]
+}

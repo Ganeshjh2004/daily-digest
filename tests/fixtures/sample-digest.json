@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-10-17T08:00:00Z",
+  "topics": ["AI Agents", "LLMs", "Python"],
+  "topic_counts": {"AI Agents": 1, "LLMs": 1, "Other": 0},
+  "articles": [
+    {
+      "id": "sample-article",
+      "title": "A sample AI agent article",
+      "url": "https://example.com/sample",
+      "source": "Sample Feed",
+      "source_type": "rss",
+      "published_at": "2026-10-17T07:00:00Z",
+      "topics": ["AI Agents", "LLMs"],
+      "image_url": null,
+      "summaries": {
+        "balanced": {"status": "ok", "bullets": ["The article introduces a sample AI agent.", "It explains the main workflow.", "It links to further details."]},
+        "technical": {"status": "ok", "bullets": ["The example uses a structured workflow.", "It stores summaries by article and tone.", "The static UI reads generated JSON."]},
+        "beginner_friendly": {"status": "ok", "bullets": ["This is an example news item.", "It has three short summary points.", "You can read more at the source."]}
+      }
+    }
+  ]
+}
