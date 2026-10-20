@@ -130,7 +130,41 @@ uv run pytest
 
 ---
 
-## How the cron workflow works
+## Owner mode — trigger runs from the dashboard
+
+The "Run Digest Now" button normally opens GitHub Actions in a new tab.  
+If you are the repo owner you can trigger a run **directly from the site** by pasting a fine-grained Personal Access Token once per browser session.
+
+### 1. Create the token
+
+1. Go to **GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens**.
+2. Click **Generate new token** and fill in:
+   - **Token name:** `daily-digest-dispatch` (or any name you prefer)
+   - **Expiration:** 30 days (shorter is better)
+   - **Resource owner:** your GitHub account
+   - **Repository access:** Only select repositories → `daily-digest`
+   - **Permissions → Repository permissions → Actions:** `Read and write`
+   - Leave everything else at "No access".
+3. Click **Generate token** and copy it immediately (it is shown only once).
+
+> **Never share this token or commit it to the repo.** It expires automatically, which limits the blast radius if it is ever exposed. Revoke it immediately in GitHub Settings if you suspect it was leaked.
+
+### 2. Use it
+
+1. Open the live site.
+2. In the left column, under the "Run Digest Now" button, click **"Owner: add token"**.
+3. Paste the token into the password field and click **Save**.
+   - The token goes into `sessionStorage` only — it is cleared automatically when you close the tab.
+4. Click **Run Digest Now**. The button shows live states: *Starting → Queued → Running → Publishing → Done*.
+5. Once done, the page re-fetches the latest digest and re-renders automatically.
+
+### 3. Remove the token
+
+Click **"Remove token"** below the button, or simply close the browser tab.
+
+---
+
+
 
 `.github/workflows/daily-digest.yml` runs every day at **08:00 UTC** and
 on every manual "Run workflow" click.

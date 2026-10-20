@@ -92,3 +92,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
 @media (max-width: 1100px) { .layout { grid-template-columns: 1fr; }.left-column { order: 1; }.center-column { order: 2; }.right-column { order: 3; }.header-inner { grid-template-columns: 1fr auto; }.search { grid-column: 1 / -1; grid-row: 2; } }
 @media (max-width: 600px) { .header-inner, .app-shell { padding-left: 16px; padding-right: 16px; }.article-card { grid-template-columns: 96px minmax(0, 1fr); gap: 12px; }.thumbnail, .placeholder { width: 96px; height: 96px; }.article-card { padding: 12px; } }
 @media (max-width: 480px) { .article-card { grid-template-columns: 1fr; }.thumbnail, .placeholder { display: none; }.brand p { display: none; } }
+
+/* ── Owner-mode token UI ─────────────────────────────────────────────────────── */
+.owner-controls { margin-top: 10px; }
+.owner-row { display: flex; align-items: center; gap: 6px; }
+.owner-note { color: var(--text-muted); font-size: 12px; }
+.owner-link { font-size: 12px; color: var(--primary); background: transparent; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+.owner-link:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+.token-form { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 4px; }
+.token-input { min-width: 0; flex: 1; padding: 7px 9px; border: 1px solid var(--border); border-radius: 8px; font-size: 13px; }
+.cancel-btn { margin-left: 2px; }
+.primary-button:disabled { opacity: 0.6; cursor: not-allowed; pointer-events: none; }
+.run-error { margin-top: 8px; padding: 8px 10px; border: 1px solid var(--danger); border-radius: 8px; background: #FEF2F2; color: #991B1B; font-size: 13px; }
+.run-error-link { color: #991B1B; font-weight: 600; }
+.run-success { color: #15803D; }
+
