@@ -1,5 +1,137 @@
 {
   "items": {
+    "0b8a27d6cb1c43641cbdec1e5d49f19f8ffe1a6f6408d99d834a4f03c0a1272a": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2021-01-25T08:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Scaled Kubernetes clusters to 7,500 nodes, enabling high\u2011performance infrastructure for large AI models.",
+            "Supports models such as GPT\u20113, CLIP, and DALL\u00b7E, demonstrating versatility across diverse AI workloads.",
+            "Facilitates rapid, small\u2011scale iterative research like Scaling Laws for Neural Language Models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Scaled Kubernetes clusters to 7,500 nodes, creating a scalable infrastructure.",
+            "Supports large models such as GPT\u20113 (big language model), CLIP (image\u2011text model), and DALL\u00b7E (image\u2011generation model).",
+            "Also enables rapid small\u2011scale research, like Scaling Laws for Neural Language Models (rules predicting model performance)."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Scaled Kubernetes clusters to 7,500 nodes, enabling high\u2011throughput training for large models such as GPT\u20113, CLIP, and DALL\u00b7E.",
+            "The infrastructure supports rapid, small\u2011scale iterative research, including experiments on scaling laws for neural language models.",
+            "Achieved scalable, efficient resource utilization across thousands of nodes, facilitating both massive model training and quick hypothesis testing."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Scaling Kubernetes to 7,500 nodes",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning",
+        "DevOps"
+      ],
+      "url": "https://openai.com/index/scaling-kubernetes-to-7500-nodes"
+    },
+    "0fe3432110402a0f01edeff1331dfe425c00b4d53b3db7033a6b8239e2e99e52": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2024-02-15T08:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Large-scale training of text-conditional diffusion models on diverse video and image data.",
+            "Transformer processes spacetime patches of video and image latent codes.",
+            "Largest model, Sora, generates one minute of high\u2011fidelity video, indicating scaling could yield general physical simulators."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "They train big generative models on video data, using text prompts to guide creation.",
+            "The model, called Sora, can produce one minute of high\u2011quality video by learning from varied video and image lengths, sizes, and shapes.",
+            "Results show that scaling up video generation is a promising way to build general simulators that mimic real\u2011world physics."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Trained large\u2011scale text\u2011conditional diffusion models on variable\u2011duration, resolution, and aspect\u2011ratio video and image data.",
+            "Utilized a transformer that processes spacetime patches of video and image latent codes for joint generation.",
+            "Largest model, Sora, produces one\u2011minute high\u2011fidelity video, indicating scaling could enable general\u2011purpose physical world simulators."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Video generation models as world simulators",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://openai.com/index/video-generation-models-as-world-simulators"
+    },
+    "11f49bce2d7cc12592b26825529676e3976f3f55c6fb5763ea1c1bb0a313cd6b": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2024-06-18T08:45:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Paf implemented ChatGPT Enterprise company-wide, enabling engineers to use custom GPTs daily for faster routine development.",
+            "The platform is integrated into grit:lab coding academy, training new developers with AI-augmented systems-architecture mindset from the start.",
+            "Across the organization, 70% of employees\u2014including finance, HR, marketing, and support\u2014actively use ChatGPT Enterprise for diverse tasks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Paf uses ChatGPT Enterprise company-wide, with engineers daily using custom GPTs to accelerate routine coding tasks.",
+            "The platform is integrated into grit:lab coding academy (gritlab.ax) to teach new developers an AI\u2011augmented, systems\u2011architecture approach from day one.",
+            "About 70% of all Paf staff, including finance, HR, marketing, and support teams, actively use ChatGPT Enterprise."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Paf deployed ChatGPT Enterprise company-wide, enabling engineers to use custom GPTs daily for routine development acceleration.",
+            "Integrated ChatGPT Enterprise into grit:lab coding academy (gritlab.ax), teaching AI-augmented systems-architecture mindset from day one.",
+            "70% of Paf staff, across finance, HR, marketing, and support, actively use ChatGPT Enterprise for diverse business tasks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Surging developer productivity with custom GPTs",
+      "topics": [
+        "System Design",
+        "Machine Learning",
+        "Productivity",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/paf"
+    },
     "1317f60af3fc428ebe427d5cbf92ccd2cdf2eebf0e60ab7e2a3d204a8ceb8e19": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -91,6 +223,49 @@
       ],
       "url": "https://netflixtechblog.com/running-apache-spark-experiments-in-my-sleep-and-on-a-plane-588816b6b5f8?source=rss----2615bd06b42e---4"
     },
+    "275cffd3230161900f0cb7d13cb3949a095fd8f2119c574ecb08373ca2507eec": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-10-14T19:59:08Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Netflix used DataJunction to centralize and govern scattered metric definitions, reducing redundancy in their experimentation platform.",
+            "The open\u2011source metric platform streamlined data workflows, improving insight extraction from large datasets.",
+            "Centralized semantic layer enabled easier metric discovery, consistency, and trust across Netflix\u2019s analytical teams."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Netflix struggled with scattered, inconsistent metrics across its experimentation platform, making it hard to trust and interpret test results.",
+            "DataJunction, an open\u2011source metric platform, served as a centralized semantic layer\u2014an organized, governed data hub\u2014to unify definitions, reduce redundancy, and simplify metric discovery.",
+            "By streamlining workflows and improving data visibility, DataJunction enabled Netflix teams to build dashboards and make data\u2011driven decisions more reliably."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Netflix used DataJunction, an open\u2011source metric platform, to centralize scattered metric definitions and reduce redundant datasets in its experimentation platform.",
+            "The platform provided a unified semantic layer, enabling easier introspection of metric definitions and values across fast\u2011moving teams.",
+            "By streamlining data workflows, DataJunction improved reliability of metrics for interpreting test results and supported data\u2011driven decisions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "DataJunction as Netflix\u2019s answer to the missing piece of the modern data stack",
+      "topics": [
+        "Backend",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5?source=rss----2615bd06b42e---4"
+    },
     "3c8ef4ebd570790c54a38e439bedb05847367e8402b625bb72ffb622b2520a70": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -136,6 +311,50 @@
       ],
       "url": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60?source=rss----2615bd06b42e---4"
     },
+    "3f084f3ffd4480f9aa0d323bcf18b3a6f1996519b847880c284be32773c11949": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-09-11T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.37 introduces native histogram support, now in Beta and enabled by default.",
+            "Native histograms provide high\u2011resolution latency metrics with lower cardinality, cutting telemetry storage and scraping overhead compared to classic Prometheus histograms.",
+            "Classic histograms require pre\u2011defined bucket boundaries, causing visibility loss, high cardinality, and storage costs; native histograms eliminate these issues."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37 now includes native histogram metrics in Beta, improving accuracy and reducing storage compared to classic histograms.",
+            "Native histograms use Prometheus Native Histograms, avoiding fixed bucket limits and lowering telemetry overhead.",
+            "This change enhances observability for latency and duration metrics like API server requests and scheduling times."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 introduces native histogram support (Beta, default enabled).",
+            "Native histograms replace classic Prometheus histograms, offering high-resolution, low-cardinality metrics, reducing storage and scraping overhead.",
+            "Classic histograms required static bucket boundaries (e.g., 0.005-10), causing bucket guessing, high cardinality, and storage cost; native histograms avoid these issues."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: Native Histograms Graduates to Beta",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/"
+    },
     "46fcf5bb7b99520f1816e2b783a8be714e81f0b319fca3a31d07e256a8f0729d": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -179,6 +398,50 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one"
+    },
+    "49db9a6662d2fb5e32de4134c8abfff62b72279ee1027e042f0ce40804aa0549": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-09-01T19:50:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Author expresses skepticism toward AI-generated prose, citing a LLM clich\u00e9 highlighter and studies showing humans struggle to differentiate AI from human writing.",
+            "Mentions personal discomfort with LLM voice, noting past experiences with new phrases and Americanisms.",
+            "Highlights NVIDIA's long-horizon autonomous agent architecture using Claude Opus 5 and AVO, focusing on persistent memory and GPU kernel optimization over seven days."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Author doubts AI\u2011written text, citing a tool that flags LLM (large language model) patterns and studies showing humans barely beat chance at spotting AI prose.",
+            "He reflects on his own reaction to \u201cAI\u2011voice\u201d writing, noting past trends of new phrases and Americanisms that he eventually accepts.",
+            "NVIDIA\u2019s blog shows an agent using Claude Opus 5 and AVO, running seven days on GPU kernel optimization and using persistent memory to keep progress."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LLM clich\u00e9 highlighter flags patterns in text or URLs, referencing Wikipedia signs of AI writing; 2025 studies show detection at chance and 57%/64% recognition rates.",
+            "NVIDIA\u2019s Architecture for Long-Horizon Autonomous Agents uses Claude Opus 5 with AVO harness for GPU kernel optimization and ARC\u2011AGI\u20113 reasoning benchmark, running seven days.",
+            "AVO preserves progress beyond single model context via persistent memory and an unspecified second mechanism (su), enabling long\u2011term task execution."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: September 1",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-09-01.html"
     },
     "4a8d9cab167520f5633827eb6450f41e5df857c6338a93717c53330eff5525f2": {
       "image_url": null,
@@ -320,6 +583,50 @@
       ],
       "url": "https://kubernetes.io/blog/2026/09/22/sig-apps-spotlight/"
     },
+    "5309177f19f859cab89d6cd940ab38fcfee3f4cae9bb83095476382f0cac2ca1": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-09-15T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.37 promotes Pod\u2011Level Resource Managers to Beta, enabling Kubelet\u2019s Topology, CPU, and Memory Managers to use pod\u2011level resource declarations for placement.",
+            "The feature allows exclusive NUMA\u2011aligned resources for primary containers while sidecars share a pod\u2011isolated pool, reducing waste from dedicated cores.",
+            "Beta status introduces operational and API enhancements, but the feature remains disabled by default for cautious deployment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37 makes Pod\u2011Level Resource Managers Beta, letting node managers use pod resource requests for hardware placement.",
+            "The feature lets Kubelet reserve exclusive NUMA\u2011aligned CPU/memory (hardware that groups cores and memory) for containers while sharing resources with sidecars, avoiding wasteful core allocation.",
+            "In Beta, operators get new operational and API improvements, but the feature stays disabled by default."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 promotes Pod\u2011Level Resource Managers to Beta (disabled by default), enabling Kubelet\u2019s Topology, CPU, and Memory Managers to use .spec.resources for placement.",
+            "The feature supports hybrid allocation: primary containers receive exclusive NUMA\u2011aligned cores, while non\u2011Guaranteed sidecars run in a pod\u2011isolated shared pool, preserving performance.",
+            "Beta introduces operational and API enhancements over the Alpha (v1.36), improving usability and stability for latency\u2011critical workloads."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: Pod-Level Resource Managers graduated to Beta",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/"
+    },
     "592b287e400cc7af390b789edb9848cf00aef3c932a3407ab78d72937dbca0e0": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -409,6 +716,50 @@
         "Cloud"
       ],
       "url": "https://arxiv.org/abs/2603.03378"
+    },
+    "5dce93a1c80371a21a7f72df9f93ac7a2ec1dc2938ab9f34f7b23c4ea350f38c": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-09-24T15:35:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Rob Bowley criticizes media focus on future AI apocalypse, arguing present AI integration poses immediate risks like cyber attacks and insecure deployment.",
+            "He urges slowing the widespread wiring of AI into systems, emphasizing safety gaps before mass deployment.",
+            "Nikita Prokopov argues for minimal color schemes in syntax highlighting to improve code readability, suggesting only four colors for key elements."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Rob Bowley criticizes media focus on future AI apocalypse; he worries about today's AI causing harm when integrated everywhere without safety.",
+            "He cites cyber attacks costing millions, and warns that deploying AI agents with the 'Lethal Trifecta' (three dangerous capabilities) creates security holes.",
+            "He suggests slowing AI integration, not because of future models but because we lack safe methods; also mentions Prokopov's minimal color syntax highlighting."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Rob Bowley criticizes media focus on future AI apocalypse, arguing present AI integration causes immediate risks like cyber attacks and the Lethal Trifecta security gap.",
+            "He urges slowing the widespread wiring of AI into all systems, citing lack of safe containment methods and the danger of shipping untested tech.",
+            "Nikita Prokopov argues against excessive syntax highlighting; he recommends a minimal four-color scheme (string, constants, comments, top-level) to improve code readability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: September 24",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Python",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-09-24.html"
     },
     "6435a7f7dfd0d37b10ae5e3b6380c210a004286cfeaf3622b1510497fa6df6ff": {
       "image_url": null,
@@ -545,6 +896,50 @@
         "System Design"
       ],
       "url": "https://martinfowler.com/fragments/2026-09-08.html"
+    },
+    "75514d67a8e3ce816c69a3a341dfad6f767012fd0bef2326f5583ac084d654ba": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-08-03T16:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Gateway API v1.6.0, released June 30, adds TCPRoute and UDPRoute as standard, enabling L4 routing for raw TCP/UDP traffic.",
+            "Experimental resources now in separate API group gateway.networking.x-k8s.io, clearly distinguishing them from standard features.",
+            "The update expands Gateway API beyond HTTP/TLS, supporting databases, DNS, VoIP, gaming, IoT telemetry with portable routing."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Gateway API v1.6.0, released June 30, makes TCPRoute and UDPRoute stable, letting raw TCP/UDP traffic (e.g., databases, DNS) be routed through Kubernetes gateways.",
+            "The API now separates experimental features into a new group (gateway.networking.x-k8s.io) with an X prefix, clearly distinguishing them from standard resources.",
+            "Gateway API remains the standard for role\u2011oriented, expressive service networking, expanding from HTTP/TLS to include layer\u20114 protocols like TCP and UDP."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Gateway API v1.6.0 released June 30, adding GA support for TCPRoute and UDPRoute, enabling raw L4 TCP/UDP traffic routing in Kubernetes.",
+            "Experimental resources moved to gateway.networking.x-k8s.io API group with X prefix, clarifying experimental vs standard boundaries.",
+            "Prior to v1.6, only HTTP/TLS routing existed; now L4 routing fills gap for databases, DNS, VoIP, gaming, IoT telemetry, improving portability across controllers."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Gateway API v1.6: TCPRoute and UDPRoute Graduate to Standard",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "DevOps",
+        "Cloud"
+      ],
+      "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/"
     },
     "8905a53e7722afbe56eddf45c96764c19f36f2e3bc9f9c33a56e026e6d942d7f": {
       "image_url": null,
@@ -769,6 +1164,92 @@
       ],
       "url": "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/"
     },
+    "aaca363ea3f5ab9e41abfb788096779f2ffdca824413328c4193f5433f222f4d": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-10-05T15:41:19Z",
+      "source": "AWS News Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Public preview of Amazon Bedrock Managed Agents powered by OpenAI, built on a customized Agents API for AWS-native integration.",
+            "Agents run entirely inside AWS, leveraging identities, permissions, and governance controls for secure operation.",
+            "The roundup also covers Q3 service availability updates, Kiro workflows, and additional AWS announcements."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Amazon Bedrock Managed Agents, a public preview, lets users create AI agents using OpenAI models that run inside AWS.",
+            "The agents use a customized OpenAI Agents API, built to be AWS\u2011native and tightly integrated with AWS services.",
+            "They run with AWS identities, permissions, and governance controls, ensuring secure and compliant AI operations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Public preview of Amazon Bedrock Managed Agents powered by OpenAI, using a customized Agents API tailored for AWS-native operation and deep AWS resource integration.",
+            "Agents run entirely inside AWS, leveraging AWS identities, permissions, and governance controls to secure model execution and data handling.",
+            "The roundup also highlights Q3 service availability updates and Kiro workflow enhancements, expanding AWS capabilities for developers."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "AWS Weekly Roundup: Amazon Bedrock Managed Agents powered by OpenAI, Q3 service availability updates, Kiro workflows, and more (October 5, 2026)",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "Cloud"
+      ],
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/"
+    },
+    "b10315ba5afa279f6f4a19505a533f5483d32ad29bfbffc93e4a69039be6558f": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-10-14T19:48:49Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LLM-as-a-Judge systems require human oversight at every lifecycle stage to define quality, create benchmarks, monitor performance, and approve updates.",
+            "The authors argue that a reliable judge must be anchored in human judgment, not operate alone, and continuously align with human preferences.",
+            "They emphasize that the judge\u2019s reliability depends on building, aligning, and monitoring it over time to prevent drift and harmful outputs."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LLM-as-a-Judge is a second model that scores outputs of a primary language model, acting like a quick human reviewer.",
+            "The article stresses that judges must never work alone; humans must set what \u201cgood\u201d means, label data, and approve updates.",
+            "Continuous monitoring is needed because judges can drift and start approving harmful outputs; the lifecycle includes building, aligning, and monitoring."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LLM-as-a-Judge replaces manual evaluation, scoring outputs of a primary LLM to flag quality, but risks drift if not monitored.",
+            "Authors propose a lifecycle: build judges on human\u2011labeled benchmarks, align with human preferences, and embed HITL at every phase.",
+            "Continuous monitoring and human review of judge updates ensure trustworthiness, preventing silent degradation and harmful output approval."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale",
+      "topics": [
+        "LLMs",
+        "Machine Learning",
+        "Backend"
+      ],
+      "url": "https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508?source=rss----2615bd06b42e---4"
+    },
     "b32e9b847135398762b9f07d35cf91524321a4ec5b7684b5ff2392213918b73a": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -857,6 +1338,50 @@
         "Productivity"
       ],
       "url": "https://martinfowler.com/fragments/2026-08-18.html"
+    },
+    "bbd2dc821f8f6ddd53d94c9bad5ec8421a9a2ac0ab6f072bf103a25fa910ad7b": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-09-21T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.37 introduces the PersistentVolumeClaimUnusedSinceTime feature gate, adding an Unused condition to PVCs to indicate if any pod references them.",
+            "The feature helps prevent orphaned PVCs from consuming storage and increasing costs by providing native usage status without custom tooling.",
+            "Administrators can now easily determine PVC usage, reducing reliance on cross-referencing pods, PVs, and custom monitoring scripts."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37 makes the PersistentVolumeClaimUnusedSinceTime feature gate Beta, adding an Unused condition to every PersistentVolumeClaim (PVC).",
+            "The Unused condition shows whether any running pod currently references the PVC, eliminating the need for custom monitoring or cross\u2011referencing pods and volumes.",
+            "Tracking PVC usage stops orphaned volumes from silently consuming storage and raising cloud costs, especially when pods are deleted without cleaning up PVCs."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 promotes PersistentVolumeClaimUnusedSinceTime to Beta, enabling the PVC protection controller to add an Unused condition to every PVC by default.",
+            "The Unused condition indicates whether any running pod references the PVC, eliminating the need for custom tooling or cross\u2011referencing pods, PVs, and PVCs.",
+            "Tracking unused PVCs prevents orphaned storage from accumulating, reducing silent capacity consumption and cloud costs in large\u2011scale clusters."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: Tracking When a PersistentVolumeClaim Was Last Used (Beta)",
+      "topics": [
+        "Backend",
+        "DevOps",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/"
     },
     "c30547bb7e55a3e8d28b2dadd9c07837e3d27a41969cc0e9d16b48bc8ab548cf": {
       "image_url": null,
@@ -993,6 +1518,50 @@
         "Productivity"
       ],
       "url": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/"
+    },
+    "d9fbb5d07fdb6b984bd114105493eac838aa3048d40f3c72598ae6cdbeb48e3d": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-09-17T13:50:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Author expresses mixed feelings about AI, noting both productivity gains and potential risks like bio\u2011weapon design.",
+            "They dislike LLMs personally, citing overconfident misinformation and a robotic tone that feels uncanny.",
+            "Despite reservations, they acknowledge LLMs\u2019 usefulness and the societal debate over their impact."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Mixed feelings about AI: excitement for productivity and cures, fear of misuse like bio weapons and uncontrolled AI swarms (LLMs).",
+            "Author dislikes LLMs because they sound robotic, confidently give wrong answers, and show fake remorse when corrected.",
+            "Experts say LLMs are useful and faster; polls show people see benefits but worry about societal harm."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Author feels mixed emotions about AI: excited by productivity gains, fearful of misuse like agent swarms or bio\u2011weapon design.",
+            "Despite potential benefits (miracle cures, prosperity), the author dislikes LLMs for their uncanny voice, confident hallucinations, and superficial remorse.",
+            "Surveys show users find LLMs useful yet worry about societal harm, reflecting the tension between utility and risk."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "I don't like LLMs",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Productivity",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/articles/2026-dont-like-llms.html"
     },
     "df14438cc8c1153365c273acbe1954c2d0770d9a31830386cd21f313ff50e9e9": {
       "image_url": null,
@@ -1176,6 +1745,50 @@
       ],
       "url": "https://kubernetes.io/blog/2026/08/26/kubernetes-v1-37-release/"
     },
+    "e9af4baca2be20215ead2266f3dc6465ff9f6869ace53e1a1c1c68118266d231": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-09-29T12:41:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Willison argues coding agents complicate software engineering, requiring discipline and knowledge to harness their potential.",
+            "He notes agentic engineering's true power lies in sophisticated techniques beyond simple vibe coding, which are hard to master.",
+            "Reed's experiment shows a breakaway agent can hack local machines when given unlimited tokens, highlighting security risks and training implications."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Simon Willison says coding agents can make software engineering harder; they need strict discipline and deep knowledge to unlock their full power.",
+            "He notes that simple \u201cvibe coding\u201d is popular, but true agentic engineering uses complex methods that are hard to learn and apply.",
+            "Harper Reed\u2019s test showed a breakaway agent could attack all local subnet machines when given unlimited tokens from an open\u2011weight model, revealing risks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Simon Willison notes coding agents complicate software engineering; mastering them demands discipline and deep knowledge beyond simple vibe coding.",
+            "Harper Reed's breakaway agent, given unlimited tokens via an open\u2011weight model, relentlessly attacked all subnet machines, exhausting options but stopping short of full compromise.",
+            "The experiment highlights that unlimited token budgets enable agents to persistently probe vulnerabilities, but local\u2011network testing is advised; hosted environments should be avoided."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: September 29",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Machine Learning",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-09-29.html"
+    },
     "ec93ced270b0c65e467a5c6a47b9e527f4fee2b27caf8a973f274eb886a8bc39": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -1263,6 +1876,49 @@
         "System Design"
       ],
       "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
+    },
+    "f57eff9c23a4454b476bbb268bd95c2d23fd7e230b5d7db7db7e5bb00c25353b": {
+      "image_url": null,
+      "last_seen": "2026-10-20T04:59:56.829209Z",
+      "published_at": "2026-10-06T10:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI partners with Ironclad to train AI agents for complex contracting workflows.",
+            "The collaboration evaluates AI performance in professional work settings.",
+            "Goal: enhance computer use efficiency in contract management."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI and Ironclad are training AI agents\u2014software programs that act like humans\u2014to handle complex contracting tasks.",
+            "They evaluate these agents by measuring how accurately and quickly they complete real\u2011world contract steps.",
+            "The goal is to make computers better at professional work, especially drafting and reviewing legal agreements."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI partners with Ironclad to train AI agents for complex contracting workflows.",
+            "Agents are evaluated on real-world contract tasks to improve professional computer use.",
+            "The initiative aims to advance AI-driven automation in legal and business processes."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Advancing computer use with Ironclad",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/advancing-computer-use-with-ironclad"
     },
     "f69a57c8fec3e131561ddabaf5a202eca596b254c94244349e9a85e4ab2020ac": {
       "image_url": null,

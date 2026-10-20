@@ -169,6 +169,47 @@
       "url": "https://arxiv.org/abs/2610.23047"
     },
     {
+      "id": "8905a53e7722afbe56eddf45c96764c19f36f2e3bc9f9c33a56e026e6d942d7f",
+      "image_url": null,
+      "published_at": "2026-10-19T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "SPLIT allocates test-time compute among sampling, model choice, and verification using a pilot dataset and an exact probability formula.",
+            "The method accounts for task difficulty, shared blind spots, and verifier correlations, fitting parameters via empirical Bayes.",
+            "Across 7 benchmarks and 26 models, SPLIT achieves near-optimal accuracy, outperforming rule-of-thumb baselines by up to 2.5 points."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "SPLIT uses a small pilot set to decide how many model outputs to generate and how much compute to spend on checking them, boosting accuracy.",
+            "It calculates the chance of a correct answer by modeling accept/reject and top\u2011score selection, accounting for task difficulty, shared blind spots, and correlated verifier errors.",
+            "Across 7 benchmarks and 175 agent systems, SPLIT outperforms rule\u2011of\u2011thumb budgets, staying within 0.8% of the best hindsight allocation, while fixed rules lose \u22652.5%."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "SPLIT uses an accept/reject & top\u2011score probability formula, fitted via empirical Bayes on a labeled pilot to allocate compute among sampling, mixing, and verification.",
+            "It models task difficulty, shared blind spots, and correlated verifier calls, enabling budget planning across 7 benchmarks, 26 models, 175 agents, and 6 verifiers.",
+            "In experiments, SPLIT achieves within 0.02\u20130.8 pp of hindsight\u2011optimal allocation, outperforming rule\u2011of\u2011thumb baselines that lose \u22652.5 pp in some settings."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Sample, Mix, or Verify? Allocating Test-Time Compute under Imperfect Verifiers",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.23255"
+    },
+    {
       "id": "9981158b40cac6bc869147fa06f755db97459088a72a5588e07d7160bfbe8d05",
       "image_url": null,
       "published_at": "2026-10-19T04:00:00Z",
@@ -209,47 +250,6 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.16352"
-    },
-    {
-      "id": "e6051a1cdf20a8b68b736c9b385b06c39e42c159a2dba707c3f7055d2181af5a",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "WebCoder is a general frontend development agent trained via artifact\u2011grounded agentic reinforcement learning, evaluating actions by their impact on a shared executable artifact.",
-            "The Webdev\u2011World environment integrates code editing, execution, browser inspection, and on\u2011demand skills, with a verifier delivering terminal rewards based on task satisfaction.",
-            "WebCoder\u201127B, evaluated on Webdev\u2011Bench, improves requirement satisfaction from 64.8% to higher, demonstrating effectiveness of the proposed training and evaluation framework."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "WebCoder is a frontend development agent that learns to write, modify, and fix code by evaluating its impact on a running application.",
-            "It uses Webdev-World, letting the agent edit code, run the app, inspect the browser, and call skills while keeping project state.",
-            "A verifier rewards only when the final app meets the task, and intermediate progress spreads credit to improve learning on long action sequences."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "WebCoder trains a general frontend agent via artifact\u2011grounded agentic reinforcement learning, evaluating actions by their impact on a shared executable artifact.",
-            "Webdev\u2011World combines code editing, app execution, browser inspection, and on\u2011demand skills, preserving state; a verifier supplies terminal rewards and redistributes intermediate advantage.",
-            "Context compaction and message\u2011tree sampling extend training beyond one context window; Webdev\u2011Bench shows WebCoder\u201127B raises requirement satisfaction from 64.8 on Qwen3.8\u201127B."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.23104"
     },
     {
       "id": "df14438cc8c1153365c273acbe1954c2d0770d9a31830386cd21f313ff50e9e9",
@@ -293,45 +293,45 @@
       "url": "https://arxiv.org/abs/2610.22891"
     },
     {
-      "id": "8905a53e7722afbe56eddf45c96764c19f36f2e3bc9f9c33a56e026e6d942d7f",
+      "id": "e6051a1cdf20a8b68b736c9b385b06c39e42c159a2dba707c3f7055d2181af5a",
       "image_url": null,
       "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv Machine Learning",
+      "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
           "bullets": [
-            "SPLIT allocates test-time compute among sampling, model choice, and verification using a pilot dataset and an exact probability formula.",
-            "The method accounts for task difficulty, shared blind spots, and verifier correlations, fitting parameters via empirical Bayes.",
-            "Across 7 benchmarks and 26 models, SPLIT achieves near-optimal accuracy, outperforming rule-of-thumb baselines by up to 2.5 points."
+            "WebCoder is a general frontend development agent trained via artifact\u2011grounded agentic reinforcement learning, evaluating actions by their impact on a shared executable artifact.",
+            "The Webdev\u2011World environment integrates code editing, execution, browser inspection, and on\u2011demand skills, with a verifier delivering terminal rewards based on task satisfaction.",
+            "WebCoder\u201127B, evaluated on Webdev\u2011Bench, improves requirement satisfaction from 64.8% to higher, demonstrating effectiveness of the proposed training and evaluation framework."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "SPLIT uses a small pilot set to decide how many model outputs to generate and how much compute to spend on checking them, boosting accuracy.",
-            "It calculates the chance of a correct answer by modeling accept/reject and top\u2011score selection, accounting for task difficulty, shared blind spots, and correlated verifier errors.",
-            "Across 7 benchmarks and 175 agent systems, SPLIT outperforms rule\u2011of\u2011thumb budgets, staying within 0.8% of the best hindsight allocation, while fixed rules lose \u22652.5%."
+            "WebCoder is a frontend development agent that learns to write, modify, and fix code by evaluating its impact on a running application.",
+            "It uses Webdev-World, letting the agent edit code, run the app, inspect the browser, and call skills while keeping project state.",
+            "A verifier rewards only when the final app meets the task, and intermediate progress spreads credit to improve learning on long action sequences."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "SPLIT uses an accept/reject & top\u2011score probability formula, fitted via empirical Bayes on a labeled pilot to allocate compute among sampling, mixing, and verification.",
-            "It models task difficulty, shared blind spots, and correlated verifier calls, enabling budget planning across 7 benchmarks, 26 models, 175 agents, and 6 verifiers.",
-            "In experiments, SPLIT achieves within 0.02\u20130.8 pp of hindsight\u2011optimal allocation, outperforming rule\u2011of\u2011thumb baselines that lose \u22652.5 pp in some settings."
+            "WebCoder trains a general frontend agent via artifact\u2011grounded agentic reinforcement learning, evaluating actions by their impact on a shared executable artifact.",
+            "Webdev\u2011World combines code editing, app execution, browser inspection, and on\u2011demand skills, preserving state; a verifier supplies terminal rewards and redistributes intermediate advantage.",
+            "Context compaction and message\u2011tree sampling extend training beyond one context window; Webdev\u2011Bench shows WebCoder\u201127B raises requirement satisfaction from 64.8 on Qwen3.8\u201127B."
           ],
           "status": "ok"
         }
       },
-      "title": "Sample, Mix, or Verify? Allocating Test-Time Compute under Imperfect Verifiers",
+      "title": "WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning",
       "topics": [
         "AI Agents",
         "LLMs",
-        "System Design",
+        "Backend",
         "Machine Learning"
       ],
-      "url": "https://arxiv.org/abs/2610.23255"
+      "url": "https://arxiv.org/abs/2610.23104"
     },
     {
       "id": "c30547bb7e55a3e8d28b2dadd9c07837e3d27a41969cc0e9d16b48bc8ab548cf",
@@ -416,6 +416,46 @@
         "Backend"
       ],
       "url": "https://netflixtechblog.com/integrating-netflixs-foundation-model-into-personalization-applications-cf176b5860eb?source=rss----2615bd06b42e---4"
+    },
+    {
+      "id": "275cffd3230161900f0cb7d13cb3949a095fd8f2119c574ecb08373ca2507eec",
+      "image_url": null,
+      "published_at": "2026-10-14T19:59:08Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Netflix used DataJunction to centralize and govern scattered metric definitions, reducing redundancy in their experimentation platform.",
+            "The open\u2011source metric platform streamlined data workflows, improving insight extraction from large datasets.",
+            "Centralized semantic layer enabled easier metric discovery, consistency, and trust across Netflix\u2019s analytical teams."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Netflix struggled with scattered, inconsistent metrics across its experimentation platform, making it hard to trust and interpret test results.",
+            "DataJunction, an open\u2011source metric platform, served as a centralized semantic layer\u2014an organized, governed data hub\u2014to unify definitions, reduce redundancy, and simplify metric discovery.",
+            "By streamlining workflows and improving data visibility, DataJunction enabled Netflix teams to build dashboards and make data\u2011driven decisions more reliably."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Netflix used DataJunction, an open\u2011source metric platform, to centralize scattered metric definitions and reduce redundant datasets in its experimentation platform.",
+            "The platform provided a unified semantic layer, enabling easier introspection of metric definitions and values across fast\u2011moving teams.",
+            "By streamlining data workflows, DataJunction improved reliability of metrics for interpreting test results and supported data\u2011driven decisions."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "DataJunction as Netflix\u2019s answer to the missing piece of the modern data stack",
+      "topics": [
+        "Backend",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5?source=rss----2615bd06b42e---4"
     },
     {
       "id": "3c8ef4ebd570790c54a38e439bedb05847367e8402b625bb72ffb622b2520a70",
@@ -589,6 +629,46 @@
       "url": "https://netflixtechblog.com/running-apache-spark-experiments-in-my-sleep-and-on-a-plane-588816b6b5f8?source=rss----2615bd06b42e---4"
     },
     {
+      "id": "b10315ba5afa279f6f4a19505a533f5483d32ad29bfbffc93e4a69039be6558f",
+      "image_url": null,
+      "published_at": "2026-10-14T19:48:49Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LLM-as-a-Judge systems require human oversight at every lifecycle stage to define quality, create benchmarks, monitor performance, and approve updates.",
+            "The authors argue that a reliable judge must be anchored in human judgment, not operate alone, and continuously align with human preferences.",
+            "They emphasize that the judge\u2019s reliability depends on building, aligning, and monitoring it over time to prevent drift and harmful outputs."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LLM-as-a-Judge is a second model that scores outputs of a primary language model, acting like a quick human reviewer.",
+            "The article stresses that judges must never work alone; humans must set what \u201cgood\u201d means, label data, and approve updates.",
+            "Continuous monitoring is needed because judges can drift and start approving harmful outputs; the lifecycle includes building, aligning, and monitoring."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LLM-as-a-Judge replaces manual evaluation, scoring outputs of a primary LLM to flag quality, but risks drift if not monitored.",
+            "Authors propose a lifecycle: build judges on human\u2011labeled benchmarks, align with human preferences, and embed HITL at every phase.",
+            "Continuous monitoring and human review of judge updates ensure trustworthiness, preventing silent degradation and harmful output approval."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale",
+      "topics": [
+        "LLMs",
+        "Machine Learning",
+        "Backend"
+      ],
+      "url": "https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508?source=rss----2615bd06b42e---4"
+    },
+    {
       "id": "ec93ced270b0c65e467a5c6a47b9e527f4fee2b27caf8a973f274eb886a8bc39",
       "image_url": null,
       "published_at": "2026-10-14T19:48:20Z",
@@ -671,14 +751,14 @@
       "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
     }
   ],
-  "generated_at": "2026-10-19T10:43:41.374358Z",
+  "generated_at": "2026-10-20T04:59:56.829209Z",
   "topic_counts": {
     "AI Agents": 11,
-    "Backend": 12,
-    "LLMs": 10,
-    "Machine Learning": 10,
-    "Other": 20,
-    "System Design": 15
+    "Backend": 14,
+    "LLMs": 11,
+    "Machine Learning": 11,
+    "Other": 21,
+    "System Design": 16
   },
   "topics": [
     "AI Agents",
