@@ -134,9 +134,49 @@ Source tag color comes from a small map keyed by `source_type` (`arxiv`, `hn`, `
 - Changing tone swaps the bullets on every card instantly. If an article has no summary for that tone, fall back to `balanced` and show a small muted note "Showing balanced summary".
 
 ### 5.3 Run Digest Now
-- Full-width primary button with a play icon, label "Run Digest Now".
-- It is a **link** (`<a>` styled as a button) that opens the GitHub Actions workflow page in a new tab (`WORKFLOW_URL` in `config.js`). The user clicks "Run workflow" there. The site cannot start the pipeline itself.
-- Under the button, muted text: "Opens GitHub Actions. Takes about a minute."
+
+The button adapts based on whether an owner token is stored in `sessionStorage`:
+
+**No token (default / visitor mode)**
+- The button renders as an `<a>` element (styled like a button) that opens `WORKFLOW_URL` in a new tab — identical to the original behavior.
+- Under the button: muted text "Opens GitHub Actions. Takes about a minute."
+- A small "Owner: add token" text link appears below the note (visible to everyone but harmless to non-owners).
+
+**Owner token UI**
+- Clicking "Owner: add token" expands an inline `<input type="password">` form. The token is stored only in `sessionStorage` (key `digest.ghToken`), never in `localStorage`, never logged.
+- When a token is stored, the link changes to "Token active. [Remove token]". Clicking "Remove token" clears the token from `sessionStorage` and restores the add-token link.
+
+**Token present — button behavior**
+- The button renders as a `<button>` element (not a link).
+- Clicking calls `POST https://api.github.com/repos/{owner}/{repo}/actions/workflows/{file}/dispatches` with `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`, `X-GitHub-Api-Version: 2022-11-28`, body `{"ref":"main"}`. Expects HTTP 204.
+- Before dispatching, a `GET …/runs?per_page=1` check is made (no auth). If a run is already `queued` or `in_progress` the dispatch is skipped and polling begins on that existing run.
+
+**Progress states** — the button label and the note below it reflect the current state:
+
+| State key | Button label | Note text |
+|-----------|-------------|-----------|
+| `starting` | Starting… | Waiting for GitHub to register the run… |
+| `queued` | Queued… | Run is queued. Checking every 15 s… |
+| `in_progress` | Running (Xs)… | Pipeline is running. Checking every 15 s… |
+| `publishing` | Publishing… | Run succeeded! Waiting ~60 s for GitHub Pages to redeploy… |
+| `done` | Done ✓ | Digest updated! Page re-rendered with fresh data. |
+| `failed` | Failed — Retry? | Error message with "View run" link to the Actions page. |
+
+The button is disabled (`.primary-button:disabled`) during active states (`starting`, `queued`, `in_progress`, `publishing`).
+
+**Polling** — every 15 seconds for up to 15 minutes. On `conclusion: success`, wait ~60 seconds for GitHub Pages to settle, then re-fetch `digest.json` and `run.json` with a cache-busting `?t=<timestamp>` query and `cache: "no-store"`, then re-render the page in place.
+
+**Error handling** (all messages use `textContent`, no innerHTML):
+- HTTP 401/403: clear the token, show "Token rejected (HTTP N). Token cleared — please add a new one."
+- HTTP 404: "Workflow not found (HTTP 404). Check WORKFLOW_FILE in config.js."
+- HTTP 422: "Unprocessable request (HTTP 422). The ref or workflow file name may be wrong."
+- HTTP 429: "GitHub rate limit reached (HTTP 429). Wait a minute and try again."
+- Network error: "Network error — check your connection and try again."
+- Polling timeout (15 min): "Polling timed out after 15 minutes." with a "View run" link if available.
+- Workflow failed conclusion: "The workflow run failed." with "View run" link.
+
+All owner-mode logic lives in `docs/owner.js` (separate module). `app.js` imports named exports only.
+
 
 ### 5.4 Last Updated card
 - Row 1: status dot + "Today, 10:32 AM" (from `run.finished_at`, shown in the viewer's local time; use "Yesterday" or a date for older runs) + a refresh icon button that **reloads the JSON files** (re-fetches, no pipeline run).

@@ -85,9 +85,9 @@ There is no API server in this design, so these rules replace API security.
 |------|--------|
 | F-1 | **Never** insert feed data with `innerHTML`. Use `textContent` or create elements with the DOM API. |
 | F-2 | Article links open with `target="_blank" rel="noopener noreferrer"`, and only if the URL starts with `http://` or `https://`. |
-| F-3 | Do not store secrets or API keys in frontend code or `localStorage`. Validate the shape of anything read from `localStorage` (bookmarks, topics, tone) before use. |
+| F-3 | Do not store secrets or API keys in frontend code or `localStorage`. Validate the shape of anything read from `localStorage` (bookmarks, topics, tone) before use. **Exception — owner mode:** the repo owner may paste a fine-grained GitHub Personal Access Token (PAT) at runtime. This token is stored **only in `sessionStorage`** under the key `digest.ghToken`, never in `localStorage`, never logged, never put in a URL, and never committed. The token must be a fine-grained PAT scoped to this single repo with **only Actions read and write** permission and a short expiry (recommended: 30 days). It is used exclusively to call `POST /actions/workflows/{file}/dispatches` via the GitHub API. |
 | F-4 | **No CDN scripts, fonts, or stylesheets.** The site uses plain CSS, vanilla JS, inline SVG icons, and a system font stack. This removes third-party supply-chain risk. |
-| F-5 | Add a CSP `<meta>` tag (GitHub Pages cannot set headers): `default-src 'self'; img-src 'self' https: data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'`. Thumbnails use `referrerpolicy="no-referrer"` and `loading="lazy"`, and only `https` image URLs. |
+| F-5 | Add a CSP `<meta>` tag (GitHub Pages cannot set headers): `default-src 'self'; img-src 'self' https: data:; style-src 'self'; script-src 'self'; connect-src 'self' https://api.github.com; base-uri 'none'; form-action 'none'`. Thumbnails use `referrerpolicy="no-referrer"` and `loading="lazy"`, and only `https` image URLs. |
 
 ## 6. Data File Security
 

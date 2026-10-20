@@ -1,4 +1,5 @@
 import { DATA_PATHS, SCHEDULE_UTC_HOUR, WORKFLOW_URL } from "./config.js";
+import { buildOwnerControls, hasToken, tryDispatch, startPolling, safeRunUrl } from "./owner.js";
 import { icons } from "./icons.js";
 
 const DEFAULT_TOPICS = ["AI Agents", "LLMs", "Python", "Backend", "System Design", "Machine Learning", "DevOps", "Cloud", "Productivity"];
@@ -38,6 +39,11 @@ const state = {
   loading: true,
   loadError: false,
   addingTopic: false,
+  // owner-mode run progress
+  runStatus: null,          // null | "starting" | "queued" | "in_progress" | "publishing" | "done" | "failed"
+  runElapsedMs: 0,
+  runError: null,           // string | null
+  runUrl: null,             // string | null — link to the GitHub Actions run
 };
 
 function timeAgo(value) {
@@ -204,7 +210,146 @@ function toneCard() {
   [["balanced", "Balanced", "Neutral and informative"], ["technical", "Technical", "More technical details"], ["beginner_friendly", "Beginner Friendly", "Simple and easy to understand"]].forEach(([value, label, helper]) => { const option = element("label", "tone-option"); const input = element("input"); input.type = "radio"; input.name = "tone"; input.value = value; input.checked = state.tone === value; input.addEventListener("change", () => { state.tone = value; save("digest.tone", value); render(); }); option.append(input, elementWithText("span", label), elementWithText("small", helper)); group.append(option); }); node.append(group); return node;
 }
 
-function runCard() { const node = card("Run Digest Now"); const link = element("a", "primary-button"); link.href = WORKFLOW_URL; link.target = "_blank"; link.rel = "noopener noreferrer"; link.append(icons.play(), document.createTextNode("Run Digest Now")); node.append(link, paragraph("Opens GitHub Actions. Takes about a minute.", "run-note")); return node; }
+function runCard() {
+  const node = card("Run Digest Now");
+
+  // ── Main action button ───────────────────────────────────────────────────
+  const tokenPresent = hasToken();
+  const btn = element(tokenPresent ? "button" : "a", "primary-button");
+  btn.id = "run-digest-btn";
+  if (tokenPresent) {
+    btn.type = "button";
+    btn.disabled = state.runStatus !== null && state.runStatus !== "done" && state.runStatus !== "failed";
+  } else {
+    btn.href = WORKFLOW_URL;
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
+  }
+
+  // Button label reflects current run state.
+  const btnLabel = runButtonLabel();
+  btn.append(icons.play(), document.createTextNode(" " + btnLabel));
+
+  if (tokenPresent) {
+    btn.addEventListener("click", handleRunClick);
+  }
+
+  node.append(btn);
+
+  // ── Progress / error message ─────────────────────────────────────────────
+  if (state.runError) {
+    const errWrap = element("div", "run-error");
+    errWrap.append(document.createTextNode(state.runError));
+    if (state.runUrl) {
+      const link = element("a", "run-error-link");
+      link.href = state.runUrl;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.textContent = "View run";
+      errWrap.append(document.createTextNode(" "), link);
+    }
+    node.append(errWrap);
+  } else if (state.runStatus && state.runStatus !== "done") {
+    node.append(paragraph(runStatusNote(), "run-note"));
+  } else if (!tokenPresent) {
+    node.append(paragraph("Opens GitHub Actions. Takes about a minute.", "run-note"));
+  } else if (state.runStatus === "done") {
+    node.append(paragraph("Digest updated! Page re-rendered with fresh data.", "run-note run-success"));
+  } else {
+    node.append(paragraph("Token active. Click to start the pipeline.", "run-note"));
+  }
+
+  // ── Owner controls (add / remove token) ─────────────────────────────────
+  node.append(buildOwnerControls());
+
+  return node;
+}
+
+function runButtonLabel() {
+  switch (state.runStatus) {
+    case "starting":    return "Starting…";
+    case "queued":      return "Queued…";
+    case "in_progress": {
+      const secs = Math.floor((state.runElapsedMs || 0) / 1000);
+      return `Running (${secs}s)…`;
+    }
+    case "publishing":  return "Publishing…";
+    case "done":        return "Done ✓";
+    case "failed":      return "Failed — Retry?";
+    default:            return "Run Digest Now";
+  }
+}
+
+function runStatusNote() {
+  switch (state.runStatus) {
+    case "starting":    return "Waiting for GitHub to register the run…";
+    case "queued":      return "Run is queued. Checking every 15 s…";
+    case "in_progress": return `Pipeline is running. Checking every 15 s…`;
+    case "publishing":  return "Run succeeded! Waiting ~60 s for GitHub Pages to redeploy…";
+    default:            return "";
+  }
+}
+
+async function handleRunClick() {
+  // Guard against double-click during a live run.
+  if (state.runStatus !== null && state.runStatus !== "done" && state.runStatus !== "failed") return;
+
+  state.runStatus = "starting";
+  state.runError = null;
+  state.runUrl = null;
+  state.runElapsedMs = 0;
+  render();
+
+  const dispatchedAt = Date.now();
+  let result;
+  try {
+    result = await tryDispatch();
+  } catch (_) {
+    state.runStatus = "failed";
+    state.runError = "Unexpected error — check the console and try again.";
+    render();
+    return;
+  }
+
+  if (result.alreadyRunning) {
+    // Follow the existing run without dispatching a new one.
+    state.runStatus = result.run?.status === "queued" ? "queued" : "in_progress";
+    state.runUrl = safeRunUrl(result.run);
+    render();
+    startPolling(dispatchedAt, handleProgress, handleReload);
+    return;
+  }
+
+  if (result.error) {
+    state.runStatus = "failed";
+    state.runError = result.error;
+    render();
+    return;
+  }
+
+  // HTTP 204 — dispatch accepted.
+  state.runStatus = "starting";
+  render();
+  startPolling(dispatchedAt, handleProgress, handleReload);
+}
+
+function handleProgress(key, run, elapsedMs) {
+  state.runStatus = key;
+  state.runElapsedMs = elapsedMs || 0;
+  if (run) state.runUrl = safeRunUrl(run);
+  if (key === "failed") {
+    state.runError = run
+      ? "The workflow run failed."
+      : "Polling timed out after 15 minutes.";
+  }
+  render();
+}
+
+function handleReload(freshDigest, freshRun) {
+  state.digest = freshDigest;
+  state.run = freshRun;
+  render();
+}
 function updatedCard() { const node = card("Last Updated"); const row = element("div", "updated-row"); const label = isStale() ? `Digest is out of date · ${lastUpdated()}` : lastUpdated(); row.append(element("span", `status-dot ${statusClass()}`), elementWithText("strong", label)); const refresh = button("", "icon-button", "Refresh digest data"); refresh.append(icons.refresh()); refresh.addEventListener("click", () => loadData(true)); row.append(refresh); const next = element("div", "next-run-row"); next.append(icons.calendar(), document.createTextNode(`Next scheduled run: ${nextRun()}`)); node.append(row, next); return node; }
 
 function articleCard(article) {
