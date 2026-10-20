@@ -1,5 +1,48 @@
 {
   "items": {
+    "009f70280ebcc29e7c90367cc5d038491a50c88b819173ad7ca2bdc392c0ba44": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-06-11T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI announced plans to acquire Ona.",
+            "Acquisition aims to expand Codex with secure, persistent cloud environments.",
+            "This will enable long-running AI agents across enterprise workflows."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI will buy Ona to add secure, long\u2011lasting cloud spaces for Codex, letting AI agents run continuously.",
+            "The move expands Codex, a tool that writes code, into enterprise workflows that need persistent, protected environments.",
+            "Secure, persistent cloud environments mean data stays safe and available for AI tasks over time."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI to acquire Ona, adding secure, persistent cloud environments to its Codex platform.",
+            "The integration will support long\u2011running AI agents that can maintain state across enterprise workflows.",
+            "This move expands Codex\u2019s capabilities for enterprise\u2011grade, continuous AI services."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "OpenAI to acquire Ona",
+      "topics": [
+        "AI Agents",
+        "Cloud",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/openai-to-acquire-ona"
+    },
     "0a5ca4c5b5238e08c45b818d5135ff075ac35b68528c7905c2a7a4bb897743f6": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -264,6 +307,48 @@
       ],
       "url": "https://kubernetes.io/blog/2026/06/25/headlamp-knative-plugin/"
     },
+    "1be45fb0ef68a5f78aff9b0c3266fee630ee825083130359fdbcd0f3a60737cf": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-10-19T18:47:22Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Move an agent session from the GitHub Copilot app into VS Code without losing conversation or code changes.",
+            "Maintain working context while transitioning between the app and the editor.",
+            "Follow the guide to continue the session seamlessly in VS Code."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Move a Copilot chat from the web app into VS Code, keeping the conversation and code edits intact.",
+            "The process preserves the working context, so you can keep coding without losing previous messages or changes.",
+            "This guide shows how to transfer the session, ensuring continuity between the app and the editor."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Move an agent session from the GitHub Copilot app into VS Code while keeping the conversation intact.",
+            "Preserve code changes and working context during the transition, so development flow remains uninterrupted.",
+            "Follow the guide on The GitHub Blog to learn the step\u2011by\u2011step process."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How to continue a GitHub Copilot app session in VS Code",
+      "topics": [
+        "AI Agents",
+        "Productivity"
+      ],
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/"
+    },
     "2440ebf036c5f0ff98875fc7ca704e459e8df25224cf7ed321f229721e7b9efd": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -397,6 +482,92 @@
       ],
       "url": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5?source=rss----2615bd06b42e---4"
     },
+    "2cc2ae252fb2084a6b420e7d971aa725c6f172195a2a3f0b209dfdc105acf1c8": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-07-31T13:48:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AI shifts bottleneck from coding to human attention, making developer focus the limiting factor in software quality.",
+            "Traditional focus on productivity metrics (speed, cost) misses the new scarcity: sustained developer attention and deep work.",
+            "The article compares software development to orchestral conducting, emphasizing coordination and flow as key to creating great software."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AI shifts focus from coding to design, architecture, verification; developers now face a new bottleneck: limited human attention.",
+            "The article argues that software quality isn't about speed; it's about maintaining uninterrupted focus for deep work.",
+            "It compares development to conducting an orchestra, emphasizing coordination and attention over mere productivity tools."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AI shifts bottleneck from coding to design, architecture, and verification, moving focus to earlier stages of software delivery.",
+            "Human attention is now the scarce resource, making developers\u2019 focus the new bottleneck in building quality software.",
+            "Developers historically protected deep work and quiet afternoons; they must now adapt workflows to preserve uninterrupted focus."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "The Conductor Developer",
+      "topics": [
+        "AI Agents",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html"
+    },
+    "393c5699009c12b4922df3c95c1e007a527d9cdce0e43024a33190d20cfe35e4": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2025-10-16T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Google Cloud's C4 offers 70% total cost of ownership improvement for GPT open-source models.",
+            "Collaboration with Intel and Hugging Face enhances performance and cost efficiency.",
+            "The solution targets GPT OSS workloads, delivering significant savings."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Google Cloud\u2019s C4 platform cuts the total cost of owning GPT open\u2011source models by about 70%.",
+            "It runs on Intel processors and works with Hugging Face, a popular library for AI models.",
+            "The savings help developers deploy large language models faster and cheaper."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Google Cloud\u2019s C4 instances deliver a 70% reduction in total cost of ownership for GPT open\u2011source workloads.",
+            "The savings stem from optimized Intel CPU performance and efficient Hugging Face model deployment on C4.",
+            "C4 supports GPT\u2011style inference, enabling enterprises to run large language models cost\u2011effectively without GPU clusters."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Google Cloud C4 Brings a 70% TCO improvement on GPT OSS with Intel and Hugging Face",
+      "topics": [
+        "LLMs",
+        "Cloud",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/gpt-oss-on-intel-xeon"
+    },
     "3c8ef4ebd570790c54a38e439bedb05847367e8402b625bb72ffb622b2520a70": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -442,6 +613,49 @@
       ],
       "url": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60?source=rss----2615bd06b42e---4"
     },
+    "3d99cf87d464b7af5461cdf1dc29e5bd6c5c008df9a0bfc30a0f3b0c56ddb179": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-06-25T02:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AI agents extend task duration and complexity, reshaping work processes.",
+            "The research demonstrates increased productivity across various roles.",
+            "OpenAI's findings highlight agents' role in transforming workplace efficiency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AI agents automate routine tasks, freeing humans to focus on higher\u2011level work.",
+            "They can manage longer, more complex projects that previously required many people.",
+            "This boosts productivity across many job roles, from clerical to creative."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI research demonstrates AI agents can handle longer, more complex work tasks than traditional models.",
+            "Agents enable multi-step reasoning, allowing them to manage extended workflows and adapt to evolving task requirements.",
+            "Resulting productivity gains span diverse roles, from data analysis to creative design, by automating repetitive steps."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How agents are transforming work",
+      "topics": [
+        "AI Agents",
+        "Productivity",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/how-agents-are-transforming-work"
+    },
     "3f084f3ffd4480f9aa0d323bcf18b3a6f1996519b847880c284be32773c11949": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -485,6 +699,49 @@
         "Productivity"
       ],
       "url": "https://kubernetes.io/blog/2026/09/11/kubernetes-v1-37-native-histograms-beta/"
+    },
+    "432c23c0dd1c00f1ba41d7bd12b90441ba2e9fa6410bb9bf491586c911b2c75b": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-06-18T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Assessing agentic behavior in open models.",
+            "Developing benchmarks tailored to individual tooling.",
+            "Comparing performance across models using custom metrics."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The article asks whether open AI models show enough autonomy\u2014acting independently\u2014so they are truly 'agentic' behavior.",
+            "It suggests using your own tools to benchmark these models, comparing their performance against custom tests.",
+            "The focus is on measuring how well models can plan, execute, and adapt tasks without external guidance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Assess agentic behavior of open-source LLMs via custom benchmarking pipelines.",
+            "Leverage self-built tooling to measure autonomy, decision-making, and goal alignment across model versions.",
+            "Findings reveal gaps in agentic consistency, highlighting need for refined evaluation metrics and training data."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Is it agentic enough? Benchmarking open models on your own tooling",
+      "topics": [
+        "AI Agents",
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/is-it-agentic-enough"
     },
     "46fcf5bb7b99520f1816e2b783a8be714e81f0b319fca3a31d07e256a8f0729d": {
       "image_url": null,
@@ -1022,6 +1279,49 @@
       ],
       "url": "https://kubernetes.io/blog/2026/07/13/introducing-headlamp-plugin-for-kubeflow/"
     },
+    "6314aebbd61e4ee70f730fca697e46e95b19c2b72eab963a0293dd706631d02b": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-01-27T01:53:15Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Overview of agentic RL training applied to GPT-OSS.",
+            "Key practical insights and lessons learned.",
+            "Implications for future GPT-OSS development."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Agentic RL training lets GPT models learn by interacting with environments, treating them as agents that choose actions to maximize rewards.",
+            "The retrospective highlights practical challenges\u2014data quality, reward design, and safety\u2014alongside successes in improving model autonomy and efficiency.",
+            "Future work aims to scale agentic RL, integrate better safety checks, and open-source tools for broader research use."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Examines agentic reinforcement learning methods tailored for GPT-OSS, detailing algorithmic adaptations and training pipelines.",
+            "Provides a practical retrospective, outlining key challenges, performance metrics, and iterative improvements during deployment.",
+            "Discusses versioning strategies, environment setups, and reproducibility guidelines for future GPT-OSS RL experiments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Unlocking Agentic RL Training for GPT-OSS: A Practical Retrospective",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl"
+    },
     "6435a7f7dfd0d37b10ae5e3b6380c210a004286cfeaf3622b1510497fa6df6ff": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -1066,6 +1366,50 @@
         "Productivity"
       ],
       "url": "https://arxiv.org/abs/2609.00050"
+    },
+    "657c9e342fe5745899beeb66d5a8444e822a88ae8796271973cb64ca1b26d874": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-06-24T18:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AI, Edge, Telecom workloads on Kubernetes now demand hardware specs beyond CPU/memory, including GPUs, TPUs, network interfaces, sometimes post\u2011pod start or time\u2011shared.",
+            "Device Management Working Group\u2019s Dynamic Resource Allocation (DRA) has graduated to GA, enabling scalable, programmable hardware\u2011aware scheduling for these workloads.",
+            "Chairs discuss legacy device model limits, NP\u2011hard scheduling challenges, and future Kubernetes hardware\u2011aware solutions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AI, Edge, and telecom workloads on Kubernetes now need hardware beyond CPU/memory\u2014GPUs, TPUs, network interfaces, sometimes added after pod start.",
+            "The Device Management Working Group\u2019s Dynamic Resource Allocation (DRA) project has graduated to GA, enabling scalable, programmable hardware allocation.",
+            "Chairs discuss legacy device model limits, NP\u2011hard scheduling, and building a future where Kubernetes is hardware\u2011aware and programmable."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Dynamic Resource Allocation (DRA) has graduated to GA, enabling Kubernetes to allocate GPUs, TPUs, network interfaces, and other hardware, even post\u2011pod start and via time\u2011sharing.",
+            "Legacy device model limits hardware scheduling; DRA addresses NP\u2011hard allocation challenges by introducing programmable, hardware\u2011aware scheduling mechanisms.",
+            "Co\u2011chairs Kevin Klues (NVIDIA Distinguished Engineer, kubelet device manager maintainer) and others lead DRA, focusing on kubelet subcomponents like CPU and topology managers."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Spotlight on WG Device Management",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/06/24/wg-device-management-spotlight-2026/"
     },
     "6978b90b4bc501c2fc068025cdc5247ee47783d12b13385dfb4fc60c1417d8e8": {
       "image_url": null,
@@ -1287,6 +1631,49 @@
         "Cloud"
       ],
       "url": "https://kubernetes.io/blog/2026/08/03/gateway-api-v1-6-release/"
+    },
+    "7899d5486fc21e6385a8ef5808d1bc22b68900ad7e7ab3ee1a76e746acab5717": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2025-05-23T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Explores building a Python agent using MCP.",
+            "Demonstrates implementation in approximately 70 lines.",
+            "Highlights minimal code for agent functionality."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Python agents can be built in about 70 lines using MCP, a modular framework for agent behavior.",
+            "MCP supplies reusable components that simplify agent logic and communication.",
+            "The article shows a minimal example, illustrating how to create a tiny, functional agent quickly."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Python agent built in ~70 lines of code",
+            "Utilizes MCP for agent functionality",
+            "Designed as a lightweight, tiny agent framework"
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Tiny Agents in Python: a MCP-powered agent in ~70 lines of code",
+      "topics": [
+        "AI Agents",
+        "Python",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/python-tiny-agents"
     },
     "85ae60baefcbcf5cc062bfce52911d7300326c4796ff56b904e647dc97384eaa": {
       "image_url": null,
@@ -1643,7 +2030,7 @@
     },
     "aa58c6ed59af2c07d01dab43dd234e8805b5ba2334d1431f24fc1025f98acdd3": {
       "image_url": null,
-      "last_seen": "2026-10-20T06:36:59.721459Z",
+      "last_seen": "2026-10-20T13:13:12.391645Z",
       "published_at": "2026-07-08T12:00:00Z",
       "source": "Kubernetes Blog",
       "source_type": "rss",
@@ -1658,9 +2045,13 @@
           "status": "ok"
         },
         "beginner_friendly": {
-          "bullets": [],
+          "bullets": [
+            "etcd v3.7.0 released, adding RangeStream to stream large query results in chunks, improving speed and reducing memory use.",
+            "The update removes the old v2 store, boots entirely from v3store, and completes a protobuf overhaul, replacing outdated libraries.",
+            "Performance gains include faster keys-only range requests, more reliable leases, and new dependency versions: bbolt v1.5.1 and raft v3.7.0."
+          ],
           "model": "openai/gpt-oss-20b",
-          "status": "failed"
+          "status": "ok"
         },
         "technical": {
           "bullets": [
@@ -2166,6 +2557,49 @@
       ],
       "url": "https://martinfowler.com/articles/2026-dont-like-llms.html"
     },
+    "ddd2460e2a3b9981672c875752e89a9f324aae498bab1a8e49704bb747899bbf": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-05-27T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Warp leverages GPT-5.5 and OpenAI models to orchestrate coding agents.",
+            "The system coordinates across local, cloud, and open-source workflows.",
+            "This approach aims to build open source with advanced AI."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Warp bets on GPT\u20115.5 to build open\u2011source tools.",
+            "It uses GPT\u20115.5 and OpenAI models to coordinate coding agents.",
+            "These agents work across local machines, cloud services, and open\u2011source projects."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Warp leverages GPT\u20115.5 to orchestrate coding agents across local, cloud, and open\u2011source environments.",
+            "The platform integrates OpenAI models to streamline collaboration between distributed developers and automated agents.",
+            "Warp\u2019s architecture supports open\u2011source contributions, enabling community\u2011driven code generation and deployment across heterogeneous infrastructures."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Warp\u2019s big bet on building open source with GPT-5.5",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Cloud"
+      ],
+      "url": "https://openai.com/index/warp"
+    },
     "df14438cc8c1153365c273acbe1954c2d0770d9a31830386cd21f313ff50e9e9": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -2523,6 +2957,94 @@
       ],
       "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
     },
+    "f0433dcbfb4f85e51a9b9e8e2584ea0a17e9e1a7e20f511efc2381820cca374f": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-06-15T00:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "SIG Storage drives persistent data and volume management in Kubernetes, linking workloads to underlying storage systems.",
+            "Co-chair Xing Yang, a VMware engineer, discusses SIG history, recent releases, and future directions as AI workloads rise.",
+            "SIG includes co-chairs, tech leads, and maintainers like Yang who focus on CSI components such as csi-provisioner."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "SIG Storage keeps Kubernetes moving by managing persistent data, volumes, and the links between workloads and storage systems.",
+            "Co\u2011chair Xing Yang, a VMware engineer, joined early, before the Container Storage Interface (CSI) release, and now maintains CSI sidecars like csi\u2011provisioner.",
+            "The group plans to adapt storage for AI workloads, adding new features in recent Kubernetes releases and guiding future storage integration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "SIG Storage drives persistent data, volume management, and CSI interfaces in Kubernetes, with co-chairs Xing Yang (VMware) and Saad Ali (Google).",
+            "Xing Yang, a CSI maintainer, oversees sidecars like csi-provisioner, guiding early CSI evolution before its first release.",
+            "The group focuses on shipping features for AI workloads, integrating storage advancements into recent Kubernetes releases."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Spotlight on SIG Storage",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/06/15/sig-storage-spotlight-2026/"
+    },
+    "f4f5eac60efab428e87e0c2996e8702fffefc25f19dabf328acd05c42653595a": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-05-20T00:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "etcd v3.7.0-beta.0 introduces RangeStream for chunked large resultsets, improving latency and memory predictability.",
+            "The release refactors legacy components, enhances security, operational reliability, and overall user experience.",
+            "Users are encouraged to test the beta and report issues; this version also sets EOL for v3.4."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "etcd 3.7.0-beta.0 released, adding RangeStream to handle large data sets in smaller chunks, reducing latency and memory use.",
+            "The update cleans up old components, improves security and reliability, and sets end\u2011of\u2011life for version 3.4.",
+            "Users are invited to test the beta, report bugs, and help shape the final release."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "etcd v3.7.0\u2011beta.0 introduces RangeStream RPC, delivering large result sets in chunks to reduce latency and memory usage.",
+            "Beta release also refactors legacy components, improves security, operational reliability, and sets EOL for version 3.4.",
+            "Users are encouraged to test v3.7.0\u2011beta.0 via source, binaries, or container images, and report issues in the etcd repo."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Announcing etcd 3.7.0-beta.0",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/20/etcd-370-beta/"
+    },
     "f57eff9c23a4454b476bbb268bd95c2d23fd7e230b5d7db7db7e5bb00c25353b": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -2653,6 +3175,91 @@
         "System Design"
       ],
       "url": "https://martinfowler.com/fragments/2026-10-04.html"
+    },
+    "fd797e93058cd1d0ca108a21f3bad26bf390a23fb0cd4f989f62522807b28eb1": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-05-12T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Parameter Golf hosted over 1,000 participants and 2,000 submissions, focusing on AI-assisted machine learning research.",
+            "Participants explored coding agents, quantization, and novel model design within strict constraints.",
+            "The event highlighted collaborative experimentation and the potential of AI tools to accelerate research under resource limits."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Parameter Golf gathered 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research.",
+            "The challenge focused on coding agents, quantization, and novel model design while keeping strict resource limits.",
+            "Participants learned how AI tools can speed experiments, reduce errors, and inspire new ideas in constrained settings."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Hosted 1,000+ participants and 2,000+ submissions, fostering collaborative AI\u2011assisted ML research.",
+            "Explored coding agents, quantization techniques, and novel model design within strict resource constraints.",
+            "Demonstrated how constrained environments drive innovation in model efficiency and algorithmic creativity."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "What Parameter Golf taught us about AI-assisted research",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/what-parameter-golf-taught-us"
+    },
+    "feaefaa2e2292ba8ee0af1f5ba945d86bde107dd0fa3c05afc85a94711e186b8": {
+      "image_url": null,
+      "last_seen": "2026-10-20T13:13:12.391645Z",
+      "published_at": "2026-10-15T19:39:27Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Ambient intelligence integrates AI, agents, voice, and physical controls to transform software development from tool operation to intent expression.",
+            "This shift enables developers to focus more on building rather than managing tools.",
+            "The GitHub Blog discusses how these interfaces help maintain developer focus and streamline workflows."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Ambient intelligence is next developer interface, using AI (artificial intelligence), agents (autonomous programs), voice, and physical controls to let developers express intent of operating tools.",
+            "This shift frees developers from repetitive tool use, allowing them to focus on building software rather than managing interfaces.",
+            "Ambient intelligence blends AI, voice, and physical controls to create a more intuitive, intent\u2011driven development experience."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Ambient intelligence merges AI, agents, voice, and physical controls to create a seamless developer interface.",
+            "This shift moves developers from operating tools to expressing intent, reducing context switching.",
+            "By automating routine interactions, ambient interfaces help developers stay focused on building core functionality."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "The next developer interface is ambient intelligence",
+      "topics": [
+        "AI Agents",
+        "Productivity"
+      ],
+      "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/"
     }
   },
   "version": 1

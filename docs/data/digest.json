@@ -1,6 +1,45 @@
 {
   "articles": [
     {
+      "id": "1be45fb0ef68a5f78aff9b0c3266fee630ee825083130359fdbcd0f3a60737cf",
+      "image_url": null,
+      "published_at": "2026-10-19T18:47:22Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Move an agent session from the GitHub Copilot app into VS Code without losing conversation or code changes.",
+            "Maintain working context while transitioning between the app and the editor.",
+            "Follow the guide to continue the session seamlessly in VS Code."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Move a Copilot chat from the web app into VS Code, keeping the conversation and code edits intact.",
+            "The process preserves the working context, so you can keep coding without losing previous messages or changes.",
+            "This guide shows how to transfer the session, ensuring continuity between the app and the editor."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Move an agent session from the GitHub Copilot app into VS Code while keeping the conversation intact.",
+            "Preserve code changes and working context during the transition, so development flow remains uninterrupted.",
+            "Follow the guide on The GitHub Blog to learn the step\u2011by\u2011step process."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "How to continue a GitHub Copilot app session in VS Code",
+      "topics": [
+        "AI Agents",
+        "Productivity"
+      ],
+      "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/"
+    },
+    {
       "id": "592b287e400cc7af390b789edb9848cf00aef3c932a3407ab78d72937dbca0e0",
       "image_url": null,
       "published_at": "2026-10-19T04:00:00Z",
@@ -377,6 +416,45 @@
       "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
     },
     {
+      "id": "feaefaa2e2292ba8ee0af1f5ba945d86bde107dd0fa3c05afc85a94711e186b8",
+      "image_url": null,
+      "published_at": "2026-10-15T19:39:27Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Ambient intelligence integrates AI, agents, voice, and physical controls to transform software development from tool operation to intent expression.",
+            "This shift enables developers to focus more on building rather than managing tools.",
+            "The GitHub Blog discusses how these interfaces help maintain developer focus and streamline workflows."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Ambient intelligence is next developer interface, using AI (artificial intelligence), agents (autonomous programs), voice, and physical controls to let developers express intent of operating tools.",
+            "This shift frees developers from repetitive tool use, allowing them to focus on building software rather than managing interfaces.",
+            "Ambient intelligence blends AI, voice, and physical controls to create a more intuitive, intent\u2011driven development experience."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Ambient intelligence merges AI, agents, voice, and physical controls to create a seamless developer interface.",
+            "This shift moves developers from operating tools to expressing intent, reducing context switching.",
+            "By automating routine interactions, ambient interfaces help developers stay focused on building core functionality."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "The next developer interface is ambient intelligence",
+      "topics": [
+        "AI Agents",
+        "Productivity"
+      ],
+      "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/"
+    },
+    {
       "id": "f69a57c8fec3e131561ddabaf5a202eca596b254c94244349e9a85e4ab2020ac",
       "image_url": null,
       "published_at": "2026-10-14T20:02:22Z",
@@ -751,13 +829,13 @@
       "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
     }
   ],
-  "generated_at": "2026-10-20T06:36:59.721459Z",
+  "generated_at": "2026-10-20T13:13:12.391645Z",
   "topic_counts": {
-    "AI Agents": 11,
+    "AI Agents": 13,
     "Backend": 14,
     "LLMs": 11,
     "Machine Learning": 11,
-    "Other": 21,
+    "Other": 23,
     "System Design": 16
   },
   "topics": [
