@@ -1,6 +1,46 @@
 {
   "articles": [
     {
+      "id": "885fe3c67de05637ce5b9612baa0a6e50e729bbbcf8015191def57f8d564f7ca",
+      "image_url": null,
+      "published_at": "2026-10-21T16:00:00Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Migrated 99.99999% of GitHub repositories to Azure, creating a near-complete copy of the codebase.",
+            "Introduced per-reference quorums to transfer remaining repositories, ensuring consistency and reliability across the infrastructure.",
+            "Leveraged object storage to allow read operations to scale independently, improving performance and scalability for Git access."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Migrated almost all GitHub repos to Azure, creating a backup in the cloud.",
+            "Uses per-reference quorums to sync the remaining 0.00001% of data, ensuring each repo copy stays consistent.",
+            "Object storage lets read requests scale independently, so many users can fetch code without slowing the system."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Migrated 99.99999% of GitHub repositories to Azure, leaving only a tiny fraction pending.",
+            "Remaining repositories will be transferred using per\u2011reference quorums to ensure consistency and reliability.",
+            "Object storage architecture allows read traffic to scale independently, improving performance for large\u2011scale Git operations."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "The bridge to agent-scale Git infrastructure",
+      "topics": [
+        "AI Agents",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
+    },
+    {
       "id": "ebf3022769d5aa3354983f9685a3ac07e18373ecdd4bfd815a8e0aab59f2765f",
       "image_url": null,
       "published_at": "2026-10-21T10:51:00Z",
@@ -40,87 +80,6 @@
         "Machine Learning"
       ],
       "url": "https://martinfowler.com/fragments/2026-10-21.html"
-    },
-    {
-      "id": "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [],
-          "status": "failed"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
-            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
-            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
-            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
-            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "Cloud",
-        "Productivity"
-      ],
-      "url": "https://arxiv.org/abs/2610.26913"
-    },
-    {
-      "id": "2e95c95ea589d2d6070e764cd8128ffdd36d6c8aeaf8be211f9180a872c02dcd",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces Semantic Observability, a multi\u2011agent framework that consolidates heterogeneous logs into a dynamic property graph database linking infrastructure, software, and events.",
-            "Uses directed cyclic graphs to autonomously traverse the graph, applying causal algorithms and temporal back\u2011traversal to isolate anomaly blast radii.",
-            "An LLM reasoning engine interprets the pruned subgraph to produce code\u2011level root\u2011cause analyses and actionable remediations."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Semantic Observability unifies diverse microservice logs into a Property Graph Database, linking infrastructure, software, and events as nodes and directed edges for clearer context.",
-            "A multi\u2011agent system, guided by Directed Cyclic Graphs (DCGs), automatically traverses the graph, uses causal algorithms and time\u2011backtracking to pinpoint the exact anomaly area.",
-            "The resulting subgraph is fed to a Large Language Model (LLM) reasoning engine, which produces code\u2011level Root Cause Analyses (RCAs) and actionable fixes."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces Semantic Observability: autonomous multi\u2011agent framework that consolidates heterogeneous microservice logs into a dynamic, queryable Property Graph Database, modeling topology, dependencies, and events.",
-            "Employs Directed Cyclic Graphs to orchestrate agents that run causal graph algorithms and temporal back\u2011traversal, isolating anomaly blast radius within the graph.",
-            "Uses an LLM reasoning engine on the pruned subgraph to produce code\u2011level Root Cause Analyses and actionable remediations, as presented in arXiv:2610.28611v1."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Semantic Observability for Autonomous Systems Diagnostics",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "DevOps"
-      ],
-      "url": "https://arxiv.org/abs/2610.28611"
     },
     {
       "id": "23675028600476715d5ad9fbc9077584366a308d41b42b8985819d05bf968a83",
@@ -165,46 +124,46 @@
       "url": "https://arxiv.org/abs/2610.27677"
     },
     {
-      "id": "e15f5cc6b720ff7e1397bd7962806f60388355e6579517da55a4544ec2ec398b",
+      "id": "2e95c95ea589d2d6070e764cd8128ffdd36d6c8aeaf8be211f9180a872c02dcd",
       "image_url": null,
       "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
+      "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
           "bullets": [
-            "LatticeMind transforms natural-language requests into validated DFT workflows, using contracts and deterministic pre-execution checks to ensure correct stages, files, and dependencies before solver runs.",
-            "On a 44-case RESCU benchmark, 119/132 runs succeeded on first plan, with remaining completed after one repair; ablation shows contracts and validation are key.",
-            "The framework also reproduces all reference values on a 19-case VASP benchmark, proving solver-agnostic transferability."
+            "Introduces Semantic Observability, a multi\u2011agent framework that consolidates heterogeneous logs into a dynamic property graph database linking infrastructure, software, and events.",
+            "Uses directed cyclic graphs to autonomously traverse the graph, applying causal algorithms and temporal back\u2011traversal to isolate anomaly blast radii.",
+            "An LLM reasoning engine interprets the pruned subgraph to produce code\u2011level root\u2011cause analyses and actionable remediations."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "LatticeMind turns natural language into DFT workflows, ensuring each step\u2019s files and dependencies are correct before running the solver. Define DFT: quantum simulation of electrons.",
-            "It uses a workflow contract and validators to catch errors early; if a check fails, a limited repair is attempted, keeping results traceable.",
-            "Tested on 44 RESCU and 19 VASP cases, it matched all reference results, outperforming a simple trial\u2011and\u2011repair approach with fewer tokens."
+            "Semantic Observability unifies diverse microservice logs into a Property Graph Database, linking infrastructure, software, and events as nodes and directed edges for clearer context.",
+            "A multi\u2011agent system, guided by Directed Cyclic Graphs (DCGs), automatically traverses the graph, uses causal algorithms and time\u2011backtracking to pinpoint the exact anomaly area.",
+            "The resulting subgraph is fed to a Large Language Model (LLM) reasoning engine, which produces code\u2011level Root Cause Analyses (RCAs) and actionable fixes."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "LatticeMind converts natural\u2011language requests into executable DFT projects via a workflow contract, deterministic validators, and bounded repair before solver launch.",
-            "On a 44\u2011case RESCU benchmark, 119/132 runs succeeded on first validated plan, with remaining passing after one repair cycle.",
-            "Ablation studies show workflow contract and pre\u2011execution validation are key, while the framework reproduces all reference values on a 19\u2011case VASP benchmark, proving solver transferability."
+            "Introduces Semantic Observability: autonomous multi\u2011agent framework that consolidates heterogeneous microservice logs into a dynamic, queryable Property Graph Database, modeling topology, dependencies, and events.",
+            "Employs Directed Cyclic Graphs to orchestrate agents that run causal graph algorithms and temporal back\u2011traversal, isolating anomaly blast radius within the graph.",
+            "Uses an LLM reasoning engine on the pruned subgraph to produce code\u2011level Root Cause Analyses and actionable remediations, as presented in arXiv:2610.28611v1."
           ],
           "status": "ok"
         }
       },
-      "title": "LatticeMind: A Validation-Gated Agentic Framework for Density Functional Theory Workflows",
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
       "topics": [
         "AI Agents",
         "LLMs",
+        "Backend",
         "System Design",
-        "Productivity",
-        "Machine Learning"
+        "DevOps"
       ],
-      "url": "https://arxiv.org/abs/2610.26869"
+      "url": "https://arxiv.org/abs/2610.28611"
     },
     {
       "id": "46178924d1dbab427845a698d30b493bb761701cba0d200717e3053312cabf44",
@@ -248,6 +207,47 @@
       "url": "https://arxiv.org/abs/2610.26904"
     },
     {
+      "id": "4934e32c8ead615ab768065a0a74661d8cab7600849b71f20b913785d8190d6c",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model that learns from simulation, robot data, images, and videos across diverse domains.",
+            "It jointly trains a single future predictor using language descriptions of actions and visual changes, built on a language model for interpreting conditions.",
+            "The model outperforms domain\u2011specific LWMs, reduces training cost 6\u00d7, speeds planning 13.9\u00d7, and initializes LaLa\u2011Policy, matching Cosmo performance."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model (predicts hidden states) that learns from simulation, robot data, images, and videos.",
+            "It uses language to describe actions and visual changes, enabling joint training across diverse datasets.",
+            "The model outperforms others in planning, costs less training, plans faster, and can initialize a policy model."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model that jointly learns from simulation, robot trajectories, images, and videos using a single future predictor.",
+            "Its predictor, built on a language model, interprets textual action descriptions and visual changes, enabling higher MPC planning performance than domain\u2011specific LWMs.",
+            "Compared to an RAEv2 video baseline, LaLa-World matches planning performance with 6\u00d7 less training cost and 13.9\u00d7 faster inference, and pretrains LaLa-Policy for competitive control."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27851"
+    },
+    {
       "id": "7d91065606633e7143b40a32ec7668e3e2f52e111273cf6b2433a802020fcadd",
       "image_url": null,
       "published_at": "2026-10-21T04:00:00Z",
@@ -287,6 +287,45 @@
         "Cloud"
       ],
       "url": "https://arxiv.org/abs/2610.27155"
+    },
+    {
+      "id": "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
+            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
+            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
+            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
+            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.26913"
     },
     {
       "id": "ba13ede3667f75612ee0c4eb588297d262978572704132208c82cc3e9545fdfa",
@@ -330,7 +369,7 @@
       "url": "https://arxiv.org/abs/2610.27889"
     },
     {
-      "id": "4934e32c8ead615ab768065a0a74661d8cab7600849b71f20b913785d8190d6c",
+      "id": "e15f5cc6b720ff7e1397bd7962806f60388355e6579517da55a4544ec2ec398b",
       "image_url": null,
       "published_at": "2026-10-21T04:00:00Z",
       "source": "arXiv Machine Learning",
@@ -338,37 +377,310 @@
       "summaries": {
         "balanced": {
           "bullets": [
-            "LaLa-World is a language\u2011conditioned latent world model that learns from simulation, robot data, images, and videos across diverse domains.",
-            "It jointly trains a single future predictor using language descriptions of actions and visual changes, built on a language model for interpreting conditions.",
-            "The model outperforms domain\u2011specific LWMs, reduces training cost 6\u00d7, speeds planning 13.9\u00d7, and initializes LaLa\u2011Policy, matching Cosmo performance."
+            "LatticeMind transforms natural-language requests into validated DFT workflows, using contracts and deterministic pre-execution checks to ensure correct stages, files, and dependencies before solver runs.",
+            "On a 44-case RESCU benchmark, 119/132 runs succeeded on first plan, with remaining completed after one repair; ablation shows contracts and validation are key.",
+            "The framework also reproduces all reference values on a 19-case VASP benchmark, proving solver-agnostic transferability."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "LaLa-World is a language\u2011conditioned latent world model (predicts hidden states) that learns from simulation, robot data, images, and videos.",
-            "It uses language to describe actions and visual changes, enabling joint training across diverse datasets.",
-            "The model outperforms others in planning, costs less training, plans faster, and can initialize a policy model."
+            "LatticeMind turns natural language into DFT workflows, ensuring each step\u2019s files and dependencies are correct before running the solver. Define DFT: quantum simulation of electrons.",
+            "It uses a workflow contract and validators to catch errors early; if a check fails, a limited repair is attempted, keeping results traceable.",
+            "Tested on 44 RESCU and 19 VASP cases, it matched all reference results, outperforming a simple trial\u2011and\u2011repair approach with fewer tokens."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "LaLa-World is a language\u2011conditioned latent world model that jointly learns from simulation, robot trajectories, images, and videos using a single future predictor.",
-            "Its predictor, built on a language model, interprets textual action descriptions and visual changes, enabling higher MPC planning performance than domain\u2011specific LWMs.",
-            "Compared to an RAEv2 video baseline, LaLa-World matches planning performance with 6\u00d7 less training cost and 13.9\u00d7 faster inference, and pretrains LaLa-Policy for competitive control."
+            "LatticeMind converts natural\u2011language requests into executable DFT projects via a workflow contract, deterministic validators, and bounded repair before solver launch.",
+            "On a 44\u2011case RESCU benchmark, 119/132 runs succeeded on first validated plan, with remaining passing after one repair cycle.",
+            "Ablation studies show workflow contract and pre\u2011execution validation are key, while the framework reproduces all reference values on a 19\u2011case VASP benchmark, proving solver transferability."
           ],
           "status": "ok"
         }
       },
-      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "title": "LatticeMind: A Validation-Gated Agentic Framework for Density Functional Theory Workflows",
       "topics": [
         "AI Agents",
+        "LLMs",
+        "System Design",
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26869"
+    },
+    {
+      "id": "8ee03648982651510b20f07b4a73efd57bc71935f9ac697719d7ee94b72d36cc",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LightCRS is a lightweight framework that unifies multi-domain multimodal conversational recommendation by precomputing product representations and using a small query-conditioned module.",
+            "It achieves state\u2011of\u2011the\u2011art HR@1, NDCG@5, and MRR, outperforming baselines by 35.4% HR@1 and reducing latency 266\u00d7.",
+            "The authors introduce MM\u2011R2A\u201125, a 25\u2011domain benchmark of Reddit conversations paired with Amazon listings, demonstrating joint training boosts HR@1 by 15.2%"
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LightCRS is a lightweight system that recommends products across many categories using a single shared model, avoiding separate models for each domain.",
+            "It precomputes product images and text with frozen encoders, then uses a 5.3M\u2011parameter module that fuses queries via cross\u2011attention and compares candidates with a Transformer.",
+            "On a 25\u2011domain benchmark, LightCRS beats baselines by 35% in top\u20111 hits and is 266 times faster per query, while joint training adds 15% accuracy."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LightCRS: lightweight framework using frozen VLM encoders to precompute multimodal product embeddings; online 5.3M-parameter query\u2011conditioned cross\u2011attention fuses evidence across domains.",
+            "Inter\u2011candidate Transformer scores candidates; shared across 25 domains, reducing latency 266\u00d7 and boosting HR@1 by 35.4% over baseline.",
+            "MM\u2011R2A\u201125 pairs Reddit dialogues with Amazon listings; joint multi\u2011domain training improves HR@1 by 15.2% over single\u2011domain models."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LightCRS: Lightweight Multi-Domain Conversational Recommendation System",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.26948"
+    },
+    {
+      "id": "10f476c8a9f7eae9633e18e9028524f7248ca03a8b7df5caefd54de169cd6f19",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "technical": {
+          "bullets": [
+            "Zero\u2011training delete\u2011relaxation heuristic h_add predicts structural difficulty with mean Spearman |\u03c1|=0.931, outperforming ridge regression (0.707), object count (0.657), and ARC (0.400).",
+            "Renaming predicates from 0% to 100% drops LLM planning success from 67.5% to 40.0%, while refusals stay at 0%, isolating semantic effects.",
+            "Hybrid routing between an LLM and a symbolic planner relies more on calibrating to the target LLM\u2019s outcomes than on the structural score chosen."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "When Planning Problems Become Hard for LLMs: Separating Structural Complexity from Semantic Interpretability",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26964"
+    },
+    {
+      "id": "c8d6b2a986c429698973949a4843c8f32538c91ade5ab8e3f65ba07ac276c2de",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "cls fine-tuning outperforms s2s for hallucination detection, creating clear two-cluster geometry and strong class separation.",
+            "cls signal saturates before final layer, revealing an InfoWindow where task information emerges; upper layers become redundant.",
+            "Removing 31% of layers above InfoWindow keeps accuracy on Qwen3-4B/8B while cutting latency 1.4\u00d7."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Fine\u2011tuning a classifier head (CLS) outperforms a sequence\u2011to\u2011sequence (S2S) approach for detecting hallucinations in large language models.",
+            "CLS pushes hidden states into two distinct clusters, giving clear class separation and easy linear decoding, while S2S keeps states near the pretrained backbone.",
+            "Analysis shows a narrow middle layer window where task information appears; removing upper layers beyond this window cuts latency 1.4\u00d7 without losing accuracy."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Classifier\u2011head fine\u2011tuning (cls) outperforms seq\u2011to\u2011seq (s2s) on binary hallucination detection by inducing a two\u2011cluster geometry with strong class separation and linearly decodable labels.",
+            "Cls signal saturates before the final layer, creating an upper\u2011middle InfoWindow where task information emerges, followed by a redundant upper plateau that mirrors this signal.",
+            "Removing layers above the InfoWindow truncates 31% of Qwen3\u20114B/8B, preserving accuracy within seed noise while cutting latency by 1.4\u00d7."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "How Fine-Tuning Objectives Shape Layer-Wise Information in LLM Hallucination Detection",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.27711"
+    },
+    {
+      "id": "90066384ad84611d7d68ad6b99b9d9373fd59ec5620960e8a9cabfac18159620",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces a prompt-side structural complexity index scoring prompts on six dimensions, avoiding bias from generated code.",
+            "Evaluated 5,000 Python prompts with 21 models and four LLM judges; composite ICC(2,1)=0.872 indicates strong inter-rater reliability.",
+            "Found a nonmonotone breakpoint at composite 14.0 where pass rates jump from 83.4% to 90.1%; breakpoint persists after adjusting for task type."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces a new Prompt\u2011Side Structural Complexity Index (a score of prompt structure on six dimensions) that avoids bias from broken code.",
+            "Tested on 5,000 Python prompts and 21 models; a composite score of 14.0 marks a breakpoint where pass rates rise from 83% to 90%.",
+            "Higher prompt complexity can lower failures, but the effect differs by model and source; 25% of failures pair high prompt scores with low output complexity."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "status": "failed"
+        }
+      },
+      "title": "The Complexity Kink: A Prompt-Side Structural Complexity Index for Code-Generation Reliability",
+      "topics": [
+        "LLMs",
+        "Python",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2609.19616"
+    },
+    {
+      "id": "fe5468c76a03c1f066a0678c59cbc17927126caa19ddc2e7a3bcd2ae6cfd8505",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Study of ordered layer-state trajectories in transformers shows layer order significantly shapes inference, aligning 1.6\u20132.2\u00d7 more with endpoint than shuffled order.",
+            "Hidden-state coordinates outperform vocabulary readbacks; architecture-specific scaffolds identified across Qwen, Llama, Gemma, with interventions controlling trajectories via local actuators and gating.",
+            "Selective gating achieved 17/87 Qwen closure trajectories to top\u20111 boundary, demonstrating behaviorally consequential process without fine\u2011grained dose assignment."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The study examines how the sequence of transformer layers (layer-state trajectory: hidden states across layers) shapes the model\u2019s computation during inference.",
+            "Across Qwen, Llama, Gemma, natural layer order aligns 1.6\u20132.2\u00d7 better with final outputs than shuffled orders, highlighting architecture over training.",
+            "Interventions on hidden states and selective gating can steer internal trajectories, improving specific outputs while leaving others unchanged, demonstrating controllable inference dynamics."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Layer-state trajectories in Qwen, Llama, Gemma show 1.60\u20132.24\u00d7 better alignment with endpoint chords than shuffled orders, revealing architecture\u2011compatible scaffolds across random initializations.",
+            "Hidden\u2011state coordinates outperform vocabulary readbacks; task\u2011defined coordinates enable computable candidate competition, while additive interventions fail but local transition actuators selectively steer trajectories.",
+            "A confidence gate and safety\u2011matched action reassignment selectively gate 17/87 Qwen closure paths to top\u20111 boundaries, demonstrating bounded actuator families without fine\u2011grained dose control."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "High-dimensional layer-state trajectories reveal the internal dynamics of transformer inference",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26866"
+    },
+    {
+      "id": "8c69d8b194f3a59980d12712d50fe456eb7cb043a0758fbc186336af871be320",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Continuum-LM, a continuous-depth language model that reuses pretrained residual transformations as dynamical operators, enabling continuous hidden-state evolution.",
+            "Uses ordinary differential equations with higher-order numerical integration; solver order and step size control computation, allowing stable training across eight scientific tasks.",
+            "Achieves 7.77\u201310.96% higher exact-match accuracy over discrete counterparts at 0.6B and 1.7B scales, outperforming Ouro-style recurrent control under matched budgets."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces Continuum\u2011LM, a continuous\u2011depth (hidden states change continuously) language model that reuses pretrained residual transformations as dynamical operators, evolving via differential equations.",
+            "Uses higher-order numerical integration (more accurate calculation of equations), where solver order and step size control computation, enabling flexible depth without adding parameters.",
+            "Tested on eight scientific tasks, Continuum\u2011LM outperforms discrete models by 7.77\u201310.96% accuracy at 0.6B and 1.7B sizes, showing parameter reuse (same parameters used) boosts performance."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Continuum\u2011LM, a continuous\u2011depth language model that reuses pretrained residual transformations as dynamical operators, evolving hidden states via an ODE solved with higher\u2011order integration.",
+            "Solver order and step size control computation, enabling stable training and 7.77\u2011point (0.6B) / 10.96\u2011point (1.7B) exact\u2011match accuracy gains over discrete counterparts.",
+            "At 0.6B, Continuum\u2011LM outperforms an Ouro\u2011style recurrent control under matched parameter and residual\u2011function evaluation budgets, proving extensible depth via parameter reuse."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Dynamic System Inspired Continuous Large Language Model for AI4Science Tasks",
+      "topics": [
         "LLMs",
         "Backend",
         "Machine Learning"
       ],
-      "url": "https://arxiv.org/abs/2610.27851"
+      "url": "https://arxiv.org/abs/2610.26959"
+    },
+    {
+      "id": "15a0583029b9da74a9de932531504a3a598c6b6ff7161a9c5585a66233077e0d",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LEAF is a LUT-aware transformer for FPGAs achieving nanosecond-scale inference.",
+            "It converts query/key/value projections and feed-forward layers into FPGA-native layers, tabulating constant matrix-vector multiplications to reduce LUT usage.",
+            "On jet tagging, LEAF improves accuracy by 1.8% and uses 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35 ns latency."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LEAF is a transformer for FPGAs that uses LUTs (lookup tables) efficiently, achieving nanosecond\u2011scale inference.",
+            "It rewrites attention (focus on important parts) and feed\u2011forward layers into FPGA\u2011native forms, tabulating constant matrix\u2011vector multiplications to reduce resource use.",
+            "On jet tagging, it outperforms prior models by 1.8% accuracy, using 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35ns."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LEAF: LUT\u2011aware Efficient Attention on FPGAs\u2014first nanosecond\u2011scale transformer converting query/key/value projections and feed\u2011forward into FPGA\u2011native layers via LUT\u2011aware training.",
+            "Attention block\u2019s constant matrix\u2011vector multiplications are tabulated, leaving remaining operations arithmetic, enabling 1.8\u2011point accuracy gain and 2.9\u00d7 LUT savings on jet\u2011tagging benchmark.",
+            "Most efficient LEAF\u2011based linformer with 64 input particles achieves 80.4% accuracy at 28k LUTs and 35 ns latency."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LEAF: LUT-aware Efficient Attention on FPGAs",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27078"
     },
     {
       "id": "1be45fb0ef68a5f78aff9b0c3266fee630ee825083130359fdbcd0f3a60737cf",
@@ -1198,14 +1510,14 @@
       "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/"
     }
   ],
-  "generated_at": "2026-10-21T13:25:33.193295Z",
+  "generated_at": "2026-10-21T16:23:39.970050Z",
   "topic_counts": {
-    "AI Agents": 20,
-    "Backend": 18,
-    "LLMs": 19,
-    "Machine Learning": 18,
-    "Other": 30,
-    "System Design": 23
+    "AI Agents": 24,
+    "Backend": 20,
+    "LLMs": 26,
+    "Machine Learning": 25,
+    "Other": 33,
+    "System Design": 28
   },
   "topics": [
     "AI Agents",

@@ -260,6 +260,42 @@
       ],
       "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/"
     },
+    "10f476c8a9f7eae9633e18e9028524f7248ca03a8b7df5caefd54de169cd6f19": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        },
+        "technical": {
+          "bullets": [
+            "Zero\u2011training delete\u2011relaxation heuristic h_add predicts structural difficulty with mean Spearman |\u03c1|=0.931, outperforming ridge regression (0.707), object count (0.657), and ARC (0.400).",
+            "Renaming predicates from 0% to 100% drops LLM planning success from 67.5% to 40.0%, while refusals stay at 0%, isolating semantic effects.",
+            "Hybrid routing between an LLM and a symbolic planner relies more on calibrating to the target LLM\u2019s outcomes than on the structural score chosen."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "When Planning Problems Become Hard for LLMs: Separating Structural Complexity from Semantic Interpretability",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26964"
+    },
     "11f49bce2d7cc12592b26825529676e3976f3f55c6fb5763ea1c1bb0a313cd6b": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -391,6 +427,49 @@
         "DevOps"
       ],
       "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/"
+    },
+    "15a0583029b9da74a9de932531504a3a598c6b6ff7161a9c5585a66233077e0d": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LEAF is a LUT-aware transformer for FPGAs achieving nanosecond-scale inference.",
+            "It converts query/key/value projections and feed-forward layers into FPGA-native layers, tabulating constant matrix-vector multiplications to reduce LUT usage.",
+            "On jet tagging, LEAF improves accuracy by 1.8% and uses 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35 ns latency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LEAF is a transformer for FPGAs that uses LUTs (lookup tables) efficiently, achieving nanosecond\u2011scale inference.",
+            "It rewrites attention (focus on important parts) and feed\u2011forward layers into FPGA\u2011native forms, tabulating constant matrix\u2011vector multiplications to reduce resource use.",
+            "On jet tagging, it outperforms prior models by 1.8% accuracy, using 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35ns."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LEAF: LUT\u2011aware Efficient Attention on FPGAs\u2014first nanosecond\u2011scale transformer converting query/key/value projections and feed\u2011forward into FPGA\u2011native layers via LUT\u2011aware training.",
+            "Attention block\u2019s constant matrix\u2011vector multiplications are tabulated, leaving remaining operations arithmetic, enabling 1.8\u2011point accuracy gain and 2.9\u00d7 LUT savings on jet\u2011tagging benchmark.",
+            "Most efficient LEAF\u2011based linformer with 64 input particles achieves 80.4% accuracy at 28k LUTs and 35 ns latency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "LEAF: LUT-aware Efficient Attention on FPGAs",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27078"
     },
     "1b7c2b0930d70d4e4fd52f8e4b416cd1203843271577af5b28c6ec97afede080": {
       "image_url": null,
@@ -1408,6 +1487,49 @@
       ],
       "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/"
     },
+    "558cd03a67c5610a9a3202355d270a35648d7e8e394cab5b974cb66cc1807454": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-05-15T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.36 adds alpha counter metric route_controller_route_sync_total to Cloud Controller Manager, counting each route sync with cloud provider.",
+            "The metric supports validating the CloudControllerManagerWatchBasedRoutesReconciliation feature gate, which switches the route controller from a fixed\u2011interval loop to watch\u2011based reconciliation.",
+            "A/B testing compares route_controller_route_sync_total with the gate disabled versus enabled; enabled mode should show fewer syncs when node changes are infrequent."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.36 adds a new counter metric, route_controller_route_sync_total, that counts each time routes sync with the cloud provider.",
+            "The metric helps test the CloudControllerManagerWatchBasedRoutesReconciliation feature gate, which switches the route controller from a fixed\u2011interval loop to a watch\u2011based approach.",
+            "When the gate is on, syncs happen only on node changes, cutting API calls and limits; compare counts with the gate off to see drop."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36 adds alpha counter metric route_controller_route_sync_total to CCM route controller, incrementing on each route sync with cloud provider.",
+            "Feature gate CloudControllerManagerWatchBasedRoutesReconciliation (introduced v1.35) switches from fixed-interval loop to watch-based reconciliation, reducing API calls when nodes unchanged.",
+            "A/B test by comparing metric counts with gate disabled vs enabled; expect steady increments when disabled, drop when enabled in low node-change clusters."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: New Metric for Route Sync in the Cloud Controller Manager",
+      "topics": [
+        "Backend",
+        "DevOps",
+        "Cloud"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/15/ccm-new-metric-route-sync-total/"
+    },
     "5890b1cfd4cc38aa3885e02e9fc3010d881da63d5d8b82ee82ae0ed7c4531d58": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -1892,6 +2014,49 @@
       ],
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
     },
+    "73a1b610054d15076be8e2686736002a9cd2793d4db72280ed26d4d99ad9e199": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-07-13T18:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes Dashboard runs inside cluster, accessed via port-forward or ingress, uses service account tokens, provides tables and forms for resource management.",
+            "Headlamp can run on desktop or cluster, reads kubeconfig, supports multiple clusters, favors YAML editing, offers visual map, extensible with plugins.",
+            "Choosing between them depends on deployment model, authentication approach, and desired UI features; both display cluster resources but differ in architecture and extensibility."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes Dashboard is a web app that runs inside a cluster, accessed via port-forward or ingress, using service account tokens for login.",
+            "Headlamp can run on a desktop or inside a cluster, reads your kubeconfig (listing cluster info), supports multiple clusters, and uses YAML for resource editing.",
+            "Both tools show cluster resources, but Dashboard relies on in-cluster service accounts, while Headlamp follows your identity and can be extended with plugins."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes Dashboard runs in-cluster, installed via Helm, accessed via port-forward or ingress, authenticates with service account Bearer tokens, provides table-based navigation and resource creation forms.",
+            "Headlamp can run locally or in-cluster, reads kubeconfig kubectl, supports multiple clusters, emphasizes YAML editing, offers visual map, extensible via plugins, uses ServiceAccount when in-cluster.",
+            "Both display cluster resources, but Dashboard relies solely on service account tokens, while Headlamp follows user identity and RBAC, enabling more flexible permission models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes Dashboard to Headlamp: A Step-by-Step Guide",
+      "topics": [
+        "Backend",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/07/13/kubernetes-dashboard-to-headlamp/"
+    },
     "73d164d48488f1d858c100d396eb88e5c6d397294345768e68888e74eadf7275": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -2025,6 +2190,49 @@
       ],
       "url": "https://huggingface.co/blog/python-tiny-agents"
     },
+    "7aa003383f2e9f5404d36e0d0ad5a19429f0908905a67e429af08afb50a93d24": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-06-25T20:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Headlamp plugin integrates Volcano resources into Kubernetes UI, enabling inspection of jobs, queues, and gang scheduling in one place.",
+            "Volcano extends Kubernetes with queues, priorities, quotas, and gang scheduling to manage batch, AI/ML, and HPC workloads more effectively.",
+            "The plugin provides visual context for jobs, PodGroups, and Pods, helping teams troubleshoot and understand workload state and queue behavior quickly."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Volcano is a batch scheduler for Kubernetes, adding queues, priorities, quotas, and gang scheduling to manage jobs that need multiple workers.",
+            "Headlamp is a web UI for Kubernetes that can be extended with plugins to show resources beyond the core API.",
+            "The Volcano plugin shows Volcano\u2019s job, queue, and PodGroup (a set of Pods that must start together) data in Headlamp, letting teams see workload state."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Volcano extends Kubernetes with queues, priorities, quotas, and gang scheduling for batch, AI/ML, HPC workloads, treating Pods as part of a job.",
+            "Headlamp\u2019s plugin system surfaces Volcano APIs, allowing users to view jobs, PodGroups, and queue behavior in a single web UI.",
+            "The plugin provides visual context for workload state, queue dynamics, and gang scheduling, improving troubleshooting and operational efficiency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Inspect Volcano workloads faster with Headlamp",
+      "topics": [
+        "DevOps",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/06/25/visual-context-volcano-headlamp-plugin/"
+    },
     "7d91065606633e7143b40a32ec7668e3e2f52e111273cf6b2433a802020fcadd": {
       "image_url": null,
       "last_seen": "2026-10-21T13:25:33.193295Z",
@@ -2113,6 +2321,49 @@
       ],
       "url": "https://martinfowler.com/fragments/2026-08-24.html"
     },
+    "885fe3c67de05637ce5b9612baa0a6e50e729bbbcf8015191def57f8d564f7ca": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-10-21T16:00:00Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Migrated 99.99999% of GitHub repositories to Azure, creating a near-complete copy of the codebase.",
+            "Introduced per-reference quorums to transfer remaining repositories, ensuring consistency and reliability across the infrastructure.",
+            "Leveraged object storage to allow read operations to scale independently, improving performance and scalability for Git access."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Migrated almost all GitHub repos to Azure, creating a backup in the cloud.",
+            "Uses per-reference quorums to sync the remaining 0.00001% of data, ensuring each repo copy stays consistent.",
+            "Object storage lets read requests scale independently, so many users can fetch code without slowing the system."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Migrated 99.99999% of GitHub repositories to Azure, leaving only a tiny fraction pending.",
+            "Remaining repositories will be transferred using per\u2011reference quorums to ensure consistency and reliability.",
+            "Object storage architecture allows read traffic to scale independently, improving performance for large\u2011scale Git operations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "The bridge to agent-scale Git infrastructure",
+      "topics": [
+        "AI Agents",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
+    },
     "8905a53e7722afbe56eddf45c96764c19f36f2e3bc9f9c33a56e026e6d942d7f": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -2157,6 +2408,93 @@
       ],
       "url": "https://arxiv.org/abs/2610.23255"
     },
+    "8c69d8b194f3a59980d12712d50fe456eb7cb043a0758fbc186336af871be320": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Continuum-LM, a continuous-depth language model that reuses pretrained residual transformations as dynamical operators, enabling continuous hidden-state evolution.",
+            "Uses ordinary differential equations with higher-order numerical integration; solver order and step size control computation, allowing stable training across eight scientific tasks.",
+            "Achieves 7.77\u201310.96% higher exact-match accuracy over discrete counterparts at 0.6B and 1.7B scales, outperforming Ouro-style recurrent control under matched budgets."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces Continuum\u2011LM, a continuous\u2011depth (hidden states change continuously) language model that reuses pretrained residual transformations as dynamical operators, evolving via differential equations.",
+            "Uses higher-order numerical integration (more accurate calculation of equations), where solver order and step size control computation, enabling flexible depth without adding parameters.",
+            "Tested on eight scientific tasks, Continuum\u2011LM outperforms discrete models by 7.77\u201310.96% accuracy at 0.6B and 1.7B sizes, showing parameter reuse (same parameters used) boosts performance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Continuum\u2011LM, a continuous\u2011depth language model that reuses pretrained residual transformations as dynamical operators, evolving hidden states via an ODE solved with higher\u2011order integration.",
+            "Solver order and step size control computation, enabling stable training and 7.77\u2011point (0.6B) / 10.96\u2011point (1.7B) exact\u2011match accuracy gains over discrete counterparts.",
+            "At 0.6B, Continuum\u2011LM outperforms an Ouro\u2011style recurrent control under matched parameter and residual\u2011function evaluation budgets, proving extensible depth via parameter reuse."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Dynamic System Inspired Continuous Large Language Model for AI4Science Tasks",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26959"
+    },
+    "8ee03648982651510b20f07b4a73efd57bc71935f9ac697719d7ee94b72d36cc": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LightCRS is a lightweight framework that unifies multi-domain multimodal conversational recommendation by precomputing product representations and using a small query-conditioned module.",
+            "It achieves state\u2011of\u2011the\u2011art HR@1, NDCG@5, and MRR, outperforming baselines by 35.4% HR@1 and reducing latency 266\u00d7.",
+            "The authors introduce MM\u2011R2A\u201125, a 25\u2011domain benchmark of Reddit conversations paired with Amazon listings, demonstrating joint training boosts HR@1 by 15.2%"
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LightCRS is a lightweight system that recommends products across many categories using a single shared model, avoiding separate models for each domain.",
+            "It precomputes product images and text with frozen encoders, then uses a 5.3M\u2011parameter module that fuses queries via cross\u2011attention and compares candidates with a Transformer.",
+            "On a 25\u2011domain benchmark, LightCRS beats baselines by 35% in top\u20111 hits and is 266 times faster per query, while joint training adds 15% accuracy."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LightCRS: lightweight framework using frozen VLM encoders to precompute multimodal product embeddings; online 5.3M-parameter query\u2011conditioned cross\u2011attention fuses evidence across domains.",
+            "Inter\u2011candidate Transformer scores candidates; shared across 25 domains, reducing latency 266\u00d7 and boosting HR@1 by 35.4% over baseline.",
+            "MM\u2011R2A\u201125 pairs Reddit dialogues with Amazon listings; joint multi\u2011domain training improves HR@1 by 15.2% over single\u2011domain models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "LightCRS: Lightweight Multi-Domain Conversational Recommendation System",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.26948"
+    },
     "8f555fe918e1ef562b9b3769e757148513a55555e3c563d9d3d7c251bab620e8": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -2200,6 +2538,46 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/speeding-up-agentic-workflows-with-websockets"
+    },
+    "90066384ad84611d7d68ad6b99b9d9373fd59ec5620960e8a9cabfac18159620": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces a prompt-side structural complexity index scoring prompts on six dimensions, avoiding bias from generated code.",
+            "Evaluated 5,000 Python prompts with 21 models and four LLM judges; composite ICC(2,1)=0.872 indicates strong inter-rater reliability.",
+            "Found a nonmonotone breakpoint at composite 14.0 where pass rates jump from 83.4% to 90.1%; breakpoint persists after adjusting for task type."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces a new Prompt\u2011Side Structural Complexity Index (a score of prompt structure on six dimensions) that avoids bias from broken code.",
+            "Tested on 5,000 Python prompts and 21 models; a composite score of 14.0 marks a breakpoint where pass rates rise from 83% to 90%.",
+            "Higher prompt complexity can lower failures, but the effect differs by model and source; 25% of failures pair high prompt scores with low output complexity."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        }
+      },
+      "title": "The Complexity Kink: A Prompt-Side Structural Complexity Index for Code-Generation Reliability",
+      "topics": [
+        "LLMs",
+        "Python",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2609.19616"
     },
     "94211aeca29cfff20d04957c7e851bcf33b1445d07b018e8c8d9fcc92120b302": {
       "image_url": null,
@@ -2424,7 +2802,7 @@
     },
     "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750": {
       "image_url": null,
-      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "last_seen": "2026-10-21T16:23:39.970050Z",
       "published_at": "2026-10-21T04:00:00Z",
       "source": "arXiv cs.AI",
       "source_type": "arxiv",
@@ -2948,6 +3326,93 @@
       ],
       "url": "https://kubernetes.io/blog/2026/05/26/reconciling-unfixed-kubernetes-cves/"
     },
+    "c71ef79e3212dc880b6b84b19450d571be80864c5402bc79c6c169ad5c7054d8": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-04-22T10:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Workspace agents are Codex-powered tools that automate complex workflows in ChatGPT.",
+            "They run in the cloud, enabling secure scaling of work across multiple tools.",
+            "These agents help teams streamline processes and manage tasks efficiently within the platform."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Workspace agents are AI helpers built into ChatGPT that can perform tasks automatically.",
+            "They use Codex, a language model, run in the cloud, and can handle complex workflows.",
+            "Teams can use them to scale work across multiple tools while keeping data secure."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Codex-powered agents embedded in ChatGPT automate complex workflows, reducing manual steps.",
+            "They operate entirely in the cloud, ensuring scalability and low latency for team collaboration.",
+            "Secure integration across tools lets teams scale work while maintaining data privacy and compliance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Introducing workspace agents in ChatGPT",
+      "topics": [
+        "AI Agents",
+        "Cloud",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/introducing-workspace-agents-in-chatgpt"
+    },
+    "c8d6b2a986c429698973949a4843c8f32538c91ade5ab8e3f65ba07ac276c2de": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "cls fine-tuning outperforms s2s for hallucination detection, creating clear two-cluster geometry and strong class separation.",
+            "cls signal saturates before final layer, revealing an InfoWindow where task information emerges; upper layers become redundant.",
+            "Removing 31% of layers above InfoWindow keeps accuracy on Qwen3-4B/8B while cutting latency 1.4\u00d7."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Fine\u2011tuning a classifier head (CLS) outperforms a sequence\u2011to\u2011sequence (S2S) approach for detecting hallucinations in large language models.",
+            "CLS pushes hidden states into two distinct clusters, giving clear class separation and easy linear decoding, while S2S keeps states near the pretrained backbone.",
+            "Analysis shows a narrow middle layer window where task information appears; removing upper layers beyond this window cuts latency 1.4\u00d7 without losing accuracy."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Classifier\u2011head fine\u2011tuning (cls) outperforms seq\u2011to\u2011seq (s2s) on binary hallucination detection by inducing a two\u2011cluster geometry with strong class separation and linearly decodable labels.",
+            "Cls signal saturates before the final layer, creating an upper\u2011middle InfoWindow where task information emerges, followed by a redundant upper plateau that mirrors this signal.",
+            "Removing layers above the InfoWindow truncates 31% of Qwen3\u20114B/8B, preserving accuracy within seed noise while cutting latency by 1.4\u00d7."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How Fine-Tuning Objectives Shape Layer-Wise Information in LLM Hallucination Detection",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.27711"
+    },
     "ccd5eb86c6d0c95e615d0a5c2c900a43d21b554ac18cc03b2fed57dc687f18c7": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -2992,6 +3457,92 @@
         "Productivity"
       ],
       "url": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/"
+    },
+    "ce22eeec83ca5359d76893bcbbaeac3089d613acd4c2c024395cd9d64d893069": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-05-15T18:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Mixed Version Proxy (MVP) moves from Alpha to Beta in Kubernetes 1.36, enabled by default.",
+            "MVP ensures requests for resources unknown to older API servers are forwarded to newer peers, preventing incorrect 404 responses during upgrades.",
+            "The feature addresses upgrade safety issues like mistaken garbage collection and blocked namespace deletions, improving cluster upgrade reliability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "MVP moves from Alpha to Beta in Kubernetes 1.36, now enabled by default.",
+            "It routes client requests for resources unknown to older API servers to newer peers, avoiding wrong 404 errors during upgrades.",
+            "This improves upgrade safety, preventing issues like mistaken garbage collection or blocked namespace deletions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36 promotes Mixed Version Proxy (MVP) from Alpha to Beta, enabling it by default to improve upgrade safety in HA control planes.",
+            "MVP proxies client requests for resources unknown to an older API server to a newer peer, avoiding 404s and preventing side\u2011effects like blocked namespace deletions.",
+            "Initially introduced in v1.28 under the UnknownVersionInteroperabilityProxy gate, MVP has evolved with modernized architecture to support mixed\u2011version API server clusters."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: Mixed Version Proxy Graduates to Beta",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/"
+    },
+    "d385c9eee6daddf42dcaff32e8b8993a49240227c995483be1d09c233c2ea2c0": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-04-27T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Choco leveraged OpenAI APIs to automate food distribution, enhancing operational efficiency.",
+            "The implementation boosted productivity and enabled scalable growth for the company.",
+            "This case study illustrates real-world AI impact on supply chain management."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Choco uses AI agents powered by OpenAI APIs to automate food distribution, reducing manual steps and speeding deliveries.",
+            "The system boosts productivity by handling inventory and routing tasks automatically, freeing staff to focus on customer service.",
+            "This automation unlocks growth, allowing Choco to scale operations and serve more customers efficiently."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Choco deployed OpenAI APIs to automate food distribution, reducing manual routing and inventory checks.",
+            "AI agents optimized delivery schedules, cutting lead times and boosting productivity across the supply chain.",
+            "The solution unlocked growth by scaling operations and improving resource allocation, demonstrating real-world AI impact."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Choco automates food distribution with AI agents",
+      "topics": [
+        "AI Agents",
+        "Productivity",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/choco"
     },
     "d9fbb5d07fdb6b984bd114105493eac838aa3048d40f3c72598ae6cdbeb48e3d": {
       "image_url": null,
@@ -3873,6 +4424,49 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/what-parameter-golf-taught-us"
+    },
+    "fe5468c76a03c1f066a0678c59cbc17927126caa19ddc2e7a3bcd2ae6cfd8505": {
+      "image_url": null,
+      "last_seen": "2026-10-21T16:23:39.970050Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Study of ordered layer-state trajectories in transformers shows layer order significantly shapes inference, aligning 1.6\u20132.2\u00d7 more with endpoint than shuffled order.",
+            "Hidden-state coordinates outperform vocabulary readbacks; architecture-specific scaffolds identified across Qwen, Llama, Gemma, with interventions controlling trajectories via local actuators and gating.",
+            "Selective gating achieved 17/87 Qwen closure trajectories to top\u20111 boundary, demonstrating behaviorally consequential process without fine\u2011grained dose assignment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The study examines how the sequence of transformer layers (layer-state trajectory: hidden states across layers) shapes the model\u2019s computation during inference.",
+            "Across Qwen, Llama, Gemma, natural layer order aligns 1.6\u20132.2\u00d7 better with final outputs than shuffled orders, highlighting architecture over training.",
+            "Interventions on hidden states and selective gating can steer internal trajectories, improving specific outputs while leaving others unchanged, demonstrating controllable inference dynamics."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Layer-state trajectories in Qwen, Llama, Gemma show 1.60\u20132.24\u00d7 better alignment with endpoint chords than shuffled orders, revealing architecture\u2011compatible scaffolds across random initializations.",
+            "Hidden\u2011state coordinates outperform vocabulary readbacks; task\u2011defined coordinates enable computable candidate competition, while additive interventions fail but local transition actuators selectively steer trajectories.",
+            "A confidence gate and safety\u2011matched action reassignment selectively gate 17/87 Qwen closure paths to top\u20111 boundaries, demonstrating bounded actuator families without fine\u2011grained dose control."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "High-dimensional layer-state trajectories reveal the internal dynamics of transformer inference",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26866"
     },
     "feaefaa2e2292ba8ee0af1f5ba945d86bde107dd0fa3c05afc85a94711e186b8": {
       "image_url": null,
