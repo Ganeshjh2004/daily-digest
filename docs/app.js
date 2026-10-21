@@ -139,7 +139,7 @@ function renderArticles() {
   if (!Array.isArray(state.digest?.articles) || state.digest.articles.length === 0) {
     column.append(message("No articles yet. Run the digest to get started.", "empty-state")); return column;
   }
-  if (state.run?.status === "partial") column.append(banner(`Some feeds failed in the last run (${state.run.metrics?.feeds_ok || 0}/${state.run.metrics?.feeds_total || 0} OK).`));
+  if (state.run?.status === "partial") column.append(banner(partialBannerMessage(state.run.metrics)));
   if (state.run?.status === "failed") column.append(banner("The last run failed. Showing the previous digest.", "failed"));
   if (articles.length === 0) {
     const text = state.search ? `No articles match “${state.search}”.` : "No articles match your filters.";
@@ -260,7 +260,7 @@ function runCard() {
   }
 
   // ── Owner controls (add / remove token) ─────────────────────────────────
-  node.append(buildOwnerControls());
+  node.append(buildOwnerControls(() => render()));
 
   return node;
 }
@@ -361,14 +361,73 @@ function placeholder(article) { const firstTopic = String(article.topics?.[0] ||
 function sourceTag(article) { const type = ["arxiv", "hn"].includes(article.source_type) ? article.source_type : "rss"; return elementWithText("span", article.source || "Unknown source", `source-tag tag-${type}`); }
 function summaryFor(article) { const requested = article.summaries?.[state.tone]; if (requested?.status === "ok" && Array.isArray(requested.bullets)) return { bullets: requested.bullets, fallback: false }; const balanced = article.summaries?.balanced; if (state.tone !== "balanced" && balanced?.status === "ok" && Array.isArray(balanced.bullets)) return { bullets: balanced.bullets, fallback: true }; return { bullets: [], fallback: false }; }
 
-function topicPanel() { const node = card("Sources by Topic"); node.firstChild.prepend(icons.chart()); const counts = state.digest?.topic_counts || {}; const entries = Object.entries(counts).filter(([, value]) => Number.isFinite(value)); const max = Math.max(1, ...entries.map(([, value]) => value)); entries.forEach(([topic, count]) => { const row = element("div", "topic-row"); row.append(elementWithText("span", topic, "topic-label"), elementWithText("span", String(count))); const progress = element("progress", "bar"); progress.max = max; progress.value = count; progress.setAttribute("aria-label", `${topic}: ${count}`); row.append(progress); node.append(row); }); return node; }
-function statsPanel() { const node = card("Summarizer Stats"); const articles = filterAndSort(); const summaries = articles.map(summaryFor).flatMap((summary) => summary.bullets); const average = summaries.length ? Math.round(summaries.reduce((total, bullet) => total + wordCount(bullet), 0) / summaries.length) : 0; const minutes = Math.round((articles.length * 4) / 5) * 5; const table = element("table", "stats"); [["Articles processed", state.run?.metrics?.items_unique ?? 0], ["Articles selected", articles.length], ["Avg. summary length", `${average} words`], ["Time saved", `~${minutes} minutes`], ["Last run", lastUpdated()]].forEach(([label, value]) => { const row = element("tr"); row.append(elementWithText("td", label), elementWithText("td", String(value))); table.append(row); }); node.append(table, paragraph(`Model: ${state.run?.model || "Unknown"} · Took ${state.run?.duration_s ?? 0} s`, "model-note")); return node; }
+function topicPanel() {
+  const node = card("Sources by Topic");
+  node.firstChild.prepend(icons.chart());
+  const counts = state.digest?.topic_counts || {};
+  const entries = Object.entries(counts).filter(([topic, value]) => Number.isFinite(value) && topic !== "Other" && topic !== "Others");
+  entries.sort((first, second) => second[1] - first[1]);
+  const displayed = entries.slice(0, 5);
+  const otherValue = counts["Other"] ?? counts["Others"];
+  if (Number.isFinite(otherValue)) {
+    displayed.push(["Other", otherValue]);
+  }
+  const max = Math.max(1, ...displayed.map(([, value]) => value));
+  displayed.forEach(([topic, count]) => {
+    const row = element("div", "topic-row");
+    row.append(elementWithText("span", topic, "topic-label"), elementWithText("span", String(count)));
+    const progress = element("progress", "bar");
+    progress.max = max;
+    progress.value = count;
+    progress.setAttribute("aria-label", `${topic}: ${count}`);
+    row.append(progress);
+    node.append(row);
+  });
+  return node;
+}
+function statsPanel() {
+  const node = card("Summarizer Stats");
+  const articles = filterAndSort();
+  const summaryLengths = articles
+    .map(summaryFor)
+    .filter((summary) => summary.bullets.length > 0)
+    .map((summary) => summary.bullets.reduce((total, bullet) => total + wordCount(bullet), 0));
+  const average = summaryLengths.length
+    ? Math.round(summaryLengths.reduce((total, words) => total + words, 0) / summaryLengths.length)
+    : 0;
+  const minutes = Math.round((articles.length * 4) / 5) * 5;
+  const table = element("table", "stats");
+  [["Articles processed", state.run?.metrics?.items_unique ?? 0], ["Articles selected", articles.length], ["Avg. summary length", `${average} words`], ["Time saved", `~${minutes} minutes`], ["Last run", lastUpdated()]].forEach(([label, value]) => {
+    const row = element("tr");
+    row.append(elementWithText("td", label), elementWithText("td", String(value)));
+    table.append(row);
+  });
+  node.append(table, paragraph(`Model: ${state.run?.model || "Unknown"} · Took ${state.run?.duration_s ?? 0} s`, "model-note"));
+  return node;
+}
 function bookmarksPanel() { const node = card("Bookmarked Articles"); const heading = node.firstChild; const view = button("View all", "view-all"); view.addEventListener("click", () => { state.bookmarkedOnly = true; render(); }); const wrap = element("div", "heading-row"); wrap.append(heading, view); node.replaceChildren(wrap); if (!state.bookmarks.length) { node.append(paragraph("No bookmarks yet. Tap the bookmark icon on any article.", "helper")); return node; } const list = element("div", "bookmark-list"); state.bookmarks.slice(0, 3).forEach((bookmark) => list.append(bookmarkRow(bookmark))); node.append(list); return node; }
 function bookmarkRow(bookmark) { const url = safeUrl(bookmark.url); const node = element(url ? "a" : "div", "bookmark-item"); if (url) { node.href = url; node.target = "_blank"; node.rel = "noopener noreferrer"; } node.append(bookmarkImage(bookmark)); const copy = element("div"); copy.append(elementWithText("div", bookmark.title || "Untitled article", "bookmark-title"), elementWithText("div", `${bookmark.source || "Unknown source"} · ${timeAgo(bookmark.published_at)}`, "bookmark-meta")); node.append(copy); return node; }
 function bookmarkImage(bookmark) { const url = safeUrl(bookmark.image_url); if (!url || !url.startsWith("https://")) return placeholder(bookmark); const image = element("img", "bookmark-thumb"); image.src = url; image.alt = ""; image.loading = "lazy"; image.referrerPolicy = "no-referrer"; image.decoding = "async"; image.width = 56; image.height = 56; image.addEventListener("error", () => image.replaceWith(placeholder(bookmark))); return image; }
 function skeletons() { const wrap = element("div", "article-list"); for (let index = 0; index < 3; index += 1) { const item = element("div", "skeleton card"); for (let line = 0; line < 4; line += 1) item.append(element("div", "skeleton-line")); wrap.append(item); } return wrap; }
 function message(text, className) { const node = element("div", className); node.append(paragraph(text)); return node; }
-function banner(text, extra = "") { return elementWithText("div", text, `status-banner ${extra}`); }
+function partialBannerMessage(metrics) {
+  const feedsOk = metrics?.feeds_ok ?? 0;
+  const feedsTotal = metrics?.feeds_total ?? 0;
+  const summariesFailed = metrics?.summaries_failed ?? 0;
+  const parts = [];
+  if (feedsOk < feedsTotal) {
+    parts.push(`${feedsTotal - feedsOk} of ${feedsTotal} feeds failed`);
+  }
+  if (summariesFailed > 0) {
+    parts.push(`${summariesFailed} ${summariesFailed === 1 ? "summary" : "summaries"} failed`);
+  }
+  if (!parts.length) {
+    return "Some feeds or summaries failed in the last run.";
+  }
+  const text = parts.join(", ");
+  return text.charAt(0).toUpperCase() + text.slice(1) + ".";
+}
+function banner(text, extra = "") { return elementWithText("div", text, `status-banner ${extra}`.trim()); }
 function clearFilters() { state.topics = []; state.search = ""; state.bookmarkedOnly = false; save("digest.topics", state.topics); const search = document.querySelector("#search-input"); if (search) search.value = ""; render(); }
 function toggleBookmark(article) { const snapshot = bookmarkSnapshot(article); const existing = state.bookmarks.findIndex((bookmark) => bookmark.id === snapshot.id); state.bookmarks = existing >= 0 ? state.bookmarks.filter((_, index) => index !== existing) : [snapshot, ...state.bookmarks].slice(0, 100); save("digest.bookmarks", state.bookmarks); render(); }
 function bookmarkSnapshot(article) { return { id: String(article.id || ""), title: String(article.title || ""), url: String(article.url || ""), source: String(article.source || ""), source_type: String(article.source_type || "rss"), published_at: String(article.published_at || ""), image_url: typeof article.image_url === "string" ? article.image_url : null }; }

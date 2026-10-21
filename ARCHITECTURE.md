@@ -217,6 +217,7 @@ Exact shapes are in `DESIGN.md` Section 8. `digest.json` is built from the cache
 | `FEED_TIMEOUT_S` | Per-feed timeout | `10` |
 | `MAX_FEED_BYTES` | Max feed size | `2000000` |
 | `MAX_ARTICLES_PER_RUN` | Articles summarized per run | `15` |
+| `MAX_PER_SOURCE_TYPE_ARXIV` | Max arXiv articles per run | `6` |
 | `LLM_CONCURRENCY` | Parallel LLM calls | `4` |
 | `LOG_LEVEL` | Logging level | `INFO` |
 
@@ -342,7 +343,7 @@ daily-digest/
 - **URL normalization:** lowercase host, drop `utm_*`, `ref`, `fbclid`, remove fragments and trailing slash. `id = sha256(normalized_url)`.
 - **Title dedupe:** lowercase, strip punctuation and extra spaces; keep the earliest item.
 - **Topic tagging:** an article gets every topic with at least one keyword hit (whole-word match) in `title + description`.
-- **Selection:** sort by number of matched topics, then newest; skip articles whose three tones are cached with `ok`; keep at most 4 articles per source; take the first `MAX_ARTICLES_PER_RUN`.
+- **Selection:** sort by number of matched topics, then newest; skip articles whose three tones are cached with `ok`; keep at most 4 articles per source; cap arxiv articles at `MAX_PER_SOURCE_TYPE_ARXIV` (default 6); take the first `MAX_ARTICLES_PER_RUN`.
 - **Topic counts:** count articles per topic in `digest.json`; keep the top 5 and sum the rest as `Other`.
 
 ## 11. Testing Strategy

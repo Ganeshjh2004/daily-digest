@@ -8,13 +8,15 @@ from app.models.schemas import Article, CacheFile
 from app.services.llm_service import FakeSummarizer
 
 
-def make_article(index: int, source: str, topics: list[str]) -> Article:
+def make_article(
+    index: int, source: str, topics: list[str], source_type: str = "rss"
+) -> Article:
     return Article(
         id=f"article-{index}",
         title=f"Article {index}",
         url=f"https://example.com/{index}",
         source=source,
-        source_type="rss",
+        source_type=source_type,
         description="This article has enough content for a deterministic summary.",
         topics=topics,
         published_at=f"2026-10-{17 - index:02d}T08:00:00Z",
@@ -40,6 +42,34 @@ async def test_select_articles_respects_source_and_total_caps(tmp_path) -> None:
     selected = [Article.model_validate(item) for item in result["selected"]]
     assert len(selected) == 6
     assert sum(article.source == "One" for article in selected) == 4
+
+
+@pytest.mark.asyncio
+async def test_select_articles_caps_arxiv_source_type(tmp_path) -> None:
+    articles = [
+        make_article(index, f"arXiv {index // 4}", ["AI Agents"], source_type="arxiv")
+        for index in range(8)
+    ]
+    articles.extend(
+        make_article(index + 8, "RSS Feed", ["Python"], source_type="rss")
+        for index in range(4)
+    )
+    settings = Settings(_env_file=None, max_articles_per_run=15, max_per_source_type_arxiv=6)
+    dependencies = NodeDependencies(
+        settings=settings,
+        config_path=tmp_path / "feeds.yaml",
+        data_dir=tmp_path / "data",
+        summarizer=FakeSummarizer(),
+        clock=lambda: datetime(2026, 10, 17, tzinfo=UTC),
+    )
+    state = {"articles": [article.model_dump() for article in articles], "cache": CacheFile()}
+
+    result = await select_articles(state, dependencies)
+
+    selected = [Article.model_validate(item) for item in result["selected"]]
+    arxiv_selected = [article for article in selected if article.source_type == "arxiv"]
+    assert len(arxiv_selected) == 6
+    assert len(selected) == 10
 
 
 @pytest.mark.asyncio

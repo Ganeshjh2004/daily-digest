@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     max_feed_bytes: int = Field(default=2_000_000, gt=0, le=10_000_000)
     max_redirects: int = Field(default=3, ge=0, le=10)
     max_articles_per_run: int = Field(default=15, gt=0, le=100)
+    max_per_source_type_arxiv: int = Field(default=6, ge=0, le=50)
     llm_concurrency: int = Field(default=4, gt=0, le=20)
     llm_timeout_s: float = Field(default=30, gt=0, le=120)
     log_level: str = "INFO"

@@ -105,12 +105,22 @@ async def select_articles(state: dict, dependencies: NodeDependencies) -> dict:
         key=lambda article: (len(article.topics), article.published_at or ""), reverse=True
     )
     source_counts: dict[str, int] = {}
+    source_type_counts: dict[str, int] = {}
     selected: list[Article] = []
     for article in candidates:
         if source_counts.get(article.source, 0) >= 4:
             continue
+        if (
+            article.source_type == "arxiv"
+            and source_type_counts.get("arxiv", 0)
+            >= dependencies.settings.max_per_source_type_arxiv
+        ):
+            continue
         selected.append(article)
         source_counts[article.source] = source_counts.get(article.source, 0) + 1
+        source_type_counts[article.source_type] = (
+            source_type_counts.get(article.source_type, 0) + 1
+        )
         if len(selected) == dependencies.settings.max_articles_per_run:
             break
     return {"selected": [article.model_dump() for article in selected]}
