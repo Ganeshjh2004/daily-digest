@@ -1,6 +1,376 @@
 {
   "articles": [
     {
+      "id": "ebf3022769d5aa3354983f9685a3ac07e18373ecdd4bfd815a8e0aab59f2765f",
+      "image_url": null,
+      "published_at": "2026-10-21T10:51:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Gergely Orosz criticizes contest entrants who used AI, claiming any AI presence may lead to the assumption of full AI authorship.",
+            "The piece examines AI detection challenges, the benefits of AI for people with disabilities or language barriers, and questions of fairness.",
+            "It also notes disappointment over the cancellation of the Grace Hopper Celebration, an event supporting women and non-binary technologists."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Gergely Orosz is upset that people used AI in his \u201cNo AI\u201d essay contest, fearing that any AI use makes the whole work seem AI.",
+            "He worries AI detection is hard, so people may think all content is AI; a \u201csecond brain\u201d for Parkinson\u2019s patients or translate for non\u2011English speakers.",
+            "The article also notes disappointment that the Grace Hopper Celebration, an event for women and non\u2011binary tech workers, was cancelled this year."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Orosz complains about AI in essay contest, warns that any AI use may be assumed 100% AI, discouraging human effort.",
+            "Discusses challenges of AI detection, neural net accuracy, and human communication blending AI elements.",
+            "Notes valid AI uses (e.g., Jim Highsmith's second brain for Parkinson's, translation aid) and mentions Grace Hopper Celebration cancellation."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: October 21",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-10-21.html"
+    },
+    {
+      "id": "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
+            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
+            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
+            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
+            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.26913"
+    },
+    {
+      "id": "2e95c95ea589d2d6070e764cd8128ffdd36d6c8aeaf8be211f9180a872c02dcd",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Semantic Observability, a multi\u2011agent framework that consolidates heterogeneous logs into a dynamic property graph database linking infrastructure, software, and events.",
+            "Uses directed cyclic graphs to autonomously traverse the graph, applying causal algorithms and temporal back\u2011traversal to isolate anomaly blast radii.",
+            "An LLM reasoning engine interprets the pruned subgraph to produce code\u2011level root\u2011cause analyses and actionable remediations."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Semantic Observability unifies diverse microservice logs into a Property Graph Database, linking infrastructure, software, and events as nodes and directed edges for clearer context.",
+            "A multi\u2011agent system, guided by Directed Cyclic Graphs (DCGs), automatically traverses the graph, uses causal algorithms and time\u2011backtracking to pinpoint the exact anomaly area.",
+            "The resulting subgraph is fed to a Large Language Model (LLM) reasoning engine, which produces code\u2011level Root Cause Analyses (RCAs) and actionable fixes."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Semantic Observability: autonomous multi\u2011agent framework that consolidates heterogeneous microservice logs into a dynamic, queryable Property Graph Database, modeling topology, dependencies, and events.",
+            "Employs Directed Cyclic Graphs to orchestrate agents that run causal graph algorithms and temporal back\u2011traversal, isolating anomaly blast radius within the graph.",
+            "Uses an LLM reasoning engine on the pruned subgraph to produce code\u2011level Root Cause Analyses and actionable remediations, as presented in arXiv:2610.28611v1."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://arxiv.org/abs/2610.28611"
+    },
+    {
+      "id": "23675028600476715d5ad9fbc9077584366a308d41b42b8985819d05bf968a83",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "CovNav uses Conformal Prediction to decide when a fast LLM should trigger slow chain-of-thought reasoning for object navigation tasks.",
+            "It treats spatial queries as binary decisions, converting token probabilities into prediction sets and escalating only ambiguous cases.",
+            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by 0.8\u20131.7 percentage points."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "CovNav uses a fast local LLM to guess if a target object is near another object, then checks uncertainty with Conformal Prediction.",
+            "If the prediction is uncertain, CovNav switches to a slow \u201cchain\u2011of\u2011thought\u201d mode, trading speed for better reasoning.",
+            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by up to 1.7 % in success rates."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "CovNav uses Conformal Prediction to decide when a fast LLM should defer to slow chain-of-thought reasoning for object goal navigation queries.",
+            "The system casts spatial queries as binary decisions, converting token probabilities into prediction sets, and escalates only ambiguous cases, keeping calibration tractable.",
+            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by 0.8\u20131.7 pp, supporting open\u2011set objects via off\u2011the\u2011shelf detectors."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "Cloud"
+      ],
+      "url": "https://arxiv.org/abs/2610.27677"
+    },
+    {
+      "id": "e15f5cc6b720ff7e1397bd7962806f60388355e6579517da55a4544ec2ec398b",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LatticeMind transforms natural-language requests into validated DFT workflows, using contracts and deterministic pre-execution checks to ensure correct stages, files, and dependencies before solver runs.",
+            "On a 44-case RESCU benchmark, 119/132 runs succeeded on first plan, with remaining completed after one repair; ablation shows contracts and validation are key.",
+            "The framework also reproduces all reference values on a 19-case VASP benchmark, proving solver-agnostic transferability."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LatticeMind turns natural language into DFT workflows, ensuring each step\u2019s files and dependencies are correct before running the solver. Define DFT: quantum simulation of electrons.",
+            "It uses a workflow contract and validators to catch errors early; if a check fails, a limited repair is attempted, keeping results traceable.",
+            "Tested on 44 RESCU and 19 VASP cases, it matched all reference results, outperforming a simple trial\u2011and\u2011repair approach with fewer tokens."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LatticeMind converts natural\u2011language requests into executable DFT projects via a workflow contract, deterministic validators, and bounded repair before solver launch.",
+            "On a 44\u2011case RESCU benchmark, 119/132 runs succeeded on first validated plan, with remaining passing after one repair cycle.",
+            "Ablation studies show workflow contract and pre\u2011execution validation are key, while the framework reproduces all reference values on a 19\u2011case VASP benchmark, proving solver transferability."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LatticeMind: A Validation-Gated Agentic Framework for Density Functional Theory Workflows",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26869"
+    },
+    {
+      "id": "46178924d1dbab427845a698d30b493bb761701cba0d200717e3053312cabf44",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces RLVR with LLMs for RTL circuit generation from natural language, addressing multi-objective PPA optimization.",
+            "Proposes a generation-based training pipeline and Hypervolume Contribution reward to maximize diversity and quality of Pareto-optimal circuit sets.",
+            "Demonstrates 13.3% improvement on RTLLM v2 benchmark, indicating superior Pareto front coverage compared to prior single-scalar reward methods."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Uses large language models (LLMs) to write RTL code from natural language, aiming for multiple trade\u2011offs (power, speed, area) instead of one best design.",
+            "Adds a loop that generates circuits sequentially, rewarding each by Hypervolume Contribution (HVC), a metric measuring its improvement to the Pareto front of trade\u2011offs.",
+            "On the RTLLM v2 benchmark, the method boosts the diversity and quality of generated designs by 13.3 % compared to earlier single\u2011objective RL approaches."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces RLVR with LLMs for RTL circuit generation, addressing multi-objective PPA optimization beyond single scalar rewards.",
+            "Proposes generation-based training pipeline converting Pareto coverage into sequential generation, and HVC reward measuring each circuit's contribution to Pareto front.",
+            "Evaluated on RTLLM v2 benchmark, achieving +13.3% improvement in reward/diversity over prior methods."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Pareto-Optimal RTL Code Generation via Multi-Objective Reinforcement Learning with Large Language Models",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.26904"
+    },
+    {
+      "id": "7d91065606633e7143b40a32ec7668e3e2f52e111273cf6b2433a802020fcadd",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Hybrid framework combining Temporal Fusion Transformer and N-BEATS for multi-horizon PV power forecasting.",
+            "Attention-based fusion learns short-term dynamics via TFT and long-term trends via N-BEATS, enabling simultaneous 30\u2011min to 24\u2011hr predictions.",
+            "Tested on DKASC multi\u2011year data, outperforms baselines with RMSE reductions up to 3540%."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Hybrid model combines Temporal Fusion Transformer (TFT) and N-BEATS to capture short\u2011term and long\u2011term patterns in PV power.",
+            "Attention\u2011based fusion balances the two branches, producing forecasts for 30\u2011min to 24\u2011hr horizons in one pipeline.",
+            "Tested on real data from DKASC, the model outperforms baselines, reducing error by up to 3540%."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Hybrid TFT\u2011N\u2011BEATS model fuses short\u2011term TFT and long\u2011term N\u2011BEATS via adaptive attention, enabling simultaneous 30\u2011min to 24\u2011h PV power forecasts.",
+            "TFT captures dynamic feature importance; N\u2011BEATS decomposes trend/seasonality with interpretable basis functions, improving multi\u2011scale learning.",
+            "On DKASC multi\u2011year data, the framework reduces RMSE to 42.35\u201352.29, outperforming baselines by up to 3540 % reduction."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "A Hybrid TFT-NBEATS Framework for Robust Multi-Horizon Photovoltaic Power Forecasting",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "Cloud"
+      ],
+      "url": "https://arxiv.org/abs/2610.27155"
+    },
+    {
+      "id": "ba13ede3667f75612ee0c4eb588297d262978572704132208c82cc3e9545fdfa",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Harness optimization boosts language model agent performance by better shaping context, tool use, and workflows without updating weights.",
+            "The study distinguishes elicitation (improving success on existing tasks) from expansion (enabling new solvable tasks) to guide recursive self\u2011improvement.",
+            "Results show that while optimized harnesses improve pass@1, gains can reverse with larger attempt budgets, and aggregate metrics may mask task\u2011specific shortfalls."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Harness optimization tweaks context, tool use, and workflows, boosting language\u2011model agent performance without changing weights.",
+            "The study distinguishes \u201celicitation\u201d (better success on known tasks) from \u201cexpansion\u201d (new tasks solved), key for recursive improvement.",
+            "Results show gains vary with task difficulty and attempt limits; larger budgets can reduce harness benefits compared to scaling or compute."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Harness optimization shapes context, tool use, and workflows to better leverage LM capabilities without weight updates.",
+            "Study distinguishes elicitation (improved success on reachable tasks) vs expansion (broader solvable tasks), using pass@k analysis to compare pre- and post-optimization harnesses.",
+            "Findings show pass@1 gains can reverse at higher attempt budgets, and aggregate improvements mask shortfalls on harder tasks, contrasting with model scaling and compute boosts."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Elicitation or Expansion? Demystifying Gains from Agent Harness Optimization",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27889"
+    },
+    {
+      "id": "4934e32c8ead615ab768065a0a74661d8cab7600849b71f20b913785d8190d6c",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model that learns from simulation, robot data, images, and videos across diverse domains.",
+            "It jointly trains a single future predictor using language descriptions of actions and visual changes, built on a language model for interpreting conditions.",
+            "The model outperforms domain\u2011specific LWMs, reduces training cost 6\u00d7, speeds planning 13.9\u00d7, and initializes LaLa\u2011Policy, matching Cosmo performance."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model (predicts hidden states) that learns from simulation, robot data, images, and videos.",
+            "It uses language to describe actions and visual changes, enabling joint training across diverse datasets.",
+            "The model outperforms others in planning, costs less training, plans faster, and can initialize a policy model."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model that jointly learns from simulation, robot trajectories, images, and videos using a single future predictor.",
+            "Its predictor, built on a language model, interprets textual action descriptions and visual changes, enabling higher MPC planning performance than domain\u2011specific LWMs.",
+            "Compared to an RAEv2 video baseline, LaLa-World matches planning performance with 6\u00d7 less training cost and 13.9\u00d7 faster inference, and pretrains LaLa-Policy for competitive control."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27851"
+    },
+    {
       "id": "1be45fb0ef68a5f78aff9b0c3266fee630ee825083130359fdbcd0f3a60737cf",
       "image_url": null,
       "published_at": "2026-10-19T18:47:22Z",
@@ -788,55 +1158,54 @@
       "url": "https://netflixtechblog.com/netflix-stratum-media-processing-automated-container-right-sizing-ddf9aa68a801?source=rss----2615bd06b42e---4"
     },
     {
-      "id": "ee6df3f0028687147a0dc01c97b22c0bf07d9c5fe83e4e152eab01ad7c08d237",
+      "id": "15138aab23bfbb834e46159cf2a02854c5d1989c6d85489249b20b0f3f1e5753",
       "image_url": null,
-      "published_at": "2026-10-13T13:35:00Z",
-      "source": "Martin Fowler",
+      "published_at": "2026-10-14T18:35:00Z",
+      "source": "Kubernetes Blog",
       "source_type": "rss",
       "summaries": {
         "balanced": {
           "bullets": [
-            "Are Harnesses Worth the Cost?.",
-            "Development summary in the balanced tone.",
-            "Generated locally without contacting an external model."
+            "Job pending may be due to Kueue still deciding resource allocation, not Kubernetes scheduler.",
+            "Headlamp Kueue plugin lets you view Workload status, condition messages, and navigate related LocalQueue, ClusterQueue, ResourceFlavor, and Cohort objects.",
+            "Requires a Kueue\u2011enabled cluster, Headlamp, 0.1.0\u2011alpha plugin, and read permissions for Kueue resources; plugin offers read\u2011only views."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "Are Harnesses Worth the Cost?.",
-            "Development summary in the beginner friendly tone.",
-            "Generated locally without contacting an external model."
+            "A Kubernetes Job can stay pending because Kueue is still deciding if it can use the requested resources, not just the scheduler.",
+            "Headlamp\u2019s Kueue plugin lets you view admission status by following links from the Workload to LocalQueue, ClusterQueue, ResourceFlavor, and Cohort.",
+            "The plugin is read\u2011only, requires Kueue and Headlamp installed, and your identity must have permission to read Kueue resources."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "Are Harnesses Worth the Cost?.",
-            "Development summary in the technical tone.",
-            "Generated locally without contacting an external model."
+            "Kueue separates job admission from pod scheduling; a pending job may be waiting for Kueue to admit the Workload before Kubernetes schedules Pods.",
+            "Headlamp\u2019s 0.1\u2011alpha Kueue plugin lets users trace admission via Workload, LocalQueue, ClusterQueue, ResourceFlavor, and Cohort links, showing condition messages.",
+            "The plugin offers read\u2011only views for Kueue v1beta2 Cohorts, ClusterQueues, LocalQueues, ResourceFlavors, and Workloads; no create/edit actions are added."
           ],
           "status": "ok"
         }
       },
-      "title": "Are Harnesses Worth the Cost?",
+      "title": "Why Is My Kubernetes Job Still Pending? Tracing Kueue Admission with Headlamp",
       "topics": [
-        "AI Agents",
-        "LLMs",
         "Backend",
-        "System Design"
+        "System Design",
+        "DevOps"
       ],
-      "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
+      "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/"
     }
   ],
-  "generated_at": "2026-10-20T13:13:12.391645Z",
+  "generated_at": "2026-10-21T13:25:33.193295Z",
   "topic_counts": {
-    "AI Agents": 13,
-    "Backend": 14,
-    "LLMs": 11,
-    "Machine Learning": 11,
-    "Other": 23,
-    "System Design": 16
+    "AI Agents": 20,
+    "Backend": 18,
+    "LLMs": 19,
+    "Machine Learning": 18,
+    "Other": 30,
+    "System Design": 23
   },
   "topics": [
     "AI Agents",

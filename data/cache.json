@@ -174,6 +174,92 @@
       ],
       "url": "https://openai.com/index/video-generation-models-as-world-simulators"
     },
+    "0ff444850a32f480e7707ce6082670b5b66bcfd382f91e092d53d68e60592033": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-04-28T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI GPT models, Codex, and Managed Agents are now available on AWS.",
+            "The integration allows enterprises to build secure AI within their AWS environments.",
+            "It expands AWS\u2019s AI offerings for developers and businesses."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI GPT models are now available on AWS, letting businesses run advanced language AI in their own cloud.",
+            "Codex, a tool that turns code requests into working code, and Managed Agents, automated assistants, are also offered on AWS.",
+            "These services help enterprises build secure AI solutions within their AWS environments, keeping data and models under company control."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI GPT models, Codex, and Managed Agents now launch on AWS, expanding AI toolset for cloud-native applications.",
+            "Enterprises can deploy these models directly within AWS, leveraging native security controls and compliance frameworks.",
+            "The integration supports secure, scalable AI workloads, enabling rapid development of AI-powered services in AWS environments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "OpenAI models, Codex, and Managed Agents come to AWS",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Cloud"
+      ],
+      "url": "https://openai.com/index/openai-on-aws"
+    },
+    "0ff92615e16e45a0173f698dd73a3ed52fc0fa23283f8a1d8c6aac47e92ca64d": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-08-28T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes 1.37 makes Pod Certificates and Cluster Trust Bundles GA, adding X.509 cert issuance for TLS/mTLS directly into core.",
+            "These new certificates provide production identity for workloads, complementing existing service\u2011account JWTs.",
+            "JWTs are automatically written to containers, kept up\u2011to\u2011date, and restricted to the Kubelet that requests them, enabling least\u2011privilege and federation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes 1.37 adds Pod Certificates and Cluster Trust Bundles, giving built\u2011in X.509 certificate issuance for TLS and mutual TLS (mTLS).",
+            "Previously, workloads used service\u2011account JWTs\u2014signed tokens written to the container by Kubelet, auto\u2011updated and limited to the node that runs the pod.",
+            "Pod Certificates let workloads authenticate to external systems, while Cluster Trust Bundles provide a trusted root for secure communication across the cluster."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 introduces Pod Certificates and Cluster Trust Bundles, enabling X.509 cert issuance for TLS/mTLS within core.",
+            "Pod Certificates replace service account JWTs for workload identity, issued by control plane, automatically rotated, and tied to Kubelet via node restriction admission.",
+            "Cluster Trust Bundles provide cluster-wide trust anchors for cert verification, supporting federated authentication to external systems."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: Pod Certificates and Cluster Trust Bundles",
+      "topics": [
+        "System Design",
+        "DevOps",
+        "Cloud"
+      ],
+      "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/"
+    },
     "11f49bce2d7cc12592b26825529676e3976f3f55c6fb5763ea1c1bb0a313cd6b": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -263,6 +349,49 @@
       ],
       "url": "https://netflixtechblog.com/behind-the-scenes-evolving-netflixs-ads-event-pipeline-for-live-part-ii-826ebf9ad9fb?source=rss----2615bd06b42e---4"
     },
+    "15138aab23bfbb834e46159cf2a02854c5d1989c6d85489249b20b0f3f1e5753": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-14T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Job pending may be due to Kueue still deciding resource allocation, not Kubernetes scheduler.",
+            "Headlamp Kueue plugin lets you view Workload status, condition messages, and navigate related LocalQueue, ClusterQueue, ResourceFlavor, and Cohort objects.",
+            "Requires a Kueue\u2011enabled cluster, Headlamp, 0.1.0\u2011alpha plugin, and read permissions for Kueue resources; plugin offers read\u2011only views."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "A Kubernetes Job can stay pending because Kueue is still deciding if it can use the requested resources, not just the scheduler.",
+            "Headlamp\u2019s Kueue plugin lets you view admission status by following links from the Workload to LocalQueue, ClusterQueue, ResourceFlavor, and Cohort.",
+            "The plugin is read\u2011only, requires Kueue and Headlamp installed, and your identity must have permission to read Kueue resources."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kueue separates job admission from pod scheduling; a pending job may be waiting for Kueue to admit the Workload before Kubernetes schedules Pods.",
+            "Headlamp\u2019s 0.1\u2011alpha Kueue plugin lets users trace admission via Workload, LocalQueue, ClusterQueue, ResourceFlavor, and Cohort links, showing condition messages.",
+            "The plugin offers read\u2011only views for Kueue v1beta2 Cohorts, ClusterQueues, LocalQueues, ResourceFlavors, and Workloads; no create/edit actions are added."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Why Is My Kubernetes Job Still Pending? Tracing Kueue Admission with Headlamp",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/"
+    },
     "1b7c2b0930d70d4e4fd52f8e4b416cd1203843271577af5b28c6ec97afede080": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -348,6 +477,51 @@
         "Productivity"
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/"
+    },
+    "23675028600476715d5ad9fbc9077584366a308d41b42b8985819d05bf968a83": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "CovNav uses Conformal Prediction to decide when a fast LLM should trigger slow chain-of-thought reasoning for object navigation tasks.",
+            "It treats spatial queries as binary decisions, converting token probabilities into prediction sets and escalating only ambiguous cases.",
+            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by 0.8\u20131.7 percentage points."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "CovNav uses a fast local LLM to guess if a target object is near another object, then checks uncertainty with Conformal Prediction.",
+            "If the prediction is uncertain, CovNav switches to a slow \u201cchain\u2011of\u2011thought\u201d mode, trading speed for better reasoning.",
+            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by up to 1.7 % in success rates."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "CovNav uses Conformal Prediction to decide when a fast LLM should defer to slow chain-of-thought reasoning for object goal navigation queries.",
+            "The system casts spatial queries as binary decisions, converting token probabilities into prediction sets, and escalates only ambiguous cases, keeping calibration tractable.",
+            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by 0.8\u20131.7 pp, supporting open\u2011set objects via off\u2011the\u2011shelf detectors."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "Cloud"
+      ],
+      "url": "https://arxiv.org/abs/2610.27677"
     },
     "2440ebf036c5f0ff98875fc7ca704e459e8df25224cf7ed321f229721e7b9efd": {
       "image_url": null,
@@ -482,6 +656,49 @@
       ],
       "url": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5?source=rss----2615bd06b42e---4"
     },
+    "2a6999bc8c1adf455891133b8cc8cc1fb3cec0363c9cb7316e2ebbb02bc39163": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-05-11T10:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Enterprises move from isolated AI experiments to widespread, compounding impact across the organization.",
+            "Building trust, governance frameworks, and workflow design are key to scaling AI.",
+            "Maintaining high quality at scale ensures reliable, sustainable AI deployment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Enterprises move from small AI tests to large\u2011scale use, aiming for growing benefits across the organization.",
+            "Building trust, setting rules (governance), and designing work processes help teams adopt AI safely.",
+            "Maintaining high data and model quality at scale ensures reliable, consistent AI results."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Enterprises progress from isolated AI experiments to large\u2011scale deployment, building repeatable pipelines and measurable impact.",
+            "Trust and governance frameworks guide workflow design, ensuring responsible AI use across business units.",
+            "Quality at scale is achieved through continuous monitoring, data hygiene, and automated validation loops."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How enterprises are scaling AI",
+      "topics": [
+        "Backend",
+        "Productivity",
+        "LLMs"
+      ],
+      "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai"
+    },
     "2cc2ae252fb2084a6b420e7d971aa725c6f172195a2a3f0b209dfdc105acf1c8": {
       "image_url": null,
       "last_seen": "2026-10-20T13:13:12.391645Z",
@@ -524,6 +741,51 @@
         "Productivity"
       ],
       "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html"
+    },
+    "2e95c95ea589d2d6070e764cd8128ffdd36d6c8aeaf8be211f9180a872c02dcd": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Semantic Observability, a multi\u2011agent framework that consolidates heterogeneous logs into a dynamic property graph database linking infrastructure, software, and events.",
+            "Uses directed cyclic graphs to autonomously traverse the graph, applying causal algorithms and temporal back\u2011traversal to isolate anomaly blast radii.",
+            "An LLM reasoning engine interprets the pruned subgraph to produce code\u2011level root\u2011cause analyses and actionable remediations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Semantic Observability unifies diverse microservice logs into a Property Graph Database, linking infrastructure, software, and events as nodes and directed edges for clearer context.",
+            "A multi\u2011agent system, guided by Directed Cyclic Graphs (DCGs), automatically traverses the graph, uses causal algorithms and time\u2011backtracking to pinpoint the exact anomaly area.",
+            "The resulting subgraph is fed to a Large Language Model (LLM) reasoning engine, which produces code\u2011level Root Cause Analyses (RCAs) and actionable fixes."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Semantic Observability: autonomous multi\u2011agent framework that consolidates heterogeneous microservice logs into a dynamic, queryable Property Graph Database, modeling topology, dependencies, and events.",
+            "Employs Directed Cyclic Graphs to orchestrate agents that run causal graph algorithms and temporal back\u2011traversal, isolating anomaly blast radius within the graph.",
+            "Uses an LLM reasoning engine on the pruned subgraph to produce code\u2011level Root Cause Analyses and actionable remediations, as presented in arXiv:2610.28611v1."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Semantic Observability for Autonomous Systems Diagnostics",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://arxiv.org/abs/2610.28611"
     },
     "393c5699009c12b4922df3c95c1e007a527d9cdce0e43024a33190d20cfe35e4": {
       "image_url": null,
@@ -743,6 +1005,50 @@
       ],
       "url": "https://huggingface.co/blog/is-it-agentic-enough"
     },
+    "46178924d1dbab427845a698d30b493bb761701cba0d200717e3053312cabf44": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces RLVR with LLMs for RTL circuit generation from natural language, addressing multi-objective PPA optimization.",
+            "Proposes a generation-based training pipeline and Hypervolume Contribution reward to maximize diversity and quality of Pareto-optimal circuit sets.",
+            "Demonstrates 13.3% improvement on RTLLM v2 benchmark, indicating superior Pareto front coverage compared to prior single-scalar reward methods."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Uses large language models (LLMs) to write RTL code from natural language, aiming for multiple trade\u2011offs (power, speed, area) instead of one best design.",
+            "Adds a loop that generates circuits sequentially, rewarding each by Hypervolume Contribution (HVC), a metric measuring its improvement to the Pareto front of trade\u2011offs.",
+            "On the RTLLM v2 benchmark, the method boosts the diversity and quality of generated designs by 13.3 % compared to earlier single\u2011objective RL approaches."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces RLVR with LLMs for RTL circuit generation, addressing multi-objective PPA optimization beyond single scalar rewards.",
+            "Proposes generation-based training pipeline converting Pareto coverage into sequential generation, and HVC reward measuring each circuit's contribution to Pareto front.",
+            "Evaluated on RTLLM v2 benchmark, achieving +13.3% improvement in reward/diversity over prior methods."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Pareto-Optimal RTL Code Generation via Multi-Objective Reinforcement Learning with Large Language Models",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.26904"
+    },
     "46fcf5bb7b99520f1816e2b783a8be714e81f0b319fca3a31d07e256a8f0729d": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -786,6 +1092,50 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one"
+    },
+    "4934e32c8ead615ab768065a0a74661d8cab7600849b71f20b913785d8190d6c": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model that learns from simulation, robot data, images, and videos across diverse domains.",
+            "It jointly trains a single future predictor using language descriptions of actions and visual changes, built on a language model for interpreting conditions.",
+            "The model outperforms domain\u2011specific LWMs, reduces training cost 6\u00d7, speeds planning 13.9\u00d7, and initializes LaLa\u2011Policy, matching Cosmo performance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model (predicts hidden states) that learns from simulation, robot data, images, and videos.",
+            "It uses language to describe actions and visual changes, enabling joint training across diverse datasets.",
+            "The model outperforms others in planning, costs less training, plans faster, and can initialize a policy model."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LaLa-World is a language\u2011conditioned latent world model that jointly learns from simulation, robot trajectories, images, and videos using a single future predictor.",
+            "Its predictor, built on a language model, interprets textual action descriptions and visual changes, enabling higher MPC planning performance than domain\u2011specific LWMs.",
+            "Compared to an RAEv2 video baseline, LaLa-World matches planning performance with 6\u00d7 less training cost and 13.9\u00d7 faster inference, and pretrains LaLa-Policy for competitive control."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27851"
     },
     "49db9a6662d2fb5e32de4134c8abfff62b72279ee1027e042f0ce40804aa0549": {
       "image_url": null,
@@ -1675,6 +2025,50 @@
       ],
       "url": "https://huggingface.co/blog/python-tiny-agents"
     },
+    "7d91065606633e7143b40a32ec7668e3e2f52e111273cf6b2433a802020fcadd": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Hybrid framework combining Temporal Fusion Transformer and N-BEATS for multi-horizon PV power forecasting.",
+            "Attention-based fusion learns short-term dynamics via TFT and long-term trends via N-BEATS, enabling simultaneous 30\u2011min to 24\u2011hr predictions.",
+            "Tested on DKASC multi\u2011year data, outperforms baselines with RMSE reductions up to 3540%."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Hybrid model combines Temporal Fusion Transformer (TFT) and N-BEATS to capture short\u2011term and long\u2011term patterns in PV power.",
+            "Attention\u2011based fusion balances the two branches, producing forecasts for 30\u2011min to 24\u2011hr horizons in one pipeline.",
+            "Tested on real data from DKASC, the model outperforms baselines, reducing error by up to 3540%."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Hybrid TFT\u2011N\u2011BEATS model fuses short\u2011term TFT and long\u2011term N\u2011BEATS via adaptive attention, enabling simultaneous 30\u2011min to 24\u2011h PV power forecasts.",
+            "TFT captures dynamic feature importance; N\u2011BEATS decomposes trend/seasonality with interpretable basis functions, improving multi\u2011scale learning.",
+            "On DKASC multi\u2011year data, the framework reduces RMSE to 42.35\u201352.29, outperforming baselines by up to 3540 % reduction."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "A Hybrid TFT-NBEATS Framework for Robust Multi-Horizon Photovoltaic Power Forecasting",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "Cloud"
+      ],
+      "url": "https://arxiv.org/abs/2610.27155"
+    },
     "85ae60baefcbcf5cc062bfce52911d7300326c4796ff56b904e647dc97384eaa": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -2028,6 +2422,48 @@
       ],
       "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/"
     },
+    "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
+            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
+            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
+            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
+            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.26913"
+    },
     "aa58c6ed59af2c07d01dab43dd234e8805b5ba2334d1431f24fc1025f98acdd3": {
       "image_url": null,
       "last_seen": "2026-10-20T13:13:12.391645Z",
@@ -2246,6 +2682,50 @@
         "Productivity"
       ],
       "url": "https://martinfowler.com/fragments/2026-08-18.html"
+    },
+    "ba13ede3667f75612ee0c4eb588297d262978572704132208c82cc3e9545fdfa": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Harness optimization boosts language model agent performance by better shaping context, tool use, and workflows without updating weights.",
+            "The study distinguishes elicitation (improving success on existing tasks) from expansion (enabling new solvable tasks) to guide recursive self\u2011improvement.",
+            "Results show that while optimized harnesses improve pass@1, gains can reverse with larger attempt budgets, and aggregate metrics may mask task\u2011specific shortfalls."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Harness optimization tweaks context, tool use, and workflows, boosting language\u2011model agent performance without changing weights.",
+            "The study distinguishes \u201celicitation\u201d (better success on known tasks) from \u201cexpansion\u201d (new tasks solved), key for recursive improvement.",
+            "Results show gains vary with task difficulty and attempt limits; larger budgets can reduce harness benefits compared to scaling or compute."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Harness optimization shapes context, tool use, and workflows to better leverage LM capabilities without weight updates.",
+            "Study distinguishes elicitation (improved success on reachable tasks) vs expansion (broader solvable tasks), using pass@k analysis to compare pre- and post-optimization harnesses.",
+            "Findings show pass@1 gains can reverse at higher attempt budgets, and aggregate improvements mask shortfalls on harder tasks, contrasting with model scaling and compute boosts."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Elicitation or Expansion? Demystifying Gains from Agent Harness Optimization",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27889"
     },
     "bbd2dc821f8f6ddd53d94c9bad5ec8421a9a2ac0ab6f072bf103a25fa910ad7b": {
       "image_url": null,
@@ -2687,6 +3167,137 @@
       ],
       "url": "https://martinfowler.com/fragments/2026-08-04.html"
     },
+    "e15f5cc6b720ff7e1397bd7962806f60388355e6579517da55a4544ec2ec398b": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LatticeMind transforms natural-language requests into validated DFT workflows, using contracts and deterministic pre-execution checks to ensure correct stages, files, and dependencies before solver runs.",
+            "On a 44-case RESCU benchmark, 119/132 runs succeeded on first plan, with remaining completed after one repair; ablation shows contracts and validation are key.",
+            "The framework also reproduces all reference values on a 19-case VASP benchmark, proving solver-agnostic transferability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LatticeMind turns natural language into DFT workflows, ensuring each step\u2019s files and dependencies are correct before running the solver. Define DFT: quantum simulation of electrons.",
+            "It uses a workflow contract and validators to catch errors early; if a check fails, a limited repair is attempted, keeping results traceable.",
+            "Tested on 44 RESCU and 19 VASP cases, it matched all reference results, outperforming a simple trial\u2011and\u2011repair approach with fewer tokens."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LatticeMind converts natural\u2011language requests into executable DFT projects via a workflow contract, deterministic validators, and bounded repair before solver launch.",
+            "On a 44\u2011case RESCU benchmark, 119/132 runs succeeded on first validated plan, with remaining passing after one repair cycle.",
+            "Ablation studies show workflow contract and pre\u2011execution validation are key, while the framework reproduces all reference values on a 19\u2011case VASP benchmark, proving solver transferability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "LatticeMind: A Validation-Gated Agentic Framework for Density Functional Theory Workflows",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26869"
+    },
+    "e41aa02a68e1ba26f548b20965e5ccb30ac03bced4989b883cdb3849ef461a17": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-06T18:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.31 moved cgroup v1 support to maintenance; v2 stable since v1.25, offering unified hierarchy and stronger isolation.",
+            "From v1.35, kubelet defaults to failCgroupV1 true, preventing startup on cgroup v1 nodes unless failCgroupV1: false override is set.",
+            "Administrators must migrate Linux nodes to cgroup v2 before upgrading or use temporary override; removal tracked in KEP-5573."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.31 moved cgroup v1 to maintenance; v2 (single hierarchy, consistent interface, stronger isolation) has been stable since v1.25.",
+            "From v1.35, kubelet defaults to fail on cgroup v1 nodes (failCgroupV1=true); admins can temporarily set failCgroupV1:false but must migrate to v2.",
+            "Before upgrading to v1.35+, ensure all Linux nodes use cgroup v2; otherwise kubelet startup fails, especially in kubeadm clusters."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.25 introduced stable cgroup v2 support; v1.31 moved cgroup v1 management to maintenance mode, highlighting shift to unified hierarchy and stronger isolation.",
+            "From v1.35, kubelet defaults failCgroupV1=true, preventing startup on cgroup v1 nodes; admins may set failCgroupV1:false temporarily, but removal follows deprecation policy.",
+            "Migrate all Linux nodes to cgroup v2 before upgrading to v1.35+, or use the override; kubeadm clusters enforce stricter cgroup v1 checks at startup."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "The Shift to cgroup v2 in Kubernetes: What You Need to Know",
+      "topics": [
+        "Backend",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/10/06/kubernetes-cgroups-v2-shift/"
+    },
+    "e4a20210b6dd24e417308d1c8ff13f536165a9cb243845b029f3da9937363f75": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-09-04T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "KubeletInUserNamespace, also called rootless mode, is promoted to beta in Kubernetes v1.37, allowing node components to run as non\u2011root users via Linux user namespaces.",
+            "The feature, introduced in 2018 and merged as alpha in v1.22, complements pod\u2011level user namespaces (GA v1.36) and can be combined for nested Kubernetes setups.",
+            "Running node components in a user namespace mitigates container\u2011breakout vulnerabilities such as CVE\u20112022\u20110811, CVE\u20112023\u201127561, and CVE\u20112024\u201110220 that could grant host root access."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37 moves KubeletInUserNamespace (rootless mode) to beta, letting node components run as non\u2011root via Linux user namespaces.",
+            "This feature differs from pod user namespaces; it protects node software from container\u2011breakout bugs that could grant host root access.",
+            "Rootless node components can be combined with pod user namespaces to nest Kubernetes inside Kubernetes without full privileged mode."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 promotes KubeletInUserNamespace (rootless mode) to beta, enabling kubelet, CRI/OCI runtimes, CNI, and kube\u2011proxy to run as non\u2011root via Linux user namespaces.",
+            "Feature originated as KEP\u20112033, alpha in v1.22, and is distinct from hostUsers: false (pod user namespaces GA v1.36) but can be combined for nested K8s.",
+            "Running node components in a user namespace mitigates container\u2011breakout CVEs such as CVE\u20112022\u20110811, CVE\u20112023\u201127561, and CVE\u20112024\u201110220 that could grant host root access."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: KubeletInUserNamespace (aka Rootless mode) Graduates to Beta",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/"
+    },
     "e5d87b51d49b9e4da356b3af6a4e68906ca95ee6699797512e42160904369fc2": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -2868,6 +3479,50 @@
         "System Design"
       ],
       "url": "https://martinfowler.com/fragments/2026-09-29.html"
+    },
+    "ebf3022769d5aa3354983f9685a3ac07e18373ecdd4bfd815a8e0aab59f2765f": {
+      "image_url": null,
+      "last_seen": "2026-10-21T13:25:33.193295Z",
+      "published_at": "2026-10-21T10:51:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Gergely Orosz criticizes contest entrants who used AI, claiming any AI presence may lead to the assumption of full AI authorship.",
+            "The piece examines AI detection challenges, the benefits of AI for people with disabilities or language barriers, and questions of fairness.",
+            "It also notes disappointment over the cancellation of the Grace Hopper Celebration, an event supporting women and non-binary technologists."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Gergely Orosz is upset that people used AI in his \u201cNo AI\u201d essay contest, fearing that any AI use makes the whole work seem AI.",
+            "He worries AI detection is hard, so people may think all content is AI; a \u201csecond brain\u201d for Parkinson\u2019s patients or translate for non\u2011English speakers.",
+            "The article also notes disappointment that the Grace Hopper Celebration, an event for women and non\u2011binary tech workers, was cancelled this year."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Orosz complains about AI in essay contest, warns that any AI use may be assumed 100% AI, discouraging human effort.",
+            "Discusses challenges of AI detection, neural net accuracy, and human communication blending AI elements.",
+            "Notes valid AI uses (e.g., Jim Highsmith's second brain for Parkinson's, translation aid) and mentions Grace Hopper Celebration cancellation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: October 21",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-10-21.html"
     },
     "ec93ced270b0c65e467a5c6a47b9e527f4fee2b27caf8a973f274eb886a8bc39": {
       "image_url": null,
