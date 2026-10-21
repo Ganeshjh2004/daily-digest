@@ -40,9 +40,11 @@ function ghHeaders(token) {
   };
 }
 
-/** GET the most recent workflow run (no auth required for public repos). */
+/** GET the most recent workflow run (authenticated if token exists to avoid unauthenticated rate limits). */
 async function fetchLatestRun() {
-  const response = await fetch(`${RUNS_URL}?per_page=1`, { cache: "no-store" });
+  const token = readToken();
+  const headers = token ? ghHeaders(token) : {};
+  const response = await fetch(`${RUNS_URL}?per_page=1`, { cache: "no-store", headers });
   if (!response.ok) throw Object.assign(new Error("Failed to fetch runs"), { status: response.status });
   const data = await response.json();
   return (data.workflow_runs || [])[0] || null;
@@ -106,11 +108,14 @@ function sleep(ms) { return new Promise((resolve) => setTimeout(resolve, ms)); }
 /**
  * Build and return the "Owner: add token" UI element.
  * The caller inserts this wherever it wants.
- *
- * No callbacks needed here — token CRUD is purely local.
+ * Accepts an optional onTokenChange callback called when token is saved or cleared.
  */
-export function buildOwnerControls() {
+export function buildOwnerControls(onTokenChange) {
   const wrap = createElement("div", "owner-controls");
+
+  function notifyChange() {
+    if (typeof onTokenChange === "function") onTokenChange();
+  }
 
   function refreshWrap() {
     // Wipe and rebuild without innerHTML.
@@ -121,7 +126,11 @@ export function buildOwnerControls() {
       const note = createText("span", "Token active. ", "owner-note");
       const remove = createText("button", "Remove token", "owner-link");
       remove.type = "button";
-      remove.addEventListener("click", () => { clearToken(); refreshWrap(); });
+      remove.addEventListener("click", () => {
+        clearToken();
+        refreshWrap();
+        notifyChange();
+      });
       row.append(note, remove);
       wrap.append(row);
     } else {
@@ -158,6 +167,7 @@ export function buildOwnerControls() {
       if (!val) return;
       writeToken(val);
       refreshWrap();
+      notifyChange();
     });
     form.append(label, document.createTextNode(" "), input, document.createTextNode(" "), save, document.createTextNode(" "), cancel);
     wrap.append(form);
