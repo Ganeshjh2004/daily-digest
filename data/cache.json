@@ -1,5 +1,44 @@
 {
   "items": {
+    "0097d099d5c66d3d2c2984ba87f512c0ac0fc70fd79bc0a790f5edd4522aeab6": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-05-14T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The .spec.externalIPs field lets a Service use extra IPs, but it can be insecure because it trusts all cluster users.",
+            "Kubernetes 1.21 advised disabling it, added a controller to block it, but the feature still poses risks and has better alternatives.",
+            "In v1.36 the field is officially deprecated; future releases will remove it from kube-proxy and require implementations not to support it."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36 formally deprecates Service .spec.externalIPs, a feature that enabled cloud\u2011load\u2011balancer\u2011like behavior but introduced security risks (CVE\u20112020\u20118554).",
+            "Since 1.21, users are advised to disable .spec.externalIPs; the DenyServiceExternalIPs admission controller can enforce this, but it was not default to avoid breaking changes.",
+            "Future minor releases will remove .spec.externalIPs support from kube\u2011proxy and update conformance criteria to require implementations not provide this functionality."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: Deprecation and removal of Service ExternalIPs",
+      "topics": [
+        "Backend",
+        "DevOps",
+        "Cloud"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/"
+    },
     "009f70280ebcc29e7c90367cc5d038491a50c88b819173ad7ca2bdc392c0ba44": {
       "image_url": null,
       "last_seen": "2026-10-20T13:13:12.391645Z",
@@ -42,6 +81,49 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/openai-to-acquire-ona"
+    },
+    "0799939eea555f7a6e94cc9084e2e41abf21b644358d249c04ea39996a6b3630": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-05-07T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "DRA in Kubernetes v1.36 expands to native resources like memory and CPU, adding new capabilities and usability improvements for hardware accelerators.",
+            "Feature graduations include stable Prioritized List, allowing ordered fallback preferences for heterogeneous devices (e.g., H100 \u2192 A100) and support for ResourceClaims in PodGroups.",
+            "Driver ecosystem grows beyond GPUs to networking and other hardware, enhancing a hardware\u2011agnostic infrastructure and better failure handling."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "DRA (Dynamic Resource Allocation) now supports native CPU and memory resources, expanding flexibility beyond GPUs.",
+            "New Prioritized list feature lets users set fallback preferences for hardware, e.g., request H100 but fall back to A100 if unavailable.",
+            "Driver support grows to include networking and other hardware types, making Kubernetes more hardware\u2011agnostic and improving failure handling and resource fallback."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36 introduces DRA feature graduations to Beta/Stable, expanding driver support to GPUs, networking, and other hardware types.",
+            "Prioritized list allows ordered fallback preferences for device requests (e.g., H100 preferred, A100 fallback), improving scheduler flexibility.",
+            "Native resource support (memory, CPU) and ResourceClaims in PodGroups enhance DRA usability, enabling fallback options and robust hardware-agnostic infrastructure."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: More Drivers, New Features, and the Next Era of DRA",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/07/kubernetes-v1-36-dra-136-updates/"
     },
     "0a5ca4c5b5238e08c45b818d5135ff075ac35b68528c7905c2a7a4bb897743f6": {
       "image_url": null,
@@ -262,20 +344,28 @@
     },
     "10f476c8a9f7eae9633e18e9028524f7248ca03a8b7df5caefd54de169cd6f19": {
       "image_url": null,
-      "last_seen": "2026-10-21T16:23:39.970050Z",
-      "published_at": "2026-10-21T04:00:00Z",
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-10-22T04:00:00Z",
       "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
-          "bullets": [],
+          "bullets": [
+            "LLMs struggle with classical planning; benchmarks rarely separate structural difficulty from semantic interpretability.",
+            "Zero\u2011training delete\u2011relaxation heuristic h_add predicts structural difficulty better than learned models (Spearman 0.931 vs 0.707, 0.657, 0.400).",
+            "Renaming predicates reduces LLM planning success from 67.5% to 40%; hybrid routing depends on LLM calibration, not just structural scores."
+          ],
           "model": "openai/gpt-oss-20b",
-          "status": "failed"
+          "status": "ok"
         },
         "beginner_friendly": {
-          "bullets": [],
+          "bullets": [
+            "LLMs find classical planning hard, but tests rarely separate structural difficulty (problem layout) from semantic difficulty (symbol meanings).",
+            "A zero\u2011training delete\u2011relaxation heuristic, h_add, predicts structural difficulty better than learned models like ridge regression or ARC.",
+            "Renaming predicates reduces LLM success from 67.5% to 40%, showing semantic changes hurt planning; hybrid systems need better semantic modeling."
+          ],
           "model": "openai/gpt-oss-20b",
-          "status": "failed"
+          "status": "ok"
         },
         "technical": {
           "bullets": [
@@ -821,6 +911,49 @@
       ],
       "url": "https://martinfowler.com/rachels-ramblings/conductor-developer.html"
     },
+    "2cd181e0a27f324cd7bf8266f07e097945e262b2f0e02b9344ff61cd42da4c6c": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-05-12T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.36 promotes PSI metrics to GA, enabling node, pod, and container level resource contention visibility.",
+            "PSI offers cumulative totals and moving averages, revealing stalled tasks and latency that traditional utilization metrics miss.",
+            "Extensive performance tests on high-density workloads confirmed PSI\u2019s low overhead and readiness for production use."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "PSI (Pressure Stall Information) shows how long tasks stall on CPU, memory, I/O, giving clearer view than simple usage percentages.",
+            "Kubernetes v1.36 adds stable PSI metrics at node, pod, container levels, with cumulative totals and moving averages (10s, 60s, 300s) to spot spikes vs tension.",
+            "Performance tests on 80+ pods show PSI adds minimal overhead, proving it ready for production use across diverse machine types."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36 promotes PSI metrics to GA, offering node, pod, container-level resource contention insights via cumulative totals and 10s/60s/300s moving averages.",
+            "PSI, introduced in Linux kernel 2018, reports stalled task time as percentages for CPU, memory, I/O, revealing latency hidden by raw utilization metrics.",
+            "SIG Node validated PSI\u2019s low overhead on high-density workloads (80+ pods) across diverse machine types, confirming production readiness."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: PSI Metrics for Kubernetes Graduates to GA",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/12/kubernetes-v1-36-psi-metrics-ga/"
+    },
     "2e95c95ea589d2d6070e764cd8128ffdd36d6c8aeaf8be211f9180a872c02dcd": {
       "image_url": null,
       "last_seen": "2026-10-21T13:25:33.193295Z",
@@ -908,6 +1041,49 @@
         "Machine Learning"
       ],
       "url": "https://huggingface.co/blog/gpt-oss-on-intel-xeon"
+    },
+    "39c5077316a13a3cc735981767248ae82cc9b3f6cec2c5d4127b82f5610411f6": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-05-05T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.36 brings Declarative Validation for native types to GA, improving API reliability and documentation.",
+            "The shift replaces ~18,000 lines of handwritten Go validation, reducing technical debt and ensuring consistent, discoverable rules across resources.",
+            "Declarative framework enables future OpenAPI rule publishing and ecosystem integration, such as with Kubebuilder, enhancing maintainability and tooling."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.36 makes Declarative Validation GA (General Availability), improving API reliability and documentation.",
+            "The new declarative framework replaces ~18,000 lines of handwritten Go validation (manual code), reducing technical debt and inconsistencies.",
+            "Future benefits include publishing validation rules via OpenAPI (a standard API description) and integrating with Kubebuilder (a tool for building APIs), easing programmatic analysis."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36 marks Declarative Validation for native types as GA, replacing ~18,000 lines of handwritten Go validation with a unified framework.",
+            "The declarative model enables future OpenAPI\u2011based rule publishing and seamless integration with ecosystem tools such as Kubebuilder.",
+            "This shift eliminates inconsistent, opaque validation, reduces technical debt, and provides more reliable, predictable, and better\u2011documented APIs for users."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: Declarative Validation Graduates to GA",
+      "topics": [
+        "Backend",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/05/kubernetes-v1-36-declarative-validation-ga/"
     },
     "3c8ef4ebd570790c54a38e439bedb05847367e8402b625bb72ffb622b2520a70": {
       "image_url": null,
@@ -1083,6 +1259,49 @@
         "Machine Learning"
       ],
       "url": "https://huggingface.co/blog/is-it-agentic-enough"
+    },
+    "4586c5f3db353f7d037e30fd31269276ba967af06b005053f1d5456ba7abb250": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-04-13T06:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Cloudflare integrates OpenAI\u2019s GPT\u20115.4 and Codex into Agent Cloud, giving enterprises a unified AI platform.",
+            "The integration allows rapid building, deployment, and scaling of AI agents for real\u2011world tasks while maintaining speed and security.",
+            "Enterprises can leverage the combined capabilities to automate workflows and enhance operational efficiency within Cloudflare\u2019s infrastructure."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Cloudflare adds OpenAI\u2019s GPT\u20115.4 and Codex to its Agent Cloud, letting businesses create AI agents that automate tasks.",
+            "The platform focuses on quick deployment and strong security, so companies can scale agents safely.",
+            "\u201cAgentic workflows\u201d means AI agents act autonomously to handle real\u2011world tasks, improving efficiency for enterprises."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Cloudflare Agent Cloud integrates OpenAI\u2019s GPT\u20115.4 and Codex, enabling enterprises to create AI agents that automate real\u2011world tasks.",
+            "Agents can be built, deployed, and scaled within the platform, leveraging Cloudflare\u2019s edge infrastructure for low\u2011latency, secure execution.",
+            "The solution emphasizes speed, security, and compliance, allowing enterprises to accelerate AI adoption while maintaining data sovereignty and regulatory adherence."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Cloud"
+      ],
+      "url": "https://openai.com/index/cloudflare-openai-agent-cloud"
     },
     "46178924d1dbab427845a698d30b493bb761701cba0d200717e3053312cabf44": {
       "image_url": null,
@@ -1794,6 +2013,49 @@
       ],
       "url": "https://huggingface.co/blog/LinkedIn/gpt-oss-agentic-rl"
     },
+    "642450704987585cb49bd4df3cd6dd373b4ccfd33a2e4cea99a6ea3a36968ff6": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2024-12-17T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Benchmarking language model performance on Google Cloud Platform\u2019s 5th\u2011generation Xeon processors.",
+            "Evaluating throughput, latency, and cost efficiency of various language models on these CPUs.",
+            "Comparing results to previous Xeon generations to assess performance gains and resource utilization."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The article discusses testing language models on Google Cloud's 5th Gen Xeon CPUs, a type of processor.",
+            "It compares performance metrics such as speed and cost for different model sizes.",
+            "The findings help users choose the right hardware for AI workloads on GCP."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Benchmarks language model inference on Google Cloud's 5th Gen Xeon CPUs.",
+            "Details methodology, metrics, and configuration settings used for evaluation.",
+            "Discusses performance outcomes and potential implications for deployment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Benchmarking Language Model Performance on 5th Gen Xeon at GCP",
+      "topics": [
+        "LLMs",
+        "Cloud",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/intel-gcp-c4"
+    },
     "6435a7f7dfd0d37b10ae5e3b6380c210a004286cfeaf3622b1510497fa6df6ff": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -1838,6 +2100,49 @@
         "Productivity"
       ],
       "url": "https://arxiv.org/abs/2609.00050"
+    },
+    "64ddfb139fec8a1cb4597ec213ad7265ff7b827324c2efbb180615bde9f68d90": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-10-21T04:50:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Thousands of AI agents were deployed to analyze massive brain-cell datasets, revealing new research leads.",
+            "The collaboration involved OpenAI, PerturbAI, and Scripps Research, leveraging distributed AI to process millions of cells.",
+            "The approach demonstrates how AI can accelerate biological discovery by efficiently mining large-scale cellular data."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Thousands of autonomous AI agents, software programs that act on their own, were deployed to sift through millions of brain cell data points.",
+            "The collaboration between OpenAI, PerturbAI, and Scripps Research combined their expertise to guide the agents toward promising research leads.",
+            "These leads help scientists understand brain function and could inform future treatments for neurological disorders."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Thousands of distributed AI agents deployed by OpenAI, PerturbAI, and Scripps Research to analyze millions of brain cell datasets.",
+            "The agents collaboratively identify promising research leads within the massive neural data.",
+            "This approach demonstrates scalable, multi\u2011institution AI collaboration for biological discovery."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "topics": [
+        "AI Agents",
+        "System Design",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
     },
     "657c9e342fe5745899beeb66d5a8444e822a88ae8796271973cb64ca1b26d874": {
       "image_url": null,
@@ -2013,6 +2318,50 @@
         "Backend"
       ],
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
+    },
+    "7100a9423b909b319969f6f3d4d8c2faf20067c1d7e918a71dd8df8d23ad9af8": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Gradus, a method that treats an environment as a latent syllabus, extracting guarded behavioral operators to guide task creation.",
+            "Decouples task objectives from concrete tasks, using corpus-level feedback to target missing outcome combinations and calibrate tasks and solutions against execution feedback.",
+            "Demonstrates significant performance gains on benchmarks, boosting 30B model accuracy from 59% to 89% on \u03c4\u00b2-Bench and from 47% to 83% on CAR-Bench."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Gradus creates a curriculum that separates learning goals from specific tasks, using the environment itself as a hidden syllabus to generate harder challenges.",
+            "It extracts guarded behavioral operators\u2014rules linking actions to conditions and outcomes\u2014and composes them into progressively demanding tasks, guided by feedback that keeps difficult examples.",
+            "The approach improves large language models, boosting performance from 59% to 89% on \u03c4\u00b2-Bench and 47% to 83% on CAR-Bench, showing effective coverage-guided exploration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Gradus decouples teaching objectives from concrete tasks, extracting guarded behavioral operators from a fixed environment\u2019s latent syllabus to model action-condition dependencies and effect propagation.",
+            "It composes operators into graded tasks, using corpus\u2011level feedback to target missing outcome combinations while jointly calibrating tasks and solutions via execution feedback.",
+            "The curriculum boosts a 30B model from 59%\u219289% on \u03c4\u00b2\u2011Bench and 47%\u219283% on CAR\u2011Bench with an Opus 4.5 proposer, preserving hard examples through recovery\u2011based verification."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "GRADUS: Discovering and Recovering Agent Lessons from the Environment's Latent Syllabus",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27781"
     },
     "73a1b610054d15076be8e2686736002a9cd2793d4db72280ed26d4d99ad9e199": {
       "image_url": null,
@@ -2277,6 +2626,50 @@
       ],
       "url": "https://arxiv.org/abs/2610.27155"
     },
+    "7f07b7a2a2a2c7ffe91ed3801fe17925927315def6cba940f268cfe3bd27cfdd": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Bayesian Evolutionary Optimization for designing multi-agent systems, combining evolutionary graph generation with Bayesian selection.",
+            "Uses graph-aware Gaussian Process and Expected Improvement to guide costly evaluations, avoiding LLM-based candidate selection.",
+            "Evaluated on BigCodeBench and TabPFN, achieving top performance in code generation and improved preprocessing on temporal tabular data."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Bayesian Evolutionary Optimization blends evolutionary search with Bayesian methods to automatically design multi-agent system (MAS) topologies, reducing costly evaluations.",
+            "The framework uses a graph\u2011aware Gaussian Process (a statistical model) and Expected Improvement to rank candidate workflows, offering a clear selection rule versus language\u2011model guessing.",
+            "Experiments on BigCodeBench and TabPFN show evolved MAS outperform systems on code generation and improve preprocessing on time\u2011series data while staying competitive on standard datasets."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Bayesian Evolutionary Optimization combining evolutionary operators and graph\u2011aware Gaussian Process with Expected Improvement to auto\u2011discover MAS topologies.",
+            "Evaluated on BigCodeBench (code generation) and TabPFN preprocessing; evolved MAS outperformed other agents on BigCodeBench and improved temporal tabular results.",
+            "Demonstrates Bayesian selection effectively guides costly evolutionary search, achieving top performance while remaining competitive on IID datasets."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Design and Tuning of Multi-Agent Systems Using Bayesian Evolutionary Optimization",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.29276"
+    },
     "85ae60baefcbcf5cc062bfce52911d7300326c4796ff56b904e647dc97384eaa": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -2407,6 +2800,49 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.23255"
+    },
+    "8afdb503cc5635992639a26513506f28523b4a0b75bbd01a7786187c3b0eba2d": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-03-17T10:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "GPT-5.4 mini and nano are compact variants of GPT-5.4.",
+            "They prioritize speed and efficiency for coding, tool use, and multimodal reasoning tasks.",
+            "Designed for high-volume API and sub-agent workloads, offering optimized performance in resource-constrained environments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "GPT\u20115.4 mini and nano are lightweight, faster variants of GPT\u20115.4.",
+            "They\u2019re tuned for coding tasks, tool use, and multimodal reasoning.",
+            "Designed for high\u2011volume API calls and sub\u2011agent workloads."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "GPT\u20115.4 mini and nano are lightweight variants of GPT\u20115.4, offering reduced size and faster inference.",
+            "They target coding, tool\u2011use, and multimodal reasoning tasks, delivering efficient performance for developers.",
+            "Designed for high\u2011volume API and sub\u2011agent workloads, these models prioritize speed and scalability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Introducing GPT-5.4 mini and nano",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano"
     },
     "8c69d8b194f3a59980d12712d50fe456eb7cb043a0758fbc186336af871be320": {
       "image_url": null,
@@ -2757,6 +3193,49 @@
       ],
       "url": "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/"
     },
+    "a0904673d8e83392bf0846c7674476b4059adb3f083f128528f7aa1ff1dea03f": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-04-01T02:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Gradient Labs introduces AI account managers for all bank customers.",
+            "Powered by GPT-4.1, GPT-5.4 mini, and nano, these agents automate banking support workflows.",
+            "The system offers low latency and high reliability for customer interactions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Gradient Labs gives every bank customer an AI account manager that helps with banking tasks.",
+            "It uses GPT\u20114.1 and GPT\u20115.4 mini/nano models to power AI agents that automate support workflows.",
+            "These agents deliver low latency\u2014fast responses\u2014and high reliability, ensuring consistent performance for customers."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Gradient Labs equips every bank customer with an AI account manager powered by GPT-4.1.",
+            "The system deploys GPT-5.4 mini and nano agents to automate support workflows.",
+            "Designed for low latency and high reliability, ensuring real\u2011time assistance across banking services."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Gradient Labs gives every bank customer an AI account manager",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design"
+      ],
+      "url": "https://openai.com/index/gradient-labs"
+    },
     "a0e33986561907aba0e68cb79bcce35963565eec65dfeba9078bbdd4c33c423e": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -2802,8 +3281,8 @@
     },
     "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750": {
       "image_url": null,
-      "last_seen": "2026-10-21T16:23:39.970050Z",
-      "published_at": "2026-10-21T04:00:00Z",
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-10-22T04:00:00Z",
       "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
@@ -3325,6 +3804,50 @@
         "Productivity"
       ],
       "url": "https://kubernetes.io/blog/2026/05/26/reconciling-unfixed-kubernetes-cves/"
+    },
+    "c6bd955905173ff0249726973c19445fe2d9676e911c64462a7a5ee54cc9006a": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Indirect prompt injection (IPI) embeds adversarial instructions in external data, threatening LLM agents; Attention Tracker detects attacks by monitoring attention between user and data tokens.",
+            "Evaluation on AgentDojo shows Attention Tracker's dataset\u2011agnostic claim fails; long structured tool outputs subvert its assumptions, yielding near\u2011chance detection across most model families.",
+            "AttnDA replaces the scalar threshold with a Fisher Linear Discriminant classifier over per\u2011head focus scores, improving detection across benchmarks yet struggling to transfer to AgentDojo."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Indirect prompt injection (IPI) is when harmful instructions are hidden in external data that a language model reads, threatening AI agents.",
+            "Attention Tracker claims to detect IPI by checking where a model focuses its attention, but tests on AgentDojo show it often fails.",
+            "The new AttnDA method replaces a simple threshold with a statistical classifier, improving detection across several tests, though challenges remain."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Attention Tracker monitors attention distribution between user task tokens and data tokens, using a scalar focus score threshold to detect indirect prompt injection (IPI) attacks.",
+            "Evaluation on AgentDojo shows dataset\u2011agnostic claim fails; long structured tool outputs subvert assumptions, yielding near\u2011chance detection across model families.",
+            "AttnDA replaces scalar threshold with Fisher Linear Discriminant Analysis on per\u2011head focus vectors, improving detection on multiple benchmarks but still struggling to transfer to AgentDojo."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Attention-based Classification for Indirect Prompt Injection",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.28988"
     },
     "c71ef79e3212dc880b6b84b19450d571be80864c5402bc79c6c169ad5c7054d8": {
       "image_url": null,
@@ -4509,6 +5032,50 @@
         "Productivity"
       ],
       "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/"
+    },
+    "ffb1232e61c43d9947c07dc558f0931a24667c83b8b1763e3284c0da85ce3150": {
+      "image_url": null,
+      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "SAPD learns from offline trajectories without new environment interactions, using step advantages to refine policy.",
+            "It decomposes multi-turn trajectories into decision contexts for on\u2011policy distillation, preventing catastrophic forgetting seen in supervised fine\u2011tuning.",
+            "Experiments on ALFWorld, WebShop, and Search\u2011based QA show improved performance and 4.7\u00d7 faster training steps than online OPD."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "SAPD learns from recorded agent interactions without needing new environment runs, using step advantage signals to guide policy updates.",
+            "The method splits multi-turn trajectories into single decision contexts, allowing the student model to generate responses based on past history.",
+            "Experiments on ALFWorld, WebShop, and Search-based QA show SAPD outperforms supervised fine-tuning, reduces forgetting, and is 4.7\u00d7 faster per training step."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces SAPD, a policy distillation technique that learns from offline agent trajectories without new environment interactions, using relative step advantage signals.",
+            "Decomposes multi-turn trajectories into individual decision contexts for on\u2011policy distillation, enabling the student to generate responses conditioned on recorded histories.",
+            "Outperforms supervised fine\u2011tuning by reducing catastrophic forgetting, achieves 4.7\u00d7 faster training steps than online OPD, and improves results on ALFWorld, WebShop, and Search\u2011based QA."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "SAPD: Learning from Agent Experience without Environment Interaction",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27847"
     }
   },
   "version": 1

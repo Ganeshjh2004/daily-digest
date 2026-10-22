@@ -1,6 +1,250 @@
 {
   "articles": [
     {
+      "id": "10f476c8a9f7eae9633e18e9028524f7248ca03a8b7df5caefd54de169cd6f19",
+      "image_url": null,
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LLMs struggle with classical planning; benchmarks rarely separate structural difficulty from semantic interpretability.",
+            "Zero\u2011training delete\u2011relaxation heuristic h_add predicts structural difficulty better than learned models (Spearman 0.931 vs 0.707, 0.657, 0.400).",
+            "Renaming predicates reduces LLM planning success from 67.5% to 40%; hybrid routing depends on LLM calibration, not just structural scores."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LLMs find classical planning hard, but tests rarely separate structural difficulty (problem layout) from semantic difficulty (symbol meanings).",
+            "A zero\u2011training delete\u2011relaxation heuristic, h_add, predicts structural difficulty better than learned models like ridge regression or ARC.",
+            "Renaming predicates reduces LLM success from 67.5% to 40%, showing semantic changes hurt planning; hybrid systems need better semantic modeling."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Zero\u2011training delete\u2011relaxation heuristic h_add predicts structural difficulty with mean Spearman |\u03c1|=0.931, outperforming ridge regression (0.707), object count (0.657), and ARC (0.400).",
+            "Renaming predicates from 0% to 100% drops LLM planning success from 67.5% to 40.0%, while refusals stay at 0%, isolating semantic effects.",
+            "Hybrid routing between an LLM and a symbolic planner relies more on calibrating to the target LLM\u2019s outcomes than on the structural score chosen."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "When Planning Problems Become Hard for LLMs: Separating Structural Complexity from Semantic Interpretability",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26964"
+    },
+    {
+      "id": "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750",
+      "image_url": null,
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
+            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
+            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
+            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
+            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.26913"
+    },
+    {
+      "id": "7100a9423b909b319969f6f3d4d8c2faf20067c1d7e918a71dd8df8d23ad9af8",
+      "image_url": null,
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Gradus, a method that treats an environment as a latent syllabus, extracting guarded behavioral operators to guide task creation.",
+            "Decouples task objectives from concrete tasks, using corpus-level feedback to target missing outcome combinations and calibrate tasks and solutions against execution feedback.",
+            "Demonstrates significant performance gains on benchmarks, boosting 30B model accuracy from 59% to 89% on \u03c4\u00b2-Bench and from 47% to 83% on CAR-Bench."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Gradus creates a curriculum that separates learning goals from specific tasks, using the environment itself as a hidden syllabus to generate harder challenges.",
+            "It extracts guarded behavioral operators\u2014rules linking actions to conditions and outcomes\u2014and composes them into progressively demanding tasks, guided by feedback that keeps difficult examples.",
+            "The approach improves large language models, boosting performance from 59% to 89% on \u03c4\u00b2-Bench and 47% to 83% on CAR-Bench, showing effective coverage-guided exploration."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Gradus decouples teaching objectives from concrete tasks, extracting guarded behavioral operators from a fixed environment\u2019s latent syllabus to model action-condition dependencies and effect propagation.",
+            "It composes operators into graded tasks, using corpus\u2011level feedback to target missing outcome combinations while jointly calibrating tasks and solutions via execution feedback.",
+            "The curriculum boosts a 30B model from 59%\u219289% on \u03c4\u00b2\u2011Bench and 47%\u219283% on CAR\u2011Bench with an Opus 4.5 proposer, preserving hard examples through recovery\u2011based verification."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "GRADUS: Discovering and Recovering Agent Lessons from the Environment's Latent Syllabus",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27781"
+    },
+    {
+      "id": "ffb1232e61c43d9947c07dc558f0931a24667c83b8b1763e3284c0da85ce3150",
+      "image_url": null,
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "SAPD learns from offline trajectories without new environment interactions, using step advantages to refine policy.",
+            "It decomposes multi-turn trajectories into decision contexts for on\u2011policy distillation, preventing catastrophic forgetting seen in supervised fine\u2011tuning.",
+            "Experiments on ALFWorld, WebShop, and Search\u2011based QA show improved performance and 4.7\u00d7 faster training steps than online OPD."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "SAPD learns from recorded agent interactions without needing new environment runs, using step advantage signals to guide policy updates.",
+            "The method splits multi-turn trajectories into single decision contexts, allowing the student model to generate responses based on past history.",
+            "Experiments on ALFWorld, WebShop, and Search-based QA show SAPD outperforms supervised fine-tuning, reduces forgetting, and is 4.7\u00d7 faster per training step."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces SAPD, a policy distillation technique that learns from offline agent trajectories without new environment interactions, using relative step advantage signals.",
+            "Decomposes multi-turn trajectories into individual decision contexts for on\u2011policy distillation, enabling the student to generate responses conditioned on recorded histories.",
+            "Outperforms supervised fine\u2011tuning by reducing catastrophic forgetting, achieves 4.7\u00d7 faster training steps than online OPD, and improves results on ALFWorld, WebShop, and Search\u2011based QA."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "SAPD: Learning from Agent Experience without Environment Interaction",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27847"
+    },
+    {
+      "id": "c6bd955905173ff0249726973c19445fe2d9676e911c64462a7a5ee54cc9006a",
+      "image_url": null,
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Indirect prompt injection (IPI) embeds adversarial instructions in external data, threatening LLM agents; Attention Tracker detects attacks by monitoring attention between user and data tokens.",
+            "Evaluation on AgentDojo shows Attention Tracker's dataset\u2011agnostic claim fails; long structured tool outputs subvert its assumptions, yielding near\u2011chance detection across most model families.",
+            "AttnDA replaces the scalar threshold with a Fisher Linear Discriminant classifier over per\u2011head focus scores, improving detection across benchmarks yet struggling to transfer to AgentDojo."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Indirect prompt injection (IPI) is when harmful instructions are hidden in external data that a language model reads, threatening AI agents.",
+            "Attention Tracker claims to detect IPI by checking where a model focuses its attention, but tests on AgentDojo show it often fails.",
+            "The new AttnDA method replaces a simple threshold with a statistical classifier, improving detection across several tests, though challenges remain."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Attention Tracker monitors attention distribution between user task tokens and data tokens, using a scalar focus score threshold to detect indirect prompt injection (IPI) attacks.",
+            "Evaluation on AgentDojo shows dataset\u2011agnostic claim fails; long structured tool outputs subvert assumptions, yielding near\u2011chance detection across model families.",
+            "AttnDA replaces scalar threshold with Fisher Linear Discriminant Analysis on per\u2011head focus vectors, improving detection on multiple benchmarks but still struggling to transfer to AgentDojo."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Attention-based Classification for Indirect Prompt Injection",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.28988"
+    },
+    {
+      "id": "7f07b7a2a2a2c7ffe91ed3801fe17925927315def6cba940f268cfe3bd27cfdd",
+      "image_url": null,
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Bayesian Evolutionary Optimization for designing multi-agent systems, combining evolutionary graph generation with Bayesian selection.",
+            "Uses graph-aware Gaussian Process and Expected Improvement to guide costly evaluations, avoiding LLM-based candidate selection.",
+            "Evaluated on BigCodeBench and TabPFN, achieving top performance in code generation and improved preprocessing on temporal tabular data."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Bayesian Evolutionary Optimization blends evolutionary search with Bayesian methods to automatically design multi-agent system (MAS) topologies, reducing costly evaluations.",
+            "The framework uses a graph\u2011aware Gaussian Process (a statistical model) and Expected Improvement to rank candidate workflows, offering a clear selection rule versus language\u2011model guessing.",
+            "Experiments on BigCodeBench and TabPFN show evolved MAS outperform systems on code generation and improve preprocessing on time\u2011series data while staying competitive on standard datasets."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Bayesian Evolutionary Optimization combining evolutionary operators and graph\u2011aware Gaussian Process with Expected Improvement to auto\u2011discover MAS topologies.",
+            "Evaluated on BigCodeBench (code generation) and TabPFN preprocessing; evolved MAS outperformed other agents on BigCodeBench and improved temporal tabular results.",
+            "Demonstrates Bayesian selection effectively guides costly evolutionary search, achieving top performance while remaining competitive on IID datasets."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Design and Tuning of Multi-Agent Systems Using Bayesian Evolutionary Optimization",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.29276"
+    },
+    {
       "id": "885fe3c67de05637ce5b9612baa0a6e50e729bbbcf8015191def57f8d564f7ca",
       "image_url": null,
       "published_at": "2026-10-21T16:00:00Z",
@@ -80,6 +324,86 @@
         "Machine Learning"
       ],
       "url": "https://martinfowler.com/fragments/2026-10-21.html"
+    },
+    {
+      "id": "64ddfb139fec8a1cb4597ec213ad7265ff7b827324c2efbb180615bde9f68d90",
+      "image_url": null,
+      "published_at": "2026-10-21T04:50:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Thousands of AI agents were deployed to analyze massive brain-cell datasets, revealing new research leads.",
+            "The collaboration involved OpenAI, PerturbAI, and Scripps Research, leveraging distributed AI to process millions of cells.",
+            "The approach demonstrates how AI can accelerate biological discovery by efficiently mining large-scale cellular data."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Thousands of autonomous AI agents, software programs that act on their own, were deployed to sift through millions of brain cell data points.",
+            "The collaboration between OpenAI, PerturbAI, and Scripps Research combined their expertise to guide the agents toward promising research leads.",
+            "These leads help scientists understand brain function and could inform future treatments for neurological disorders."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Thousands of distributed AI agents deployed by OpenAI, PerturbAI, and Scripps Research to analyze millions of brain cell datasets.",
+            "The agents collaboratively identify promising research leads within the massive neural data.",
+            "This approach demonstrates scalable, multi\u2011institution AI collaboration for biological discovery."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Using thousands of AI agents to uncover new leads in biological data",
+      "topics": [
+        "AI Agents",
+        "System Design",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
+    },
+    {
+      "id": "15a0583029b9da74a9de932531504a3a598c6b6ff7161a9c5585a66233077e0d",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LEAF is a LUT-aware transformer for FPGAs achieving nanosecond-scale inference.",
+            "It converts query/key/value projections and feed-forward layers into FPGA-native layers, tabulating constant matrix-vector multiplications to reduce LUT usage.",
+            "On jet tagging, LEAF improves accuracy by 1.8% and uses 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35 ns latency."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LEAF is a transformer for FPGAs that uses LUTs (lookup tables) efficiently, achieving nanosecond\u2011scale inference.",
+            "It rewrites attention (focus on important parts) and feed\u2011forward layers into FPGA\u2011native forms, tabulating constant matrix\u2011vector multiplications to reduce resource use.",
+            "On jet tagging, it outperforms prior models by 1.8% accuracy, using 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35ns."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LEAF: LUT\u2011aware Efficient Attention on FPGAs\u2014first nanosecond\u2011scale transformer converting query/key/value projections and feed\u2011forward into FPGA\u2011native layers via LUT\u2011aware training.",
+            "Attention block\u2019s constant matrix\u2011vector multiplications are tabulated, leaving remaining operations arithmetic, enabling 1.8\u2011point accuracy gain and 2.9\u00d7 LUT savings on jet\u2011tagging benchmark.",
+            "Most efficient LEAF\u2011based linformer with 64 input particles achieves 80.4% accuracy at 28k LUTs and 35 ns latency."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LEAF: LUT-aware Efficient Attention on FPGAs",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.27078"
     },
     {
       "id": "23675028600476715d5ad9fbc9077584366a308d41b42b8985819d05bf968a83",
@@ -289,43 +613,122 @@
       "url": "https://arxiv.org/abs/2610.27155"
     },
     {
-      "id": "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750",
+      "id": "8c69d8b194f3a59980d12712d50fe456eb7cb043a0758fbc186336af871be320",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Continuum-LM, a continuous-depth language model that reuses pretrained residual transformations as dynamical operators, enabling continuous hidden-state evolution.",
+            "Uses ordinary differential equations with higher-order numerical integration; solver order and step size control computation, allowing stable training across eight scientific tasks.",
+            "Achieves 7.77\u201310.96% higher exact-match accuracy over discrete counterparts at 0.6B and 1.7B scales, outperforming Ouro-style recurrent control under matched budgets."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces Continuum\u2011LM, a continuous\u2011depth (hidden states change continuously) language model that reuses pretrained residual transformations as dynamical operators, evolving via differential equations.",
+            "Uses higher-order numerical integration (more accurate calculation of equations), where solver order and step size control computation, enabling flexible depth without adding parameters.",
+            "Tested on eight scientific tasks, Continuum\u2011LM outperforms discrete models by 7.77\u201310.96% accuracy at 0.6B and 1.7B sizes, showing parameter reuse (same parameters used) boosts performance."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Continuum\u2011LM, a continuous\u2011depth language model that reuses pretrained residual transformations as dynamical operators, evolving hidden states via an ODE solved with higher\u2011order integration.",
+            "Solver order and step size control computation, enabling stable training and 7.77\u2011point (0.6B) / 10.96\u2011point (1.7B) exact\u2011match accuracy gains over discrete counterparts.",
+            "At 0.6B, Continuum\u2011LM outperforms an Ouro\u2011style recurrent control under matched parameter and residual\u2011function evaluation budgets, proving extensible depth via parameter reuse."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Dynamic System Inspired Continuous Large Language Model for AI4Science Tasks",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.26959"
+    },
+    {
+      "id": "8ee03648982651510b20f07b4a73efd57bc71935f9ac697719d7ee94b72d36cc",
       "image_url": null,
       "published_at": "2026-10-21T04:00:00Z",
       "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
-          "bullets": [],
-          "status": "failed"
+          "bullets": [
+            "LightCRS is a lightweight framework that unifies multi-domain multimodal conversational recommendation by precomputing product representations and using a small query-conditioned module.",
+            "It achieves state\u2011of\u2011the\u2011art HR@1, NDCG@5, and MRR, outperforming baselines by 35.4% HR@1 and reducing latency 266\u00d7.",
+            "The authors introduce MM\u2011R2A\u201125, a 25\u2011domain benchmark of Reddit conversations paired with Amazon listings, demonstrating joint training boosts HR@1 by 15.2%"
+          ],
+          "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
-            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
-            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
+            "LightCRS is a lightweight system that recommends products across many categories using a single shared model, avoiding separate models for each domain.",
+            "It precomputes product images and text with frozen encoders, then uses a 5.3M\u2011parameter module that fuses queries via cross\u2011attention and compares candidates with a Transformer.",
+            "On a 25\u2011domain benchmark, LightCRS beats baselines by 35% in top\u20111 hits and is 266 times faster per query, while joint training adds 15% accuracy."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
-            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
-            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
+            "LightCRS: lightweight framework using frozen VLM encoders to precompute multimodal product embeddings; online 5.3M-parameter query\u2011conditioned cross\u2011attention fuses evidence across domains.",
+            "Inter\u2011candidate Transformer scores candidates; shared across 25 domains, reducing latency 266\u00d7 and boosting HR@1 by 35.4% over baseline.",
+            "MM\u2011R2A\u201125 pairs Reddit dialogues with Amazon listings; joint multi\u2011domain training improves HR@1 by 15.2% over single\u2011domain models."
           ],
           "status": "ok"
         }
       },
-      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
+      "title": "LightCRS: Lightweight Multi-Domain Conversational Recommendation System",
       "topics": [
-        "AI Agents",
         "LLMs",
-        "Backend",
         "System Design",
-        "Cloud",
-        "Productivity"
+        "Machine Learning",
+        "AI Agents"
       ],
-      "url": "https://arxiv.org/abs/2610.26913"
+      "url": "https://arxiv.org/abs/2610.26948"
+    },
+    {
+      "id": "90066384ad84611d7d68ad6b99b9d9373fd59ec5620960e8a9cabfac18159620",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces a prompt-side structural complexity index scoring prompts on six dimensions, avoiding bias from generated code.",
+            "Evaluated 5,000 Python prompts with 21 models and four LLM judges; composite ICC(2,1)=0.872 indicates strong inter-rater reliability.",
+            "Found a nonmonotone breakpoint at composite 14.0 where pass rates jump from 83.4% to 90.1%; breakpoint persists after adjusting for task type."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces a new Prompt\u2011Side Structural Complexity Index (a score of prompt structure on six dimensions) that avoids bias from broken code.",
+            "Tested on 5,000 Python prompts and 21 models; a composite score of 14.0 marks a breakpoint where pass rates rise from 83% to 90%.",
+            "Higher prompt complexity can lower failures, but the effect differs by model and source; 25% of failures pair high prompt scores with low output complexity."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "status": "failed"
+        }
+      },
+      "title": "The Complexity Kink: A Prompt-Side Structural Complexity Index for Code-Generation Reliability",
+      "topics": [
+        "LLMs",
+        "Python",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2609.19616"
     },
     {
       "id": "ba13ede3667f75612ee0c4eb588297d262978572704132208c82cc3e9545fdfa",
@@ -367,6 +770,47 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.27889"
+    },
+    {
+      "id": "c8d6b2a986c429698973949a4843c8f32538c91ade5ab8e3f65ba07ac276c2de",
+      "image_url": null,
+      "published_at": "2026-10-21T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "cls fine-tuning outperforms s2s for hallucination detection, creating clear two-cluster geometry and strong class separation.",
+            "cls signal saturates before final layer, revealing an InfoWindow where task information emerges; upper layers become redundant.",
+            "Removing 31% of layers above InfoWindow keeps accuracy on Qwen3-4B/8B while cutting latency 1.4\u00d7."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Fine\u2011tuning a classifier head (CLS) outperforms a sequence\u2011to\u2011sequence (S2S) approach for detecting hallucinations in large language models.",
+            "CLS pushes hidden states into two distinct clusters, giving clear class separation and easy linear decoding, while S2S keeps states near the pretrained backbone.",
+            "Analysis shows a narrow middle layer window where task information appears; removing upper layers beyond this window cuts latency 1.4\u00d7 without losing accuracy."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Classifier\u2011head fine\u2011tuning (cls) outperforms seq\u2011to\u2011seq (s2s) on binary hallucination detection by inducing a two\u2011cluster geometry with strong class separation and linearly decodable labels.",
+            "Cls signal saturates before the final layer, creating an upper\u2011middle InfoWindow where task information emerges, followed by a redundant upper plateau that mirrors this signal.",
+            "Removing layers above the InfoWindow truncates 31% of Qwen3\u20114B/8B, preserving accuracy within seed noise while cutting latency by 1.4\u00d7."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "How Fine-Tuning Objectives Shape Layer-Wise Information in LLM Hallucination Detection",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.27711"
     },
     {
       "id": "e15f5cc6b720ff7e1397bd7962806f60388355e6579517da55a4544ec2ec398b",
@@ -411,158 +855,6 @@
       "url": "https://arxiv.org/abs/2610.26869"
     },
     {
-      "id": "8ee03648982651510b20f07b4a73efd57bc71935f9ac697719d7ee94b72d36cc",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LightCRS is a lightweight framework that unifies multi-domain multimodal conversational recommendation by precomputing product representations and using a small query-conditioned module.",
-            "It achieves state\u2011of\u2011the\u2011art HR@1, NDCG@5, and MRR, outperforming baselines by 35.4% HR@1 and reducing latency 266\u00d7.",
-            "The authors introduce MM\u2011R2A\u201125, a 25\u2011domain benchmark of Reddit conversations paired with Amazon listings, demonstrating joint training boosts HR@1 by 15.2%"
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LightCRS is a lightweight system that recommends products across many categories using a single shared model, avoiding separate models for each domain.",
-            "It precomputes product images and text with frozen encoders, then uses a 5.3M\u2011parameter module that fuses queries via cross\u2011attention and compares candidates with a Transformer.",
-            "On a 25\u2011domain benchmark, LightCRS beats baselines by 35% in top\u20111 hits and is 266 times faster per query, while joint training adds 15% accuracy."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LightCRS: lightweight framework using frozen VLM encoders to precompute multimodal product embeddings; online 5.3M-parameter query\u2011conditioned cross\u2011attention fuses evidence across domains.",
-            "Inter\u2011candidate Transformer scores candidates; shared across 25 domains, reducing latency 266\u00d7 and boosting HR@1 by 35.4% over baseline.",
-            "MM\u2011R2A\u201125 pairs Reddit dialogues with Amazon listings; joint multi\u2011domain training improves HR@1 by 15.2% over single\u2011domain models."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "LightCRS: Lightweight Multi-Domain Conversational Recommendation System",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.26948"
-    },
-    {
-      "id": "10f476c8a9f7eae9633e18e9028524f7248ca03a8b7df5caefd54de169cd6f19",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [],
-          "status": "failed"
-        },
-        "beginner_friendly": {
-          "bullets": [],
-          "status": "failed"
-        },
-        "technical": {
-          "bullets": [
-            "Zero\u2011training delete\u2011relaxation heuristic h_add predicts structural difficulty with mean Spearman |\u03c1|=0.931, outperforming ridge regression (0.707), object count (0.657), and ARC (0.400).",
-            "Renaming predicates from 0% to 100% drops LLM planning success from 67.5% to 40.0%, while refusals stay at 0%, isolating semantic effects.",
-            "Hybrid routing between an LLM and a symbolic planner relies more on calibrating to the target LLM\u2019s outcomes than on the structural score chosen."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "When Planning Problems Become Hard for LLMs: Separating Structural Complexity from Semantic Interpretability",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.26964"
-    },
-    {
-      "id": "c8d6b2a986c429698973949a4843c8f32538c91ade5ab8e3f65ba07ac276c2de",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "cls fine-tuning outperforms s2s for hallucination detection, creating clear two-cluster geometry and strong class separation.",
-            "cls signal saturates before final layer, revealing an InfoWindow where task information emerges; upper layers become redundant.",
-            "Removing 31% of layers above InfoWindow keeps accuracy on Qwen3-4B/8B while cutting latency 1.4\u00d7."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Fine\u2011tuning a classifier head (CLS) outperforms a sequence\u2011to\u2011sequence (S2S) approach for detecting hallucinations in large language models.",
-            "CLS pushes hidden states into two distinct clusters, giving clear class separation and easy linear decoding, while S2S keeps states near the pretrained backbone.",
-            "Analysis shows a narrow middle layer window where task information appears; removing upper layers beyond this window cuts latency 1.4\u00d7 without losing accuracy."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Classifier\u2011head fine\u2011tuning (cls) outperforms seq\u2011to\u2011seq (s2s) on binary hallucination detection by inducing a two\u2011cluster geometry with strong class separation and linearly decodable labels.",
-            "Cls signal saturates before the final layer, creating an upper\u2011middle InfoWindow where task information emerges, followed by a redundant upper plateau that mirrors this signal.",
-            "Removing layers above the InfoWindow truncates 31% of Qwen3\u20114B/8B, preserving accuracy within seed noise while cutting latency by 1.4\u00d7."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "How Fine-Tuning Objectives Shape Layer-Wise Information in LLM Hallucination Detection",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.27711"
-    },
-    {
-      "id": "90066384ad84611d7d68ad6b99b9d9373fd59ec5620960e8a9cabfac18159620",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces a prompt-side structural complexity index scoring prompts on six dimensions, avoiding bias from generated code.",
-            "Evaluated 5,000 Python prompts with 21 models and four LLM judges; composite ICC(2,1)=0.872 indicates strong inter-rater reliability.",
-            "Found a nonmonotone breakpoint at composite 14.0 where pass rates jump from 83.4% to 90.1%; breakpoint persists after adjusting for task type."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Introduces a new Prompt\u2011Side Structural Complexity Index (a score of prompt structure on six dimensions) that avoids bias from broken code.",
-            "Tested on 5,000 Python prompts and 21 models; a composite score of 14.0 marks a breakpoint where pass rates rise from 83% to 90%.",
-            "Higher prompt complexity can lower failures, but the effect differs by model and source; 25% of failures pair high prompt scores with low output complexity."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [],
-          "status": "failed"
-        }
-      },
-      "title": "The Complexity Kink: A Prompt-Side Structural Complexity Index for Code-Generation Reliability",
-      "topics": [
-        "LLMs",
-        "Python",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2609.19616"
-    },
-    {
       "id": "fe5468c76a03c1f066a0678c59cbc17927126caa19ddc2e7a3bcd2ae6cfd8505",
       "image_url": null,
       "published_at": "2026-10-21T04:00:00Z",
@@ -601,86 +893,6 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.26866"
-    },
-    {
-      "id": "8c69d8b194f3a59980d12712d50fe456eb7cb043a0758fbc186336af871be320",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces Continuum-LM, a continuous-depth language model that reuses pretrained residual transformations as dynamical operators, enabling continuous hidden-state evolution.",
-            "Uses ordinary differential equations with higher-order numerical integration; solver order and step size control computation, allowing stable training across eight scientific tasks.",
-            "Achieves 7.77\u201310.96% higher exact-match accuracy over discrete counterparts at 0.6B and 1.7B scales, outperforming Ouro-style recurrent control under matched budgets."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Introduces Continuum\u2011LM, a continuous\u2011depth (hidden states change continuously) language model that reuses pretrained residual transformations as dynamical operators, evolving via differential equations.",
-            "Uses higher-order numerical integration (more accurate calculation of equations), where solver order and step size control computation, enabling flexible depth without adding parameters.",
-            "Tested on eight scientific tasks, Continuum\u2011LM outperforms discrete models by 7.77\u201310.96% accuracy at 0.6B and 1.7B sizes, showing parameter reuse (same parameters used) boosts performance."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces Continuum\u2011LM, a continuous\u2011depth language model that reuses pretrained residual transformations as dynamical operators, evolving hidden states via an ODE solved with higher\u2011order integration.",
-            "Solver order and step size control computation, enabling stable training and 7.77\u2011point (0.6B) / 10.96\u2011point (1.7B) exact\u2011match accuracy gains over discrete counterparts.",
-            "At 0.6B, Continuum\u2011LM outperforms an Ouro\u2011style recurrent control under matched parameter and residual\u2011function evaluation budgets, proving extensible depth via parameter reuse."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Dynamic System Inspired Continuous Large Language Model for AI4Science Tasks",
-      "topics": [
-        "LLMs",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.26959"
-    },
-    {
-      "id": "15a0583029b9da74a9de932531504a3a598c6b6ff7161a9c5585a66233077e0d",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LEAF is a LUT-aware transformer for FPGAs achieving nanosecond-scale inference.",
-            "It converts query/key/value projections and feed-forward layers into FPGA-native layers, tabulating constant matrix-vector multiplications to reduce LUT usage.",
-            "On jet tagging, LEAF improves accuracy by 1.8% and uses 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35 ns latency."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LEAF is a transformer for FPGAs that uses LUTs (lookup tables) efficiently, achieving nanosecond\u2011scale inference.",
-            "It rewrites attention (focus on important parts) and feed\u2011forward layers into FPGA\u2011native forms, tabulating constant matrix\u2011vector multiplications to reduce resource use.",
-            "On jet tagging, it outperforms prior models by 1.8% accuracy, using 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35ns."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LEAF: LUT\u2011aware Efficient Attention on FPGAs\u2014first nanosecond\u2011scale transformer converting query/key/value projections and feed\u2011forward into FPGA\u2011native layers via LUT\u2011aware training.",
-            "Attention block\u2019s constant matrix\u2011vector multiplications are tabulated, leaving remaining operations arithmetic, enabling 1.8\u2011point accuracy gain and 2.9\u00d7 LUT savings on jet\u2011tagging benchmark.",
-            "Most efficient LEAF\u2011based linformer with 64 input particles achieves 80.4% accuracy at 28k LUTs and 35 ns latency."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "LEAF: LUT-aware Efficient Attention on FPGAs",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.27078"
     },
     {
       "id": "1be45fb0ef68a5f78aff9b0c3266fee630ee825083130359fdbcd0f3a60737cf",
@@ -1135,389 +1347,16 @@
         "Productivity"
       ],
       "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/"
-    },
-    {
-      "id": "f69a57c8fec3e131561ddabaf5a202eca596b254c94244349e9a85e4ab2020ac",
-      "image_url": null,
-      "published_at": "2026-10-14T20:02:22Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Netflix built a centralized Foundation Model to replace multiple specialized personalization models, aiming to reduce maintenance and leverage large-scale user data.",
-            "Three integration methods\u2014embeddings, subgraph, and fine\u2011tuning\u2014were tested to meet varying latency, tech stack, and model\u2011usage needs across teams.",
-            "The article highlights the practical gap in deploying large transformer models and shares Netflix\u2019s experimental results for production integration."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Netflix built a central Foundation Model to replace many specialized personalization models, learning from large user histories and content data.",
-            "They tested three integration methods\u2014embeddings, subgraph, fine\u2011tuning\u2014choosing based on latency, tech stack, and power usage.",
-            "The article explains how these methods fit into production systems, bridging research gaps between theory and practice."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Netflix built a large transformer-based Foundation Model to centralize member preference learning from extensive user interaction histories and content data, replacing multiple specialized homepage models.",
-            "Three integration strategies were tested: embeddings, subgraph, and fine\u2011tuning, chosen to meet differing latency, tech\u2011stack, and model\u2011power requirements across teams.",
-            "The blog highlights the lack of practical guidance for deploying large models in production and documents lessons from integrating the Foundation Model into personalization systems."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Integrating Netflix\u2019s Foundation Model into Personalization applications",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "Backend"
-      ],
-      "url": "https://netflixtechblog.com/integrating-netflixs-foundation-model-into-personalization-applications-cf176b5860eb?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "275cffd3230161900f0cb7d13cb3949a095fd8f2119c574ecb08373ca2507eec",
-      "image_url": null,
-      "published_at": "2026-10-14T19:59:08Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Netflix used DataJunction to centralize and govern scattered metric definitions, reducing redundancy in their experimentation platform.",
-            "The open\u2011source metric platform streamlined data workflows, improving insight extraction from large datasets.",
-            "Centralized semantic layer enabled easier metric discovery, consistency, and trust across Netflix\u2019s analytical teams."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Netflix struggled with scattered, inconsistent metrics across its experimentation platform, making it hard to trust and interpret test results.",
-            "DataJunction, an open\u2011source metric platform, served as a centralized semantic layer\u2014an organized, governed data hub\u2014to unify definitions, reduce redundancy, and simplify metric discovery.",
-            "By streamlining workflows and improving data visibility, DataJunction enabled Netflix teams to build dashboards and make data\u2011driven decisions more reliably."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Netflix used DataJunction, an open\u2011source metric platform, to centralize scattered metric definitions and reduce redundant datasets in its experimentation platform.",
-            "The platform provided a unified semantic layer, enabling easier introspection of metric definitions and values across fast\u2011moving teams.",
-            "By streamlining data workflows, DataJunction improved reliability of metrics for interpreting test results and supported data\u2011driven decisions."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "DataJunction as Netflix\u2019s answer to the missing piece of the modern data stack",
-      "topics": [
-        "Backend",
-        "System Design",
-        "Productivity"
-      ],
-      "url": "https://netflixtechblog.com/datajunction-as-netflixs-answer-to-the-missing-piece-of-the-modern-data-stack-92af926b40a5?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "3c8ef4ebd570790c54a38e439bedb05847367e8402b625bb72ffb622b2520a70",
-      "image_url": null,
-      "published_at": "2026-10-14T19:56:08Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads.",
-            "Development summary in the balanced tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads.",
-            "Development summary in the beginner friendly tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads.",
-            "Development summary in the technical tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "TimeSeries Tiered Storage Journey: Kafka/Flink Streams to Native Cassandra Cold Reads",
-      "topics": [
-        "AI Agents",
-        "Backend",
-        "System Design",
-        "Machine Learning",
-        "Productivity"
-      ],
-      "url": "https://netflixtechblog.com/timeseries-tiered-storage-journey-kafka-flink-streams-to-native-cassandra-cold-reads-e59d597c9d60?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "1317f60af3fc428ebe427d5cbf92ccd2cdf2eebf0e60ab7e2a3d204a8ceb8e19",
-      "image_url": null,
-      "published_at": "2026-10-14T19:51:35Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Netflix\u2019s Ads Event Publisher centralizes ad telemetry, enriches it with campaign context, and streams unified events to downstream systems while protecting member privacy.",
-            "Part II details the enrichment box, explaining why it was rebuilt to support live\u2011stream ads, de\u2011duplication, and richer data signals.",
-            "The redesign replaces database lookups with a real\u2011time streaming join in Apache Flink, enabling stateful processing and immediate event enrichment."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Netflix\u2019s Ads Event pipeline gathers ad telemetry, enriches it with campaign details, and publishes a single, unified stream for billing, metrics, and reporting.",
-            "This post explains the enrichment component, rebuilt with stateful stream processing that replaces a database lookup with a real\u2011time join in Apache Flink.",
-            "The redesign enables ads on live streams, removes duplicate events, and adds richer data signals for better measurement and reporting."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Centralized Ads Event Publisher collects ad telemetry, enriches with ad context, publishes unified stream to downstream consumers.",
-            "Rebuilt enrichment with stateful stream processing in Apache Flink, replacing database lookups with real\u2011time streaming joins.",
-            "Pipeline supports live\u2011stream ads, de\u2011duplication, richer signals, while encrypting member PII per Netflix privacy/security practices."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Behind the Scenes: Evolving Netflix\u2019s Ads Event Pipeline for Live \u2014 Part II",
-      "topics": [
-        "Backend",
-        "System Design",
-        "DevOps",
-        "Cloud",
-        "Productivity"
-      ],
-      "url": "https://netflixtechblog.com/behind-the-scenes-evolving-netflixs-ads-event-pipeline-for-live-part-ii-826ebf9ad9fb?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "e5d87b51d49b9e4da356b3af6a4e68906ca95ee6699797512e42160904369fc2",
-      "image_url": null,
-      "published_at": "2026-10-14T19:50:17Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Netflix Conductor: The Next Chapter.",
-            "Development summary in the balanced tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Netflix Conductor: The Next Chapter.",
-            "Development summary in the beginner friendly tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Netflix Conductor: The Next Chapter.",
-            "Development summary in the technical tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Netflix Conductor: The Next Chapter",
-      "topics": [
-        "AI Agents",
-        "Python",
-        "Backend",
-        "System Design",
-        "DevOps",
-        "Cloud",
-        "Productivity"
-      ],
-      "url": "https://netflixtechblog.com/netflix-conductor-the-next-chapter-41ad21067649?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "258958982f47942bdfb5d01dbc5ffc66088ef38669f94a7b6dc5ce70c634bf87",
-      "image_url": null,
-      "published_at": "2026-10-14T19:49:11Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Running Apache Spark experiments in my sleep (and on a plane).",
-            "Development summary in the balanced tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Running Apache Spark experiments in my sleep (and on a plane).",
-            "Development summary in the beginner friendly tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Running Apache Spark experiments in my sleep (and on a plane).",
-            "Development summary in the technical tone.",
-            "Generated locally without contacting an external model."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Running Apache Spark experiments in my sleep (and on a plane)",
-      "topics": [
-        "AI Agents",
-        "Backend",
-        "System Design",
-        "Machine Learning",
-        "Cloud",
-        "Productivity"
-      ],
-      "url": "https://netflixtechblog.com/running-apache-spark-experiments-in-my-sleep-and-on-a-plane-588816b6b5f8?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "b10315ba5afa279f6f4a19505a533f5483d32ad29bfbffc93e4a69039be6558f",
-      "image_url": null,
-      "published_at": "2026-10-14T19:48:49Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LLM-as-a-Judge systems require human oversight at every lifecycle stage to define quality, create benchmarks, monitor performance, and approve updates.",
-            "The authors argue that a reliable judge must be anchored in human judgment, not operate alone, and continuously align with human preferences.",
-            "They emphasize that the judge\u2019s reliability depends on building, aligning, and monitoring it over time to prevent drift and harmful outputs."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LLM-as-a-Judge is a second model that scores outputs of a primary language model, acting like a quick human reviewer.",
-            "The article stresses that judges must never work alone; humans must set what \u201cgood\u201d means, label data, and approve updates.",
-            "Continuous monitoring is needed because judges can drift and start approving harmful outputs; the lifecycle includes building, aligning, and monitoring."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LLM-as-a-Judge replaces manual evaluation, scoring outputs of a primary LLM to flag quality, but risks drift if not monitored.",
-            "Authors propose a lifecycle: build judges on human\u2011labeled benchmarks, align with human preferences, and embed HITL at every phase.",
-            "Continuous monitoring and human review of judge updates ensure trustworthiness, preventing silent degradation and harmful output approval."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "The Lifecycle of LLM-as-a-Judge: Building, Aligning, and Monitoring at scale",
-      "topics": [
-        "LLMs",
-        "Machine Learning",
-        "Backend"
-      ],
-      "url": "https://netflixtechblog.com/the-lifecycle-of-llm-as-a-judge-building-aligning-and-monitoring-at-scale-c95bd8283508?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "ec93ced270b0c65e467a5c6a47b9e527f4fee2b27caf8a973f274eb886a8bc39",
-      "image_url": null,
-      "published_at": "2026-10-14T19:48:20Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Stratum is Netflix\u2019s serverless media platform that schedules OCI container jobs on Titus for encoding, packaging, and quality tasks across diverse content types.",
-            "Engineers set CPU, memory, disk, and network limits in YAML, but manual tuning struggles with infrastructure changes, causing over\u2011provisioning or drift.",
-            "The article discusses automated right\u2011sizing to maintain optimal resource allocation and reduce inefficiencies in high\u2011throughput media workloads."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Stratum is Netflix\u2019s serverless media platform that runs containerized jobs (OCI images (container packages)) on the Titus compute system for encoding, packaging, and quality tasks.",
-            "Engineers set CPU, memory, disk, and network limits in a YAML file; keeping these values right is hard because infrastructure and workloads change.",
-            "Over\u2011provisioned or drifting configs waste resources and can hurt performance, so Stratum needs automated right\u2011sizing to adapt to content types like podcasts or live events."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Stratum, Netflix\u2019s serverless media platform, runs OCI\u2011packaged functions as batch jobs on Titus, handling encoding, packaging, inspection, and AI workloads across millions of containers daily.",
-            "Developers set CPU, memory, disk, and network limits in YAML; manual tuning is hard due to infrastructure changes, leading to over\u2011provisioning and drift.",
-            "The article explores automated right\u2011sizing techniques to adjust container resources, improving efficiency as new content formats (podcasts, live events, ads) enter the catalog."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Netflix Stratum Media Processing: Automated Container Right-Sizing",
-      "topics": [
-        "System Design",
-        "Cloud",
-        "Productivity",
-        "Backend"
-      ],
-      "url": "https://netflixtechblog.com/netflix-stratum-media-processing-automated-container-right-sizing-ddf9aa68a801?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "15138aab23bfbb834e46159cf2a02854c5d1989c6d85489249b20b0f3f1e5753",
-      "image_url": null,
-      "published_at": "2026-10-14T18:35:00Z",
-      "source": "Kubernetes Blog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Job pending may be due to Kueue still deciding resource allocation, not Kubernetes scheduler.",
-            "Headlamp Kueue plugin lets you view Workload status, condition messages, and navigate related LocalQueue, ClusterQueue, ResourceFlavor, and Cohort objects.",
-            "Requires a Kueue\u2011enabled cluster, Headlamp, 0.1.0\u2011alpha plugin, and read permissions for Kueue resources; plugin offers read\u2011only views."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "A Kubernetes Job can stay pending because Kueue is still deciding if it can use the requested resources, not just the scheduler.",
-            "Headlamp\u2019s Kueue plugin lets you view admission status by following links from the Workload to LocalQueue, ClusterQueue, ResourceFlavor, and Cohort.",
-            "The plugin is read\u2011only, requires Kueue and Headlamp installed, and your identity must have permission to read Kueue resources."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Kueue separates job admission from pod scheduling; a pending job may be waiting for Kueue to admit the Workload before Kubernetes schedules Pods.",
-            "Headlamp\u2019s 0.1\u2011alpha Kueue plugin lets users trace admission via Workload, LocalQueue, ClusterQueue, ResourceFlavor, and Cohort links, showing condition messages.",
-            "The plugin offers read\u2011only views for Kueue v1beta2 Cohorts, ClusterQueues, LocalQueues, ResourceFlavors, and Workloads; no create/edit actions are added."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Why Is My Kubernetes Job Still Pending? Tracing Kueue Admission with Headlamp",
-      "topics": [
-        "Backend",
-        "System Design",
-        "DevOps"
-      ],
-      "url": "https://kubernetes.io/blog/2026/10/14/tracing-kueue-admission-with-headlamp/"
     }
   ],
-  "generated_at": "2026-10-21T16:23:39.970050Z",
+  "generated_at": "2026-10-22T13:24:32.434324Z",
   "topic_counts": {
-    "AI Agents": 24,
-    "Backend": 20,
-    "LLMs": 26,
+    "AI Agents": 26,
+    "Backend": 13,
+    "LLMs": 29,
     "Machine Learning": 25,
-    "Other": 33,
-    "System Design": 28
+    "Other": 20,
+    "System Design": 22
   },
   "topics": [
     "AI Agents",
