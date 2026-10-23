@@ -1,6 +1,334 @@
 {
   "articles": [
     {
+      "id": "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kernel-managed shared memory lets agents tag structured memories; the kernel handles retrieval, privacy, and prompt injection.",
+            "Evaluation on AIOS with GPT\u20114o, Llama\u20113.1, Qwen\u20112.5 shows 2.4\u20114.0 point personalization gains over unmanaged Mem0, significant at p < 10\u207b\u00b9\u2078.",
+            "Compared to full context concatenation, kernel\u2011managed injection matches performance on two models, reduces prompt length, latency 15\u201161% lower, and cuts token usage."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kernel\u2011managed shared memory lets agents tag memories; the kernel retrieves, enforces privacy, and injects prompts, acting as the system\u2019s core controller.",
+            "On AIOS, we tested GPT\u20114o, Llama\u20113.1, and Qwen\u20112.5 across 1,800 trials, gaining 2.4\u20134.0 points over unmanaged memory (p < 10\u207b\u00b9\u2078).",
+            "Compared to full context concatenation, kernel\u2011managed injection matches two models, slightly lags one, yet uses 15\u201361% fewer tokens, lower latency, and cheaper inference."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces kernel-managed shared memory: agents write structured, tagged memories; kernel handles retrieval, privacy, prompt injection.",
+            "Implemented on AIOS; evaluated against Mem0, standard retrieval-augmented injection, and full context concatenation across GPT-4o, Llama-3.1:8B, Qwen-2.5:7B, 1,800 trials.",
+            "Kernel-managed approach improves personalization 2.4-4.0 points, matches or exceeds other methods, reduces latency 15-61%, lowers token usage and cost."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Kernel-Managed Shared Memory for System-Wide Personalization",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2609.10144"
+    },
+    {
+      "id": "071ab93645637197f5569a5c9478c6c8afa5b1691c9e5f78d13fcb2963264902",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces SpecEvo, a multi-LLM framework that uses lightweight models for parallel speculation and an Advisor to consolidate evidence, reserving expensive frontier models for strategic interventions.",
+            "The workflow alternates speculative generation and evidence consolidation, enabling cost\u2011efficient exploration while maintaining high performance across 176 scientific and algorithmic tasks.",
+            "SpecEvo reduces API cost by up to 80%, improves evaluation efficiency 1.5\u00d7 on equation discovery, and outperforms CO\u2011Bench baselines by 3.8%."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "SpecEvo uses many small LLMs (Speculators) to generate and tweak program ideas, while a lightweight Advisor learns from successes and failures to guide future searches.",
+            "A powerful frontier LLM (Navigator) checks the population at checkpoints, making big changes like combining ideas, fine\u2011tuning, or re\u2011framing when progress stalls.",
+            "Across 176 tasks, SpecEvo cuts API costs by up to 80%, speeds up evaluations 1.5\u00d7, and outperforms strong baselines, showing cost\u2011efficient scientific discovery."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "SpecEvo: multi-LLM framework using lightweight Speculators and Advisor for candidate generation and evidence consolidation, with frontier Navigator for strategic interventions.",
+            "Workflow: speculate-then-consolidate delegates routine exploration to inexpensive models, reserving frontier reasoning for sparse checkpoints, reducing API cost up to 80%.",
+            "Performance: on 176 tasks across four domains, matches/outperforms frontier baselines, 1.5\u00d7 evaluation efficiency on equation discovery, 3.8% improvement over CO-Bench."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Productivity",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.28706"
+    },
+    {
+      "id": "4cd0d3a23be15a1e655e3f9005f86d90b6563439111869b501c50195289058ae",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "PerMIT protects LLM agents by enforcing explicit trust on user inputs and gate-confirmed values, mediating untrusted environment data via a finite memory interface.",
+            "Two machine-checked integrity theorems in Lean 4 guarantee that only gate\u2011approved memory can influence sensitive actions, reducing attacks to a single auditable decision.",
+            "Community endorsements accumulate, and simulations show that as the community grows, poisoning risks drop while per\u2011user verification effort stays low."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "PerMIT is a memory architecture that protects persistent memory from injection attacks by only trusting user inputs and values confirmed at a gate.",
+            "It uses a finite memory interface and two machine\u2011checked integrity theorems (Lean 4) to ensure environment data reaches sensitive actions only after gate confirmation.",
+            "Community endorsements accumulate; once enough users confirm, items become community\u2011confirmed, reducing verification effort while lowering poisoning and false\u2011eviction risks."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "PerMIT enforces integrity of persistent memory by trusting only user-typed inputs confirmed at a gate, mediating untrusted values via a finite interface.",
+            "Two machine\u2011checked (Lean 4) integrity theorems guarantee that environment\u2011derived data reaches sensitive actions only after gate confirmation and influences agents solely through gate display.",
+            "Community endorsements log exact content; once sufficiently endorsed, items become community\u2011confirmed, reducing per\u2011user verification effort and lowering poisoning risk as the community scales."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design"
+      ],
+      "url": "https://arxiv.org/abs/2610.28987"
+    },
+    {
+      "id": "44e5cf64b54640ce0656c6690eeb0701463bd31a3ff3414621a51b8fec153c10",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces First Passage Attention (FPA) as a new attention mechanism that replaces path summation with path extrema to selectively erase intermediate context.",
+            "FPA generalizes Forgetting Transformer, forming a stack of alive keys via a shared learned walk, enabling constant-dimension heads to realize any subset of keys.",
+            "Experiments show one-layer FPA outperforms softmax and FoX baselines, matching FoX perplexity and achieving perfect passkey retrieval at 8\u00d7 training length with compressed cache."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "First Passage Attention (FPA) replaces cumulative decay in attention with a path\u2011extrema rule that can selectively erase intermediate tokens while keeping older ones.",
+            "FPA generalizes the Forgetting Transformer; its constant\u2011size head can keep any chosen keys, unlike softmax heads that need size proportional to key count.",
+            "In tests, a single\u2011layer FPA matches FoX (forgetting transformer) on perplexity and retrieves passkeys 8\u00d7 longer than training, even with a 25% compressed cache."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "FPA replaces softmax path summation with path extrema, lowering a key\u2019s logit by the deepest dip of a learned scalar field over the span.",
+            "Shared learned walk makes alive keys stack; a constant\u2011dimension head can realize any subset, whereas softmax heads require linear size.",
+            "Synthetic tests show one\u2011layer FPA converges to target key sets; 110M model matches FoX perplexity and retrieves 8\u00d7 longer passkeys with 25% cache compression."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "First Passage Attention",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.22714"
+    },
+    {
+      "id": "897ee53c8693109a84df74a94849379792d89f8d5959208865bf9d810999f05e",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces VeriEvolve, an evaluator-first evolution framework that builds an executable evaluator before optimizing agents for realistic stateful tasks.",
+            "Synthesizes instruction-grounded challenge states and freezes the evaluator as fitness signal, then refines it using counterfactual test cases from strong/weak runs.",
+            "Applied to 30 MCPMark filesystem tasks, it raises success rates for GLM\u20115.2 and Claude, proving evaluators guide search when observability and verification exist."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "VeriEvolve builds an evaluator first, creating test states from instructions and a program that checks them, giving agents a clear success signal.",
+            "In 30 tasks, it built 30 evaluators, 141 states, raising agent success from 6/30 to 18/30 for one model and 27/30 to 30/30 for another.",
+            "Tests on PostgreSQL, Playwright, Notion, GitHub show limits in observing results, state representation, and search, proving evaluators help when success can be seen."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "VeriEvolve constructs evaluator\u2011first evolution, synthesizing instruction\u2011grounded challenge states and an executable evaluator that serves as a frozen fitness signal during each workflow round.",
+            "Between rounds, the evaluator is revised by converting strong and weak run end states into counterfactual test pairs, refining 30 evaluators across 30 MCPMark tasks.",
+            "Results: 141/141 agreement on generated suites, 113/122 on held\u2011out states, raising GLM\u20115.2 success 6/30\u219218/30 and Claude 27/30\u219230/30; cross\u2011environment tests on PostgreSQL, Playwright, Notion, GitHub."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "VeriEvolve: Evaluator-First Evolution for Tool-Using Agents",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.29005"
+    },
+    {
+      "id": "eee6fa42d71dc5a43db82b38ebcb42bd5cd6b1fbf9ca8ec9084a7f57b1974e49",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Architecture uses tools and memory to selectively correct wrist PPG heart rate estimates, addressing motion artifacts.",
+            "Trained on PPG\u2011DaLiA, tested on four datasets; MAE reduced up to 44.5%, with significant error decreases on GalaxyPPG.",
+            "Real\u2011time wearable system implemented; prototype recordings showed MAE drop from 9.09 to 4.45 bpm without extra rejection."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Agent uses tools and memory to improve wrist heart\u2011rate readings from photoplethysmography (PPG) by selecting or correcting estimates based on pulse, motion, and past data.",
+            "Trained on PPG\u2011DaLiA and tested on four datasets, the system cut mean absolute error by up to 44.5%, especially on GalaxyPPG, by reducing harmful corrections.",
+            "Real\u2011time prototype on a smartphone lowered error from 9.09 to 4.45 beats per minute in four recordings, showing practical feasibility without extra data rejection."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Agent architecture uses tools and memory around a fixed heart\u2011rate estimator, generating candidate corrections from pulse, motion, and limited history, then selecting via predicted benefit/harms.",
+            "Risk gate retains, corrects, or rejects outputs; trained on PPG\u2011DaLiA, tested on Wrist Exercise, GalaxyPPG, WildPPG, cutting MAE up to 44.5 %.",
+            "Real\u2011time wearable acquisition, Bluetooth, and smartphone deployment achieved a prototype MAE drop from 9.09 to 4.45 bpm without extra rejection, showing practical feasibility."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "An Agent Architecture with Tools and Memory for Selective Correction of Wrist PPG Heart Rate Estimates",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.30688"
+    },
+    {
+      "id": "51888f116f5b083740bce79640ccacdc80055a08000c769931982fc83218805e",
+      "image_url": null,
+      "published_at": "2026-10-22T22:24:34Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Converts database grading metrics into reinforcement learning reward signals for training agents.",
+            "Employs post\u2011training agents that refine behavior after initial learning.",
+            "Integrates ThinkingBox framework to manage reward shaping and policy evaluation."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Database grading is the process of automatically checking database queries for correctness and performance.",
+            "Reinforcement learning rewards are signals that tell an agent how well it is doing, guiding its future actions.",
+            "ThinkingBox is a tool that lets developers add post\u2011training reinforcement learning to agents, improving their performance after initial training."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Converts database grading metrics into reinforcement learning reward signals for post-training agent fine-tuning.",
+            "Employs ThinkingBox framework to adapt agents after training, enabling dynamic reward shaping.",
+            "Focuses on integrating database evaluation pipelines with RL agents, potentially using version 1.0 of ThinkingBox."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+    },
+    {
+      "id": "3ed693bf52dd2dcbb855a489dded6ac1af22cfdb0a080428eaffe850732f24d3",
+      "image_url": null,
+      "published_at": "2026-10-22T22:19:12Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Titus is a Kubernetes-based, multi-tenant container platform running millions of containers across thousands of EC2 instances.",
+            "For demanding real\u2011time workloads, single\u2011tenant mode gives each task its own VM while keeping the same API and managed experience.",
+            "The post examines why shared\u2011kernel isolation falls short, how isolation is measured, and the options weighed for stronger isolation."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Titus is Netflix\u2019s Kubernetes-based container platform that runs millions of containers on EC2, sharing hosts across teams.",
+            "Some real\u2011time workloads need stronger isolation, so single\u2011tenant mode gives each task its own virtual machine while keeping the same API and management.",
+            "The post explains why shared\u2011kernel isolation fails for certain workloads, how isolation is measured, and the options Netflix weighed for stronger isolation."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Titus is a Kubernetes\u2011based, multi\u2011tenant platform running millions of containers weekly across thousands of EC2 instances with patched control and data planes.",
+            "Single\u2011tenant Titus gives each task its own VM, keeping the same API, deployment path, and managed experience while providing isolation for demanding real\u2011time workloads.",
+            "The team explains why shared\u2011kernel isolation fails, how they measure isolation, and the options considered, such as micro\u2011VMs, to meet strict isolation requirements."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Cloud"
+      ],
+      "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4"
+    },
+    {
       "id": "10f476c8a9f7eae9633e18e9028524f7248ca03a8b7df5caefd54de169cd6f19",
       "image_url": null,
       "published_at": "2026-10-22T04:00:00Z",
@@ -40,45 +368,6 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.26964"
-    },
-    {
-      "id": "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750",
-      "image_url": null,
-      "published_at": "2026-10-22T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [],
-          "status": "failed"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
-            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
-            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
-            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
-            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "Cloud",
-        "Productivity"
-      ],
-      "url": "https://arxiv.org/abs/2610.26913"
     },
     {
       "id": "7100a9423b909b319969f6f3d4d8c2faf20067c1d7e918a71dd8df8d23ad9af8",
@@ -122,45 +411,84 @@
       "url": "https://arxiv.org/abs/2610.27781"
     },
     {
-      "id": "ffb1232e61c43d9947c07dc558f0931a24667c83b8b1763e3284c0da85ce3150",
+      "id": "7f07b7a2a2a2c7ffe91ed3801fe17925927315def6cba940f268cfe3bd27cfdd",
+      "image_url": null,
+      "published_at": "2026-10-22T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces Bayesian Evolutionary Optimization for designing multi-agent systems, combining evolutionary graph generation with Bayesian selection.",
+            "Uses graph-aware Gaussian Process and Expected Improvement to guide costly evaluations, avoiding LLM-based candidate selection.",
+            "Evaluated on BigCodeBench and TabPFN, achieving top performance in code generation and improved preprocessing on temporal tabular data."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Bayesian Evolutionary Optimization blends evolutionary search with Bayesian methods to automatically design multi-agent system (MAS) topologies, reducing costly evaluations.",
+            "The framework uses a graph\u2011aware Gaussian Process (a statistical model) and Expected Improvement to rank candidate workflows, offering a clear selection rule versus language\u2011model guessing.",
+            "Experiments on BigCodeBench and TabPFN show evolved MAS outperform systems on code generation and improve preprocessing on time\u2011series data while staying competitive on standard datasets."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Bayesian Evolutionary Optimization combining evolutionary operators and graph\u2011aware Gaussian Process with Expected Improvement to auto\u2011discover MAS topologies.",
+            "Evaluated on BigCodeBench (code generation) and TabPFN preprocessing; evolved MAS outperformed other agents on BigCodeBench and improved temporal tabular results.",
+            "Demonstrates Bayesian selection effectively guides costly evolutionary search, achieving top performance while remaining competitive on IID datasets."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Design and Tuning of Multi-Agent Systems Using Bayesian Evolutionary Optimization",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.29276"
+    },
+    {
+      "id": "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750",
       "image_url": null,
       "published_at": "2026-10-22T04:00:00Z",
       "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
-          "bullets": [
-            "SAPD learns from offline trajectories without new environment interactions, using step advantages to refine policy.",
-            "It decomposes multi-turn trajectories into decision contexts for on\u2011policy distillation, preventing catastrophic forgetting seen in supervised fine\u2011tuning.",
-            "Experiments on ALFWorld, WebShop, and Search\u2011based QA show improved performance and 4.7\u00d7 faster training steps than online OPD."
-          ],
-          "status": "ok"
+          "bullets": [],
+          "status": "failed"
         },
         "beginner_friendly": {
           "bullets": [
-            "SAPD learns from recorded agent interactions without needing new environment runs, using step advantage signals to guide policy updates.",
-            "The method splits multi-turn trajectories into single decision contexts, allowing the student model to generate responses based on past history.",
-            "Experiments on ALFWorld, WebShop, and Search-based QA show SAPD outperforms supervised fine-tuning, reduces forgetting, and is 4.7\u00d7 faster per training step."
+            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
+            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
+            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "Introduces SAPD, a policy distillation technique that learns from offline agent trajectories without new environment interactions, using relative step advantage signals.",
-            "Decomposes multi-turn trajectories into individual decision contexts for on\u2011policy distillation, enabling the student to generate responses conditioned on recorded histories.",
-            "Outperforms supervised fine\u2011tuning by reducing catastrophic forgetting, achieves 4.7\u00d7 faster training steps than online OPD, and improves results on ALFWorld, WebShop, and Search\u2011based QA."
+            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
+            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
+            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
           ],
           "status": "ok"
         }
       },
-      "title": "SAPD: Learning from Agent Experience without Environment Interaction",
+      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
       "topics": [
         "AI Agents",
         "LLMs",
         "Backend",
-        "Machine Learning"
+        "System Design",
+        "Cloud",
+        "Productivity"
       ],
-      "url": "https://arxiv.org/abs/2610.27847"
+      "url": "https://arxiv.org/abs/2610.26913"
     },
     {
       "id": "c6bd955905173ff0249726973c19445fe2d9676e911c64462a7a5ee54cc9006a",
@@ -204,45 +532,45 @@
       "url": "https://arxiv.org/abs/2610.28988"
     },
     {
-      "id": "7f07b7a2a2a2c7ffe91ed3801fe17925927315def6cba940f268cfe3bd27cfdd",
+      "id": "ffb1232e61c43d9947c07dc558f0931a24667c83b8b1763e3284c0da85ce3150",
       "image_url": null,
       "published_at": "2026-10-22T04:00:00Z",
-      "source": "arXiv Machine Learning",
+      "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
           "bullets": [
-            "Introduces Bayesian Evolutionary Optimization for designing multi-agent systems, combining evolutionary graph generation with Bayesian selection.",
-            "Uses graph-aware Gaussian Process and Expected Improvement to guide costly evaluations, avoiding LLM-based candidate selection.",
-            "Evaluated on BigCodeBench and TabPFN, achieving top performance in code generation and improved preprocessing on temporal tabular data."
+            "SAPD learns from offline trajectories without new environment interactions, using step advantages to refine policy.",
+            "It decomposes multi-turn trajectories into decision contexts for on\u2011policy distillation, preventing catastrophic forgetting seen in supervised fine\u2011tuning.",
+            "Experiments on ALFWorld, WebShop, and Search\u2011based QA show improved performance and 4.7\u00d7 faster training steps than online OPD."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "Bayesian Evolutionary Optimization blends evolutionary search with Bayesian methods to automatically design multi-agent system (MAS) topologies, reducing costly evaluations.",
-            "The framework uses a graph\u2011aware Gaussian Process (a statistical model) and Expected Improvement to rank candidate workflows, offering a clear selection rule versus language\u2011model guessing.",
-            "Experiments on BigCodeBench and TabPFN show evolved MAS outperform systems on code generation and improve preprocessing on time\u2011series data while staying competitive on standard datasets."
+            "SAPD learns from recorded agent interactions without needing new environment runs, using step advantage signals to guide policy updates.",
+            "The method splits multi-turn trajectories into single decision contexts, allowing the student model to generate responses based on past history.",
+            "Experiments on ALFWorld, WebShop, and Search-based QA show SAPD outperforms supervised fine-tuning, reduces forgetting, and is 4.7\u00d7 faster per training step."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "Introduces Bayesian Evolutionary Optimization combining evolutionary operators and graph\u2011aware Gaussian Process with Expected Improvement to auto\u2011discover MAS topologies.",
-            "Evaluated on BigCodeBench (code generation) and TabPFN preprocessing; evolved MAS outperformed other agents on BigCodeBench and improved temporal tabular results.",
-            "Demonstrates Bayesian selection effectively guides costly evolutionary search, achieving top performance while remaining competitive on IID datasets."
+            "Introduces SAPD, a policy distillation technique that learns from offline agent trajectories without new environment interactions, using relative step advantage signals.",
+            "Decomposes multi-turn trajectories into individual decision contexts for on\u2011policy distillation, enabling the student to generate responses conditioned on recorded histories.",
+            "Outperforms supervised fine\u2011tuning by reducing catastrophic forgetting, achieves 4.7\u00d7 faster training steps than online OPD, and improves results on ALFWorld, WebShop, and Search\u2011based QA."
           ],
           "status": "ok"
         }
       },
-      "title": "Design and Tuning of Multi-Agent Systems Using Bayesian Evolutionary Optimization",
+      "title": "SAPD: Learning from Agent Experience without Environment Interaction",
       "topics": [
         "AI Agents",
         "LLMs",
-        "Productivity",
+        "Backend",
         "Machine Learning"
       ],
-      "url": "https://arxiv.org/abs/2610.29276"
+      "url": "https://arxiv.org/abs/2610.27847"
     },
     {
       "id": "885fe3c67de05637ce5b9612baa0a6e50e729bbbcf8015191def57f8d564f7ca",
@@ -1308,55 +1636,16 @@
         "Productivity"
       ],
       "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "feaefaa2e2292ba8ee0af1f5ba945d86bde107dd0fa3c05afc85a94711e186b8",
-      "image_url": null,
-      "published_at": "2026-10-15T19:39:27Z",
-      "source": "GitHub Blog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Ambient intelligence integrates AI, agents, voice, and physical controls to transform software development from tool operation to intent expression.",
-            "This shift enables developers to focus more on building rather than managing tools.",
-            "The GitHub Blog discusses how these interfaces help maintain developer focus and streamline workflows."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Ambient intelligence is next developer interface, using AI (artificial intelligence), agents (autonomous programs), voice, and physical controls to let developers express intent of operating tools.",
-            "This shift frees developers from repetitive tool use, allowing them to focus on building software rather than managing interfaces.",
-            "Ambient intelligence blends AI, voice, and physical controls to create a more intuitive, intent\u2011driven development experience."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Ambient intelligence merges AI, agents, voice, and physical controls to create a seamless developer interface.",
-            "This shift moves developers from operating tools to expressing intent, reducing context switching.",
-            "By automating routine interactions, ambient interfaces help developers stay focused on building core functionality."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "The next developer interface is ambient intelligence",
-      "topics": [
-        "AI Agents",
-        "Productivity"
-      ],
-      "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/"
     }
   ],
-  "generated_at": "2026-10-22T13:24:32.434324Z",
+  "generated_at": "2026-10-23T05:18:06.830843Z",
   "topic_counts": {
-    "AI Agents": 26,
-    "Backend": 13,
-    "LLMs": 29,
-    "Machine Learning": 25,
-    "Other": 20,
-    "System Design": 22
+    "AI Agents": 32,
+    "Backend": 20,
+    "LLMs": 34,
+    "Machine Learning": 29,
+    "Other": 24,
+    "System Design": 26
   },
   "topics": [
     "AI Agents",

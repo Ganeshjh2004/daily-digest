@@ -2,15 +2,19 @@
   "items": {
     "0097d099d5c66d3d2c2984ba87f512c0ac0fc70fd79bc0a790f5edd4522aeab6": {
       "image_url": null,
-      "last_seen": "2026-10-22T13:24:32.434324Z",
+      "last_seen": "2026-10-23T05:18:06.830843Z",
       "published_at": "2026-05-14T18:35:00Z",
       "source": "Kubernetes Blog",
       "source_type": "rss",
       "summaries": {
         "balanced": {
-          "bullets": [],
+          "bullets": [
+            "The .spec.externalIPs field, intended for load\u2011balancer\u2011like behavior in non\u2011cloud clusters, has been formally deprecated in Kubernetes v1.36 due to security concerns.",
+            "Since v1.21, users are advised to disable .spec.externalIPs, and an admission controller (DenyServiceExternalIPs) can enforce this restriction.",
+            "Future releases will remove kube\u2011proxy support for the field and update conformance criteria to disallow its use."
+          ],
           "model": "openai/gpt-oss-20b",
-          "status": "failed"
+          "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
@@ -81,6 +85,93 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/openai-to-acquire-ona"
+    },
+    "01572b4c34e91a6301328019f096b326f3eef5a74d18cb0b6fc85982a8c8e8fd": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-03-11T11:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI extended the Responses API into an agent runtime, adding a computer environment for interactive tasks.",
+            "The system integrates a shell tool and hosted containers, enabling secure, scalable execution of agents with file access and tool usage.",
+            "Agents maintain state across interactions, leveraging the API\u2019s capabilities to manage files, tools, and persistent context."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI created an agent runtime that turns the Responses API into a tool for building autonomous agents.",
+            "The system uses a shell tool and hosted containers to give agents access to files, tools, and persistent state while keeping operations secure.",
+            "This architecture allows agents to run scalable, isolated tasks, ensuring that each agent\u2019s environment is separate and protected from others."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI extended the Responses API to support agent execution by integrating a shell tool that allows commands to be run in a controlled environment.",
+            "The runtime runs inside hosted containers, providing isolation, file access, tool integration, and persistent state across agent interactions.",
+            "This architecture enables secure, scalable agents that can manipulate files, invoke external tools, and maintain state, all orchestrated through the Responses API."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "From model to agent: Equipping the Responses API with a computer environment",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/equip-responses-api-computer-environment"
+    },
+    "071ab93645637197f5569a5c9478c6c8afa5b1691c9e5f78d13fcb2963264902": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces SpecEvo, a multi-LLM framework that uses lightweight models for parallel speculation and an Advisor to consolidate evidence, reserving expensive frontier models for strategic interventions.",
+            "The workflow alternates speculative generation and evidence consolidation, enabling cost\u2011efficient exploration while maintaining high performance across 176 scientific and algorithmic tasks.",
+            "SpecEvo reduces API cost by up to 80%, improves evaluation efficiency 1.5\u00d7 on equation discovery, and outperforms CO\u2011Bench baselines by 3.8%."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "SpecEvo uses many small LLMs (Speculators) to generate and tweak program ideas, while a lightweight Advisor learns from successes and failures to guide future searches.",
+            "A powerful frontier LLM (Navigator) checks the population at checkpoints, making big changes like combining ideas, fine\u2011tuning, or re\u2011framing when progress stalls.",
+            "Across 176 tasks, SpecEvo cuts API costs by up to 80%, speeds up evaluations 1.5\u00d7, and outperforms strong baselines, showing cost\u2011efficient scientific discovery."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "SpecEvo: multi-LLM framework using lightweight Speculators and Advisor for candidate generation and evidence consolidation, with frontier Navigator for strategic interventions.",
+            "Workflow: speculate-then-consolidate delegates routine exploration to inexpensive models, reserving frontier reasoning for sparse checkpoints, reducing API cost up to 80%.",
+            "Performance: on 176 tasks across four domains, matches/outperforms frontier baselines, 1.5\u00d7 evaluation efficiency on equation discovery, 3.8% improvement over CO-Bench."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Productivity",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.28706"
     },
     "0799939eea555f7a6e94cc9084e2e41abf21b644358d249c04ea39996a6b3630": {
       "image_url": null,
@@ -1173,6 +1264,50 @@
       ],
       "url": "https://openai.com/index/how-agents-are-transforming-work"
     },
+    "3ed693bf52dd2dcbb855a489dded6ac1af22cfdb0a080428eaffe850732f24d3": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-10-22T22:19:12Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Titus is a Kubernetes-based, multi-tenant container platform running millions of containers across thousands of EC2 instances.",
+            "For demanding real\u2011time workloads, single\u2011tenant mode gives each task its own VM while keeping the same API and managed experience.",
+            "The post examines why shared\u2011kernel isolation falls short, how isolation is measured, and the options weighed for stronger isolation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Titus is Netflix\u2019s Kubernetes-based container platform that runs millions of containers on EC2, sharing hosts across teams.",
+            "Some real\u2011time workloads need stronger isolation, so single\u2011tenant mode gives each task its own virtual machine while keeping the same API and management.",
+            "The post explains why shared\u2011kernel isolation fails for certain workloads, how isolation is measured, and the options Netflix weighed for stronger isolation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Titus is a Kubernetes\u2011based, multi\u2011tenant platform running millions of containers weekly across thousands of EC2 instances with patched control and data planes.",
+            "Single\u2011tenant Titus gives each task its own VM, keeping the same API, deployment path, and managed experience while providing isolation for demanding real\u2011time workloads.",
+            "The team explains why shared\u2011kernel isolation fails, how they measure isolation, and the options considered, such as micro\u2011VMs, to meet strict isolation requirements."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Cloud"
+      ],
+      "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4"
+    },
     "3f084f3ffd4480f9aa0d323bcf18b3a6f1996519b847880c284be32773c11949": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -1259,6 +1394,50 @@
         "Machine Learning"
       ],
       "url": "https://huggingface.co/blog/is-it-agentic-enough"
+    },
+    "44e5cf64b54640ce0656c6690eeb0701463bd31a3ff3414621a51b8fec153c10": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces First Passage Attention (FPA) as a new attention mechanism that replaces path summation with path extrema to selectively erase intermediate context.",
+            "FPA generalizes Forgetting Transformer, forming a stack of alive keys via a shared learned walk, enabling constant-dimension heads to realize any subset of keys.",
+            "Experiments show one-layer FPA outperforms softmax and FoX baselines, matching FoX perplexity and achieving perfect passkey retrieval at 8\u00d7 training length with compressed cache."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "First Passage Attention (FPA) replaces cumulative decay in attention with a path\u2011extrema rule that can selectively erase intermediate tokens while keeping older ones.",
+            "FPA generalizes the Forgetting Transformer; its constant\u2011size head can keep any chosen keys, unlike softmax heads that need size proportional to key count.",
+            "In tests, a single\u2011layer FPA matches FoX (forgetting transformer) on perplexity and retrieves passkeys 8\u00d7 longer than training, even with a 25% compressed cache."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "FPA replaces softmax path summation with path extrema, lowering a key\u2019s logit by the deepest dip of a learned scalar field over the span.",
+            "Shared learned walk makes alive keys stack; a constant\u2011dimension head can realize any subset, whereas softmax heads require linear size.",
+            "Synthetic tests show one\u2011layer FPA converges to target key sets; 110M model matches FoX perplexity and retrieves 8\u00d7 longer passkeys with 25% cache compression."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "First Passage Attention",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.22714"
     },
     "4586c5f3db353f7d037e30fd31269276ba967af06b005053f1d5456ba7abb250": {
       "image_url": null,
@@ -1525,6 +1704,50 @@
       ],
       "url": "https://kubernetes.io/blog/2026/05/13/kubernetes-v1-36-advancing-workload-aware-scheduling/"
     },
+    "4cd0d3a23be15a1e655e3f9005f86d90b6563439111869b501c50195289058ae": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "PerMIT protects LLM agents by enforcing explicit trust on user inputs and gate-confirmed values, mediating untrusted environment data via a finite memory interface.",
+            "Two machine-checked integrity theorems in Lean 4 guarantee that only gate\u2011approved memory can influence sensitive actions, reducing attacks to a single auditable decision.",
+            "Community endorsements accumulate, and simulations show that as the community grows, poisoning risks drop while per\u2011user verification effort stays low."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "PerMIT is a memory architecture that protects persistent memory from injection attacks by only trusting user inputs and values confirmed at a gate.",
+            "It uses a finite memory interface and two machine\u2011checked integrity theorems (Lean 4) to ensure environment data reaches sensitive actions only after gate confirmation.",
+            "Community endorsements accumulate; once enough users confirm, items become community\u2011confirmed, reducing verification effort while lowering poisoning and false\u2011eviction risks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "PerMIT enforces integrity of persistent memory by trusting only user-typed inputs confirmed at a gate, mediating untrusted values via a finite interface.",
+            "Two machine\u2011checked (Lean 4) integrity theorems guarantee that environment\u2011derived data reaches sensitive actions only after gate confirmation and influences agents solely through gate display.",
+            "Community endorsements log exact content; once sufficiently endorsed, items become community\u2011confirmed, reducing per\u2011user verification effort and lowering poisoning risk as the community scales."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design"
+      ],
+      "url": "https://arxiv.org/abs/2610.28987"
+    },
     "50f31b94c19898a3b6f1ac5cd3bb0d2788b222dae330c85b980e0e3f1a6964eb": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -1571,6 +1794,49 @@
         "Cloud"
       ],
       "url": "https://kubernetes.io/blog/2026/10/05/scaling-kubernetes-workloads-with-node-swap/"
+    },
+    "51888f116f5b083740bce79640ccacdc80055a08000c769931982fc83218805e": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-10-22T22:24:34Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Converts database grading metrics into reinforcement learning reward signals for training agents.",
+            "Employs post\u2011training agents that refine behavior after initial learning.",
+            "Integrates ThinkingBox framework to manage reward shaping and policy evaluation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Database grading is the process of automatically checking database queries for correctness and performance.",
+            "Reinforcement learning rewards are signals that tell an agent how well it is doing, guiding its future actions.",
+            "ThinkingBox is a tool that lets developers add post\u2011training reinforcement learning to agents, improving their performance after initial training."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Converts database grading metrics into reinforcement learning reward signals for post-training agent fine-tuning.",
+            "Employs ThinkingBox framework to adapt agents after training, enabling dynamic reward shaping.",
+            "Focuses on integrating database evaluation pipelines with RL agents, potentially using version 1.0 of ThinkingBox."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
     },
     "51aaf081823175d3b5f124a125717004208533c5a188f2d7488dedbc6aa2fa42": {
       "image_url": null,
@@ -2801,6 +3067,50 @@
       ],
       "url": "https://arxiv.org/abs/2610.23255"
     },
+    "897ee53c8693109a84df74a94849379792d89f8d5959208865bf9d810999f05e": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces VeriEvolve, an evaluator-first evolution framework that builds an executable evaluator before optimizing agents for realistic stateful tasks.",
+            "Synthesizes instruction-grounded challenge states and freezes the evaluator as fitness signal, then refines it using counterfactual test cases from strong/weak runs.",
+            "Applied to 30 MCPMark filesystem tasks, it raises success rates for GLM\u20115.2 and Claude, proving evaluators guide search when observability and verification exist."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "VeriEvolve builds an evaluator first, creating test states from instructions and a program that checks them, giving agents a clear success signal.",
+            "In 30 tasks, it built 30 evaluators, 141 states, raising agent success from 6/30 to 18/30 for one model and 27/30 to 30/30 for another.",
+            "Tests on PostgreSQL, Playwright, Notion, GitHub show limits in observing results, state representation, and search, proving evaluators help when success can be seen."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "VeriEvolve constructs evaluator\u2011first evolution, synthesizing instruction\u2011grounded challenge states and an executable evaluator that serves as a frozen fitness signal during each workflow round.",
+            "Between rounds, the evaluator is revised by converting strong and weak run end states into counterfactual test pairs, refining 30 evaluators across 30 MCPMark tasks.",
+            "Results: 141/141 agreement on generated suites, 113/122 on held\u2011out states, raising GLM\u20115.2 success 6/30\u219218/30 and Claude 27/30\u219230/30; cross\u2011environment tests on PostgreSQL, Playwright, Notion, GitHub."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "VeriEvolve: Evaluator-First Evolution for Tool-Using Agents",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.29005"
+    },
     "8afdb503cc5635992639a26513506f28523b4a0b75bbd01a7786187c3b0eba2d": {
       "image_url": null,
       "last_seen": "2026-10-22T13:24:32.434324Z",
@@ -3407,6 +3717,92 @@
         "Cloud"
       ],
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-managed-agents-powered-by-openai-q3-service-availability-updates-kiro-workflows-and-more-october-5-2026/"
+    },
+    "ab2932b75c4ab178262a6b027cfe1b425fb3b3085a6db4d321e2e0df52239be3": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2024-08-19T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Overview of deploying Meta Llama 3.1 405B on Google Cloud Vertex AI.",
+            "Step-by-step guide to set up Vertex AI environment for the model.",
+            "Tips for optimizing performance and managing resources during deployment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Deploy Meta Llama 3.1 405B on Vertex AI: a guide to running the large language model on Google Cloud's managed AI platform.",
+            "Key steps include setting up a GCP (Google Cloud Platform) project, installing the Vertex AI SDK, uploading the model, and configuring an inference endpoint.",
+            "Benefits are scalable, managed inference (model predictions), reduced operational overhead, and easy integration with other Google Cloud services."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Deploy Meta Llama 3.1 405B model to Vertex AI for scalable inference",
+            "Use Vertex AI endpoints to host the 405B parameter Llama 3.1 model",
+            "Configure GPU resources and scaling settings for optimal performance"
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Deploy Meta Llama 3.1 405B on Google Cloud Vertex AI",
+      "topics": [
+        "LLMs",
+        "Cloud",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/llama31-on-vertex-ai"
+    },
+    "ae10eb4597fe2dea3b838512ee33b4589fb7c90fcb34260eaf8654f1a2d9895d": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-01-23T12:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "The Codex agent loop is a technical framework that coordinates model execution, tool integration, and prompt management to enable automated task completion.",
+            "Codex CLI orchestrates models, tools, and prompts by sequencing requests and handling responses, ensuring each component interacts seamlessly during execution.",
+            "Performance is monitored through the Responses API, providing metrics on latency, throughput, and resource usage to optimize agent behavior."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The Codex agent loop coordinates models, tools, and prompts to create AI responses.",
+            "Codex CLI uses the Responses API to orchestrate these components and track performance.",
+            "The article dives into how the loop works, showing the flow of data and control."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Codex CLI drives the agent loop, coordinating model calls, tool invocations, and prompt management in a single orchestrated workflow.",
+            "The loop integrates multiple models and external tools, passing context through prompts to generate context\u2011aware responses.",
+            "Performance is monitored via the Responses API, providing metrics and feedback for iterative refinement of the agent."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Unrolling the Codex agent loop",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/unrolling-the-codex-agent-loop"
     },
     "b10315ba5afa279f6f4a19505a533f5483d32ad29bfbffc93e4a69039be6558f": {
       "image_url": null,
@@ -4024,6 +4420,94 @@
       ],
       "url": "https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/"
     },
+    "ced2f6d2cab8772ae7ccd95bf473092f5f331d88506cb64343563a25ecd28f72": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-02-27T05:30:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI and Amazon have announced a strategic partnership.",
+            "The partnership will bring OpenAI\u2019s Frontier platform to AWS.",
+            "It expands AI infrastructure, custom models, and enterprise AI agents."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI and Amazon partner to bring OpenAI\u2019s Frontier platform to AWS, expanding AI infrastructure.",
+            "The partnership offers custom models and enterprise AI agents for businesses.",
+            "Frontier platform will run on Amazon\u2019s cloud, enabling scalable AI services."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI and Amazon partner to deploy OpenAI\u2019s Frontier platform on AWS, integrating advanced AI infrastructure into Amazon\u2019s cloud services.",
+            "The collaboration expands AI infrastructure, enabling customers to build custom models and deploy enterprise AI agents directly within AWS.",
+            "Frontier\u2019s integration offers scalable, secure AI services, positioning AWS as a primary platform for OpenAI\u2019s enterprise-grade solutions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "OpenAI and Amazon announce strategic partnership",
+      "topics": [
+        "AI Agents",
+        "Cloud",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/amazon-partnership"
+    },
+    "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kernel-managed shared memory lets agents tag structured memories; the kernel handles retrieval, privacy, and prompt injection.",
+            "Evaluation on AIOS with GPT\u20114o, Llama\u20113.1, Qwen\u20112.5 shows 2.4\u20114.0 point personalization gains over unmanaged Mem0, significant at p < 10\u207b\u00b9\u2078.",
+            "Compared to full context concatenation, kernel\u2011managed injection matches performance on two models, reduces prompt length, latency 15\u201161% lower, and cuts token usage."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kernel\u2011managed shared memory lets agents tag memories; the kernel retrieves, enforces privacy, and injects prompts, acting as the system\u2019s core controller.",
+            "On AIOS, we tested GPT\u20114o, Llama\u20113.1, and Qwen\u20112.5 across 1,800 trials, gaining 2.4\u20134.0 points over unmanaged memory (p < 10\u207b\u00b9\u2078).",
+            "Compared to full context concatenation, kernel\u2011managed injection matches two models, slightly lags one, yet uses 15\u201361% fewer tokens, lower latency, and cheaper inference."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces kernel-managed shared memory: agents write structured, tagged memories; kernel handles retrieval, privacy, prompt injection.",
+            "Implemented on AIOS; evaluated against Mem0, standard retrieval-augmented injection, and full context concatenation across GPT-4o, Llama-3.1:8B, Qwen-2.5:7B, 1,800 trials.",
+            "Kernel-managed approach improves personalization 2.4-4.0 points, matches or exceeds other methods, reduces latency 15-61%, lowers token usage and cost."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kernel-Managed Shared Memory for System-Wide Personalization",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2609.10144"
+    },
     "d385c9eee6daddf42dcaff32e8b8993a49240227c995483be1d09c233c2ea2c0": {
       "image_url": null,
       "last_seen": "2026-10-21T16:23:39.970050Z",
@@ -4285,6 +4769,49 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.26869"
+    },
+    "e205ffac9d9f156d0028feaf325542ac53dc21d301de48f946e7a9ad575c469d": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-02-04T13:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "The Codex App Server enables embedding the Codex agent via a bidirectional JSON\u2011RPC API.",
+            "It streams progress, supports tool use, and handles approvals and diffs in real time.",
+            "The article explains the server\u2019s architecture and how it powers these features."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The Codex App Server lets developers embed the Codex agent into their apps, acting as a bridge that sends and receives commands in JSON format.",
+            "It uses a bidirectional JSON\u2011RPC API, meaning the server and client can call each other\u2019s functions over JSON messages, enabling real\u2011time, two\u2011way communication.",
+            "The server streams progress updates, lets the agent call external tools, requests user approvals, and shows diffs\u2014differences between file versions\u2014to help developers track changes."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Codex App Server is a bidirectional JSON\u2011RPC API enabling embedding of the Codex agent.",
+            "It streams progress, supports tool use, approvals, and diffs in real\u2011time.",
+            "The architecture allows developers to harness Codex via a lightweight server harness."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Unlocking the Codex harness: how we built the App Server",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/unlocking-the-codex-harness"
     },
     "e41aa02a68e1ba26f548b20965e5ccb30ac03bced4989b883cdb3849ef461a17": {
       "image_url": null,
@@ -4686,6 +5213,50 @@
       ],
       "url": "https://martinfowler.com/articles/are-harnesses-worth-the-cost.html"
     },
+    "eee6fa42d71dc5a43db82b38ebcb42bd5cd6b1fbf9ca8ec9084a7f57b1974e49": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Architecture uses tools and memory to selectively correct wrist PPG heart rate estimates, addressing motion artifacts.",
+            "Trained on PPG\u2011DaLiA, tested on four datasets; MAE reduced up to 44.5%, with significant error decreases on GalaxyPPG.",
+            "Real\u2011time wearable system implemented; prototype recordings showed MAE drop from 9.09 to 4.45 bpm without extra rejection."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Agent uses tools and memory to improve wrist heart\u2011rate readings from photoplethysmography (PPG) by selecting or correcting estimates based on pulse, motion, and past data.",
+            "Trained on PPG\u2011DaLiA and tested on four datasets, the system cut mean absolute error by up to 44.5%, especially on GalaxyPPG, by reducing harmful corrections.",
+            "Real\u2011time prototype on a smartphone lowered error from 9.09 to 4.45 beats per minute in four recordings, showing practical feasibility without extra data rejection."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Agent architecture uses tools and memory around a fixed heart\u2011rate estimator, generating candidate corrections from pulse, motion, and limited history, then selecting via predicted benefit/harms.",
+            "Risk gate retains, corrects, or rejects outputs; trained on PPG\u2011DaLiA, tested on Wrist Exercise, GalaxyPPG, WildPPG, cutting MAE up to 44.5 %.",
+            "Real\u2011time wearable acquisition, Bluetooth, and smartphone deployment achieved a prototype MAE drop from 9.09 to 4.45 bpm without extra rejection, showing practical feasibility."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "An Agent Architecture with Tools and Memory for Selective Correction of Wrist PPG Heart Rate Estimates",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.30688"
+    },
     "f0433dcbfb4f85e51a9b9e8e2584ea0a17e9e1a7e20f511efc2381820cca374f": {
       "image_url": null,
       "last_seen": "2026-10-20T13:13:12.391645Z",
@@ -4729,6 +5300,49 @@
         "Productivity"
       ],
       "url": "https://kubernetes.io/blog/2026/06/15/sig-storage-spotlight-2026/"
+    },
+    "f06f004e2ec809790cc64456ecfb6e1c9502c494161c8f3c36164e755ffd9994": {
+      "image_url": null,
+      "last_seen": "2026-10-23T05:18:06.830843Z",
+      "published_at": "2024-04-22T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces a transformer-based agent capable of handling diverse tasks across domains.",
+            "Highlights its versatility, excelling in specific areas while maintaining broad applicability.",
+            "Discusses potential applications and benefits of a multi-purpose AI system."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The article introduces a transformer-based AI agent that can handle many tasks, like a \"Jack of All Trades\".",
+            "It explains that while the agent is versatile, it excels at specific tasks, becoming a \"Master of Some\".",
+            "The piece discusses how this multi-purpose design can be applied in real-world applications, balancing breadth and depth."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Presents a transformer agent designed for multiple tasks, balancing general-purpose capabilities with focused expertise.",
+            "Emphasizes the agent's adaptability across varied domains while mastering specific functions.",
+            "Explores the trade-offs between breadth and depth in the agent's performance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Jack of All Trades, Master of Some, a Multi-Purpose Transformer Agent",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/jat"
     },
     "f4f5eac60efab428e87e0c2996e8702fffefc25f19dabf328acd05c42653595a": {
       "image_url": null,
