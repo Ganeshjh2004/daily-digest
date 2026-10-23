@@ -1,48 +1,6 @@
 {
   "articles": [
     {
-      "id": "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Kernel-managed shared memory lets agents tag structured memories; the kernel handles retrieval, privacy, and prompt injection.",
-            "Evaluation on AIOS with GPT\u20114o, Llama\u20113.1, Qwen\u20112.5 shows 2.4\u20114.0 point personalization gains over unmanaged Mem0, significant at p < 10\u207b\u00b9\u2078.",
-            "Compared to full context concatenation, kernel\u2011managed injection matches performance on two models, reduces prompt length, latency 15\u201161% lower, and cuts token usage."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Kernel\u2011managed shared memory lets agents tag memories; the kernel retrieves, enforces privacy, and injects prompts, acting as the system\u2019s core controller.",
-            "On AIOS, we tested GPT\u20114o, Llama\u20113.1, and Qwen\u20112.5 across 1,800 trials, gaining 2.4\u20134.0 points over unmanaged memory (p < 10\u207b\u00b9\u2078).",
-            "Compared to full context concatenation, kernel\u2011managed injection matches two models, slightly lags one, yet uses 15\u201361% fewer tokens, lower latency, and cheaper inference."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces kernel-managed shared memory: agents write structured, tagged memories; kernel handles retrieval, privacy, prompt injection.",
-            "Implemented on AIOS; evaluated against Mem0, standard retrieval-augmented injection, and full context concatenation across GPT-4o, Llama-3.1:8B, Qwen-2.5:7B, 1,800 trials.",
-            "Kernel-managed approach improves personalization 2.4-4.0 points, matches or exceeds other methods, reduces latency 15-61%, lowers token usage and cost."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Kernel-Managed Shared Memory for System-Wide Personalization",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2609.10144"
-    },
-    {
       "id": "071ab93645637197f5569a5c9478c6c8afa5b1691c9e5f78d13fcb2963264902",
       "image_url": null,
       "published_at": "2026-10-23T04:00:00Z",
@@ -82,47 +40,6 @@
         "AI Agents"
       ],
       "url": "https://arxiv.org/abs/2610.28706"
-    },
-    {
-      "id": "4cd0d3a23be15a1e655e3f9005f86d90b6563439111869b501c50195289058ae",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "PerMIT protects LLM agents by enforcing explicit trust on user inputs and gate-confirmed values, mediating untrusted environment data via a finite memory interface.",
-            "Two machine-checked integrity theorems in Lean 4 guarantee that only gate\u2011approved memory can influence sensitive actions, reducing attacks to a single auditable decision.",
-            "Community endorsements accumulate, and simulations show that as the community grows, poisoning risks drop while per\u2011user verification effort stays low."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "PerMIT is a memory architecture that protects persistent memory from injection attacks by only trusting user inputs and values confirmed at a gate.",
-            "It uses a finite memory interface and two machine\u2011checked integrity theorems (Lean 4) to ensure environment data reaches sensitive actions only after gate confirmation.",
-            "Community endorsements accumulate; once enough users confirm, items become community\u2011confirmed, reducing verification effort while lowering poisoning and false\u2011eviction risks."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "PerMIT enforces integrity of persistent memory by trusting only user-typed inputs confirmed at a gate, mediating untrusted values via a finite interface.",
-            "Two machine\u2011checked (Lean 4) integrity theorems guarantee that environment\u2011derived data reaches sensitive actions only after gate confirmation and influences agents solely through gate display.",
-            "Community endorsements log exact content; once sufficiently endorsed, items become community\u2011confirmed, reducing per\u2011user verification effort and lowering poisoning risk as the community scales."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design"
-      ],
-      "url": "https://arxiv.org/abs/2610.28987"
     },
     {
       "id": "44e5cf64b54640ce0656c6690eeb0701463bd31a3ff3414621a51b8fec153c10",
@@ -166,6 +83,47 @@
       "url": "https://arxiv.org/abs/2610.22714"
     },
     {
+      "id": "4cd0d3a23be15a1e655e3f9005f86d90b6563439111869b501c50195289058ae",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "PerMIT protects LLM agents by enforcing explicit trust on user inputs and gate-confirmed values, mediating untrusted environment data via a finite memory interface.",
+            "Two machine-checked integrity theorems in Lean 4 guarantee that only gate\u2011approved memory can influence sensitive actions, reducing attacks to a single auditable decision.",
+            "Community endorsements accumulate, and simulations show that as the community grows, poisoning risks drop while per\u2011user verification effort stays low."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "PerMIT is a memory architecture that protects persistent memory from injection attacks by only trusting user inputs and values confirmed at a gate.",
+            "It uses a finite memory interface and two machine\u2011checked integrity theorems (Lean 4) to ensure environment data reaches sensitive actions only after gate confirmation.",
+            "Community endorsements accumulate; once enough users confirm, items become community\u2011confirmed, reducing verification effort while lowering poisoning and false\u2011eviction risks."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "PerMIT enforces integrity of persistent memory by trusting only user-typed inputs confirmed at a gate, mediating untrusted values via a finite interface.",
+            "Two machine\u2011checked (Lean 4) integrity theorems guarantee that environment\u2011derived data reaches sensitive actions only after gate confirmation and influences agents solely through gate display.",
+            "Community endorsements log exact content; once sufficiently endorsed, items become community\u2011confirmed, reducing per\u2011user verification effort and lowering poisoning risk as the community scales."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design"
+      ],
+      "url": "https://arxiv.org/abs/2610.28987"
+    },
+    {
       "id": "897ee53c8693109a84df74a94849379792d89f8d5959208865bf9d810999f05e",
       "image_url": null,
       "published_at": "2026-10-23T04:00:00Z",
@@ -207,6 +165,48 @@
       "url": "https://arxiv.org/abs/2610.29005"
     },
     {
+      "id": "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kernel-managed shared memory lets agents tag structured memories; the kernel handles retrieval, privacy, and prompt injection.",
+            "Evaluation on AIOS with GPT\u20114o, Llama\u20113.1, Qwen\u20112.5 shows 2.4\u20114.0 point personalization gains over unmanaged Mem0, significant at p < 10\u207b\u00b9\u2078.",
+            "Compared to full context concatenation, kernel\u2011managed injection matches performance on two models, reduces prompt length, latency 15\u201161% lower, and cuts token usage."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kernel\u2011managed shared memory lets agents tag memories; the kernel retrieves, enforces privacy, and injects prompts, acting as the system\u2019s core controller.",
+            "On AIOS, we tested GPT\u20114o, Llama\u20113.1, and Qwen\u20112.5 across 1,800 trials, gaining 2.4\u20134.0 points over unmanaged memory (p < 10\u207b\u00b9\u2078).",
+            "Compared to full context concatenation, kernel\u2011managed injection matches two models, slightly lags one, yet uses 15\u201361% fewer tokens, lower latency, and cheaper inference."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces kernel-managed shared memory: agents write structured, tagged memories; kernel handles retrieval, privacy, prompt injection.",
+            "Implemented on AIOS; evaluated against Mem0, standard retrieval-augmented injection, and full context concatenation across GPT-4o, Llama-3.1:8B, Qwen-2.5:7B, 1,800 trials.",
+            "Kernel-managed approach improves personalization 2.4-4.0 points, matches or exceeds other methods, reduces latency 15-61%, lowers token usage and cost."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Kernel-Managed Shared Memory for System-Wide Personalization",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2609.10144"
+    },
+    {
       "id": "eee6fa42d71dc5a43db82b38ebcb42bd5cd6b1fbf9ca8ec9084a7f57b1974e49",
       "image_url": null,
       "published_at": "2026-10-23T04:00:00Z",
@@ -246,6 +246,240 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.30688"
+    },
+    {
+      "id": "e7cca0b9835b81a5aa7162b7194cc615c6f1d6c9b59949ce73cc3a9a1584628c",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "MixAgent is an agentic pipeline that emulates audio engineers, grouping tracks, planning effects, and refining mixes guided by a reference song.",
+            "A detector identifies needed corrections, and MixCritic\u2014a dataset of 45,657 repair critiques\u2014trains a critic to propose parameter adjustments, reducing mix error by 19%.",
+            "Human listening tests show MixAgent outperforms Qwen3\u2011Omni, Gemini 3.8 Flash, and GPT\u20114o\u2011audio in quality ratings."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces MixAgent, a step\u2011by\u2011step system that mimics audio engineers by grouping tracks, planning effects, and creating editable mixing plans using a reference song.",
+            "A detector finds problems, and a critic suggests numeric adjustments; trained on 45,657 repair critiques, it is fine\u2011tuned with preference optimization.",
+            "Experiments on MedleyDB show the system reduces mix error by 19% over the initial mix, and human listeners rate it higher than several language models."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "MixAgent pipeline: grouping agent routes tracks into subgroups; planning agent selects and orders audio effects (volume, reverb) for tracks, subgroups, full mix.",
+            "Refinement: detector flags needed corrections; MixCritic (45,657 critiques) trains critic via supervised learning plus preference optimization, cutting mix error 19% (8.4% more with optimization).",
+            "Evaluation: On MedleyDB, MixAgent outperforms Qwen3\u2011Omni, Gemini 3.8 Flash, GPT\u20114o\u2011audio in human listening tests, achieving higher quality ratings."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Agentic Music Post-Production",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Machine Learning",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.29093"
+    },
+    {
+      "id": "a974bc695170ebbc67bbcd54218136f71f3107a5d2166364f707d6c5dfec511d",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LLMSeg is a training-free pipeline that turns a vision-capable LLM into a text-prompted image segmenter without extra segmentation heads or training.",
+            "It uses three LLM-driven stages: detection and coarse description, B-spline tracing within bounding boxes, and iterative refinement with focus boxes until mask stabilizes.",
+            "Evaluated on ten referring and reasoning segmentation splits, open-vocabulary instance and semantic segmentation, and zero-shot detection, it matches or surpasses specialist SAM models using Gemini-3.7-Flash."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LLMSeg is a training\u2011free pipeline that turns a multimodal large language model into a text\u2011prompted image segmenter, eliminating extra segmentation heads.",
+            "It performs segmentation in three LLM\u2011driven stages: detect instances, trace boundaries with closed B\u2011splines, and iteratively refine until masks stabilize.",
+            "Across ten referring and reasoning splits, plus open\u2011vocabulary datasets, LLMSeg matches or surpasses the specialist SAM model using only a Gemini\u20113.7\u2011Flash backend."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LLMSeg is a training\u2011free, text\u2011prompted segmentation pipeline that uses a vision\u2011capable LLM (Gemini\u20113.7\u2011Flash) to detect, describe, and segment instances via B\u2011splines.",
+            "It runs three stages: detect & describe instances; trace each with periodic B\u2011splines inside boxes; refine via focus boxes until mask stabilizes or budget ends.",
+            "Evaluate on ten ReasonSeg/RefCOCO splits, LVIS, COCO, SA\u2011Co, zero\u2011shot detection; matches or surpasses SAM 3 on identical instances."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LLMSeg: Training-Free Text-Prompted Image Segmentation with B-Splines",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.29409"
+    },
+    {
+      "id": "d7c237cc133940eeccf4595ef5072305dc0a139b9d93bffffbcfaa895d8fa1db",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces spiking ternary GRU (stGRU) combining ternary-weight gated recurrent unit for filtering and resonate-and-fire neurons for binary spike output.",
+            "Enables end\u2011to\u2011end training on LibriSpeech, achieving single\u2011digit WER (6.44% on test\u2011clean) without dense MACs or external language model.",
+            "Also attains 10.88% CER on Aishell\u20111, demonstrating effectiveness on Mandarin speech and depth\u2011graded hierarchical representations."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces spiking ternary GRU (stGRU) that separates filtering and integration, using ternary weights and resonate\u2011and\u2011fire neurons for efficient, event\u2011driven speech processing.",
+            "Trained end\u2011to\u2011end on LibriSpeech, stGRU models reach 6.44% WER on test\u2011clean without language models, the first spiking network to hit single\u2011digit error without dense MACs.",
+            "Also achieves 10.88% character error on Aishell\u20111, showing the architecture works on Mandarin speech and builds a depth\u2011graded hierarchy of representations."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "stGRU combines ternary-weight GRU temporal filtering with downstream Resonate\u2011and\u2011Fire neurons that emit binary spikes, eliminating LIF decay and enabling native event\u2011based training.",
+            "End\u2011to\u2011end training on LibriSpeech\u2011960 yields 6.44% WER (small/medium/large) without external LM, first matrix\u2011MAC\u2011free spiking network achieving single\u2011digit WER.",
+            "The model also reaches 10.88% test CER on Aishell\u20111 (9.28% dev) from scratch, developing a depth\u2011graded hierarchy of representations."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.29720"
+    },
+    {
+      "id": "48eb2c61541658acf567cbf6e500900fdf3d3a4220b783ca096af7e3cd4b2d4d",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "HiddenLens is a six-layer BERT-LLM pipeline that detects, classifies, questions, and resolves hidden assumptions in natural-language software requirements.",
+            "The framework localizes unresolved spans, articulates assumptions with risk, classifies them into six NFR categories, and generates ranked clarification options.",
+            "A new HiddenLens Corpus contains 312 requirements annotated with 847 hidden assumptions, supporting training and evaluation of the framework."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "HiddenLens is a six-layer BERT-LLM pipeline that finds hidden assumptions in software requirements, not just vague language.",
+            "Layers 1\u20136 locate unclear spans, explain assumptions, classify into six non\u2011functional categories, suggest clarifications, let humans edit, then rewrite explicit, testable requirements.",
+            "HiddenLens Corpus contains 312 requirements with 847 annotated hidden assumptions across performance, security, scalability, usability, reliability, and domain, aiding future research."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "status": "failed"
+        }
+      },
+      "title": "HiddenLens: A Multi-Layer LLM Framework for Detecting and Resolving Hidden Assumptions in Software Requirements",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.29996"
+    },
+    {
+      "id": "6ba2d9f839023a805615ba690add02c086b84a0d007fc6331fd2f8d94463e8bb",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Gandalf reduces KV cache writes by prioritizing full-attention data for SSD offloading, extending SSD lifetime without lowering cache hit rate.",
+            "The system uses historical access patterns and attention type to decide which KV cache entries to write to SSD.",
+            "Evaluation shows Gandalf extends SSD lifetime by 7.3\u00d7 on average, maintaining negligible impact on LLM serving cost."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "KV caching speeds LLM serving but uses too much memory; SSDs expand capacity, yet heavy writes shrink SSD life from years to months.",
+            "Traditional gating of writes based on past access patterns hurts cache hit rate because different attention types share patterns but need different future data.",
+            "Gandalf prioritizes full-attention KV cache writes to SSD, extending lifetime 7.3\u00d7 while keeping hit rate unchanged; it uses attention type info to guide writes."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Gandalf offloads KV cache to SSD, prioritizing full\u2011attention entries over others to reduce write amplification while preserving hit rates.",
+            "Uses access\u2011pattern gating combined with attention\u2011type awareness to limit SSD writes, extending lifetime by ~7.3\u00d7 without cost increase.",
+            "Evaluation shows negligible hit\u2011rate drop, achieving 7.3X SSD longevity gain in multi\u2011round LLM serving workloads."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.30791"
+    },
+    {
+      "id": "5d193cc1f396c8e39b220f8d1dbe6e508d25f4e743cec875d7aba3418f269cc6",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Handshake: initial exchange where agents find each other, learn abilities, and set up a session; measured across three protocols (MCP, A2A, ACP).",
+            "Round\u2011trip count dominates cost: legacy MCP needs 3 round trips (~230 ms at 50 ms RTT), A2A only 1 (~61 ms).",
+            "Handshake also scales with capability inventory: each capability costs 24\u2013107 tokens; a 200\u2011capability agent uses 11% of a 200k\u2011token context before reading its own task."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "status": "failed"
+        }
+      },
+      "title": "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.30151"
     },
     {
       "id": "51888f116f5b083740bce79640ccacdc80055a08000c769931982fc83218805e",
@@ -571,6 +805,45 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.27847"
+    },
+    {
+      "id": "5b4e08461387ba3b44832eb32623a231bc98422af2b9c0aa208f73f388840205",
+      "image_url": null,
+      "published_at": "2026-10-21T16:04:43Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Overview of TorchNeuron and its integration with AWS Trainium for machine learning workloads.",
+            "Explanation of system-level profiling techniques used to monitor performance metrics on Trainium hardware.",
+            "Key findings and insights from the first part of the profiling study."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "TorchNeuron is a library that lets PyTorch run on AWS Trainium, a custom chip for machine learning.",
+            "The article is Part 1 of a series that explains how to profile TorchNeuron at the system level on Trainium.",
+            "System-level profiling tracks overall resource use, such as CPU, memory, and network, to optimize performance on Trainium."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces system-level profiling techniques for TorchNeuron models running on AWS Trainium hardware.",
+            "Discusses performance metrics captured, such as compute utilization, memory bandwidth, and inference latency.",
+            "Provides guidance on interpreting profiling data to optimize TorchNeuron deployment on Trainium."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+      "topics": [
+        "Cloud",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
     },
     {
       "id": "885fe3c67de05637ce5b9612baa0a6e50e729bbbcf8015191def57f8d564f7ca",
@@ -1638,14 +1911,14 @@
       "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
     }
   ],
-  "generated_at": "2026-10-23T05:18:06.830843Z",
+  "generated_at": "2026-10-23T13:03:06.593626Z",
   "topic_counts": {
-    "AI Agents": 32,
-    "Backend": 20,
-    "LLMs": 34,
-    "Machine Learning": 29,
-    "Other": 24,
-    "System Design": 26
+    "AI Agents": 38,
+    "Backend": 21,
+    "LLMs": 40,
+    "Machine Learning": 36,
+    "Other": 26,
+    "System Design": 30
   },
   "topics": [
     "AI Agents",

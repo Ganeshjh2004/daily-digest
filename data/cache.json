@@ -433,6 +433,49 @@
       ],
       "url": "https://kubernetes.io/blog/2026/08/28/kubernetes-v1-37-pod-certificates-and-cluster-trust-bundles/"
     },
+    "10ab1c39be1497734c701eecd3d7297bcc9620f7a61ac5c1ea3023cf313f4180": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2025-12-11T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "GPT-5.2 is the latest frontier model designed for everyday professional tasks.",
+            "It offers advanced reasoning, long-context understanding, coding, and vision capabilities.",
+            "Available via ChatGPT and the OpenAI API for faster, more reliable agentic workflows."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "GPT-5.2 is the newest advanced model for everyday professional tasks.",
+            "It excels at reasoning, understanding long text, coding, and vision, making it faster and more reliable for agentic workflows.",
+            "Available in ChatGPT and the OpenAI API, it powers improved workflows for users."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "GPT\u20115.2: latest frontier model, engineered for everyday professional tasks with enhanced reasoning, long\u2011context comprehension, coding, and vision capabilities.",
+            "Integrated into ChatGPT and OpenAI API, enabling faster, more reliable agentic workflows across diverse applications.",
+            "Designed to support complex reasoning, extended context handling, and multimodal tasks, positioning GPT\u20115.2 as the most advanced model for professional use."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Introducing GPT-5.2",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend"
+      ],
+      "url": "https://openai.com/index/introducing-gpt-5-2"
+    },
     "10f476c8a9f7eae9633e18e9028524f7248ca03a8b7df5caefd54de169cd6f19": {
       "image_url": null,
       "last_seen": "2026-10-22T13:24:32.434324Z",
@@ -737,6 +780,49 @@
         "Productivity"
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/"
+    },
+    "21d667d4b44d480b6e06f5ac377cab1a4ecedc51d6b892c16abbfcb953a7518e": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2021-01-18T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Achieved 100x speed increase in transformer inference for \ud83e\udd17 API customers.",
+            "Implemented optimizations across model architecture and deployment pipeline.",
+            "Resulted in faster response times and lower resource usage."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "We improved the speed of transformer models, which generate predictions from text, by redesigning how the models run.",
+            "The new approach makes inference 100 times faster, cutting the time needed to get results from minutes to milliseconds.",
+            "This speed boost benefits Hugging Face API users, letting them deploy models quickly and handle more requests with less cost."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Increased transformer inference speed by 100\u00d7 for Hugging Face API customers.",
+            "Implemented model optimizations and efficient runtime to reduce latency.",
+            "Maintained full API compatibility while delivering significant performance gains."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How we sped up transformer inference 100x for \ud83e\udd17 API customers",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/accelerated-inference"
     },
     "23675028600476715d5ad9fbc9077584366a308d41b42b8985819d05bf968a83": {
       "image_url": null,
@@ -1044,6 +1130,49 @@
         "DevOps"
       ],
       "url": "https://kubernetes.io/blog/2026/05/12/kubernetes-v1-36-psi-metrics-ga/"
+    },
+    "2d9b2aa26e18bdeea0304c9afbc4fe199ac6dc0c62e35e9a915b60973fd8977b": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-01-08T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Netomi demonstrates scaling agentic AI in enterprises by leveraging GPT-4.1 and GPT-5.2 to handle complex tasks.",
+            "The approach blends concurrency, governance, and multi-step reasoning to maintain reliable production workflows.",
+            "These lessons illustrate how to integrate advanced language models into enterprise systems for consistent, scalable performance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Netomi scales AI agents in enterprises by combining GPT-4.1 and GPT-5.2, ensuring reliable production workflows.",
+            "Concurrency lets multiple agents work at once, boosting speed and efficiency in large operations.",
+            "Governance and multi-step reasoning keep control, safety, and accuracy across complex tasks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Netomi scales enterprise AI agents by deploying GPT\u20114.1 and GPT\u20115.2 models, enabling advanced multi\u2011step reasoning across complex workflows.",
+            "Concurrency is managed through parallel agent orchestration, allowing simultaneous task execution while maintaining consistent state and resource allocation.",
+            "Governance frameworks enforce policy compliance, audit trails, and safety checks, ensuring reliable production workflows and mitigating model drift."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Netomi\u2019s lessons for scaling agentic systems into the enterprise",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend"
+      ],
+      "url": "https://openai.com/index/netomi"
     },
     "2e95c95ea589d2d6070e764cd8128ffdd36d6c8aeaf8be211f9180a872c02dcd": {
       "image_url": null,
@@ -1569,6 +1698,46 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/scaling-storage-one-billion-users-part-one"
+    },
+    "48eb2c61541658acf567cbf6e500900fdf3d3a4220b783ca096af7e3cd4b2d4d": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "HiddenLens is a six-layer BERT-LLM pipeline that detects, classifies, questions, and resolves hidden assumptions in natural-language software requirements.",
+            "The framework localizes unresolved spans, articulates assumptions with risk, classifies them into six NFR categories, and generates ranked clarification options.",
+            "A new HiddenLens Corpus contains 312 requirements annotated with 847 hidden assumptions, supporting training and evaluation of the framework."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "HiddenLens is a six-layer BERT-LLM pipeline that finds hidden assumptions in software requirements, not just vague language.",
+            "Layers 1\u20136 locate unclear spans, explain assumptions, classify into six non\u2011functional categories, suggest clarifications, let humans edit, then rewrite explicit, testable requirements.",
+            "HiddenLens Corpus contains 312 requirements with 847 annotated hidden assumptions across performance, security, scalability, usability, reliability, and domain, aiding future research."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        }
+      },
+      "title": "HiddenLens: A Multi-Layer LLM Framework for Detecting and Resolving Hidden Assumptions in Software Requirements",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.29996"
     },
     "4934e32c8ead615ab768065a0a74661d8cab7600849b71f20b913785d8190d6c": {
       "image_url": null,
@@ -2148,6 +2317,126 @@
       ],
       "url": "https://arxiv.org/abs/2603.03378"
     },
+    "5b4e08461387ba3b44832eb32623a231bc98422af2b9c0aa208f73f388840205": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-10-21T16:04:43Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Overview of TorchNeuron and its integration with AWS Trainium for machine learning workloads.",
+            "Explanation of system-level profiling techniques used to monitor performance metrics on Trainium hardware.",
+            "Key findings and insights from the first part of the profiling study."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "TorchNeuron is a library that lets PyTorch run on AWS Trainium, a custom chip for machine learning.",
+            "The article is Part 1 of a series that explains how to profile TorchNeuron at the system level on Trainium.",
+            "System-level profiling tracks overall resource use, such as CPU, memory, and network, to optimize performance on Trainium."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces system-level profiling techniques for TorchNeuron models running on AWS Trainium hardware.",
+            "Discusses performance metrics captured, such as compute utilization, memory bandwidth, and inference latency.",
+            "Provides guidance on interpreting profiling data to optimize TorchNeuron deployment on Trainium."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
+      "topics": [
+        "Cloud",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
+    },
+    "5c00c57a96250570db8585475abd3ebbf17506acf086fdd4787a4a4c3fd1af9f": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-10-14T19:57:43Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Personalization shapes online experiences; Netflix uses it extensively, but measuring its value is a challenge.",
+            "Traditional metrics like share of viewing from recommendations miss causal impact because recommendations are not random.",
+            "Authors propose a behavioral model linking member choices and recommendations, estimating how they influence watch decisions and title selection."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Personalization shapes what we see online, from shows to music, but measuring its value is hard because recommendations aren't random.",
+            "The authors built a model linking member behavior, title choice, and personalized recommendations to estimate how suggestions influence watching decisions.",
+            "Their study shows how to separate a title\u2019s inherent appeal from the extra value added by recommending it at the right time."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces a causal model linking member behavior, title choice, and personalized recommendations to quantify recommendation impact on watch decisions and title selection.",
+            "Highlights that naive metrics (share of viewing from recommended titles) conflate recommendation effect with title appeal, underscoring need for causal inference.",
+            "Presents empirical results from Netflix data, showing recommendations significantly increase watch probability and shift title distribution, with implications for revenue and member experience."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Measuring the Impact of Personalized Recommendations",
+      "topics": [
+        "Backend",
+        "System Design"
+      ],
+      "url": "https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96?source=rss----2615bd06b42e---4"
+    },
+    "5d193cc1f396c8e39b220f8d1dbe6e508d25f4e743cec875d7aba3418f269cc6": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Handshake: initial exchange where agents find each other, learn abilities, and set up a session; measured across three protocols (MCP, A2A, ACP).",
+            "Round\u2011trip count dominates cost: legacy MCP needs 3 round trips (~230 ms at 50 ms RTT), A2A only 1 (~61 ms).",
+            "Handshake also scales with capability inventory: each capability costs 24\u2013107 tokens; a 200\u2011capability agent uses 11% of a 200k\u2011token context before reading its own task."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        }
+      },
+      "title": "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.30151"
+    },
     "5dce93a1c80371a21a7f72df9f93ac7a2ec1dc2938ab9f34f7b23c4ea350f38c": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -2498,6 +2787,50 @@
         "Cloud"
       ],
       "url": "https://arxiv.org/abs/2610.23047"
+    },
+    "6ba2d9f839023a805615ba690add02c086b84a0d007fc6331fd2f8d94463e8bb": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Gandalf reduces KV cache writes by prioritizing full-attention data for SSD offloading, extending SSD lifetime without lowering cache hit rate.",
+            "The system uses historical access patterns and attention type to decide which KV cache entries to write to SSD.",
+            "Evaluation shows Gandalf extends SSD lifetime by 7.3\u00d7 on average, maintaining negligible impact on LLM serving cost."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "KV caching speeds LLM serving but uses too much memory; SSDs expand capacity, yet heavy writes shrink SSD life from years to months.",
+            "Traditional gating of writes based on past access patterns hurts cache hit rate because different attention types share patterns but need different future data.",
+            "Gandalf prioritizes full-attention KV cache writes to SSD, extending lifetime 7.3\u00d7 while keeping hit rate unchanged; it uses attention type info to guide writes."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Gandalf offloads KV cache to SSD, prioritizing full\u2011attention entries over others to reduce write amplification while preserving hit rates.",
+            "Uses access\u2011pattern gating combined with attention\u2011type awareness to limit SSD writes, extending lifetime by ~7.3\u00d7 without cost increase.",
+            "Evaluation shows negligible hit\u2011rate drop, achieving 7.3X SSD longevity gain in multi\u2011round LLM serving workloads."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.30791"
     },
     "6c1178c045518f38387491e309dc2ff611fac7ed60a75b3c83fe9911c01ef7a6": {
       "image_url": null,
@@ -3111,6 +3444,49 @@
       ],
       "url": "https://arxiv.org/abs/2610.29005"
     },
+    "89a221162f32c17ddc19377e1b50b84e5b55da0e618a54b1edad14a99c1e4792": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-01-22T12:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI scaled PostgreSQL to support 800M ChatGPT users, handling millions of queries per second.",
+            "Techniques included replicas, caching, rate limiting, and workload isolation to maintain performance and reliability.",
+            "The architecture enabled efficient scaling while preserving data consistency across distributed workloads."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI scaled PostgreSQL to serve 800 million ChatGPT users.",
+            "They used replicas, caching, rate limiting, and workload isolation to handle millions of queries per second.",
+            "Replicas duplicate data for read traffic; caching stores recent results; rate limiting controls request volume; isolation separates workloads for stability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI scaled PostgreSQL to serve 800M ChatGPT users, achieving millions of queries per second.",
+            "Employed read replicas, aggressive caching, and rate limiting to manage load and maintain performance.",
+            "Isolated workloads via sharding or separate clusters to prevent cross\u2011tenant interference."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Scaling PostgreSQL to power 800 million ChatGPT users",
+      "topics": [
+        "Backend",
+        "System Design",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scaling-postgresql"
+    },
     "8afdb503cc5635992639a26513506f28523b4a0b75bbd01a7786187c3b0eba2d": {
       "image_url": null,
       "last_seen": "2026-10-22T13:24:32.434324Z",
@@ -3503,6 +3879,49 @@
       ],
       "url": "https://kubernetes.io/blog/2026/07/29/controller-runtime-cache-explained/"
     },
+    "9dfd3cb35306a03de025dd45e21319034dc97384c8480338777de4777cc28c34": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2021-06-03T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Demonstrates few-shot learning using GPT-Neo, highlighting model's adaptability to limited examples.",
+            "Integrates Hugging Face Accelerated Inference API for efficient, low-latency deployment.",
+            "Provides practical guidance and performance insights for real-world applications."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The article shows how to use few-shot learning, where a model learns from a handful of examples, with GPT-Neo.",
+            "It highlights the Accelerated Inference API, a tool that speeds up GPT-Neo predictions.",
+            "The piece demonstrates practical steps for deploying GPT-Neo in real-world tasks using the API."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Demonstrates few-shot learning using GPT-Neo, highlighting prompt design and example selection.",
+            "Explores Hugging Face's Accelerated Inference API for efficient model deployment and inference speed.",
+            "Provides practical guidance on integrating GPT-Neo with the Accelerated Inference API for real-world applications."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Few-shot learning in practice: GPT-Neo and the \ud83e\udd17 Accelerated Inference API",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/few-shot-learning-gpt-neo-and-inference-api"
+    },
     "a0904673d8e83392bf0846c7674476b4059adb3f083f128528f7aa1ff1dea03f": {
       "image_url": null,
       "last_seen": "2026-10-22T13:24:32.434324Z",
@@ -3630,6 +4049,50 @@
         "Productivity"
       ],
       "url": "https://arxiv.org/abs/2610.26913"
+    },
+    "a974bc695170ebbc67bbcd54218136f71f3107a5d2166364f707d6c5dfec511d": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LLMSeg is a training-free pipeline that turns a vision-capable LLM into a text-prompted image segmenter without extra segmentation heads or training.",
+            "It uses three LLM-driven stages: detection and coarse description, B-spline tracing within bounding boxes, and iterative refinement with focus boxes until mask stabilizes.",
+            "Evaluated on ten referring and reasoning segmentation splits, open-vocabulary instance and semantic segmentation, and zero-shot detection, it matches or surpasses specialist SAM models using Gemini-3.7-Flash."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LLMSeg is a training\u2011free pipeline that turns a multimodal large language model into a text\u2011prompted image segmenter, eliminating extra segmentation heads.",
+            "It performs segmentation in three LLM\u2011driven stages: detect instances, trace boundaries with closed B\u2011splines, and iteratively refine until masks stabilize.",
+            "Across ten referring and reasoning splits, plus open\u2011vocabulary datasets, LLMSeg matches or surpasses the specialist SAM model using only a Gemini\u20113.7\u2011Flash backend."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LLMSeg is a training\u2011free, text\u2011prompted segmentation pipeline that uses a vision\u2011capable LLM (Gemini\u20113.7\u2011Flash) to detect, describe, and segment instances via B\u2011splines.",
+            "It runs three stages: detect & describe instances; trace each with periodic B\u2011splines inside boxes; refine via focus boxes until mask stabilizes or budget ends.",
+            "Evaluate on ten ReasonSeg/RefCOCO splits, LVIS, COCO, SA\u2011Co, zero\u2011shot detection; matches or surpasses SAM 3 on identical instances."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "LLMSeg: Training-Free Text-Prompted Image Segmentation with B-Splines",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.29409"
     },
     "aa58c6ed59af2c07d01dab43dd234e8805b5ba2334d1431f24fc1025f98acdd3": {
       "image_url": null,
@@ -4463,6 +4926,49 @@
       ],
       "url": "https://openai.com/index/amazon-partnership"
     },
+    "cf00253e33d984445e36f9f30766bdb4962f804d9895929a2c4f91183c7dfc0f": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2023-11-07T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AWS Inferentia2 accelerates llama model inference, reducing generation time for large language models.",
+            "The platform offers high throughput and low latency, enabling faster deployment of llama-based applications.",
+            "Users can integrate Inferentia2 into their workflows to improve performance and cost-efficiency for llama inference tasks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Use AWS Inferentia2, Amazon\u2019s AI chip, to accelerate Llama model inference.",
+            "Inferentia2 reduces generation time, making responses faster for applications.",
+            "Llama is a large language model that benefits from hardware acceleration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AWS Inferentia2 accelerates Llama inference, cutting generation latency dramatically.",
+            "The article details deployment steps for Llama on Inferentia2, including model conversion and runtime configuration.",
+            "Performance benchmarks show significant speedups compared to CPU and GPU baselines."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Make your llama generation time fly with AWS Inferentia2",
+      "topics": [
+        "LLMs",
+        "Cloud",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/inferentia-llama2"
+    },
     "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5": {
       "image_url": null,
       "last_seen": "2026-10-23T05:18:06.830843Z",
@@ -4550,6 +5056,50 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/choco"
+    },
+    "d7c237cc133940eeccf4595ef5072305dc0a139b9d93bffffbcfaa895d8fa1db": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces spiking ternary GRU (stGRU) combining ternary-weight gated recurrent unit for filtering and resonate-and-fire neurons for binary spike output.",
+            "Enables end\u2011to\u2011end training on LibriSpeech, achieving single\u2011digit WER (6.44% on test\u2011clean) without dense MACs or external language model.",
+            "Also attains 10.88% CER on Aishell\u20111, demonstrating effectiveness on Mandarin speech and depth\u2011graded hierarchical representations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces spiking ternary GRU (stGRU) that separates filtering and integration, using ternary weights and resonate\u2011and\u2011fire neurons for efficient, event\u2011driven speech processing.",
+            "Trained end\u2011to\u2011end on LibriSpeech, stGRU models reach 6.44% WER on test\u2011clean without language models, the first spiking network to hit single\u2011digit error without dense MACs.",
+            "Also achieves 10.88% character error on Aishell\u20111, showing the architecture works on Mandarin speech and builds a depth\u2011graded hierarchy of representations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "stGRU combines ternary-weight GRU temporal filtering with downstream Resonate\u2011and\u2011Fire neurons that emit binary spikes, eliminating LIF decay and enabling native event\u2011based training.",
+            "End\u2011to\u2011end training on LibriSpeech\u2011960 yields 6.44% WER (small/medium/large) without external LM, first matrix\u2011MAC\u2011free spiking network achieving single\u2011digit WER.",
+            "The model also reaches 10.88% test CER on Aishell\u20111 (9.28% dev) from scratch, developing a depth\u2011graded hierarchy of representations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.29720"
     },
     "d9fbb5d07fdb6b984bd114105493eac838aa3048d40f3c72598ae6cdbeb48e3d": {
       "image_url": null,
@@ -4989,6 +5539,50 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.23104"
+    },
+    "e7cca0b9835b81a5aa7162b7194cc615c6f1d6c9b59949ce73cc3a9a1584628c": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "MixAgent is an agentic pipeline that emulates audio engineers, grouping tracks, planning effects, and refining mixes guided by a reference song.",
+            "A detector identifies needed corrections, and MixCritic\u2014a dataset of 45,657 repair critiques\u2014trains a critic to propose parameter adjustments, reducing mix error by 19%.",
+            "Human listening tests show MixAgent outperforms Qwen3\u2011Omni, Gemini 3.8 Flash, and GPT\u20114o\u2011audio in quality ratings."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces MixAgent, a step\u2011by\u2011step system that mimics audio engineers by grouping tracks, planning effects, and creating editable mixing plans using a reference song.",
+            "A detector finds problems, and a critic suggests numeric adjustments; trained on 45,657 repair critiques, it is fine\u2011tuned with preference optimization.",
+            "Experiments on MedleyDB show the system reduces mix error by 19% over the initial mix, and human listeners rate it higher than several language models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "MixAgent pipeline: grouping agent routes tracks into subgroups; planning agent selects and orders audio effects (volume, reverb) for tracks, subgroups, full mix.",
+            "Refinement: detector flags needed corrections; MixCritic (45,657 critiques) trains critic via supervised learning plus preference optimization, cutting mix error 19% (8.4% more with optimization).",
+            "Evaluation: On MedleyDB, MixAgent outperforms Qwen3\u2011Omni, Gemini 3.8 Flash, GPT\u20114o\u2011audio in human listening tests, achieving higher quality ratings."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Agentic Music Post-Production",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Machine Learning",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.29093"
     },
     "e89b4b1882ad157fe48bb3c6d1548da8f90190761857f99751de17036483ac98": {
       "image_url": null,
@@ -5646,6 +6240,49 @@
         "Productivity"
       ],
       "url": "https://github.blog/news-insights/company-news/the-next-developer-interface-is-ambient-intelligence/"
+    },
+    "feff5c589b8ce53b1458ca90dd36623e8290f4c99f4a5e4edbdd603d778d92be": {
+      "image_url": null,
+      "last_seen": "2026-10-23T13:03:06.593626Z",
+      "published_at": "2026-01-15T00:09:56Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Guide targets startups, outlining steps to migrate to the Responses API for GPT-5 model integration.",
+            "It covers agent design, prompt tuning, and steering techniques to optimize GPT-5 performance.",
+            "The article emphasizes building reliable AI workflows, ensuring consistency and robustness across deployments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Migrating to the Responses API helps startups shift from older models to GPT\u20115, simplifying integration and improving response consistency.",
+            "Designing agents and tuning prompts lets teams customize GPT\u20115 behavior, ensuring outputs match specific business needs and user expectations.",
+            "Steering GPT\u20115 models and building reliable AI workflows create robust, predictable systems that scale with startup growth."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Migrating to GPT\u20115 Responses API: step\u2011by\u2011step integration for startups, including endpoint setup, authentication, and data flow optimization.",
+            "Designing agents with GPT\u20115: modular architecture, role assignment, context management, and dynamic prompt steering for consistent behavior.",
+            "Building reliable AI workflows: version control, monitoring, error handling, and automated rollback using GPT\u20115 tuning parameters."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Building with the GPT-5 Model Series: A Practical Guide",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend"
+      ],
+      "url": "https://openai.com/business/guides-and-resources/a-practical-guide-to-building-with-ai"
     },
     "ffb1232e61c43d9947c07dc558f0931a24667c83b8b1763e3284c0da85ce3150": {
       "image_url": null,
