@@ -1,6 +1,89 @@
 {
   "articles": [
     {
+      "id": "0ae783437195bedecfa6bd931a03b285ae0ec65b5b42164626419c011d62422d",
+      "image_url": null,
+      "published_at": "2026-10-23T18:32:51Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Quasar links proposed API changes to actual consumer references, giving producers concrete evidence for release decisions.",
+            "It highlights the challenge of assessing downstream impact when a library change originates in one repo but affects many others.",
+            "The tool aids both producers and coding agents by revealing which consumers still rely on changed symbols, informing migration strategies."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Quasar links a library\u2019s API change to actual usage in other projects, showing how many consumers still rely on the altered code.",
+            "This visibility helps producers decide whether to remove or keep a deprecated method, by revealing its \u201cblast radius\u201d \u2013 the spread of affected projects.",
+            "The tool also informs automated coding agents, giving them cross\u2011repository context to assess downstream risk and plan safe migrations."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Quasar links proposed API changes to observed consumer references across Netflix's shared Java libraries, giving producers concrete evidence of downstream impact.",
+            "The tool tracks API diffs, identifies remaining calls to deprecated methods, and maps consumer versions, enabling producers to assess risk before removal.",
+            "By exposing blast radius, Quasar supports automated agents in planning migrations and testing, reducing manual effort in large, independently evolving repository ecosystems."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
+      "topics": [
+        "AI Agents",
+        "Python",
+        "Backend",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90?source=rss----2615bd06b42e---4"
+    },
+    {
+      "id": "ee4c22366ef7e7abd786b0a4bc8d65774ddf350a3208b6c38568ae822ed0b9b0",
+      "image_url": null,
+      "published_at": "2026-10-23T17:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI scaled Habitat to support over 1 billion ChatGPT users by implementing reliable multi\u2011tenancy across its storage system.",
+            "Global caching was added to reduce latency, enabling faster data access for users worldwide.",
+            "Integration with Azure Cosmos DB delivered a 12\u00d7 speed\u2011up in read operations, improving overall performance."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI expanded Habitat to support over 1 billion ChatGPT users by adding reliable multi\u2011tenancy, letting many users share the same storage safely.",
+            "They used global caching and Azure Cosmos DB, a cloud database that stores data in many regions, to keep data fast and available worldwide.",
+            "These changes made read operations 12 times faster, improving ChatGPT\u2019s response speed for millions of users."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI scaled Habitat to support >1B ChatGPT users, focusing on reliable multi\u2011tenancy for isolated data access.",
+            "Implemented global caching across regions, reducing latency and improving read performance.",
+            "Leveraged Azure Cosmos DB, achieving 12\u00d7 faster reads and consistent scalability."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "topics": [
+        "Backend",
+        "System Design",
+        "Cloud",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+    },
+    {
       "id": "071ab93645637197f5569a5c9478c6c8afa5b1691c9e5f78d13fcb2963264902",
       "image_url": null,
       "published_at": "2026-10-23T04:00:00Z",
@@ -83,6 +166,43 @@
       "url": "https://arxiv.org/abs/2610.22714"
     },
     {
+      "id": "48eb2c61541658acf567cbf6e500900fdf3d3a4220b783ca096af7e3cd4b2d4d",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "HiddenLens is a six-layer BERT-LLM pipeline that detects, classifies, questions, and resolves hidden assumptions in natural-language software requirements.",
+            "The framework localizes unresolved spans, articulates assumptions with risk, classifies them into six NFR categories, and generates ranked clarification options.",
+            "A new HiddenLens Corpus contains 312 requirements annotated with 847 hidden assumptions, supporting training and evaluation of the framework."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "HiddenLens is a six-layer BERT-LLM pipeline that finds hidden assumptions in software requirements, not just vague language.",
+            "Layers 1\u20136 locate unclear spans, explain assumptions, classify into six non\u2011functional categories, suggest clarifications, let humans edit, then rewrite explicit, testable requirements.",
+            "HiddenLens Corpus contains 312 requirements with 847 annotated hidden assumptions across performance, security, scalability, usability, reliability, and domain, aiding future research."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "status": "failed"
+        }
+      },
+      "title": "HiddenLens: A Multi-Layer LLM Framework for Detecting and Resolving Hidden Assumptions in Software Requirements",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.29996"
+    },
+    {
       "id": "4cd0d3a23be15a1e655e3f9005f86d90b6563439111869b501c50195289058ae",
       "image_url": null,
       "published_at": "2026-10-23T04:00:00Z",
@@ -124,6 +244,80 @@
       "url": "https://arxiv.org/abs/2610.28987"
     },
     {
+      "id": "5d193cc1f396c8e39b220f8d1dbe6e508d25f4e743cec875d7aba3418f269cc6",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Handshake: initial exchange where agents find each other, learn abilities, and set up a session; measured across three protocols (MCP, A2A, ACP).",
+            "Round\u2011trip count dominates cost: legacy MCP needs 3 round trips (~230 ms at 50 ms RTT), A2A only 1 (~61 ms).",
+            "Handshake also scales with capability inventory: each capability costs 24\u2013107 tokens; a 200\u2011capability agent uses 11% of a 200k\u2011token context before reading its own task."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "status": "failed"
+        }
+      },
+      "title": "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.30151"
+    },
+    {
+      "id": "6ba2d9f839023a805615ba690add02c086b84a0d007fc6331fd2f8d94463e8bb",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Gandalf reduces KV cache writes by prioritizing full-attention data for SSD offloading, extending SSD lifetime without lowering cache hit rate.",
+            "The system uses historical access patterns and attention type to decide which KV cache entries to write to SSD.",
+            "Evaluation shows Gandalf extends SSD lifetime by 7.3\u00d7 on average, maintaining negligible impact on LLM serving cost."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "KV caching speeds LLM serving but uses too much memory; SSDs expand capacity, yet heavy writes shrink SSD life from years to months.",
+            "Traditional gating of writes based on past access patterns hurts cache hit rate because different attention types share patterns but need different future data.",
+            "Gandalf prioritizes full-attention KV cache writes to SSD, extending lifetime 7.3\u00d7 while keeping hit rate unchanged; it uses attention type info to guide writes."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Gandalf offloads KV cache to SSD, prioritizing full\u2011attention entries over others to reduce write amplification while preserving hit rates.",
+            "Uses access\u2011pattern gating combined with attention\u2011type awareness to limit SSD writes, extending lifetime by ~7.3\u00d7 without cost increase.",
+            "Evaluation shows negligible hit\u2011rate drop, achieving 7.3X SSD longevity gain in multi\u2011round LLM serving workloads."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.30791"
+    },
+    {
       "id": "897ee53c8693109a84df74a94849379792d89f8d5959208865bf9d810999f05e",
       "image_url": null,
       "published_at": "2026-10-23T04:00:00Z",
@@ -163,6 +357,47 @@
         "Productivity"
       ],
       "url": "https://arxiv.org/abs/2610.29005"
+    },
+    {
+      "id": "a974bc695170ebbc67bbcd54218136f71f3107a5d2166364f707d6c5dfec511d",
+      "image_url": null,
+      "published_at": "2026-10-23T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LLMSeg is a training-free pipeline that turns a vision-capable LLM into a text-prompted image segmenter without extra segmentation heads or training.",
+            "It uses three LLM-driven stages: detection and coarse description, B-spline tracing within bounding boxes, and iterative refinement with focus boxes until mask stabilizes.",
+            "Evaluated on ten referring and reasoning segmentation splits, open-vocabulary instance and semantic segmentation, and zero-shot detection, it matches or surpasses specialist SAM models using Gemini-3.7-Flash."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LLMSeg is a training\u2011free pipeline that turns a multimodal large language model into a text\u2011prompted image segmenter, eliminating extra segmentation heads.",
+            "It performs segmentation in three LLM\u2011driven stages: detect instances, trace boundaries with closed B\u2011splines, and iteratively refine until masks stabilize.",
+            "Across ten referring and reasoning splits, plus open\u2011vocabulary datasets, LLMSeg matches or surpasses the specialist SAM model using only a Gemini\u20113.7\u2011Flash backend."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LLMSeg is a training\u2011free, text\u2011prompted segmentation pipeline that uses a vision\u2011capable LLM (Gemini\u20113.7\u2011Flash) to detect, describe, and segment instances via B\u2011splines.",
+            "It runs three stages: detect & describe instances; trace each with periodic B\u2011splines inside boxes; refine via focus boxes until mask stabilizes or budget ends.",
+            "Evaluate on ten ReasonSeg/RefCOCO splits, LVIS, COCO, SA\u2011Co, zero\u2011shot detection; matches or surpasses SAM 3 on identical instances."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LLMSeg: Training-Free Text-Prompted Image Segmentation with B-Splines",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.29409"
     },
     {
       "id": "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5",
@@ -207,45 +442,45 @@
       "url": "https://arxiv.org/abs/2609.10144"
     },
     {
-      "id": "eee6fa42d71dc5a43db82b38ebcb42bd5cd6b1fbf9ca8ec9084a7f57b1974e49",
+      "id": "d7c237cc133940eeccf4595ef5072305dc0a139b9d93bffffbcfaa895d8fa1db",
       "image_url": null,
       "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv Machine Learning",
+      "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
           "bullets": [
-            "Architecture uses tools and memory to selectively correct wrist PPG heart rate estimates, addressing motion artifacts.",
-            "Trained on PPG\u2011DaLiA, tested on four datasets; MAE reduced up to 44.5%, with significant error decreases on GalaxyPPG.",
-            "Real\u2011time wearable system implemented; prototype recordings showed MAE drop from 9.09 to 4.45 bpm without extra rejection."
+            "Introduces spiking ternary GRU (stGRU) combining ternary-weight gated recurrent unit for filtering and resonate-and-fire neurons for binary spike output.",
+            "Enables end\u2011to\u2011end training on LibriSpeech, achieving single\u2011digit WER (6.44% on test\u2011clean) without dense MACs or external language model.",
+            "Also attains 10.88% CER on Aishell\u20111, demonstrating effectiveness on Mandarin speech and depth\u2011graded hierarchical representations."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "Agent uses tools and memory to improve wrist heart\u2011rate readings from photoplethysmography (PPG) by selecting or correcting estimates based on pulse, motion, and past data.",
-            "Trained on PPG\u2011DaLiA and tested on four datasets, the system cut mean absolute error by up to 44.5%, especially on GalaxyPPG, by reducing harmful corrections.",
-            "Real\u2011time prototype on a smartphone lowered error from 9.09 to 4.45 beats per minute in four recordings, showing practical feasibility without extra data rejection."
+            "Introduces spiking ternary GRU (stGRU) that separates filtering and integration, using ternary weights and resonate\u2011and\u2011fire neurons for efficient, event\u2011driven speech processing.",
+            "Trained end\u2011to\u2011end on LibriSpeech, stGRU models reach 6.44% WER on test\u2011clean without language models, the first spiking network to hit single\u2011digit error without dense MACs.",
+            "Also achieves 10.88% character error on Aishell\u20111, showing the architecture works on Mandarin speech and builds a depth\u2011graded hierarchy of representations."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "Agent architecture uses tools and memory around a fixed heart\u2011rate estimator, generating candidate corrections from pulse, motion, and limited history, then selecting via predicted benefit/harms.",
-            "Risk gate retains, corrects, or rejects outputs; trained on PPG\u2011DaLiA, tested on Wrist Exercise, GalaxyPPG, WildPPG, cutting MAE up to 44.5 %.",
-            "Real\u2011time wearable acquisition, Bluetooth, and smartphone deployment achieved a prototype MAE drop from 9.09 to 4.45 bpm without extra rejection, showing practical feasibility."
+            "stGRU combines ternary-weight GRU temporal filtering with downstream Resonate\u2011and\u2011Fire neurons that emit binary spikes, eliminating LIF decay and enabling native event\u2011based training.",
+            "End\u2011to\u2011end training on LibriSpeech\u2011960 yields 6.44% WER (small/medium/large) without external LM, first matrix\u2011MAC\u2011free spiking network achieving single\u2011digit WER.",
+            "The model also reaches 10.88% test CER on Aishell\u20111 (9.28% dev) from scratch, developing a depth\u2011graded hierarchy of representations."
           ],
           "status": "ok"
         }
       },
-      "title": "An Agent Architecture with Tools and Memory for Selective Correction of Wrist PPG Heart Rate Estimates",
+      "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
       "topics": [
-        "AI Agents",
-        "Backend",
+        "LLMs",
         "System Design",
-        "Machine Learning"
+        "Machine Learning",
+        "AI Agents"
       ],
-      "url": "https://arxiv.org/abs/2610.30688"
+      "url": "https://arxiv.org/abs/2610.29720"
     },
     {
       "id": "e7cca0b9835b81a5aa7162b7194cc615c6f1d6c9b59949ce73cc3a9a1584628c",
@@ -289,197 +524,84 @@
       "url": "https://arxiv.org/abs/2610.29093"
     },
     {
-      "id": "a974bc695170ebbc67bbcd54218136f71f3107a5d2166364f707d6c5dfec511d",
+      "id": "eee6fa42d71dc5a43db82b38ebcb42bd5cd6b1fbf9ca8ec9084a7f57b1974e49",
       "image_url": null,
       "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
+      "source": "arXiv Machine Learning",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
           "bullets": [
-            "LLMSeg is a training-free pipeline that turns a vision-capable LLM into a text-prompted image segmenter without extra segmentation heads or training.",
-            "It uses three LLM-driven stages: detection and coarse description, B-spline tracing within bounding boxes, and iterative refinement with focus boxes until mask stabilizes.",
-            "Evaluated on ten referring and reasoning segmentation splits, open-vocabulary instance and semantic segmentation, and zero-shot detection, it matches or surpasses specialist SAM models using Gemini-3.7-Flash."
+            "Architecture uses tools and memory to selectively correct wrist PPG heart rate estimates, addressing motion artifacts.",
+            "Trained on PPG\u2011DaLiA, tested on four datasets; MAE reduced up to 44.5%, with significant error decreases on GalaxyPPG.",
+            "Real\u2011time wearable system implemented; prototype recordings showed MAE drop from 9.09 to 4.45 bpm without extra rejection."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "LLMSeg is a training\u2011free pipeline that turns a multimodal large language model into a text\u2011prompted image segmenter, eliminating extra segmentation heads.",
-            "It performs segmentation in three LLM\u2011driven stages: detect instances, trace boundaries with closed B\u2011splines, and iteratively refine until masks stabilize.",
-            "Across ten referring and reasoning splits, plus open\u2011vocabulary datasets, LLMSeg matches or surpasses the specialist SAM model using only a Gemini\u20113.7\u2011Flash backend."
+            "Agent uses tools and memory to improve wrist heart\u2011rate readings from photoplethysmography (PPG) by selecting or correcting estimates based on pulse, motion, and past data.",
+            "Trained on PPG\u2011DaLiA and tested on four datasets, the system cut mean absolute error by up to 44.5%, especially on GalaxyPPG, by reducing harmful corrections.",
+            "Real\u2011time prototype on a smartphone lowered error from 9.09 to 4.45 beats per minute in four recordings, showing practical feasibility without extra data rejection."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "LLMSeg is a training\u2011free, text\u2011prompted segmentation pipeline that uses a vision\u2011capable LLM (Gemini\u20113.7\u2011Flash) to detect, describe, and segment instances via B\u2011splines.",
-            "It runs three stages: detect & describe instances; trace each with periodic B\u2011splines inside boxes; refine via focus boxes until mask stabilizes or budget ends.",
-            "Evaluate on ten ReasonSeg/RefCOCO splits, LVIS, COCO, SA\u2011Co, zero\u2011shot detection; matches or surpasses SAM 3 on identical instances."
+            "Agent architecture uses tools and memory around a fixed heart\u2011rate estimator, generating candidate corrections from pulse, motion, and limited history, then selecting via predicted benefit/harms.",
+            "Risk gate retains, corrects, or rejects outputs; trained on PPG\u2011DaLiA, tested on Wrist Exercise, GalaxyPPG, WildPPG, cutting MAE up to 44.5 %.",
+            "Real\u2011time wearable acquisition, Bluetooth, and smartphone deployment achieved a prototype MAE drop from 9.09 to 4.45 bpm without extra rejection, showing practical feasibility."
           ],
           "status": "ok"
         }
       },
-      "title": "LLMSeg: Training-Free Text-Prompted Image Segmentation with B-Splines",
+      "title": "An Agent Architecture with Tools and Memory for Selective Correction of Wrist PPG Heart Rate Estimates",
       "topics": [
-        "LLMs",
+        "AI Agents",
         "Backend",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.29409"
-    },
-    {
-      "id": "d7c237cc133940eeccf4595ef5072305dc0a139b9d93bffffbcfaa895d8fa1db",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces spiking ternary GRU (stGRU) combining ternary-weight gated recurrent unit for filtering and resonate-and-fire neurons for binary spike output.",
-            "Enables end\u2011to\u2011end training on LibriSpeech, achieving single\u2011digit WER (6.44% on test\u2011clean) without dense MACs or external language model.",
-            "Also attains 10.88% CER on Aishell\u20111, demonstrating effectiveness on Mandarin speech and depth\u2011graded hierarchical representations."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Introduces spiking ternary GRU (stGRU) that separates filtering and integration, using ternary weights and resonate\u2011and\u2011fire neurons for efficient, event\u2011driven speech processing.",
-            "Trained end\u2011to\u2011end on LibriSpeech, stGRU models reach 6.44% WER on test\u2011clean without language models, the first spiking network to hit single\u2011digit error without dense MACs.",
-            "Also achieves 10.88% character error on Aishell\u20111, showing the architecture works on Mandarin speech and builds a depth\u2011graded hierarchy of representations."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "stGRU combines ternary-weight GRU temporal filtering with downstream Resonate\u2011and\u2011Fire neurons that emit binary spikes, eliminating LIF decay and enabling native event\u2011based training.",
-            "End\u2011to\u2011end training on LibriSpeech\u2011960 yields 6.44% WER (small/medium/large) without external LM, first matrix\u2011MAC\u2011free spiking network achieving single\u2011digit WER.",
-            "The model also reaches 10.88% test CER on Aishell\u20111 (9.28% dev) from scratch, developing a depth\u2011graded hierarchy of representations."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.29720"
-    },
-    {
-      "id": "48eb2c61541658acf567cbf6e500900fdf3d3a4220b783ca096af7e3cd4b2d4d",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "HiddenLens is a six-layer BERT-LLM pipeline that detects, classifies, questions, and resolves hidden assumptions in natural-language software requirements.",
-            "The framework localizes unresolved spans, articulates assumptions with risk, classifies them into six NFR categories, and generates ranked clarification options.",
-            "A new HiddenLens Corpus contains 312 requirements annotated with 847 hidden assumptions, supporting training and evaluation of the framework."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "HiddenLens is a six-layer BERT-LLM pipeline that finds hidden assumptions in software requirements, not just vague language.",
-            "Layers 1\u20136 locate unclear spans, explain assumptions, classify into six non\u2011functional categories, suggest clarifications, let humans edit, then rewrite explicit, testable requirements.",
-            "HiddenLens Corpus contains 312 requirements with 847 annotated hidden assumptions across performance, security, scalability, usability, reliability, and domain, aiding future research."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [],
-          "status": "failed"
-        }
-      },
-      "title": "HiddenLens: A Multi-Layer LLM Framework for Detecting and Resolving Hidden Assumptions in Software Requirements",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.29996"
-    },
-    {
-      "id": "6ba2d9f839023a805615ba690add02c086b84a0d007fc6331fd2f8d94463e8bb",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Gandalf reduces KV cache writes by prioritizing full-attention data for SSD offloading, extending SSD lifetime without lowering cache hit rate.",
-            "The system uses historical access patterns and attention type to decide which KV cache entries to write to SSD.",
-            "Evaluation shows Gandalf extends SSD lifetime by 7.3\u00d7 on average, maintaining negligible impact on LLM serving cost."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "KV caching speeds LLM serving but uses too much memory; SSDs expand capacity, yet heavy writes shrink SSD life from years to months.",
-            "Traditional gating of writes based on past access patterns hurts cache hit rate because different attention types share patterns but need different future data.",
-            "Gandalf prioritizes full-attention KV cache writes to SSD, extending lifetime 7.3\u00d7 while keeping hit rate unchanged; it uses attention type info to guide writes."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Gandalf offloads KV cache to SSD, prioritizing full\u2011attention entries over others to reduce write amplification while preserving hit rates.",
-            "Uses access\u2011pattern gating combined with attention\u2011type awareness to limit SSD writes, extending lifetime by ~7.3\u00d7 without cost increase.",
-            "Evaluation shows negligible hit\u2011rate drop, achieving 7.3X SSD longevity gain in multi\u2011round LLM serving workloads."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
-      "topics": [
-        "AI Agents",
-        "LLMs",
         "System Design",
         "Machine Learning"
       ],
-      "url": "https://arxiv.org/abs/2610.30791"
+      "url": "https://arxiv.org/abs/2610.30688"
     },
     {
-      "id": "5d193cc1f396c8e39b220f8d1dbe6e508d25f4e743cec875d7aba3418f269cc6",
+      "id": "2b3f616d26d343fed7789052f7d45765c10f64079fafbd4a9ee06dcaf0e956ff",
       "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
+      "published_at": "2026-10-23T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
       "summaries": {
         "balanced": {
-          "bullets": [],
-          "status": "failed"
+          "bullets": [
+            "AWS Trainium is a custom chip for machine learning inference and training.",
+            "To determine if a model runs on Trainium, verify framework support and hardware compatibility.",
+            "Use AWS documentation and tools to confirm model deployment on Trainium."
+          ],
+          "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "Handshake: initial exchange where agents find each other, learn abilities, and set up a session; measured across three protocols (MCP, A2A, ACP).",
-            "Round\u2011trip count dominates cost: legacy MCP needs 3 round trips (~230 ms at 50 ms RTT), A2A only 1 (~61 ms).",
-            "Handshake also scales with capability inventory: each capability costs 24\u2013107 tokens; a 200\u2011capability agent uses 11% of a 200k\u2011token context before reading its own task."
+            "AWS Trainium is a custom chip designed for machine learning workloads.",
+            "To see if your model runs on Trainium, consult AWS documentation or compatibility guides.",
+            "Compatibility depends on the framework, model size, and supported operations (ops)."
           ],
           "status": "ok"
         },
         "technical": {
-          "bullets": [],
-          "status": "failed"
+          "bullets": [
+            "Determine if your model is compatible with AWS Trainium by reviewing AWS documentation.",
+            "Use the \u201cLook It Up\u201d guidance to confirm support for your model\u2019s framework.",
+            "Follow AWS Trainium deployment steps to run the model on the hardware."
+          ],
+          "status": "ok"
         }
       },
-      "title": "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols",
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
       "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
+        "Cloud",
         "Machine Learning"
       ],
-      "url": "https://arxiv.org/abs/2610.30151"
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support"
     },
     {
       "id": "51888f116f5b083740bce79640ccacdc80055a08000c769931982fc83218805e",
@@ -1868,57 +1990,53 @@
       "url": "https://arxiv.org/abs/2610.23104"
     },
     {
-      "id": "c30547bb7e55a3e8d28b2dadd9c07837e3d27a41969cc0e9d16b48bc8ab548cf",
+      "id": "5c52b7d34becd1ccf770a5f22540c4c3de16ae5f8db819babc6348fdbc423c77",
       "image_url": null,
-      "published_at": "2026-10-16T16:01:02Z",
-      "source": "Netflix TechBlog",
+      "published_at": "2026-10-19T00:00:00Z",
+      "source": "Hugging Face Blog",
       "source_type": "rss",
       "summaries": {
         "balanced": {
           "bullets": [
-            "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale.",
-            "Development summary in the balanced tone.",
-            "Generated locally without contacting an external model."
+            "TorchNeuron simplifies deployment of Hugging Face models on AWS Trainium.",
+            "It offers streamlined integration and performance optimization for training and inference.",
+            "The new release reduces setup complexity, accelerating deployment and reducing costs."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale.",
-            "Development summary in the beginner friendly tone.",
-            "Generated locally without contacting an external model."
+            "TorchNeuron is a new tool that lets users run Hugging Face (HF) models on Amazon\u2019s Trainium hardware more easily.",
+            "It simplifies the setup process, reducing the steps needed to deploy large language models on Trainium, which is Amazon\u2019s custom AI chip.",
+            "Users can benefit from faster inference and lower costs, as TorchNeuron optimizes model execution for Trainium\u2019s architecture."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale.",
-            "Development summary in the technical tone.",
-            "Generated locally without contacting an external model."
+            "TorchNeuron enables running Hugging Face models directly on AWS Trainium hardware.",
+            "It simplifies deployment, reducing setup complexity for training and inference.",
+            "The tool streamlines integration of HF models with Trainium, improving usability."
           ],
           "status": "ok"
         }
       },
-      "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix Scale",
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
       "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "DevOps",
-        "Productivity"
+        "Cloud",
+        "Machine Learning"
       ],
-      "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
+      "url": "https://huggingface.co/blog/hf-torchneuron"
     }
   ],
-  "generated_at": "2026-10-23T13:03:06.593626Z",
+  "generated_at": "2026-10-24T12:25:01.672068Z",
   "topic_counts": {
     "AI Agents": 38,
-    "Backend": 21,
+    "Backend": 22,
     "LLMs": 40,
-    "Machine Learning": 36,
-    "Other": 26,
-    "System Design": 30
+    "Machine Learning": 38,
+    "Other": 29,
+    "System Design": 31
   },
   "topics": [
     "AI Agents",

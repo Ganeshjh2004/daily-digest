@@ -259,6 +259,51 @@
       ],
       "url": "https://openai.com/index/managing-ai-investments-in-agentic-era"
     },
+    "0ae783437195bedecfa6bd931a03b285ae0ec65b5b42164626419c011d62422d": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-23T18:32:51Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Quasar links proposed API changes to actual consumer references, giving producers concrete evidence for release decisions.",
+            "It highlights the challenge of assessing downstream impact when a library change originates in one repo but affects many others.",
+            "The tool aids both producers and coding agents by revealing which consumers still rely on changed symbols, informing migration strategies."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Quasar links a library\u2019s API change to actual usage in other projects, showing how many consumers still rely on the altered code.",
+            "This visibility helps producers decide whether to remove or keep a deprecated method, by revealing its \u201cblast radius\u201d \u2013 the spread of affected projects.",
+            "The tool also informs automated coding agents, giving them cross\u2011repository context to assess downstream risk and plan safe migrations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Quasar links proposed API changes to observed consumer references across Netflix's shared Java libraries, giving producers concrete evidence of downstream impact.",
+            "The tool tracks API diffs, identifies remaining calls to deprecated methods, and maps consumer versions, enabling producers to assess risk before removal.",
+            "By exposing blast radius, Quasar supports automated agents in planning migrations and testing, reducing manual effort in large, independently evolving repository ecosystems."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
+      "topics": [
+        "AI Agents",
+        "Python",
+        "Backend",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90?source=rss----2615bd06b42e---4"
+    },
     "0b8a27d6cb1c43641cbdec1e5d49f19f8ffe1a6f6408d99d834a4f03c0a1272a": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -608,6 +653,49 @@
         "Productivity"
       ],
       "url": "https://netflixtechblog.com/behind-the-scenes-evolving-netflixs-ads-event-pipeline-for-live-part-ii-826ebf9ad9fb?source=rss----2615bd06b42e---4"
+    },
+    "13d4a9bfec6354847044f273dc9ad7178105044b3db0c4d50c7e2b3cfba2a0af": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2025-11-19T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "GPT\u20115.1\u2011CodexMax includes model\u2011level safety training for harmful tasks and prompt injections.",
+            "Product\u2011level safeguards feature agent sandboxing and configurable network access.",
+            "The system card details comprehensive safety measures for the model and its deployment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Model-level safeguards train GPT\u20115.1\u2011CodexMax to avoid harmful tasks and resist prompt injections, reducing unsafe outputs.",
+            "Product-level controls include agent sandboxing\u2014a safe, isolated environment for tasks\u2014and configurable network access to limit external data.",
+            "Together, these measures aim to keep GPT\u20115.1\u2011CodexMax safe and reliable for users."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Model\u2011level safeguards include specialized safety training targeting harmful tasks and prompt\u2011injection defenses for GPT\u20115.1\u2011CodexMax.",
+            "Product\u2011level mitigations feature agent sandboxing to isolate execution and prevent unauthorized system interactions.",
+            "Configurable network access allows administrators to enable or restrict external connectivity for the model."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "GPT-5.1-Codex-Max System Card",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Machine Learning"
+      ],
+      "url": "https://openai.com/index/gpt-5-1-codex-max-system-card"
     },
     "15138aab23bfbb834e46159cf2a02854c5d1989c6d85489249b20b0f3f1e5753": {
       "image_url": null,
@@ -1044,6 +1132,48 @@
         "LLMs"
       ],
       "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai"
+    },
+    "2b3f616d26d343fed7789052f7d45765c10f64079fafbd4a9ee06dcaf0e956ff": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-23T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AWS Trainium is a custom chip for machine learning inference and training.",
+            "To determine if a model runs on Trainium, verify framework support and hardware compatibility.",
+            "Use AWS documentation and tools to confirm model deployment on Trainium."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AWS Trainium is a custom chip designed for machine learning workloads.",
+            "To see if your model runs on Trainium, consult AWS documentation or compatibility guides.",
+            "Compatibility depends on the framework, model size, and supported operations (ops)."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Determine if your model is compatible with AWS Trainium by reviewing AWS documentation.",
+            "Use the \u201cLook It Up\u201d guidance to confirm support for your model\u2019s framework.",
+            "Follow AWS Trainium deployment steps to run the model on the hardware."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Does Your Model Run on AWS Trainium? Look It Up",
+      "topics": [
+        "Cloud",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support"
     },
     "2cc2ae252fb2084a6b420e7d971aa725c6f172195a2a3f0b209dfdc105acf1c8": {
       "image_url": null,
@@ -2141,6 +2271,48 @@
       ],
       "url": "https://kubernetes.io/blog/2026/09/15/kubernetes-v1-37-pod-level-resource-managers-beta/"
     },
+    "53911f98c21c784fce1ad32ff03581a81f8dabebaf6d23b86827f6c51a0cda80": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-13T17:05:48Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LFM2.5-24B-A2B is a lightweight language model designed for rapid on-device execution.",
+            "The model enables private agents to run locally, eliminating the need for cloud-based inference.",
+            "It delivers efficient performance while maintaining user privacy and reducing latency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LFM2.5-24B-A2B is a 24\u2011billion\u2011parameter language model optimized for on\u2011device inference.",
+            "It powers private agents that keep user data on the device, enhancing privacy.",
+            "The model runs quickly, enabling real\u2011time applications without cloud dependence."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LFM2.5\u201124B\u2011A2B is a 24\u2011billion\u2011parameter language model engineered for on\u2011device inference, balancing performance with low latency.",
+            "It enables private agents by keeping all data and inference locally, eliminating cloud\u2011based data transmission.",
+            "Optimized with quantization, pruning, and lightweight attention, LFM2.5\u201124B\u2011A2B achieves fast inference on mobile CPUs and GPUs."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
+    },
     "558cd03a67c5610a9a3202355d270a35648d7e8e394cab5b974cb66cc1807454": {
       "image_url": null,
       "last_seen": "2026-10-21T16:23:39.970050Z",
@@ -2183,6 +2355,91 @@
         "Cloud"
       ],
       "url": "https://kubernetes.io/blog/2026/05/15/ccm-new-metric-route-sync-total/"
+    },
+    "56c490db040147f1def4aa82fd8798b0218ca38f4ad181a049f33c2fdbcde858": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-02T04:01:31Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AutoSynthData is a system for generating synthetic training data for enterprise AI agents.",
+            "It automates data creation to improve agent performance and reduce manual labeling.",
+            "The approach supports diverse enterprise use cases, enabling scalable, privacy-preserving data generation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AutoSynthData automatically creates labeled examples for AI agents (software that performs tasks) used in business, cutting manual data collection time.",
+            "It generates synthetic data (artificially created data) that mimics real enterprise scenarios, helping models learn tasks like customer support or inventory management.",
+            "The tool reduces costs and speeds up deployment of AI solutions by providing ready-to-use training sets."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AutoSynthData automates synthetic data generation for enterprise agents, enabling scalable training data creation.",
+            "The system reduces manual labeling effort by generating realistic agent interaction datasets.",
+            "AutoSynthData supports enterprise agent development with automated pipelines and customizable data templates."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "AutoSynthData: Generating Training Data for Enterprise Agents",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/ServiceNow-AI/autosynthdata"
+    },
+    "574161e956a98014957788d300c39c6f553bf2f249ef03d4950dc0b5bd0041d5": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2025-11-13T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Philips trains 70,000 employees with ChatGPT Enterprise to enhance AI literacy and responsible use.",
+            "The initiative aims to improve healthcare outcomes globally through AI-driven insights.",
+            "It focuses on scaling AI knowledge across the organization for better decision-making and innovation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Philips trains 70,000 employees with ChatGPT Enterprise to boost AI skills.",
+            "The program emphasizes responsible AI use and aims to improve healthcare outcomes worldwide.",
+            "Scaling AI literacy across the global workforce helps Philips deliver better patient care."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "- Philips deploys ChatGPT Enterprise to train 70,000 employees, embedding AI literacy across its global workforce.",
+            "- Training focuses on responsible AI use, ensuring data privacy, bias mitigation, and alignment with healthcare regulations.",
+            "- The initiative aims to improve patient outcomes worldwide by equipping staff with AI tools for diagnostics, treatment planning, and operational efficiency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How Philips is scaling AI literacy across 70,000 employees",
+      "topics": [
+        "Backend",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/philips"
     },
     "5890b1cfd4cc38aa3885e02e9fc3010d881da63d5d8b82ee82ae0ed7c4531d58": {
       "image_url": null,
@@ -2401,6 +2658,90 @@
       ],
       "url": "https://netflixtechblog.com/measuring-the-impact-of-personalized-recommendations-4c26be3a4d96?source=rss----2615bd06b42e---4"
     },
+    "5c52b7d34becd1ccf770a5f22540c4c3de16ae5f8db819babc6348fdbc423c77": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-19T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "TorchNeuron simplifies deployment of Hugging Face models on AWS Trainium.",
+            "It offers streamlined integration and performance optimization for training and inference.",
+            "The new release reduces setup complexity, accelerating deployment and reducing costs."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "TorchNeuron is a new tool that lets users run Hugging Face (HF) models on Amazon\u2019s Trainium hardware more easily.",
+            "It simplifies the setup process, reducing the steps needed to deploy large language models on Trainium, which is Amazon\u2019s custom AI chip.",
+            "Users can benefit from faster inference and lower costs, as TorchNeuron optimizes model execution for Trainium\u2019s architecture."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "TorchNeuron enables running Hugging Face models directly on AWS Trainium hardware.",
+            "It simplifies deployment, reducing setup complexity for training and inference.",
+            "The tool streamlines integration of HF models with Trainium, improving usability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
+      "topics": [
+        "Cloud",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/hf-torchneuron"
+    },
+    "5d15c391e24287d68058dc537aeeeb59aa41360b83b329adf831d54dd40b62fb": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-14T19:11:33Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "The new star history API cuts request volume from 2,500 to 24 per repository.",
+            "It delivers trend data without returning individual stargazer identities.",
+            "Engineering tradeoffs were made to avoid unbounded database work while maintaining accuracy."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The new API cuts requests from 2,500 to 24 per repo, speeding up star history retrieval.",
+            "It shows star trends without listing who starred, protecting user privacy.",
+            "Engineers balanced performance and privacy by avoiding heavy database queries, accepting some data detail loss."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Reduced API calls from 2,500 to 24 per repo, cutting server load and latency.",
+            "Provides star trend data without exposing individual stargazer identities, preserving privacy.",
+            "Implemented tradeoffs to avoid unbounded database work, balancing performance and data granularity."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
+      "topics": [
+        "Backend",
+        "Productivity"
+      ],
+      "url": "https://github.blog/engineering/architecture-optimization/from-2500-requests-to-24-rebuilding-star-history-without-the-stargazers/"
+    },
     "5d193cc1f396c8e39b220f8d1dbe6e508d25f4e743cec875d7aba3418f269cc6": {
       "image_url": null,
       "last_seen": "2026-10-23T13:03:06.593626Z",
@@ -2480,6 +2821,48 @@
         "System Design"
       ],
       "url": "https://martinfowler.com/fragments/2026-09-24.html"
+    },
+    "602c8542c9b7b2070c58d9c1436413ab8d2010fc2ba0311e78fe657d32fdaba7": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-09-30T20:03:34Z",
+      "source": "AWS News Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Amazon S3 Vectors introduces metadata pre-filtering, enabling filters to run before similarity search.",
+            "This change can increase recall by up to 5x for filtered queries, improving relevance.",
+            "The feature benefits RAG, agentic applications, and document search use cases."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Amazon S3 Vectors now lets you filter by metadata before searching, boosting recall up to 5\u00d7.",
+            "The pre\u2011filtering step narrows results, so similarity searches return more relevant items.",
+            "This feature helps retrieval\u2011augmented generation, agentic apps, and document search to find better matches."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Amazon S3 Vectors introduces metadata pre-filtering, enabling filters to run before similarity search.",
+            "Pre-filtering boosts recall by up to 5\u00d7, ensuring scoped queries return more relevant results.",
+            "Feature is ideal for RAG, agentic applications, and document search use cases."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Amazon S3 Vectors now supports metadata pre-filtering for higher recall on filtered searches",
+      "topics": [
+        "AI Agents",
+        "Cloud"
+      ],
+      "url": "https://aws.amazon.com/blogs/aws/amazon-s3-vectors-now-supports-metadata-pre-filtering-for-higher-recall-on-filtered-searches/"
     },
     "61193afe253ba34f2baf0a6ab1e23c6c22370cdb9a67ac9bc5d69523d97b157e": {
       "image_url": null,
@@ -3269,6 +3652,49 @@
       ],
       "url": "https://arxiv.org/abs/2610.29276"
     },
+    "817be1b64aeefb03765cd8b6046d2a1fae82862b506ec77993fc1d750646fe5f": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2025-11-19T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Scania, a global manufacturer, is accelerating work across its workforce by scaling AI with ChatGPT Enterprise.",
+            "The company employs team-based onboarding and robust guardrails to integrate AI tools.",
+            "This approach enhances productivity, quality, and innovation across Scania's operations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Scania uses ChatGPT Enterprise to speed up work across its global workforce.",
+            "Team-based onboarding and strong guardrails help employees use AI safely and effectively.",
+            "AI boosts productivity, quality, and innovation, improving efficiency and product development."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Scania deploys ChatGPT Enterprise across its global workforce, integrating AI into daily operations to enhance efficiency and decision\u2011making.",
+            "Team\u2011based onboarding trains employees in AI use, ensuring consistent adoption and alignment with company processes.",
+            "Robust guardrails and policy controls prevent misuse, while AI outputs improve product quality, speed, and innovation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How Scania accelerates work with AI across its global workforce",
+      "topics": [
+        "Backend",
+        "Productivity",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scania"
+    },
     "85ae60baefcbcf5cc062bfce52911d7300326c4796ff56b904e647dc97384eaa": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -3701,6 +4127,48 @@
       ],
       "url": "https://arxiv.org/abs/2609.19616"
     },
+    "91597643c193a9c7e9c907164a09265d1b6cd5df8a0598ba02dae9e04ba2e194": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-12T17:43:59Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Add custom instructions and skills to your repository to tailor Copilot\u2019s behavior to your codebase.",
+            "Create custom agents that interact with your code, enabling more context-aware suggestions.",
+            "Connect MCP servers such as Playwright to extend Copilot\u2019s testing and automation capabilities."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Add custom instructions and skills to your repo so Copilot knows your project\u2019s style and rules.",
+            "Create custom agents\u2014small programs that guide Copilot\u2019s suggestions based on your specific coding needs.",
+            "Connect MCP servers like Playwright, a tool that automates web browsers, to test Copilot\u2019s code."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Add custom instructions and skills to your repository to tailor Copilot\u2019s behavior to your codebase.",
+            "Create and use custom agents that interact with your code, enabling more context\u2011aware suggestions.",
+            "Connect MCP servers such as Playwright to extend Copilot\u2019s testing and automation capabilities."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "topics": [
+        "AI Agents",
+        "Productivity"
+      ],
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/"
+    },
     "94211aeca29cfff20d04957c7e851bcf33b1445d07b018e8c8d9fcc92120b302": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -3921,6 +4389,48 @@
         "Machine Learning"
       ],
       "url": "https://huggingface.co/blog/few-shot-learning-gpt-neo-and-inference-api"
+    },
+    "9f2d06fc385078171c5af07d35fc929db9a110f651fd3e000319461c0f339ded": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-01T20:04:04Z",
+      "source": "AWS News Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AWS Well-Architected Agent is a public preview AI service that analyzes your AWS environment for targeted, contextual recommendations.",
+            "It focuses on improving cost, security, performance, and resilience of applications.",
+            "Recommendations include ready-to-implement fixes aligned with business goals."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AWS Well-Architected Agent is an AI tool that reviews your cloud setup and gives specific, actionable advice to improve cost, security, performance, and resilience.",
+            "It offers ready-to-implement fixes that match your business goals, helping you make changes quickly and effectively.",
+            "The service is currently in public preview, meaning it\u2019s available for testing but may still evolve before full release."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AWS Well-Architected Agent (public preview) uses AI to analyze your AWS environment, providing contextual recommendations for cost, security, performance, and resilience.",
+            "Recommendations include ready\u2011to\u2011implement fixes aligned with business goals, enabling rapid application optimization across multiple workloads.",
+            "The service delivers targeted insights by evaluating your infrastructure, offering actionable guidance to improve cloud architecture and operational efficiency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Announcing AWS Well-Architected Agent, an AI-powered intelligence to optimize your cloud environment (preview)",
+      "topics": [
+        "AI Agents",
+        "Cloud"
+      ],
+      "url": "https://aws.amazon.com/blogs/aws/announcing-aws-well-architected-agent-an-ai-powered-intelligence-to-optimize-your-cloud-environment-preview/"
     },
     "a0904673d8e83392bf0846c7674476b4059adb3f083f128528f7aa1ff1dea03f": {
       "image_url": null,
@@ -4708,6 +5218,48 @@
       ],
       "url": "https://arxiv.org/abs/2610.28988"
     },
+    "c6dfcab64da70bccdeafe260008ace004bb2f2b1c0508ff1190eb86709c8c5f6": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-09-30T17:22:31Z",
+      "source": "AWS News Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Aurora PostgreSQL now queries Apache Iceberg and Parquet data directly from data lakes, eliminating the need for ETL pipelines.",
+            "The feature uses DuckDB inside Aurora, allowing single PostgreSQL queries to join live transactional and historical data.",
+            "It supports AWS Glue Data Catalog, S3, and S3 Tables, with predicate pushdown and caching for efficient performance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Aurora PostgreSQL can now read Apache Iceberg and Parquet files directly from a data lake, so you don't need separate ETL steps.",
+            "The feature uses DuckDB inside Aurora, letting a single PostgreSQL query join live transactional data with historical lake data.",
+            "It works with AWS Glue Data Catalog, S3, and S3 Tables, and includes optimizations like predicate pushdown and caching for faster performance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Directly query Iceberg & Parquet in S3 data lake from Aurora PostgreSQL, eliminating ETL, via DuckDB engine embedded in Aurora.",
+            "Single queries can join live transactional data with historical lake tables using standard PostgreSQL syntax, leveraging AWS Glue Data Catalog, S3, and S3 Tables.",
+            "Performance is boosted by predicate pushdown and caching, enabling efficient scans of large Iceberg/Parquet datasets within Aurora."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Amazon Aurora PostgreSQL now supports direct querying of Apache Iceberg and Parquet data in your data lake",
+      "topics": [
+        "System Design",
+        "Cloud"
+      ],
+      "url": "https://aws.amazon.com/blogs/aws/amazon-aurora-postgresql-now-supports-direct-querying-of-apache-iceberg-and-parquet-data-in-your-data-lake/"
+    },
     "c71ef79e3212dc880b6b84b19450d571be80864c5402bc79c6c169ad5c7054d8": {
       "image_url": null,
       "last_seen": "2026-10-21T16:23:39.970050Z",
@@ -5449,6 +6001,48 @@
       ],
       "url": "https://kubernetes.io/blog/2026/09/04/kubernetes-v1-37-rootless-beta/"
     },
+    "e4a55cbd6248607b20b77531deb7dce963dd4d899da5496737473b0980363e70": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-13T15:59:06Z",
+      "source": "AWS News Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AWS Weekly Roundup covers Prime Day 2026 metrics, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and other AWS updates (Oct 13, 2026).",
+            "Prime Day 2026 saw Amazon ElastiCache peak at 2.3 quadrillion daily requests, a figure highlighted in the post.",
+            "The article reflects on the event's metrics, noting that Prime Day occurred in June and the roundup is posted later."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Prime Day 2026 was a massive shopping event; Amazon\u2019s ElastiCache (a caching service that speeds up data retrieval) hit 2.3 quadrillion daily requests.",
+            "The roundup also highlights new AI tools: Claude Haiku 5.5, Amazon Nova 2.5, and Sonic, each offering improved language and search capabilities.",
+            "The post reflects on how these metrics illustrate Amazon\u2019s growing cloud infrastructure and the scale of its e\u2011commerce peak."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Prime Day 2026 saw Amazon ElastiCache peak at 2.3 quadrillion daily requests, highlighting unprecedented traffic during the event.",
+            "Claude Haiku 5.5 launched, offering advanced generative AI capabilities with improved speed and contextual understanding.",
+            "Amazon Nova 2.5 Sonic introduced, delivering faster compute performance and lower latency for high\u2011performance workloads."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "AWS Weekly Roundup: Prime Day 2026 by the numbers, Claude Haiku 5.5, Amazon Nova 2.5 Sonic, and more (October 13, 2026)",
+      "topics": [
+        "LLMs",
+        "Cloud"
+      ],
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/"
+    },
     "e5d87b51d49b9e4da356b3af6a4e68906ca95ee6699797512e42160904369fc2": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -5762,6 +6356,50 @@
         "Backend"
       ],
       "url": "https://netflixtechblog.com/netflix-stratum-media-processing-automated-container-right-sizing-ddf9aa68a801?source=rss----2615bd06b42e---4"
+    },
+    "ee4c22366ef7e7abd786b0a4bc8d65774ddf350a3208b6c38568ae822ed0b9b0": {
+      "image_url": null,
+      "last_seen": "2026-10-24T12:25:01.672068Z",
+      "published_at": "2026-10-23T17:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI scaled Habitat to support over 1 billion ChatGPT users by implementing reliable multi\u2011tenancy across its storage system.",
+            "Global caching was added to reduce latency, enabling faster data access for users worldwide.",
+            "Integration with Azure Cosmos DB delivered a 12\u00d7 speed\u2011up in read operations, improving overall performance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI expanded Habitat to support over 1 billion ChatGPT users by adding reliable multi\u2011tenancy, letting many users share the same storage safely.",
+            "They used global caching and Azure Cosmos DB, a cloud database that stores data in many regions, to keep data fast and available worldwide.",
+            "These changes made read operations 12 times faster, improving ChatGPT\u2019s response speed for millions of users."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI scaled Habitat to support >1B ChatGPT users, focusing on reliable multi\u2011tenancy for isolated data access.",
+            "Implemented global caching across regions, reducing latency and improving read performance.",
+            "Leveraged Azure Cosmos DB, achieving 12\u00d7 faster reads and consistent scalability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
+      "topics": [
+        "Backend",
+        "System Design",
+        "Cloud",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
     },
     "ee6df3f0028687147a0dc01c97b22c0bf07d9c5fe83e4e152eab01ad7c08d237": {
       "image_url": null,
