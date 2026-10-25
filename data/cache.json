@@ -173,6 +173,48 @@
       ],
       "url": "https://arxiv.org/abs/2610.28706"
     },
+    "075fed980e67c694db46cedaac3bb03714e2e805b3a4b8d5ecbdb92fb4704bd4": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-09-10T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Explores reconstructing the AUTOMATIC1111 web UI using Gradio, a Python library for building interactive interfaces.",
+            "Highlights benefits such as simplified deployment, modular component integration, and improved user experience compared to the original interface.",
+            "Provides step\u2011by\u2011step guidance on setting up Gradio, configuring models, and customizing controls for image generation tasks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AUTOMATIC1111 is a popular web interface for Stable Diffusion, a text\u2011to\u2011image AI model.",
+            "Gradio lets developers build interactive web apps quickly, using simple Python code.",
+            "The article shows how to replace AUTOMATIC1111\u2019s original setup with a Gradio workflow, making it easier to customize and deploy."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Rebuild AUTOMATIC1111 interface using Gradio Workflow.",
+            "Step-by-step guide to replace original UI with Gradio components.",
+            "Discuss version compatibility and deployment considerations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Rebuilding AUTOMATIC1111 with Gradio Workflow",
+      "topics": [
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/gradio-workflow-1111"
+    },
     "0799939eea555f7a6e94cc9084e2e41abf21b644358d249c04ea39996a6b3630": {
       "image_url": null,
       "last_seen": "2026-10-22T13:24:32.434324Z",
@@ -867,6 +909,49 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.27078"
+    },
+    "183d58a311d515e31a248a59a1c2afffba52f890e9a6ed29d1b72860746a36cc": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2025-05-16T08:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Codex is a cloud-based coding agent built on the codex-1 model, a specialized version of OpenAI's o3 for software engineering.",
+            "The model was trained via reinforcement learning on diverse real-world coding tasks to produce code that mirrors human style and pull\u2011request preferences.",
+            "Codex iteratively runs tests, ensuring generated code meets instructions and passes all tests before final output."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Codex is a cloud-based coding agent that writes code in the style of human developers.",
+            "It uses codex-1, a version of OpenAI\u2019s o3 model fine\u2011tuned for software engineering with reinforcement learning on real coding tasks.",
+            "The system follows instructions exactly, runs tests repeatedly, and only stops when all tests pass, matching developers\u2019 pull\u2011request preferences."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Codex: cloud-based coding agent built on codex-1, an OpenAI o3 variant tailored for software engineering.",
+            "codex-1 trained via reinforcement learning on diverse real-world coding tasks, producing code that mimics human style and PR preferences.",
+            "Agent iteratively executes tests, ensuring code passes before final output, strictly following user instructions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Addendum to o3 and o4-mini system card: Codex",
+      "topics": [
+        "AI Agents",
+        "Cloud",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/o3-o4-mini-codex-system-card-addendum"
     },
     "1b7c2b0930d70d4e4fd52f8e4b416cd1203843271577af5b28c6ec97afede080": {
       "image_url": null,
@@ -2699,6 +2784,48 @@
       ],
       "url": "https://arxiv.org/abs/2602.22871"
     },
+    "59d665bbb77eb2ca2a68e99b67413769c9031cc0a589d301272d993002c9c9cf": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-09-02T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.37 introduces beta, default-enabled HPA support for scaling workloads to zero replicas using object or external metrics.",
+            "This core feature removes idle pods, saving resources for CPU/GPU-heavy workloads, but incurs cold-start latency and requires non-HTTP buffering for request-driven services.",
+            "Scaling to zero relies on metrics independent of running pods (e.g., queue length), unlike CPU/memory metrics that vanish when replicas hit zero."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37 adds core support for scaling workloads to zero replicas using HorizontalPodAutoscaler (HPA), a feature now in Beta and enabled by default.",
+            "HPA can use object or external metrics, like queue length, to trigger scaling to zero and back, avoiding the need for add\u2011ons or alpha gates.",
+            "Scaling to zero saves resources but incurs cold\u2011start delays; HTTP workloads need a buffering layer because services don\u2019t queue requests when no Pods are ready."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 adds core HPA support for scaling workloads to zero replicas, now Beta and enabled by default.",
+            "Zero scaling uses object or external metrics (e.g., queue length) that persist without Pods, allowing HPA to trigger scale\u2011up when demand rises.",
+            "Trade\u2011off: cold\u2011start latency as HPA observes metric, schedules, and boots a Pod; HTTP workloads need buffering since Services don\u2019t queue requests."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: Scale Workloads to Zero with HorizontalPodAutoscaler",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/"
+    },
     "5a37fac8855312255045a847fb068fdd8c5ff3c1ffd79da7595ec9b4f5cfb1e1": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -2785,6 +2912,48 @@
         "Machine Learning"
       ],
       "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
+    },
+    "5bfed052375c43fb851ba430a5cbf03343824478413ca006cea23094a74f4052": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-09-03T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "DRA Extended Resource support has graduated to GA in Kubernetes 1.37, enabling DRA drivers to satisfy extended resource requests without separate device plugins.",
+            "The feature allows setting an extended resource name on a DeviceClass; Pods requesting it are matched to a device via DRA without needing a ResourceClaim.",
+            "ResourceClaim status now includes a devices field, providing per-device status such as interface name, MAC, and IP addresses for network devices."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "DRA Extended Resource support is now GA in Kubernetes 1.37, letting drivers satisfy GPU\u2011like requests directly via DeviceClass without extra device plugins.",
+            "Existing workloads using extended resources keep working unchanged while the allocation logic shifts to DRA, enabling gradual adoption for cluster operators.",
+            "ResourceClaim.status now includes a devices field that reports per\u2011device status, such as network interface name, MAC address, and IP addresses, improving visibility."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "DRA Extended Resource support reaches GA in v1.37, letting drivers satisfy example.com/gpu requests via DeviceClass names without separate device plugins.",
+            "ResourceClaim.status now includes a devices field, exposing per\u2011device status, network interface names, MACs, and IPs for better visibility.",
+            "The feature progressed from KEP acceptance (1.34) to alpha (1.35), beta (1.36), and now stable, enabling gradual DRA adoption without modifying existing workloads."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: DRA Updates",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/09/03/kubernetes-v1-37-dra-updates/"
     },
     "5c00c57a96250570db8585475abd3ebbf17506acf086fdd4787a4a4c3fd1af9f": {
       "image_url": null,
@@ -3298,7 +3467,7 @@
     },
     "689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
       "image_url": null,
-      "last_seen": "2026-10-24T12:59:25.109510Z",
+      "last_seen": "2026-10-25T12:56:15.750533Z",
       "published_at": "2026-09-22T00:00:00Z",
       "source": "Hugging Face Blog",
       "source_type": "rss",
@@ -4539,6 +4708,48 @@
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase/"
     },
+    "92852f6b830041a36ca716210330515316b43779b8ca7f124ad4fe9e6d36bd7d": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-08-27T13:11:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Organizations anticipate AI to improve efficiency, cut costs, and boost margins, yet many lack robust data foundations.",
+            "The authors emphasize that AI success depends on accurate, trustworthy data, which is often weak or unreliable.",
+            "They outline strategies for building a dependable data base to support agentic AI applications."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AI can improve efficiency and profits, but it relies on good data.",
+            "Many companies have weak data, like sand, which hurts AI.",
+            "Authors advise building a solid, accurate, and trustworthy data base for AI success."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AI's effectiveness hinges on data quality; organizations often have unreliable data foundations.",
+            "Authors propose methods to build a reliable, accurate, and trusted data base for AI.",
+            "Emphasizes establishing robust data governance and validation processes to support AI-driven efficiencies."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Making Your Data Ready for Agentic AI",
+      "topics": [
+        "AI Agents",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html"
+    },
     "94211aeca29cfff20d04957c7e851bcf33b1445d07b018e8c8d9fcc92120b302": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -4929,6 +5140,48 @@
         "Cloud"
       ],
       "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-collaborative-ai-powered-observability-for-your-applications/"
+    },
+    "a1d018f16fad79f97456f75bff3df416e35d9a73410b1735dcbcc9bb4c30fb83": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-09-15T16:00:44Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "The article examines the reliability of AI agents after a successful task completion.",
+            "It discusses factors influencing whether an agent can consistently replicate its performance.",
+            "It offers insights into testing and monitoring strategies for repeated task execution."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The article examines how an AI agent (software that acts autonomously) successfully completed a task and questions whether it can repeat that success.",
+            "It discusses factors that influence repeatability, such as data quality, model updates, and changing conditions.",
+            "The piece warns that an agent\u2019s past performance is not a guarantee of future results."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Agent aces initial task, demonstrating high performance and reliability.",
+            "Key question: will the agent replicate success under similar conditions?",
+            "Factors such as training data, environment stability, and model updates influence repeatability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Your Agent Aced the Task. Will It Do It Again?",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency"
     },
     "a552db5e754f1076506dc8c96c03d4d71af076a248fb8cef25ec49a8e66906a8": {
       "image_url": null,
@@ -5579,6 +5832,48 @@
       ],
       "url": "https://martinfowler.com/rachels-ramblings/citizens-agents-experts.html"
     },
+    "c27336331a48e407a92f072b8259baf298a668a1cf7172493565c57508dc8779": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-08-31T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.37 GA enables Storage Version Migration (SVM) by default, stabilizing storagemigration.k8s.io/v1 API and control plane controller.",
+            "SVM ensures resources are rewritten to the latest storage version, preventing stale data when dropping older API versions like v1alpha1.",
+            "The feature resolves issues where existing resources remain in older storage schemas, enabling safe removal of deprecated API versions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37 now has Storage Version Migration (SVM) GA, automatically enabled in all clusters, ensuring resources use the latest storage schema.",
+            "SVM fixes stale storage versions that arise when older API versions (e.g., v1alpha1) remain in object storage, preventing safe removal of outdated API versions.",
+            "The control plane controller automatically rewrites existing resources to the new storage version, eliminating the need for manual migration steps."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 GA: Storage Version Migration (SVM) fully stable, built\u2011in API storagemigration.k8s.io/v1, control\u2011plane controller enabled by default.",
+            "SVM ensures all stored API resources are rewritten to the latest storage version, preventing stale v1alpha1/v1beta1 data when dropping older CRD API versions.",
+            "Migration requires mutation of each resource; SVM automates rewriting, allowing safe removal of old storedVersions once every object is updated to the new schema."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: Storage Version Migration Enabled by Default",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/08/31/kubernetes-v1-37-storage-version-migration-ga/"
+    },
     "c30547bb7e55a3e8d28b2dadd9c07837e3d27a41969cc0e9d16b48bc8ab548cf": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -5624,6 +5919,49 @@
         "Productivity"
       ],
       "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf?source=rss----2615bd06b42e---4"
+    },
+    "c3a08c57269d6a1012527bad486e6648ed1c2cd6a35618174c76fa7364b9758f": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2024-10-10T10:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "MLE-bench is a benchmark for measuring AI agents' performance in machine learning engineering.",
+            "It evaluates how well agents handle ML engineering tasks.",
+            "The benchmark provides a standardized way to assess ML agent capabilities."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "MLE\u2011bench is a benchmark that measures how well AI agents perform in machine learning engineering.",
+            "It focuses on tasks that involve building, training, and evaluating ML models (statistical models that learn from data).",
+            "The goal is to assess how well agents can handle engineering tasks like data preprocessing (cleaning data), hyperparameter tuning (adjusting settings), deployment (using models)."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "MLE-bench is a benchmark designed to evaluate AI agents on machine learning engineering tasks.",
+            "It measures how well agents perform across ML engineering workflows, providing standardized metrics.",
+            "The benchmark offers a framework for assessing agent capabilities in building, training, and deploying ML models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "MLE-bench: Evaluating Machine Learning Agents on Machine Learning Engineering",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/mle-bench"
     },
     "c591060be429e94d25921753c38adbbd40ede9764c4aa718c41cea9b5c224cb4": {
       "image_url": null,
@@ -5888,6 +6226,48 @@
       ],
       "url": "https://kubernetes.io/blog/2026/09/08/kubernetes-v1-37-advancing-workload-aware-scheduling/"
     },
+    "cdd1118267ee925c63286ac83c83df800f6195e85e821a17d4745982cb7ef8b5": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-09-03T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Explains the concept of user-owned memory for coding agents, emphasizing control over data and privacy.",
+            "Describes practical approaches to embed and manage this memory within agent workflows.",
+            "Highlights benefits such as improved data security, reduced reliance on third\u2011party services, and enhanced customization."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Coding agents are software that writes code automatically.",
+            "Memory is the storage where these agents keep information.",
+            "Owning the memory lets you control what the agent remembers."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Equip coding agents with a private memory layer you control, ensuring data stays within your infrastructure.",
+            "Maintain ownership of all stored code snippets, logs, and state, preventing third\u2011party access.",
+            "Seamlessly integrate the memory module into existing AI workflows for consistent, secure code generation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Give Your Coding Agents a Memory You Own",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/funes"
+    },
     "ce22eeec83ca5359d76893bcbbaeac3089d613acd4c2c024395cd9d64d893069": {
       "image_url": null,
       "last_seen": "2026-10-21T16:23:39.970050Z",
@@ -6104,6 +6484,44 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/choco"
+    },
+    "d4361cc5b51334262577fcd478fcf0fcb41b5f55de75ac6e43dfb0e2a680136b": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-09-01T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "etcd RangeStream in Kubernetes v1.37 enters beta, paired with etcd v3.7, to lower memory needed for large collection reads.",
+            "It streams results in adaptive chunks, avoiding full payload assembly and reducing peak memory on API server and etcd.",
+            "The change makes large list and watch requests more predictable, mitigating OOM risks from big objects or concurrent reads."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        },
+        "technical": {
+          "bullets": [
+            "etcd RangeStream enters beta in Kubernetes v1.37, paired with etcd v3.7, to cut API server and etcd memory during large list reads.",
+            "RangeStream streams responses in adaptive chunks, avoiding full payload assembly; reduces peak usage and improves predictability for large object collections.",
+            "API server previously paginated by key count, still risked OOM with large objects; RangeStream eliminates duplicate memory on etcd and API server."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: etcd RangeStream Cuts Memory Use on Large List Reads",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/"
     },
     "d57f5928adacdd34268d71f2d7fa5e93a473bc3137ae06919fc2c939058afa17": {
       "image_url": null,
@@ -6580,6 +6998,49 @@
         "Cloud"
       ],
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-prime-day-2026-by-the-numbers-claude-haiku-5-5-amazon-nova-2-5-sonic-and-more-october-13-2026/"
+    },
+    "e50bb7710b05ddef1d922f2894f4e0a01ba48d2938b84dc088423bdee9987d6f": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2025-07-01T10:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Genspark leveraged GPT-4.1 and OpenAI Realtime API to create no-code personal agents.",
+            "The product achieved $36M annual recurring revenue in just 45 days.",
+            "The approach demonstrates rapid AI product development without coding expertise."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Genspark created an AI product that earned $36M in annual recurring revenue (ARR) in just 45 days.",
+            "It uses no-code agents\u2014automated helpers built without coding\u2014powered by GPT\u20114.1, a large language model that writes human\u2011like text.",
+            "The system relies on OpenAI\u2019s Realtime API, which streams data instantly, letting agents respond quickly to user input."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Genspark launched a no-code personal agent platform, leveraging GPT\u20114.1 and OpenAI Realtime API to deliver AI-driven assistants.",
+            "The product achieved $36 M ARR in just 45 days, showcasing rapid deployment and high revenue potential.",
+            "No-code tooling enabled rapid iteration, allowing non\u2011developers to build and customize agents without coding."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "No-code personal agents, powered by GPT-4.1 and Realtime API",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend"
+      ],
+      "url": "https://openai.com/index/genspark"
     },
     "e579ae6b6f9d1be0cff6269848a1eebc09764d9d4a4b50123d95f99972ab0384": {
       "image_url": null,
@@ -7069,6 +7530,49 @@
       ],
       "url": "https://arxiv.org/abs/2610.30688"
     },
+    "ef935fda21318cae55da518c0b0c1eb83df81006b9540755fdea56cb6d50a812": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2025-03-20T11:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "New API audio models allow developers to specify speaking styles, such as a sympathetic customer service tone.",
+            "This feature enables more personalized voice agent interactions.",
+            "It marks the first time TTS models can be instructed to adopt specific personas."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "New audio models let developers guide text-to-speech to adopt specific styles, like a sympathetic customer service agent.",
+            "This feature adds a layer of customization for voice agents, making virtual assistants sound more natural and tailored.",
+            "Text-to-speech (TTS) turns written words into spoken audio; the API now supports style instructions for richer user interactions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Next\u2011generation audio models added to API, enabling developers to customize TTS output.",
+            "Developers can instruct TTS to adopt specific speaking styles, e.g., \u201csympathetic customer service agent.\u201d",
+            "This feature unlocks advanced voice agent personalization without external tools."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Introducing next-generation audio models in the API",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/introducing-our-next-generation-audio-models"
+    },
     "f0433dcbfb4f85e51a9b9e8e2584ea0a17e9e1a7e20f511efc2381820cca374f": {
       "image_url": null,
       "last_seen": "2026-10-20T13:13:12.391645Z",
@@ -7329,6 +7833,48 @@
       ],
       "url": "https://kubernetes.io/blog/2026/09/09/kubernetes-v1-37-node-lifecycle-conditions/"
     },
+    "fa2cf7f3abc01193a67a5eb65d4cb461c1c3eedfc4797bc3f78f8a7f941822fe": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-09-02T13:32:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AI is generating code at a rate exceeding human review capacity, prompting a re-evaluation of traditional code review practices.",
+            "The author argues that code review serves broader purposes\u2014knowledge sharing, mentoring, ownership, and architectural understanding\u2014beyond bug detection.",
+            "A panel discussion highlighted differing views on whether automating or modifying code review processes better achieves these goals."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AI writes code faster than humans can review, raising concerns about overloading traditional code reviews.",
+            "Code reviews do more than spot bugs\u2014they teach, share knowledge, build ownership, and spread architectural understanding.",
+            "The author argues that automating reviews might lose these benefits, so we should rethink how we use code reviews."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AI produces more code than humans can review: Meta saw 106% rise in lines per human\u2011landed diff; DX noted 64% increase in median PR size.",
+            "Code review does more than bug hunting\u2014it shares knowledge, teaches juniors, builds collective ownership, and spreads architectural understanding.",
+            "The author argues that using code review to handle AI\u2011driven volume risks losing its broader benefits and suggests it may be the wrong tool."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Maybe We Shouldn't Be Reviewing All This Code",
+      "topics": [
+        "AI Agents",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/rachels-ramblings/code-review.html"
+    },
     "fafe571b74e06e1fdde720a3b727b1e294879be407fcc7945a9a32655fe9cc4f": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -7415,6 +7961,48 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/what-parameter-golf-taught-us"
+    },
+    "fe305408589952205b8b68996ed0fcf9097e8a9b42d1f42ba8f525ed10669f1e": {
+      "image_url": null,
+      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "published_at": "2026-09-02T14:45:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Experiment tested team productivity with fully agentic engineering practices.",
+            "Agents unintentionally generated a blackboard coordination system within the git repository.",
+            "The incident highlights unexpected emergent coordination mechanisms in automated development workflows."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The team tried a fully agentic engineering experiment, where software agents work independently like humans.",
+            "They unintentionally caused the agents to build a blackboard coordination system inside the git repository\u2014a shared board where agents post and read updates.",
+            "The result was an unexpected, agent-driven coordination method that could improve team productivity, showing how AI can create new collaboration tools."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Experiment tested productivity of fully agentic engineering practices.",
+            "Agents inadvertently generated a blackboard coordination system within the git repository.",
+            "The incident highlights emergent coordination mechanisms in autonomous agent workflows."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "An Accidental Blackboard",
+      "topics": [
+        "AI Agents",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/articles/exploring-gen-ai/an-accidental-blackboard.html"
     },
     "fe5468c76a03c1f066a0678c59cbc17927126caa19ddc2e7a3bcd2ae6cfd8505": {
       "image_url": null,
