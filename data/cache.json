@@ -129,6 +129,48 @@
       ],
       "url": "https://openai.com/index/equip-responses-api-computer-environment"
     },
+    "01c7a7a96ee24e1ca00e04f53769fc0fd775f67c5848bbd3137a21958e4168fd": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-07-31T16:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.37 will deprecate kubectl run\u2019s --filename/-f flag, shifting pod creation to CLI arguments like NAME and --image.",
+            "Static Pods will no longer reference Secrets or ConfigMaps, removing the previous bug and the PreventStaticPodAPIReferences feature gate.",
+            "Support for ipvs mode in kube-proxy is being deprecated as part of the upcoming release changes."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37 will drop the --filename flag in kubectl run, simplifying pod creation to just name and image.",
+            "Static Pods can no longer use Secrets or ConfigMaps, as they were never meant to read API resources directly.",
+            "Support for ipvs mode in kube-proxy is being phased out, affecting how traffic is routed in the cluster."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 will deprecate kubectl run --filename/-f, as generated pods rely only on CLI args like NAME and --image.",
+            "Static Pods in v1.37 cannot reference Secrets or ConfigMaps; the PreventStaticPodAPIReferences gate is removed, enforcing this restriction.",
+            "kube-proxy will drop ipvs mode support in v1.37, signaling a shift away from that networking backend."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37 Sneak Peek",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/"
+    },
     "071ab93645637197f5569a5c9478c6c8afa5b1691c9e5f78d13fcb2963264902": {
       "image_url": null,
       "last_seen": "2026-10-23T05:18:06.830843Z",
@@ -910,6 +952,51 @@
       ],
       "url": "https://arxiv.org/abs/2610.27078"
     },
+    "17593d61de4e8fbb37de2227f03fd45a057b279591262a2b782c3207f392be13": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-10-26T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "InferSlice is a reference architecture enabling SLO-driven LLM inference across telco wide\u2011area networks, integrating network slicing, GPU partitioning, elastic serving, and observability.",
+            "Evaluation on the JOINER UK WAN shows tiered service differentiation, weight streaming reduces scale\u2011out time, and replication is placement\u2011insensitive but memory\u2011bound.",
+            "Parallelism experiments reveal pipeline parallelism tolerates cross\u2011site hops, while tensor parallelism and disaggregation fail beyond a single hop, highlighting network constraints."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "InferSlice is a reference design that lets telco networks run large\u2011language\u2011model inference with Service\u2011Level Objectives, avoiding central cloud limits on latency, sovereignty, and resource locality.",
+            "It combines network slicing, GPU partitioning, elastic scaling, and observability to coordinate geographically distributed compute and heterogeneous resources.",
+            "Tests on JOINER UK WAN show latency\u2011throughput trade\u2011offs; weight streaming speeds up scale\u2011out, while pipeline parallelism works across sites but tensor/disaggregation fails beyond hops."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "InferSlice is a reference architecture for SLO\u2011driven LLM inference on telco WANs, combining network slicing, GPU partitioning, elastic serving, and observability.",
+            "Evaluation on JOINER UK WAN shows tiered service differentiation, weight\u2011streaming reduces scale\u2011out time, and replication is placement\u2011insensitive but memory\u2011bound.",
+            "Pipeline parallelism tolerates near\u2011 and mid\u2011cross\u2011site hops, while tensor parallelism and prefill/decode disaggregation fail beyond a single hop."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "InferSlice: A Reference Architecture for SLO-driven LLM Inference over a Telco Wide-Area Network",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "DevOps",
+        "Cloud",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.32638"
+    },
     "183d58a311d515e31a248a59a1c2afffba52f890e9a6ed29d1b72860746a36cc": {
       "image_url": null,
       "last_seen": "2026-10-25T12:56:15.750533Z",
@@ -1561,6 +1648,48 @@
       ],
       "url": "https://arxiv.org/abs/2610.28611"
     },
+    "353217afc4f706b5339de407629065a4820f98bc0f70c28c174d08c10ec6ab52": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-08-13T17:16:04Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Unified workflow for data collection, model training, and deployment.",
+            "Integration of Strands Agents for orchestration, LeRobot for robotic interactions, and Hugging Face Storage Buckets for data storage.",
+            "Enables end-to-end AI pipeline in a single environment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Strands Agents let you capture data, build models, and launch them all in a single interface, cutting down on switching tools.",
+            "LeRobot is a robot\u2011learning framework that trains agents by simulating tasks, making it easier to create AI that can act in real environments.",
+            "Hugging Face Storage Buckets store model files and data in the cloud, letting you share and version your AI assets securely."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Strands Agents orchestrate end\u2011to\u2011end ML pipelines, enabling data capture, model training, and inference deployment from a single interface.",
+            "LeRobot provides lightweight, container\u2011based runtime environments that automatically package models and dependencies for reproducible training and inference.",
+            "Hugging Face Storage Buckets store datasets, checkpoints, and artifacts, offering versioned, secure access integrated with Strands and LeRobot workflows."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop"
+    },
     "3556c47e80db65b8a163bbc9cd962a42558c46393558a51f547bad9a28ea7190": {
       "image_url": null,
       "last_seen": "2026-10-24T12:59:25.109510Z",
@@ -1689,6 +1818,48 @@
         "Productivity"
       ],
       "url": "https://kubernetes.io/blog/2026/05/05/kubernetes-v1-36-declarative-validation-ga/"
+    },
+    "3b5080acff0154853d9d0a88a850d37ca8500854ed165bba9cfe92e2c90dd8a4": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-08-27T18:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.37 promotes metrics.k8s.io API to stable v1, giving it official stability guarantees.",
+            "The stable API offers NodeMetrics and PodMetrics, providing CPU and memory usage for nodes and pods, unchanged from v1beta1.",
+            "This graduation supports autoscaling and basic inspection but is not a full monitoring replacement, remaining small and unchanged."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.37 promotes metrics.k8s.io API to stable v1, giving it official reliability guarantees.",
+            "The API returns CPU and memory usage for nodes (NodeMetrics) and pods (PodMetrics), used by kubectl top and autoscaling (automatic resource adjustment).",
+            "No new fields or changes; the stable API keeps the same data as beta, remaining a small, focused tool, not a full monitoring system."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.37 promotes metrics.k8s.io API to stable v1, granting official stability guarantees for CPU and memory metrics.",
+            "The API exposes NodeMetrics and PodMetrics resources, identical to v1beta1, with per\u2011container breakdowns in PodMetrics.",
+            "It remains a lightweight interface for autoscaling and basic inspection, not a full monitoring replacement or custom metrics API."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.37: Metrics API graduates to stable",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/08/27/kubernetes-v1-37-metrics-api-ga/"
     },
     "3c8ef4ebd570790c54a38e439bedb05847367e8402b625bb72ffb622b2520a70": {
       "image_url": null,
@@ -2302,6 +2473,92 @@
       ],
       "url": "https://arxiv.org/abs/2610.28987"
     },
+    "4e33c3e8216e3e5b8a4804622ba8cde656ee244fc0f404764df963bd536b3ca5": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2022-06-23T07:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Trained neural network to play Minecraft via Video PreTraining on large unlabeled human play videos, requiring minimal labeled data.",
+            "Fine-tuned model can craft diamond tools in ~20 minutes, matching human proficiency, using native keypress and mouse controls.",
+            "Approach demonstrates progress toward general computer-using agents by leveraging natural human interface and massive video data."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Trained a neural network to play Minecraft via Video PreTraining on an unlabeled video dataset of human play, using a small amount of labeled data.",
+            "After fine\u2011tuning, the model can craft diamond tools\u2014a task that normally takes proficient humans over 20 minutes (24,000 actions).",
+            "The model uses the native human interface of keypresses and mouse movements, making it general and a step toward general computer\u2011using agents."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Trained a neural network via Video PreTraining on massive unlabeled human Minecraft videos, requiring only minimal labeled contractor data.",
+            "Fine\u2011tuned model achieves diamond tool crafting in ~24,000 actions, far faster than typical 20\u2011minute human play.",
+            "Operates through native keypress/mouse interface, demonstrating generalizable computer\u2011using agent capabilities."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Learning to play Minecraft with Video PreTraining",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/vpt"
+    },
+    "4f916dd940512f5ba3908be1b81122d5515b18fac641b68c65f3c4508e37009c": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2022-08-10T07:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "New content moderation tool launched, enhancing previous filter capabilities.",
+            "The Moderation endpoint offers improved accuracy and flexibility over earlier versions.",
+            "It is available for free today to all OpenAI API developers."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI launches a new content moderation tool that replaces the older filter.",
+            "The Moderation endpoint offers better accuracy and flexibility for detecting unwanted content.",
+            "It is free for all OpenAI API developers starting today."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "New content moderation tool released, replacing older filter with enhanced Moderation endpoint.",
+            "Endpoint offers improved detection accuracy and broader content categories compared to prior filter.",
+            "Free for all OpenAI API developers as of today, enabling immediate integration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "New and improved content moderation tooling",
+      "topics": [
+        "Backend",
+        "Productivity",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/new-and-improved-content-moderation-tooling"
+    },
     "50f31b94c19898a3b6f1ac5cd3bb0d2788b222dae330c85b980e0e3f1a6964eb": {
       "image_url": null,
       "last_seen": "2026-10-17T11:51:20.495239Z",
@@ -2913,6 +3170,48 @@
       ],
       "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
     },
+    "5ba78b757300e8cc3ff5b4c8f26a93a1cc067af59a63302997722a2b18eff29a": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-08-18T18:09:38Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "The article examines how much memory an agent truly requires for optimal performance.",
+            "It discusses factors influencing memory usage, such as model size, context length, and deployment constraints.",
+            "Practical guidelines are offered to balance memory consumption with agent capabilities."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Memory is the computer space an agent uses to store data while working.",
+            "The article explains how to estimate the amount of memory needed for different agent tasks.",
+            "It offers tips for balancing memory usage with performance, so agents run smoothly without wasting resources."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Evaluate actual memory consumption of AI agents beyond theoretical estimates.",
+            "Identify key factors that inflate memory usage, such as model size, context length, and auxiliary data.",
+            "Implement techniques to reduce footprint, like pruning, quantization, and efficient data structures."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How Much Memory Does Your Agent Actually Need?",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm"
+    },
     "5bfed052375c43fb851ba430a5cbf03343824478413ca006cea23094a74f4052": {
       "image_url": null,
       "last_seen": "2026-10-25T12:56:15.750533Z",
@@ -3467,7 +3766,7 @@
     },
     "689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
       "image_url": null,
-      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "last_seen": "2026-10-26T14:46:02.993055Z",
       "published_at": "2026-09-22T00:00:00Z",
       "source": "Hugging Face Blog",
       "source_type": "rss",
@@ -3711,6 +4010,49 @@
         "Backend"
       ],
       "url": "https://openai.com/index/builders-guide-to-gpt-5-6"
+    },
+    "7039dde8336dd49d445e7be3b79c63a1f04d06faec1c612b29f9343a08488beb": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2024-04-05T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Klarna\u2019s AI assistant can perform tasks equivalent to 700 full\u2011time agents, boosting efficiency across operations.",
+            "The tool enhances personal shopping, customer service, and employee productivity, transforming how services are delivered.",
+            "Its deployment signals a shift toward AI\u2011driven automation in retail and support functions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Klarna\u2019s AI assistant (a computer program that helps people) can replace the work of 700 full\u2011time agents (people working full time).",
+            "It helps customers by acting as a personal shopping guide (choosing items for them).",
+            "The tool also boosts customer service (helping customers) and employee productivity (how well workers perform)."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Klarna\u2019s AI assistant performs tasks equivalent to 700 full\u2011time agents, automating routine operations.",
+            "It transforms personal shopping by providing AI\u2011driven recommendations and seamless checkout experiences.",
+            "The system boosts customer service efficiency and increases employee productivity across Klarna\u2019s support teams."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Klarna's AI assistant does the work of 700 full-time agents",
+      "topics": [
+        "AI Agents",
+        "Productivity",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/klarna"
     },
     "7100a9423b909b319969f6f3d4d8c2faf20067c1d7e918a71dd8df8d23ad9af8": {
       "image_url": null,
@@ -4451,6 +4793,51 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/scaling-postgresql"
+    },
+    "8ae590bc78052ec06680e05d210b6d8e9e929d598e1165201e3f4b9056a71e05": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-10-26T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces S\u2011SALAAD, a framework that jointly learns weights, low\u2011rank, and structured sparse components for efficient inference on edge devices.",
+            "Supports hardware\u2011compatible structured sparsity patterns and budget\u2011aware compression, enabling a single checkpoint to adapt to multiple memory budgets.",
+            "Experiments on Llama2 and Qwen3 models demonstrate improved performance\u2011memory trade\u2011offs compared to prior sparse\u2011plus\u2011low\u2011rank methods."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Large models reward scaling laws, yet their size forces cloud inference; edge devices need smaller, faster models due to limited memory and unreliable connectivity.",
+            "Sparse-plus-low-rank compression cuts parameters but can slow inference because irregular memory access and indexing overhead hurt speed.",
+            "S\u2011SALAAD learns weights, low\u2011rank, and structured sparse patterns\u2014zeros in regular blocks hardware can skip\u2014then uses compatible kernels to run checkpoint efficiently across many memory budgets."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces S\u2011SALAAD, a training framework that jointly learns weights, low\u2011rank, and structured sparse components for single\u2011checkpoint elastic compression.",
+            "Supports hardware\u2011compatible sparsity patterns and budget\u2011aware compression, with custom CPU/GPU kernels that exploit learned structure for faster inference.",
+            "Evaluated on Llama2 and Qwen3 during pretraining and distillation, achieving improved Pareto trade\u2011offs between memory, speed, and accuracy."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Learning Structured Sparsity for Large Models: Bridging Model Compressibility and Efficient Inference",
+      "topics": [
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Cloud",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.31897"
     },
     "8afdb503cc5635992639a26513506f28523b4a0b75bbd01a7786187c3b0eba2d": {
       "image_url": null,
@@ -5440,6 +5827,48 @@
         "Machine Learning"
       ],
       "url": "https://huggingface.co/blog/llama31-on-vertex-ai"
+    },
+    "ad90e6779ea3045b3b9ff330e4c9d1c6cd82a44459fb7cba10b171e8ac596ec8": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-09-01T21:39:07Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Explores the true metrics captured by LLM benchmarks.",
+            "Highlights gaps between benchmark scores and real-world capabilities.",
+            "Suggests directions for more meaningful evaluation of language models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "BenchMIRT explores what LLM (large language model) benchmarks measure, questioning if they truly test understanding.",
+            "It shows benchmarks may focus on pattern recognition, not deep reasoning, and may not reflect real-world language use.",
+            "The article proposes new metrics that better capture reasoning, context handling, and adaptability of language models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "BenchMIRT is a new benchmark designed to evaluate large language models on multi\u2011aspect tasks.",
+            "It measures reasoning, factual accuracy, and contextual understanding across diverse datasets.",
+            "The study reveals that existing benchmarks over\u2011emphasize surface metrics, under\u2011representing true model capabilities."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "BenchMIRT: What are LLM benchmarks actually measuring?",
+      "topics": [
+        "LLMs",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/allenai/benchmirt"
     },
     "ae10eb4597fe2dea3b838512ee33b4589fb7c90fcb34260eaf8654f1a2d9895d": {
       "image_url": null,
@@ -6487,7 +6916,7 @@
     },
     "d4361cc5b51334262577fcd478fcf0fcb41b5f55de75ac6e43dfb0e2a680136b": {
       "image_url": null,
-      "last_seen": "2026-10-25T12:56:15.750533Z",
+      "last_seen": "2026-10-26T14:46:02.993055Z",
       "published_at": "2026-09-01T18:30:00Z",
       "source": "Kubernetes Blog",
       "source_type": "rss",
@@ -6502,9 +6931,13 @@
           "status": "ok"
         },
         "beginner_friendly": {
-          "bullets": [],
+          "bullets": [
+            "etcd RangeStream, a streaming read feature, now beta in Kubernetes v1.37, cuts memory use by sending data in chunks.",
+            "The API server normally loads entire resource collections into memory, which can cause out\u2011of\u2011memory errors when many or large objects are read.",
+            "By streaming responses, etcd and the API server share less data simultaneously, making peak memory predictable and reducing crashes."
+          ],
           "model": "openai/gpt-oss-20b",
-          "status": "failed"
+          "status": "ok"
         },
         "technical": {
           "bullets": [
@@ -6782,6 +7215,52 @@
         "System Design"
       ],
       "url": "https://martinfowler.com/fragments/2026-08-04.html"
+    },
+    "e0f3ebb3e178873c67bfe22af679d35f1c9f17da3e6b173eef39768dbd5e8317": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-10-26T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "NeuroMAS treats multi-agent language systems as trainable neural-network-like architectures, with LLM agents as nodes and textual signals as edges, removing fixed semantic roles.",
+            "Reinforcement learning determines node communication, specialization, and coordination, making the system structure-aware but role-free, enabling scalable depth, width, connectivity, and growth.",
+            "Experiments show NeuroMAS outperforms inference-time and trained baselines; scaling is path-dependent, requiring progressive growth from smaller trained systems for larger models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "NeuroMAS treats multi-agent language systems as trainable neural-network-like architecture, with LLM (large language model) agents as nodes and text signals as edges.",
+            "Agents are role-free but structure-aware; reinforcement learning decides how they communicate, specialize, and coordinate, moving design from fixed workflows to flexible architecture.",
+            "Experiments show better performance; training larger systems works best when grown from smaller trained ones, and modular text computation is parameter-efficient for hierarchical tasks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "NeuroMAS models multi-agent language systems as trainable neural networks: LLM agents are nodes, textual signals are edges; but structure-aware, with RL guiding communication, specialization, coordination.",
+            "Architecture design shifts from fixed workflows to scalable depth, width, connectivity, and growth protocols, yielding parameter-efficient modular computation for hierarchically decomposable tasks.",
+            "Experiments show NeuroMAS outperforms inference-time and trained baselines; scaling is path-dependent\u2014progressive growth from smaller trained systems enables training of larger models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "NeuroMAS: Multi-Agent Systems as Neural Networks with Joint Reinforcement Learning",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2605.16757"
     },
     "e15f5cc6b720ff7e1397bd7962806f60388355e6579517da55a4544ec2ec398b": {
       "image_url": null,
@@ -7354,6 +7833,49 @@
       ],
       "url": "https://martinfowler.com/fragments/2026-10-21.html"
     },
+    "ec05e05a8071c87a9f4f931bb4cea3ed65e23983270a642780a42f4916508240": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2024-10-01T10:03:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Prompt caching in the API provides automatic discounts for inputs the model has recently seen.",
+            "This feature reduces costs by reusing recent prompts.",
+            "It enhances efficiency for developers using the API."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Prompt caching stores recent inputs so the API can reuse them instead of reprocessing, saving time and resources.",
+            "The system offers automatic discounts when the same prompt is used again, rewarding frequent or repeated requests.",
+            "Prompt caching is a cost\u2011saving feature that reduces redundant computation, making the API faster and cheaper for users."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Prompt Caching in the API enables automatic discounts for inputs the model has recently seen.",
+            "The feature reduces costs by reusing recent prompts.",
+            "It applies discounts automatically without user intervention."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Prompt Caching in the API",
+      "topics": [
+        "Backend",
+        "System Design",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/api-prompt-caching"
+    },
     "ec93ced270b0c65e467a5c6a47b9e527f4fee2b27caf8a973f274eb886a8bc39": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -7659,6 +8181,51 @@
         "Machine Learning"
       ],
       "url": "https://huggingface.co/blog/jat"
+    },
+    "f2c693d7443af6dcdc452af7d4640db653f44615aa0a53bb9596e3342bd2d464": {
+      "image_url": null,
+      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "published_at": "2026-10-26T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Microservice systems rely on anomaly detection to maintain reliability, yet current multimodal methods ignore modality-specific traits and suffer from identity-shortcut issues.",
+            "LLMMAD embeds multimodal data into a unified sequence for LLM processing, uses modality-wise reconstruction heads, and predicts future states to eliminate identity-shortcut.",
+            "Experiments on three real-world datasets demonstrate that LLMMAD outperforms existing approaches in multimodal anomaly detection for microservice systems."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Microservice systems need quick anomaly detection (finding unusual patterns); current methods ignore each data type and copy inputs, causing errors.",
+            "LLMMAD uses a Large Language Model (AI that reads language) to merge data types into one sequence, then predicts future states, keeping each type\u2019s details.",
+            "Tests on three real datasets show LLMMAD outperforms existing methods, improving reliability of cloud applications."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LLMMAD uses LLM to embed multimodal microservice data into a unified sequence, modeling inter-modality relationships while preserving modality-specific info via reconstruction heads.",
+            "Implements prediction-driven autoregressive objective to avoid identity-shortcut, predicting future states instead of copying current inputs.",
+            "Evaluated on three real-world datasets, showing improved anomaly detection over existing multimodal methods."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Autoregressive Multimodal Anomaly Detection with Large Language Models for Microservice Systems",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Cloud",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.31722"
     },
     "f4f5eac60efab428e87e0c2996e8702fffefc25f19dabf328acd05c42653595a": {
       "image_url": null,

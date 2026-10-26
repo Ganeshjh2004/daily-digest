@@ -1,6 +1,175 @@
 {
   "articles": [
     {
+      "id": "e0f3ebb3e178873c67bfe22af679d35f1c9f17da3e6b173eef39768dbd5e8317",
+      "image_url": null,
+      "published_at": "2026-10-26T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "NeuroMAS treats multi-agent language systems as trainable neural-network-like architectures, with LLM agents as nodes and textual signals as edges, removing fixed semantic roles.",
+            "Reinforcement learning determines node communication, specialization, and coordination, making the system structure-aware but role-free, enabling scalable depth, width, connectivity, and growth.",
+            "Experiments show NeuroMAS outperforms inference-time and trained baselines; scaling is path-dependent, requiring progressive growth from smaller trained systems for larger models."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "NeuroMAS treats multi-agent language systems as trainable neural-network-like architecture, with LLM (large language model) agents as nodes and text signals as edges.",
+            "Agents are role-free but structure-aware; reinforcement learning decides how they communicate, specialize, and coordinate, moving design from fixed workflows to flexible architecture.",
+            "Experiments show better performance; training larger systems works best when grown from smaller trained ones, and modular text computation is parameter-efficient for hierarchical tasks."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "NeuroMAS models multi-agent language systems as trainable neural networks: LLM agents are nodes, textual signals are edges; but structure-aware, with RL guiding communication, specialization, coordination.",
+            "Architecture design shifts from fixed workflows to scalable depth, width, connectivity, and growth protocols, yielding parameter-efficient modular computation for hierarchically decomposable tasks.",
+            "Experiments show NeuroMAS outperforms inference-time and trained baselines; scaling is path-dependent\u2014progressive growth from smaller trained systems enables training of larger models."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "NeuroMAS: Multi-Agent Systems as Neural Networks with Joint Reinforcement Learning",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2605.16757"
+    },
+    {
+      "id": "f2c693d7443af6dcdc452af7d4640db653f44615aa0a53bb9596e3342bd2d464",
+      "image_url": null,
+      "published_at": "2026-10-26T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Microservice systems rely on anomaly detection to maintain reliability, yet current multimodal methods ignore modality-specific traits and suffer from identity-shortcut issues.",
+            "LLMMAD embeds multimodal data into a unified sequence for LLM processing, uses modality-wise reconstruction heads, and predicts future states to eliminate identity-shortcut.",
+            "Experiments on three real-world datasets demonstrate that LLMMAD outperforms existing approaches in multimodal anomaly detection for microservice systems."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Microservice systems need quick anomaly detection (finding unusual patterns); current methods ignore each data type and copy inputs, causing errors.",
+            "LLMMAD uses a Large Language Model (AI that reads language) to merge data types into one sequence, then predicts future states, keeping each type\u2019s details.",
+            "Tests on three real datasets show LLMMAD outperforms existing methods, improving reliability of cloud applications."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LLMMAD uses LLM to embed multimodal microservice data into a unified sequence, modeling inter-modality relationships while preserving modality-specific info via reconstruction heads.",
+            "Implements prediction-driven autoregressive objective to avoid identity-shortcut, predicting future states instead of copying current inputs.",
+            "Evaluated on three real-world datasets, showing improved anomaly detection over existing multimodal methods."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Autoregressive Multimodal Anomaly Detection with Large Language Models for Microservice Systems",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Cloud",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.31722"
+    },
+    {
+      "id": "8ae590bc78052ec06680e05d210b6d8e9e929d598e1165201e3f4b9056a71e05",
+      "image_url": null,
+      "published_at": "2026-10-26T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces S\u2011SALAAD, a framework that jointly learns weights, low\u2011rank, and structured sparse components for efficient inference on edge devices.",
+            "Supports hardware\u2011compatible structured sparsity patterns and budget\u2011aware compression, enabling a single checkpoint to adapt to multiple memory budgets.",
+            "Experiments on Llama2 and Qwen3 models demonstrate improved performance\u2011memory trade\u2011offs compared to prior sparse\u2011plus\u2011low\u2011rank methods."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Large models reward scaling laws, yet their size forces cloud inference; edge devices need smaller, faster models due to limited memory and unreliable connectivity.",
+            "Sparse-plus-low-rank compression cuts parameters but can slow inference because irregular memory access and indexing overhead hurt speed.",
+            "S\u2011SALAAD learns weights, low\u2011rank, and structured sparse patterns\u2014zeros in regular blocks hardware can skip\u2014then uses compatible kernels to run checkpoint efficiently across many memory budgets."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces S\u2011SALAAD, a training framework that jointly learns weights, low\u2011rank, and structured sparse components for single\u2011checkpoint elastic compression.",
+            "Supports hardware\u2011compatible sparsity patterns and budget\u2011aware compression, with custom CPU/GPU kernels that exploit learned structure for faster inference.",
+            "Evaluated on Llama2 and Qwen3 during pretraining and distillation, achieving improved Pareto trade\u2011offs between memory, speed, and accuracy."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Learning Structured Sparsity for Large Models: Bridging Model Compressibility and Efficient Inference",
+      "topics": [
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Cloud",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.31897"
+    },
+    {
+      "id": "17593d61de4e8fbb37de2227f03fd45a057b279591262a2b782c3207f392be13",
+      "image_url": null,
+      "published_at": "2026-10-26T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "InferSlice is a reference architecture enabling SLO-driven LLM inference across telco wide\u2011area networks, integrating network slicing, GPU partitioning, elastic serving, and observability.",
+            "Evaluation on the JOINER UK WAN shows tiered service differentiation, weight streaming reduces scale\u2011out time, and replication is placement\u2011insensitive but memory\u2011bound.",
+            "Parallelism experiments reveal pipeline parallelism tolerates cross\u2011site hops, while tensor parallelism and disaggregation fail beyond a single hop, highlighting network constraints."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "InferSlice is a reference design that lets telco networks run large\u2011language\u2011model inference with Service\u2011Level Objectives, avoiding central cloud limits on latency, sovereignty, and resource locality.",
+            "It combines network slicing, GPU partitioning, elastic scaling, and observability to coordinate geographically distributed compute and heterogeneous resources.",
+            "Tests on JOINER UK WAN show latency\u2011throughput trade\u2011offs; weight streaming speeds up scale\u2011out, while pipeline parallelism works across sites but tensor/disaggregation fails beyond hops."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "InferSlice is a reference architecture for SLO\u2011driven LLM inference on telco WANs, combining network slicing, GPU partitioning, elastic serving, and observability.",
+            "Evaluation on JOINER UK WAN shows tiered service differentiation, weight\u2011streaming reduces scale\u2011out time, and replication is placement\u2011insensitive but memory\u2011bound.",
+            "Pipeline parallelism tolerates near\u2011 and mid\u2011cross\u2011site hops, while tensor parallelism and prefill/decode disaggregation fail beyond a single hop."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "InferSlice: A Reference Architecture for SLO-driven LLM Inference over a Telco Wide-Area Network",
+      "topics": [
+        "LLMs",
+        "System Design",
+        "DevOps",
+        "Cloud",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.32638"
+    },
+    {
       "id": "0ae783437195bedecfa6bd931a03b285ae0ec65b5b42164626419c011d62422d",
       "image_url": null,
       "published_at": "2026-10-23T18:32:51Z",
@@ -1655,388 +1824,16 @@
         "Productivity"
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/"
-    },
-    {
-      "id": "592b287e400cc7af390b789edb9848cf00aef3c932a3407ab78d72937dbca0e0",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces a self-consistency framework that uses diffusion-sampled reasoning trajectories and a reward model to score intermediate steps.",
-            "The framework stitches top-scoring steps across trajectories into a composite rationale, then recomputes the final answer, separating exploration from evaluation.",
-            "Applied to math and coding benchmarks, the method boosts accuracy up to 23.8% without training, especially on harder problems."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "The paper introduces a method that uses diffusion language models to generate many short reasoning steps, then picks the best ones.",
-            "Each step is scored by a reward model, and the top steps from different runs are stitched together to form a new, stronger explanation.",
-            "The stitched explanation is used to recompute the final answer, boosting accuracy on math and coding tasks by up to 23.8% without extra training."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Diffusion LM samples many low\u2011cost reasoning chains; each intermediate step is scored by a process reward model (PRM).",
-            "Highest\u2011scoring steps from different trajectories are stitched into a composite rationale, then a final solver recomputes the answer.",
-            "Training\u2011free, reward\u2011guided stitching boosts accuracy up to 23.8% on six math and coding benchmarks, especially on harder problems."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Test-Time Scaling with Diffusion Language Models via Reward-Guided Stitching",
-      "topics": [
-        "LLMs",
-        "Backend",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2602.22871"
-    },
-    {
-      "id": "5a37fac8855312255045a847fb068fdd8c5ff3c1ffd79da7595ec9b4f5cfb1e1",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "AOI is a multi\u2011agent framework that turns failed operational trajectories into training signals for autonomous cloud diagnosis.",
-            "It employs GRPO for preference\u2011based learning, a read\u2011write separated execution architecture, and a closed\u2011loop evolver to mine failures.",
-            "On the AIOpsLab benchmark, AOI reaches 66.3% best@5 success, outpacing the prior 41.9% by 24.4 points."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "AOI is a multi\u2011agent system that turns failed operations into learning signals for autonomous cloud diagnosis, improving reliability without exposing sensitive data.",
-            "It uses Group Relative Policy Optimization (GRPO), tweaking actions based on group performance, to teach models, observation, reasoning, and action to keep environments safe.",
-            "On the AIOpsLab benchmark, AOI reaches 66.3% success on 86 tasks, beating previous best (41.9%) by 24.4 points."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "AOI: multi\u2011agent framework turning operations into trajectory learning under security constraints, using GRPO\u2011based diagnostic models for preference\u2011based learning without sensitive data exposure.",
-            "Read\u2011write separated execution splits observation, reasoning, action phases, enabling safe learning while preventing unauthorized state mutation in permission\u2011governed environments.",
-            "Failure Trajectory Closed\u2011Loop Evolver mines unsuccessful paths, converting them into corrective supervision, boosting AOI runtime to 66.3% best@5 on 86 tasks (vs 41.9% prior)."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "AOI: Turning Failed Trajectories into Training Signals for Autonomous Cloud Diagnosis",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "Cloud"
-      ],
-      "url": "https://arxiv.org/abs/2603.03378"
-    },
-    {
-      "id": "6435a7f7dfd0d37b10ae5e3b6380c210a004286cfeaf3622b1510497fa6df6ff",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Agentic AI enables cloud workflows where autonomous agents reason, invoke tools, modify infra, deploy services, verify outcomes, adapt over long tasks.",
-            "Framework separates graph engineering (workflow progression & verification), loop engineering (diagnosis, repair, retry), and agent harness engineering (zero-trust execution via identity, policy, isolation).",
-            "Evaluation on Google Cloud shows validated code repos, controlled execution, evidence-gated progression, operational deployment, and bounded recovery."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Agentic AI lets autonomous agents manage cloud tasks, from planning to deployment, by reasoning about state and using authorized tools.",
-            "The framework splits work into graph engineering (workflow steps and checks), loop engineering (bounded fixes and retries), and agent harness (zero\u2011trust security).",
-            "Tested on Google Cloud, it shows complete code repos, safe execution, evidence\u2011based progress, and limited recovery within set limits."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Graph engineering defines long\u2011horizon workflow progression and verification\u2011dependent transitions, enabling machine\u2011checkable repository and deployment evidence.",
-            "Loop engineering supplies bounded diagnosis, repair, re\u2011planning, retry, and re\u2011verification, constraining failure recovery within explicit operational bounds and termination criteria.",
-            "Agent harness engineering enforces zero\u2011trust execution via identity, authorization, policy\u2011scoped capabilities, isolation, and runtime safeguards, validated on Google Cloud with evidence\u2011gated progression."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Towards Agentic Cloud Engineering: Graph and Loop Engineering with a Zero-Trust Agent Harness",
-      "topics": [
-        "AI Agents",
-        "System Design",
-        "DevOps",
-        "Cloud",
-        "Productivity"
-      ],
-      "url": "https://arxiv.org/abs/2609.00050"
-    },
-    {
-      "id": "6978b90b4bc501c2fc068025cdc5247ee47783d12b13385dfb4fc60c1417d8e8",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Difflet is a serving engine for diffusion transformer models on AWS Trainium, sharing a single compilation backend across five pipelines.",
-            "It splits attention across cores by head, uses a host controller to decide per denoising step whether to run the denoiser or reuse cached output.",
-            "Across five image and video families, fused attention speeds denoiser steps 1.2\u20134.3\u00d7 over PyTorch/XLA, and resident serving is 1.5\u20133.4\u00d7 faster than reloading weights."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Difflet is a fast inference engine for diffusion transformer models on AWS Trainium, sharing a single compilation backend across five pipelines.",
-            "It splits joint attention across cores by head, and a host controller decides each denoising step whether to run the denoiser or reuse earlier output.",
-            "The system speeds up denoiser steps 1.2\u20134.3\u00d7 over PyTorch/XLA and makes resident serving 1.5\u20133.4\u00d7 faster than reloading weights for each generation."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Difflet compiles all diffusion components ahead of time on AWS Trainium2, sharing a single backend across five pipelines, splitting joint attention by head across cores.",
-            "A host controller and device\u2011side probe decide per denoising step whether to run the denoiser or reuse cached output, keeping programs resident across requests.",
-            "Fused attention yields 1.2\u20134.3\u00d7 speedups over PyTorch/XLA, enabling 32.8k\u2011token attention compilation and 1.5\u20133.4\u00d7 faster resident serving versus weight\u2011reload runs."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "DIFFLET: A Fast Inference Engine for Diffusion Transformer Models on AWS Trainium",
-      "topics": [
-        "LLMs",
-        "Backend",
-        "System Design",
-        "Machine Learning",
-        "Cloud"
-      ],
-      "url": "https://arxiv.org/abs/2610.23047"
-    },
-    {
-      "id": "8905a53e7722afbe56eddf45c96764c19f36f2e3bc9f9c33a56e026e6d942d7f",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "SPLIT allocates test-time compute among sampling, model choice, and verification using a pilot dataset and an exact probability formula.",
-            "The method accounts for task difficulty, shared blind spots, and verifier correlations, fitting parameters via empirical Bayes.",
-            "Across 7 benchmarks and 26 models, SPLIT achieves near-optimal accuracy, outperforming rule-of-thumb baselines by up to 2.5 points."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "SPLIT uses a small pilot set to decide how many model outputs to generate and how much compute to spend on checking them, boosting accuracy.",
-            "It calculates the chance of a correct answer by modeling accept/reject and top\u2011score selection, accounting for task difficulty, shared blind spots, and correlated verifier errors.",
-            "Across 7 benchmarks and 175 agent systems, SPLIT outperforms rule\u2011of\u2011thumb budgets, staying within 0.8% of the best hindsight allocation, while fixed rules lose \u22652.5%."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "SPLIT uses an accept/reject & top\u2011score probability formula, fitted via empirical Bayes on a labeled pilot to allocate compute among sampling, mixing, and verification.",
-            "It models task difficulty, shared blind spots, and correlated verifier calls, enabling budget planning across 7 benchmarks, 26 models, 175 agents, and 6 verifiers.",
-            "In experiments, SPLIT achieves within 0.02\u20130.8 pp of hindsight\u2011optimal allocation, outperforming rule\u2011of\u2011thumb baselines that lose \u22652.5 pp in some settings."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Sample, Mix, or Verify? Allocating Test-Time Compute under Imperfect Verifiers",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.23255"
-    },
-    {
-      "id": "9981158b40cac6bc869147fa06f755db97459088a72a5588e07d7160bfbe8d05",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LoongSage is a lightweight (\u224814K lines) agent-native RL framework for LLMs, built on Megatron and SGLang, enabling high\u2011efficiency, fully asynchronous training.",
-            "It centralizes orchestration in one controller, uses Ray actors for GPU components, and introduces AgentFlow, sliding\u2011window staleness control, and TransferMesh for fast weight routing.",
-            "The framework includes a memory\u2011efficient Teacher Manager supporting Multi\u2011Teacher On\u2011Policy Distillation, and has been evaluated across four full training runs."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LoongSage is a lightweight, fully asynchronous RL framework for large language models, built on Megatron and SGLang, with a single controller and Ray actors.",
-            "It introduces AgentFlow to run both white\u2011box and black\u2011box agents, sliding\u2011window strategies to limit trajectory staleness, and TransferMesh for fast weight sync.",
-            "A memory\u2011efficient Teacher Manager enables multi\u2011teacher on\u2011policy distillation, and the system was tested in four full training runs."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LoongSage: 14K\u2011line, fully asynchronous RL framework built on Megatron and SGLang, centralizing orchestration in one controller and using Ray actors for GPU components.",
-            "Introduces AgentFlow for unified white\u2011/black\u2011box agent execution, sliding\u2011window trajectory staleness control, and TransferMesh topology\u2011aware weight routing for fastest transport.",
-            "Features memory\u2011efficient Teacher Manager enabling Multi\u2011Teacher On\u2011Policy Distillation, with extensive evaluation across four full training runs on frontier LLMs."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "LoongSage: A Production-Grade, High-Efficiency Agentic RL Framework for Frontier LLMs with Validated Recipes",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.16352"
-    },
-    {
-      "id": "df14438cc8c1153365c273acbe1954c2d0770d9a31830386cd21f313ff50e9e9",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "TP constrain transformer architecture to extract readable Python code, revealing learned computations beyond token accuracy.",
-            "Study shows token accuracy can mask incorrect full outputs; program inspection uncovers failures and guides data augmentation, improving sequence accuracy.",
-            "Training dynamics and constraints can cause late-stage accuracy drops; careful inspection and data expansion help achieve exhaustive correctness on bounded tasks."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "TP constrains Transformers to produce readable Python code, revealing learned computations but token accuracy can mask wrong full answers.",
-            "Study on nine algorithmic tasks shows token accuracy differs from full sequence accuracy; program inspection uncovers hidden failures and guides better training data.",
-            "Adding larger count examples improved counting task accuracy; TP training can cause late accuracy drops, and constraints affect model performance."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "TP constrains Transformers to produce extractable Python code, revealing learned computations beyond token accuracy.",
-            "Program inspection uncovers hidden errors: e.g., a counting TP had 100% token accuracy but omitted correct labels; retraining with larger counts fixed exhaustive evaluation.",
-            "TP training can incur late\u2011stage accuracy loss; frequency\u2011ranking tasks show how correct counts can still yield wrong outputs, guiding data\u2011augmentation adjustments."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "What Accuracy Hides In Learned Transformer Programs",
-      "topics": [
-        "LLMs",
-        "Python",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.22891"
-    },
-    {
-      "id": "e6051a1cdf20a8b68b736c9b385b06c39e42c159a2dba707c3f7055d2181af5a",
-      "image_url": null,
-      "published_at": "2026-10-19T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "WebCoder is a general frontend development agent trained via artifact\u2011grounded agentic reinforcement learning, evaluating actions by their impact on a shared executable artifact.",
-            "The Webdev\u2011World environment integrates code editing, execution, browser inspection, and on\u2011demand skills, with a verifier delivering terminal rewards based on task satisfaction.",
-            "WebCoder\u201127B, evaluated on Webdev\u2011Bench, improves requirement satisfaction from 64.8% to higher, demonstrating effectiveness of the proposed training and evaluation framework."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "WebCoder is a frontend development agent that learns to write, modify, and fix code by evaluating its impact on a running application.",
-            "It uses Webdev-World, letting the agent edit code, run the app, inspect the browser, and call skills while keeping project state.",
-            "A verifier rewards only when the final app meets the task, and intermediate progress spreads credit to improve learning on long action sequences."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "WebCoder trains a general frontend agent via artifact\u2011grounded agentic reinforcement learning, evaluating actions by their impact on a shared executable artifact.",
-            "Webdev\u2011World combines code editing, app execution, browser inspection, and on\u2011demand skills, preserving state; a verifier supplies terminal rewards and redistributes intermediate advantage.",
-            "Context compaction and message\u2011tree sampling extend training beyond one context window; Webdev\u2011Bench shows WebCoder\u201127B raises requirement satisfaction from 64.8 on Qwen3.8\u201127B."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "WebCoder: Scaling General Frontend Development with Artifact-Grounded Agentic Reinforcement Learning",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.23104"
-    },
-    {
-      "id": "5c52b7d34becd1ccf770a5f22540c4c3de16ae5f8db819babc6348fdbc423c77",
-      "image_url": null,
-      "published_at": "2026-10-19T00:00:00Z",
-      "source": "Hugging Face Blog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "TorchNeuron simplifies deployment of Hugging Face models on AWS Trainium.",
-            "It offers streamlined integration and performance optimization for training and inference.",
-            "The new release reduces setup complexity, accelerating deployment and reducing costs."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "TorchNeuron is a new tool that lets users run Hugging Face (HF) models on Amazon\u2019s Trainium hardware more easily.",
-            "It simplifies the setup process, reducing the steps needed to deploy large language models on Trainium, which is Amazon\u2019s custom AI chip.",
-            "Users can benefit from faster inference and lower costs, as TorchNeuron optimizes model execution for Trainium\u2019s architecture."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "TorchNeuron enables running Hugging Face models directly on AWS Trainium hardware.",
-            "It simplifies deployment, reducing setup complexity for training and inference.",
-            "The tool streamlines integration of HF models with Trainium, improving usability."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "TorchNeuron: running HF models on AWS Trainium is easier than ever",
-      "topics": [
-        "Cloud",
-        "Machine Learning"
-      ],
-      "url": "https://huggingface.co/blog/hf-torchneuron"
     }
   ],
-  "generated_at": "2026-10-25T12:56:15.750533Z",
+  "generated_at": "2026-10-26T14:46:02.993055Z",
   "topic_counts": {
-    "AI Agents": 38,
-    "Backend": 22,
-    "LLMs": 40,
-    "Machine Learning": 38,
-    "Other": 29,
-    "System Design": 31
+    "AI Agents": 36,
+    "Backend": 21,
+    "LLMs": 36,
+    "Machine Learning": 32,
+    "Other": 27,
+    "System Design": 28
   },
   "topics": [
     "AI Agents",
