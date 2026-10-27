@@ -129,6 +129,52 @@
       ],
       "url": "https://openai.com/index/equip-responses-api-computer-environment"
     },
+    "01a827110fafae3fdaddaf3f4d0f4edd642cde6e7f572385f5547c9cd4449970": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-27T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AIPC is an agent-based workflow that uses evidence from toolchains, runtimes, and profiling to guide deployment of PyTorch inference projects on dedicated accelerators.",
+            "It addresses cross-layer challenges\u2014model formats, quantization, operator support\u2014by structuring skills for model adaptation, artifact building, execution, accuracy repair, and performance tuning.",
+            "Evaluation on Qualcomm QAIRT NPU shows significant gains: 6/7 Whisper-Small models meet accuracy/latency targets, YOLO-Worldv2 achieves 2.79\u00d7 speedup versus 1.6\u00d7 control."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AIPC is a method that uses AI agents to guide the conversion of PyTorch models into hardware-ready artifacts for devices like NPUs (neural processing units).",
+            "It tackles cross-layer issues\u2014differences in model formats, quantization (reducing precision), operator support, and toolchain interfaces\u2014by combining structured skills, runtime evidence, and profiling data.",
+            "In tests on Qualcomm\u2019s on-device NPU, AIPC improved accuracy and latency for Whisper-Small and sped up YOLO-Worldv2 by up to 2.8\u00d7 compared to controls."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AIPC is an LLM\u2011driven agent workflow using structured Skills, toolchain, runtime, and profiling evidence to diagnose and repair cross\u2011layer issues in PyTorch inference on NPUs.",
+            "It converts PyTorch/ONNX models into hardware\u2011runtime artifacts, managing quantization flows, operator support, and toolchain interfaces for dedicated accelerators such as Qualcomm QAIRT.",
+            "Evaluation on QAIRT NPU shows 6/7 Whisper\u2011Small runs meet accuracy/latency targets, while YOLO\u2011Worldv2 achieves 2.791\u00d7 speedup versus 1.599\u00d7 control."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "AIPC: Evidence-Guided Agent Workflows for PyTorch Project Deployment",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.34890"
+    },
     "01c7a7a96ee24e1ca00e04f53769fc0fd775f67c5848bbd3137a21958e4168fd": {
       "image_url": null,
       "last_seen": "2026-10-26T14:46:02.993055Z",
@@ -170,6 +216,49 @@
         "DevOps"
       ],
       "url": "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/"
+    },
+    "03e8feb802d3a2648af49067d0b4f75ff9ae6b03ab29fdec8669d796d77dc79d": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2021-07-28T07:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Triton 1.0 is an open-source Python-like language for GPU programming, designed to be accessible to researchers without CUDA experience.",
+            "It enables writing highly efficient GPU code, often matching performance of expert-written code.",
+            "The release focuses on neural network applications, simplifying development while maintaining near\u2011expert efficiency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Triton 1.0 is an open-source language that looks like Python, designed for writing GPU code without needing CUDA knowledge.",
+            "It lets researchers create efficient GPU programs that often match the performance of expert-written code.",
+            "The goal is to make high\u2011performance neural network programming accessible to those without deep GPU programming experience."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Triton 1.0: open\u2011source, Python\u2011like language for GPU programming, targeting neural network workloads.",
+            "Designed for researchers lacking CUDA expertise, enabling efficient GPU code comparable to expert\u2011written kernels.",
+            "Focuses on high performance, delivering near\u2011expert results with minimal GPU programming overhead."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Introducing Triton: Open-source GPU programming for neural networks",
+      "topics": [
+        "Python",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/triton"
     },
     "071ab93645637197f5569a5c9478c6c8afa5b1691c9e5f78d13fcb2963264902": {
       "image_url": null,
@@ -3764,9 +3853,99 @@
       ],
       "url": "https://kubernetes.io/blog/2026/06/24/wg-device-management-spotlight-2026/"
     },
+    "65a328ac4f85deaf37f7ba7e3794700f546eaf5177943293d5e102a0dd064cfe": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-26T17:04:57Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Netflix handles ~100k daily workload failures; diagnosing requires sifting logs to identify code vs platform issues.",
+            "Pensive auto-diagnosis uses regex and Java rules to classify errors, enabling ~50% self\u2011service retries or remediations.",
+            "Despite processing 7M failures, half remain unknown, highlighting need for scalable, AI\u2011driven coverage beyond hand\u2011written rules."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Netflix runs ~100,000 data jobs daily; on peak days about 100,000 fail, requiring engineers to analyze logs and decide fixes.",
+            "Pensive auto\u2011diagnoses failures by parsing logs with regex and Java rules, giving retry or remediation advice, making ~50% of failures self\u2011service or automatic.",
+            "Still, about half of failures fall into an unknown bucket; the team needs smarter AI to expand coverage while keeping deterministic rules."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Netflix's Pensive auto-diagnosis system processes millions of failed workloads, extracting errors via regex and Java rules to guide retries or remediation.",
+            "It covers ~50% of failures automatically, but half of seven million classifications remain unknown, highlighting limited rule coverage and need for broader detection.",
+            "Pensive integrates with orchestration engines (Titus, Spark, Trino, Druid) and passes guidance to Maestro, aiming to reduce engineering time and compute waste."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Making Failure Diagnosis Reliable with Pensive AI",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "Productivity"
+      ],
+      "url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4"
+    },
+    "669a89ad8edada24bffac2699c7d45a8609885985a912b670e725687d9a0f38b": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-27T04:30:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes announces the Workload Conformance Working Group to create a shared standard for how workloads behave at runtime.",
+            "The group seeks input from workload builders and cluster operators to address issues like disruption tolerance, API deprecation, and unnecessary privilege or resource usage.",
+            "Deliverables include a specification of workload behavior for each Kubernetes minor version, providing a repeatable baseline for operators and maintainers."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Announced a new Workload Conformance Working Group to create a shared standard for how applications (workloads) behave on Kubernetes clusters.",
+            "Current lack of workload tests forces cluster operators to manually check each app for issues like disruption tolerance, API changes, unnecessary privileges, and unused resources.",
+            "The group will deliver a specification of workload behavior for each Kubernetes minor version, enabling repeatable tests and consistent assessments across environments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Workload Conformance WG creates runtime behavior standard for Kubernetes workloads, filling gap left by cluster-only conformance tests.",
+            "It gathers input from workload builders and cluster operators to address issues like disruption tolerance, API deprecation, privilege misuse, and resource reservation.",
+            "Deliverable: version\u2011specific specification of workload behavior for each Kubernetes minor release, enabling repeatable, automated assessment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Announcing the Workload Conformance Working Group",
+      "topics": [
+        "Backend",
+        "System Design",
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/10/27/announcing-workload-conformance-wg/"
+    },
     "689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
       "image_url": null,
-      "last_seen": "2026-10-26T14:46:02.993055Z",
+      "last_seen": "2026-10-27T13:51:49.611060Z",
       "published_at": "2026-09-22T00:00:00Z",
       "source": "Hugging Face Blog",
       "source_type": "rss",
@@ -3880,6 +4059,95 @@
         "Cloud"
       ],
       "url": "https://arxiv.org/abs/2610.23047"
+    },
+    "6b40386db013a8785e9fd9553bfb6bd7401b3ea0e204f2f6b11ca58d12a65a8f": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-27T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces a role-based difficulty profile for ontology-grounded NL-to-DSL parsing, highlighting Input, Generator, Output, Validator, Repairer roles.",
+            "Identifies seven key variables: input sufficiency, context availability, grounding complexity, template fit, vocabulary coverage, validation strength, error observability.",
+            "Emphasizes that failures stem from structural issues, not just weak models, and suggests qualitative assessment to diagnose workflow bottlenecks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The paper studies translating language into ontology\u2011based DSL (domain\u2011specific language) statements, noting that syntax is easier than meaning and failures stem from data model gaps.",
+            "The authors propose a diagnostic \u201cdifficulty profile\u201d that maps seven factors\u2014input sufficiency, context, grounding, template fit, vocabulary, validation, error visibility\u2014onto five workflow roles.",
+            "Practitioners build the profile by qualitatively judging evidence, helping them identify whether problems lie with the input, generator, output, validator, or repairer."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces role-level difficulty profile for ontology-grounded NL-to-DSL parsing, focusing on ABox DSL generation.",
+            "Profile includes five roles (Input, Generator, Output, Validator, Repairer) and variables: input sufficiency, context availability, grounding complexity, template fit, vocabulary coverage, validation strength, error observability.",
+            "Highlights structural failure sources\u2014insufficient input, weak grounding, template/vocabulary gaps, weak validation, non-local repair\u2014over weak generator models, enabling qualitative evidence-based diagnosis."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Before Blaming the LLM, Diagnose the Workflow: A Role-Level Difficulty Profile for Translating Natural Language into Ontology-Grounded Statements",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "DevOps",
+        "Productivity",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.35267"
+    },
+    "6b771939fc11946c99e7d69a9cde11aee758d3562d2a86b59b826c5864fd6f1d": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-27T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "RADIANT is an object-centric transformer that models global illumination without optimization, using 32 surface-patch tokens per object to keep attention length independent of mesh resolution.",
+            "The architecture employs invariant form-factor attention, embedding geometric distances and orientations into SE(3)-invariant query-key products, avoiding O(N^2) bias matrices.",
+            "A single network combines an inter-object scene transformer and a view decoder, rendering images from point inputs while cross-attending scene tokens for visibility."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "RADIANT is a neural renderer (a network that creates images) that predicts realistic lighting for new 3D scenes without per-scene tuning or slow ray tracing.",
+            "It represents each object with 32 surface tokens, keeping the model\u2019s attention size constant no matter how many mesh triangles exist.",
+            "The transformer (a sequence network) learns how light moves between objects using geometry\u2011aware attention, then a decoder turns the results into images from camera angle."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "RADIANT uses 32 surface-patch tokens per object, decoupling attention length from mesh resolution for feed\u2011forward global illumination.",
+            "An inter\u2011object transformer models 3D radiative exchange; invariant form\u2011factor attention embeds SE(3)-invariant geometry into query\u2011key dot products weighted by learned area/material gains.",
+            "A view decoder renders images from target camera poses, with camera rays cross\u2011attending scene tokens guided by depth\u2011tested point splats, avoiding per\u2011scene optimization."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "RADIANT: Object-Centric Feed-Forward Global Illumination",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.32075"
     },
     "6ba2d9f839023a805615ba690add02c086b84a0d007fc6331fd2f8d94463e8bb": {
       "image_url": null,
@@ -5137,6 +5405,49 @@
       ],
       "url": "https://martinfowler.com/articles/making-data-ready-for-agentic-ai.html"
     },
+    "93ced13be7b2396312f275b1901045e7d00d6a8f537c5881ef63197df502823e": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-26T16:01:02Z",
+      "source": "Netflix TechBlog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Netflix launched Clips, a vertical video feed, requiring scalable solutions for vertical content across devices.",
+            "The team developed an automated multi\u2011ratio cropping system integrated into production tools to produce high\u2011quality vertical and other aspect ratios with minimal manual effort.",
+            "The system uses an intelligent virtual camera that tracks key action and composition, ensuring crops feel intentional like original shots."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Netflix created an automated system to crop horizontal videos into vertical and other ratios for mobile feeds and marketing, saving manual editing time.",
+            "The system uses a \u201cvirtual camera\u201d that tracks key action and scene composition, ensuring crops look intentional like the original shot.",
+            "This tool integrates with internal production workflows, enabling Netflix to scale vertical content for 1.2B social media followers and new Clips feature."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Developed an automated multi\u2011ratio cropping system for Netflix, producing vertical and other aspect\u2011ratio variants from 16:9 footage with minimal manual editing.",
+            "System uses a virtual camera that tracks key action and scene composition, ensuring crops feel intentional and maintain cinematic intent.",
+            "Integrated into internal production tools, it supports the new Clips vertical feed and external marketing, scaling to Netflix\u2019s 1.2B social media followers."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Multi\u2011Ratio Video Resizing for Mobile Feed and Marketing",
+      "topics": [
+        "Machine Learning",
+        "Productivity",
+        "Backend"
+      ],
+      "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4"
+    },
     "94211aeca29cfff20d04957c7e851bcf33b1445d07b018e8c8d9fcc92120b302": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -6131,6 +6442,49 @@
       ],
       "url": "https://arxiv.org/abs/2610.27889"
     },
+    "bb4559fb85eefb33bf8c647bf4090b091cfa219bc52bf11e47329110c115c5b3": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2019-09-17T07:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Agents in a simulated hide\u2011and\u2011seek environment progressively discovered more complex tool use, forming six distinct strategies and counterstrategies.",
+            "Some strategies emerged that the designers did not anticipate, revealing hidden capabilities of the environment.",
+            "The self\u2011supervised, emergent complexity suggests multi\u2011agent co\u2011adaptation could eventually generate highly sophisticated, intelligent behavior."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Agents in a simulated hide\u2011and\u2011seek game learn to use tools, gradually developing more sophisticated tactics.",
+            "Six distinct strategies and counter\u2011strategies emerged, including ones the designers did not anticipate the environment could support.",
+            "The self\u2011supervised growth of complexity suggests that multi\u2011agent co\u2011adaptation could eventually produce highly intelligent behavior."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Agents discover progressively complex tool use while playing hide-and-seek in a simulated environment.",
+            "Six distinct strategies and counterstrategies emerge, some beyond the environment\u2019s intended support.",
+            "Self\u2011supervised co\u2011adaptation suggests multi\u2011agent interactions can generate highly complex, intelligent behavior."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Emergent tool use from multi-agent interaction",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/emergent-tool-use"
+    },
     "bbd2dc821f8f6ddd53d94c9bad5ec8421a9a2ac0ab6f072bf103a25fa910ad7b": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -6218,6 +6572,37 @@
       ],
       "url": "https://huggingface.co/blog/microsoft/thinkingbox"
     },
+    "bd2a7f12ec033efae496309323fbceb5a04f5cd0ef5d7e044fd5193346817f56": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2020-01-23T08:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "insufficient_content"
+        },
+        "beginner_friendly": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "insufficient_content"
+        },
+        "technical": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "insufficient_content"
+        }
+      },
+      "title": "Scaling laws for neural language models",
+      "topics": [
+        "Backend",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scaling-laws-for-neural-language-models"
+    },
     "bf54a8a4e57cee033d83ec1080034063b0b0123cb32516bedd792f68debd5015": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -6260,6 +6645,49 @@
         "Productivity"
       ],
       "url": "https://martinfowler.com/rachels-ramblings/citizens-agents-experts.html"
+    },
+    "c23fd24e1cf8ad7361de1a21405e94f8c5b5348400fe3c61329a10fc16eb16d9": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2019-11-21T08:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Safety Gym is a new suite of environments and tools for reinforcement learning research.",
+            "It enables measurement of agents' adherence to safety constraints during training.",
+            "The release aims to advance progress in safe RL development."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Safety Gym is a new collection of test settings (environments) and software tools to help developers build and evaluate AI that learns safely.",
+            "It measures how well reinforcement learning agents\u2014AI that learns by trial and error\u2014follow safety rules during training.",
+            "The suite lets researchers track progress, compare methods, and improve safety before deploying agents in real-world tasks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Safety Gym is a new suite of environments designed to test reinforcement learning agents under safety constraints.",
+            "It includes tools that quantify progress toward agents that respect safety constraints during training.",
+            "The framework enables systematic evaluation of safety compliance in RL training pipelines."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Safety Gym",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/safety-gym"
     },
     "c27336331a48e407a92f072b8259baf298a668a1cf7172493565c57508dc8779": {
       "image_url": null,
@@ -6740,6 +7168,46 @@
       ],
       "url": "https://kubernetes.io/blog/2026/05/15/kubernetes-1-36-feature-mixed-version-proxy-beta/"
     },
+    "ce766c65d943bee9ef4fb8f07e27e925ce8f6d4708978e5ee649585903eddeb9": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-27T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kolibri is a 78.1\u2011billion\u2011parameter English\u2011German mixture\u2011of\u2011experts transformer (uses specialized sub\u2011models) that uses only 3.46 billion active parameters per token, released under Apache 2.0.",
+            "Trained on 24 trillion tokens, German >20 % of data, plus 2 trillion curated and synthetic German tokens.",
+            "Fine\u2011tuned with reinforcement learning on 1.2 million tasks, it activates 4.4 % of parameters per token and ranks on the Pareto frontier (best quality\u2011cost trade\u2011off)."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "78.1B total parameters, 3.46B active per token, open weights Apache 2.0.",
+            "Trained on 24T tokens, >20% German, 2T curated German, synthetic, supervised fine\u2011tuning + 1.2M RL tasks (reasoning, tool use, code, retrieval).",
+            "Pareto\u2011frontier quality vs serving cost in English/German, built on Kolibri Origin, Model Factory pipeline."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kolibri: A Sovereign European Model on the Pareto Frontier",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.31945"
+    },
     "ced2f6d2cab8772ae7ccd95bf473092f5f331d88506cb64343563a25ecd28f72": {
       "image_url": null,
       "last_seen": "2026-10-23T05:18:06.830843Z",
@@ -7216,6 +7684,48 @@
       ],
       "url": "https://martinfowler.com/fragments/2026-08-04.html"
     },
+    "dfb586131bf3d3cb04b45c447ddda1020a0bfabb4f918d58630b10079556383d": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-08-10T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Meta releases Muse Glimmer, a new AI system.",
+            "It operates locally, offering agentic capabilities.",
+            "It supports multimodal inputs and is open source."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Meta launches Muse Glimmer, a new AI system that runs locally on user devices, giving users full control over data and privacy.",
+            "The model is agentic, meaning it can act independently and make decisions without constant human input.",
+            "Muse Glimmer is multimodal, handling text, images, and other media, and is open source, so developers can modify and improve it."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Meta launches Muse Glimmer, a local AI model that runs entirely on user hardware without cloud dependency.",
+            "The system is agentic, enabling autonomous task planning and execution across multimodal inputs like text, images, and audio.",
+            "Muse Glimmer is released as open source, allowing developers to customize and extend its multimodal capabilities."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/muse-glimmer"
+    },
     "e0f3ebb3e178873c67bfe22af679d35f1c9f17da3e6b173eef39768dbd5e8317": {
       "image_url": null,
       "last_seen": "2026-10-26T14:46:02.993055Z",
@@ -7261,6 +7771,51 @@
         "Productivity"
       ],
       "url": "https://arxiv.org/abs/2605.16757"
+    },
+    "e11faf2f31ca56eddb02478eb7c11f92a849f003ea5d769d41afdeacb594175b": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-27T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces an economic model to evaluate LLM adoption in operational information systems, addressing uncertainty with Monte Carlo simulations and benchmark-centered random variables.",
+            "Applies the model to Security Operations Centers, mapping workflows to standards and assessing productivity gains versus costs for both cloud API and self-hosted LLMs.",
+            "Findings show ROI is context-dependent, with automation benefits gated by efficiency assumptions, and provide probability of profitability and Value at Risk for each configuration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The paper creates a cost\u2011benefit model for using large language models (LLMs) in data\u2011heavy tasks, helping firms decide if the investment pays off.",
+            "It treats uncertain factors as random variables, runs many simulations, and shows probability of profit, risk of loss, and key drivers for each setup.",
+            "Applied to Security Operations Centers, the model maps tasks to standards, weighs LLM gains against costs like cloud use, hardware, and fixing mistakes."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Economic model uses random variables and Monte Carlo simulation to estimate ROI for LLM adoption in info systems, providing profitability probability and Value at Risk.",
+            "Applied to SOCs, model maps workflows to standards, identifies LLM\u2011suitable tasks, and weighs alert\u2011volume driven gains against inference, infrastructure, and error\u2011remediation costs.",
+            "Findings show adoption economics vary by context; automation is a lever but gated by factors like LLM efficiency and deployment choice (cloud API vs self\u2011hosted)."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "From Hype to ROI: An Economic Model for LLM Adoption in Information Systems and Security Operations",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "Cloud",
+        "Productivity",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.33352"
     },
     "e15f5cc6b720ff7e1397bd7962806f60388355e6579517da55a4544ec2ec398b": {
       "image_url": null,
@@ -8051,6 +8606,51 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.30688"
+    },
+    "ef51b778727bac9022dbe27c482a75618112a5a488c7c9bae0fdb8316610dc2c": {
+      "image_url": null,
+      "last_seen": "2026-10-27T13:51:49.611060Z",
+      "published_at": "2026-10-27T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Study examines how pre\u2011trained model size affects causal learning, using two Qwen 2.5\u2011based systems: CausalLLM for scalar outcomes and CausalGen for treatment\u2011conditioned generation.",
+            "Backbone growth 0.5B\u21921.5B gives mixed scalar results on IHDP but raises CodeGen pass@1 from 0.267 to 0.575 and treatment\u2011effect score from 0.231 to 0.515.",
+            "Narrative inputs reduce CausalLLM error (1.842\u21921.780) and improve over tabular by 3.4%, but small backbones, varied data, and no intermediate tests limit conclusions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Pre-trained model size (capacity) affects causal learning performance, but results vary across tasks.",
+            "Larger backbones improve code generation accuracy and treatment-effect scoring, but scalar outcome estimates show mixed gains.",
+            "Input format matters: narrative inputs slightly lower error compared to tabular, showing representation and format influence beyond model size."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "CausalLLM uses Qwen 2.5 backbones (0.5B\u20131.5B) with treatment\u2011specific heads to estimate scalar potential outcomes; 0.5B model sees 3.4% PEHE drop with narrative inputs.",
+            "CausalGen uses soft\u2011prefix SFT and preference alignment to generate treatment\u2011conditioned code; 1.5B backbone raises CodeGen pass@1 0.267\u21920.575 and treatment\u2011effect 0.231\u21920.515.",
+            "On IHDP, scaling from 0.5B to 1.5B yields mixed scalar\u2011estimation gains, supporting a capacity\u2011adaptation alignment hypothesis rather than a universal scaling law."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "When Does Pre-Trained Capacity Help Causal Learning? From Scalar Prediction to Counterfactual Post-Training",
+      "topics": [
+        "LLMs",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.33311"
     },
     "ef935fda21318cae55da518c0b0c1eb83df81006b9540755fdea56cb6d50a812": {
       "image_url": null,
