@@ -1,19 +1,19 @@
 {
-  "duration_s": 261.596,
+  "duration_s": 275.861,
   "errors": [],
-  "finished_at": "2026-10-27T13:51:49.611060Z",
+  "finished_at": "2026-10-28T14:47:08.714209Z",
   "metrics": {
-    "duration_s": 261.596,
+    "duration_s": 275.861,
     "feeds_ok": 12,
     "feeds_total": 12,
-    "items_parsed": 3437,
-    "items_unique": 3430,
+    "items_parsed": 3517,
+    "items_unique": 3503,
     "summaries_failed": 1,
     "summaries_ok": 38,
     "tokens_total": 0
   },
   "model": "openai/gpt-oss-20b",
-  "run_id": "4898895518184bbb9249fecd23e89164",
-  "started_at": "2026-10-27T13:47:28.015338Z",
+  "run_id": "f144594061a34b0caa2086e044b28154",
+  "started_at": "2026-10-28T14:42:32.853316Z",
   "status": "partial"
 }

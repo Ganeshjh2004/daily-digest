@@ -1,6 +1,292 @@
 {
   "articles": [
     {
+      "id": "f10c14217170b02a480e018fb208a9566f7652215ff3538f230e17e51b01282e",
+      "image_url": null,
+      "published_at": "2026-10-28T12:55:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Karpathy notes a widening gap between public perception of LLMs and professional experience, with most users seeing only basic chatbot behavior.",
+            "Free-tier LLM chatbots are often useful but unreliable, limiting their usefulness for everyday users.",
+            "At Foocamp, a niche group of early adopters experienced rapid LLM advancements, prompting discussions on immersion courses for developers."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Karpathy sees a gap: most people view LLMs as clunky chatbots, professionals notice modest gains, and a few feel rapid progress.",
+            "Free\u2011tier LLM chatbots are often useful but unreliable, making them less helpful for everyday users, a reality many regular folks share.",
+            "At Foocamp, a gathering of early adopters, participants discussed immersion courses to train developers, highlighting the excitement of those on the bleeding edge."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Karpathy notes a widening perception gap: public sees LLMs as derpy chatbots, professionals see modest gains, few feel vertigo from rapid capability growth.",
+            "He finds free\u2011tier LLM chatbots useful but unreliable, undermining usefulness; most users lack access to frontier tools, echoing his colleagues\u2019 experience.",
+            "At Foocamp, an O\u2019Reilly open\u2011space event, participants\u2014mostly bleeding\u2011edge users\u2014discussed immersion courses to train developers, under a Chatham House rule."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Fragments: October 28",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Productivity",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/fragments/2026-10-28.html"
+    },
+    {
+      "id": "3f3bdde7c6b12fba843e4ac1445e4cc99e20ed36102200b21859fc87b49c5a93",
+      "image_url": null,
+      "published_at": "2026-10-28T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LLM agents currently set up environments sequentially, causing slow, single\u2011route trial\u2011and\u2011error loops that wait for long commands to finish.",
+            "SpecBuild introduces speculative forking at strategy and command levels, running multiple setup branches in parallel and committing the first successful environment.",
+            "Evaluation on Multi\u2011Docker\u2011Eval shows SpecBuild raises success rates by 6.4\u201312.0 pp across 334 tasks, 40 repos, 9 languages, outperforming baseline models."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "SpecBuild uses LLMs to automate setting up software projects, writing scripts, running them, and fixing errors.",
+            "It forks branches in parallel\u2014creating separate paths\u2014exploring different base images (OS templates) and dependency policies, and predicts command failures to prepare repairs early.",
+            "On 334 tasks from 40 repositories and 9 languages, SpecBuild raises success rates\u2014percentage of setups that finish\u2014by 6.4\u201312.0% over the best baseline."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "SpecBuild uses LLMs to generate environment setup scripts, then speculatively forks at strategy and command levels, running multiple branches in parallel to reduce idle wait.",
+            "Strategy-level forking explores alternate base images and dependency policies; command-level forking predicts command failures, pre\u2011spawning repair branches before errors occur.",
+            "Evaluated on Multi\u2011Docker\u2011Eval (334 tasks, 40 repos, 9 languages) with three backbone models, boosting success rates by 6.4\u201312.0 pp over best baseline."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Speculative Forking: Turning Idle Wait into Parallel Exploration for Repository Environment Setup",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "DevOps",
+        "Productivity",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.33129"
+    },
+    {
+      "id": "81d50ec6026448b010689635c226044113408486f3deff0746179d265ed8bd9e",
+      "image_url": null,
+      "published_at": "2026-10-28T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Study used 148 PyTorch projects, migrated 10 to TPUs with Claude Code, and evaluated success, numerical behavior, hardware use, goal preservation, and performance.",
+            "Results: 8 projects met goals, average 2.4 human interventions; 76% of 70 execution attempts failed, many silent errors, some performance changes.",
+            "TorchTPU can train 1.86\u00d7 faster and 25% cheaper per run, but failures are common, requiring careful validation and cost analysis."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "We tested 10 PyTorch projects, migrating them from NVIDIA GPUs to Google Cloud TPUs with Claude Code, checking if they run, keep behavior, and perform.",
+            "Only 8 projects met the goal; average 2.4 human tweaks were needed, and 76% of 70 runs failed, often silently due to library changes.",
+            "Some TPUs ran 1.86\u00d7 faster and 25% cheaper than GPUs, but costs varied widely, showing mixed benefits."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Migrated 10 PyTorch projects from NVIDIA GPUs to Google Cloud TPUs via Claude Code; 8 met goals, requiring ~2.4 human interventions each.",
+            "70 execution attempts: 76% failed, 49% silent failures; common issues: repeated compilation, execution inefficiencies, library interactions altering gradients (accuracy drop 1.64%).",
+            "TorchTPU backend achieved 1.86\u00d7 speedup and 25% cost reduction per run compared to GPU, but costs vary widely across workloads."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "From GPU to TPU with Coding Agents: What Works, What Fails, and What It Costs?",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning",
+        "Cloud"
+      ],
+      "url": "https://arxiv.org/abs/2610.34422"
+    },
+    {
+      "id": "6d883a1f3620138ca1b271982e4ce882129c90819d6b05bba2efac307a48c659",
+      "image_url": null,
+      "published_at": "2026-10-28T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Explores how AI assistance saves time, contrasting stopwatch and ledger perspectives, and introduces break-even defect cost as a decision metric.",
+            "Provides a baseline model showing checking time depends on model error, highlighting over-trust risks and variable AI impact across tasks.",
+            "Replicates METR study, revealing AI helped 3\u201382% of issues, with speedup capped at 3.6x in certain review workflows."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Stopwatch view counts clock minutes; ledger view compares actual time to errors that slip through, focusing on real benefit.",
+            "I define time saved, excess escaped defects, and break\u2011even defect cost, a decision number linking saved time to defect risk.",
+            "Studies show AI slows work 19\u201324% but helps 3\u201382% of tasks; review time limits GPT\u20115 speedup to 3.6\u00d7, and experiments test predictions."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Defines time saved and excess escaped defects, introduces break\u2011even defect cost, contrasts stopwatch vs ledger measurement of AI\u2011assisted time savings.",
+            "Baseline checking model: escaped\u2011defect rate constant until model is reliable; checking time \u221d log(error rate); over\u2011trust yields clock gains but higher total minutes.",
+            "Replicates METR study (246 issues): slowdown 19\u201324%, AI helped 3\u201382%; GDPval workflow caps GPT\u20115 speedup at 3.6\u00d7; small experiment tests predictions."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Counting the Bandages: On measuring the time that AI saves",
+      "topics": [
+        "LLMs",
+        "Machine Learning",
+        "Productivity",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.35942"
+    },
+    {
+      "id": "190913b96a96b9057743dfbae00f88937970599626474104eabe5f00b39e498a",
+      "image_url": null,
+      "published_at": "2026-10-28T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LM-DSB automates daily safety bulletins (DSBs) in construction using a lightweight multi\u2011agent system on consumer\u2011grade PCs.",
+            "The system combines retrieval\u2011augmented generation with a locally deployable LLM, employing planner, researcher, and writer agents and fine\u2011tuned on 37 HSE documents.",
+            "Validation shows the multi\u2011agent RAG model outperforms alternatives, achieving high lexical alignment, coherence, and expert\u2011rated compliance and factual accuracy."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LM-DSB automates daily safety bulletins in construction, cutting manual time from 2\u20133 hours to near instant.",
+            "It uses a multi\u2011agent system: planner, researcher, writer, plus retrieval\u2011augmented generation and a fine\u2011tuned local LLM.",
+            "Tests show it outperforms single\u2011agent models, with experts rating compliance 4.20/5 and accuracy 4.10/5."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LM-DSB uses a hierarchical multi\u2011agent RAG architecture (planner, researcher, writer) with Llama 3\u20118B, fine\u2011tuned on 37 HSE documents, deployable on consumer PCs.",
+            "Phase 1 evaluation shows multi\u2011agent RAG achieves TF\u2011IDF 0.70, BLEU 0.39, ROUGE\u20111 0.66, length ratio 1.01, outperforming single\u2011agent RAG (0.39).",
+            "Phase 2 expert review (N = 40) rates compliance 4.20/5 and factual accuracy 4.10/5, confirming practical acceptability of automated DSBs."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LM-DSB: A Lightweight Multi-agent System for Automated Daily Safety Bulletin Generation in Construction",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.36433"
+    },
+    {
+      "id": "a9466646661807b3e6eebdf066a1c4cec2d93799ba908285626790ddbaaf72be",
+      "image_url": null,
+      "published_at": "2026-10-28T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "TeamGym evaluates language\u2011model agents on team decision tasks from legal, finance, medical, and software corpora, using a minimal \u201cpivotal information\u201d set to guide decisions.",
+            "Experiments with 8 models show distributing pivotal facts across agents reduces success by ~23 points, and requiring self\u2011retrieval drops performance by ~20 points.",
+            "The platform trains policies to improve information sharing and retrieval, aiming to close the identified communication and retrieval gaps."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "technical": {
+          "bullets": [
+            "TeamGym: environment for training language\u2011model agents on team decision\u2011making using real\u2011world corpora (legal, finance, medical, software engineering); introduces pivotal information concept.",
+            "Evaluated 8 LMs on 12 corpora; communication gap: distributing pivotal facts reduces success by 22.9%; retrieval gap: agents extract facts reduces success by 19.9%.",
+            "TeamGym trains policies to improve information sharing and retrieval, addressing communication and retrieval gaps identified in the evaluation."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "TeamGym: A Gym for Team Decision-Making by AI Agents with Distributed Information",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.37571"
+    },
+    {
+      "id": "e336653325a206b4b5f0a7a7676b21a35152b4a7b058fd3ba39c86f86d9899d8",
+      "image_url": null,
+      "published_at": "2026-10-28T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "scPyviewer is a Python-native web viewer that directly ingests AnnData objects for interactive exploration of single-cell datasets.",
+            "It matches or exceeds three R Shiny tools, offering faster rendering (up to 3.6\u00d7) and lower memory usage (5.2\u00d7 on small datasets).",
+            "scPyviewer provides a Python API that returns Matplotlib figures and pandas tables for publication-ready output."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "scPyviewer is a Python web viewer that reads AnnData objects directly, letting users explore single\u2011cell data without converting to R formats.",
+            "It matches or outperforms three R Shiny tools, offering faster rendering (up to 3.6\u00d7) and lower memory use, even handling 313,000 cells where Seurat fails.",
+            "The API returns Matplotlib figures and pandas tables, enabling quick publication\u2011ready plots and data tables directly from Python scripts."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "scPyviewer is a Python-native interactive viewer that ingests AnnData objects directly, matching R Shiny tools' interaction patterns without conversion.",
+            "Benchmarks show up to 3.6x faster rendering and 5.2x lower memory on small datasets; handles 313k cells where Seurat fails due to 8GB limit.",
+            "Provides a Python API returning Matplotlib figures and pandas tables for publication-ready output, implemented in Python 3.11."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "scPyviewer: a Python-native interactive viewer from AnnData single-cell data",
+      "topics": [
+        "Python",
+        "Backend",
+        "Machine Learning",
+        "AI Agents"
+      ],
+      "url": "https://arxiv.org/abs/2610.35890"
+    },
+    {
       "id": "669a89ad8edada24bffac2699c7d45a8609885985a912b670e725687d9a0f38b",
       "image_url": null,
       "published_at": "2026-10-27T04:30:00Z",
@@ -127,46 +413,82 @@
       "url": "https://arxiv.org/abs/2610.35267"
     },
     {
-      "id": "ef51b778727bac9022dbe27c482a75618112a5a488c7c9bae0fdb8316610dc2c",
+      "id": "6b771939fc11946c99e7d69a9cde11aee758d3562d2a86b59b826c5864fd6f1d",
       "image_url": null,
       "published_at": "2026-10-27T04:00:00Z",
-      "source": "arXiv cs.AI",
+      "source": "arXiv Machine Learning",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
           "bullets": [
-            "Study examines how pre\u2011trained model size affects causal learning, using two Qwen 2.5\u2011based systems: CausalLLM for scalar outcomes and CausalGen for treatment\u2011conditioned generation.",
-            "Backbone growth 0.5B\u21921.5B gives mixed scalar results on IHDP but raises CodeGen pass@1 from 0.267 to 0.575 and treatment\u2011effect score from 0.231 to 0.515.",
-            "Narrative inputs reduce CausalLLM error (1.842\u21921.780) and improve over tabular by 3.4%, but small backbones, varied data, and no intermediate tests limit conclusions."
+            "RADIANT is an object-centric transformer that models global illumination without optimization, using 32 surface-patch tokens per object to keep attention length independent of mesh resolution.",
+            "The architecture employs invariant form-factor attention, embedding geometric distances and orientations into SE(3)-invariant query-key products, avoiding O(N^2) bias matrices.",
+            "A single network combines an inter-object scene transformer and a view decoder, rendering images from point inputs while cross-attending scene tokens for visibility."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "Pre-trained model size (capacity) affects causal learning performance, but results vary across tasks.",
-            "Larger backbones improve code generation accuracy and treatment-effect scoring, but scalar outcome estimates show mixed gains.",
-            "Input format matters: narrative inputs slightly lower error compared to tabular, showing representation and format influence beyond model size."
+            "RADIANT is a neural renderer (a network that creates images) that predicts realistic lighting for new 3D scenes without per-scene tuning or slow ray tracing.",
+            "It represents each object with 32 surface tokens, keeping the model\u2019s attention size constant no matter how many mesh triangles exist.",
+            "The transformer (a sequence network) learns how light moves between objects using geometry\u2011aware attention, then a decoder turns the results into images from camera angle."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "CausalLLM uses Qwen 2.5 backbones (0.5B\u20131.5B) with treatment\u2011specific heads to estimate scalar potential outcomes; 0.5B model sees 3.4% PEHE drop with narrative inputs.",
-            "CausalGen uses soft\u2011prefix SFT and preference alignment to generate treatment\u2011conditioned code; 1.5B backbone raises CodeGen pass@1 0.267\u21920.575 and treatment\u2011effect 0.231\u21920.515.",
-            "On IHDP, scaling from 0.5B to 1.5B yields mixed scalar\u2011estimation gains, supporting a capacity\u2011adaptation alignment hypothesis rather than a universal scaling law."
+            "RADIANT uses 32 surface-patch tokens per object, decoupling attention length from mesh resolution for feed\u2011forward global illumination.",
+            "An inter\u2011object transformer models 3D radiative exchange; invariant form\u2011factor attention embeds SE(3)-invariant geometry into query\u2011key dot products weighted by learned area/material gains.",
+            "A view decoder renders images from target camera poses, with camera rays cross\u2011attending scene tokens guided by depth\u2011tested point splats, avoiding per\u2011scene optimization."
           ],
           "status": "ok"
         }
       },
-      "title": "When Does Pre-Trained Capacity Help Causal Learning? From Scalar Prediction to Counterfactual Post-Training",
+      "title": "RADIANT: Object-Centric Feed-Forward Global Illumination",
       "topics": [
         "LLMs",
         "Backend",
         "System Design",
-        "Machine Learning",
-        "AI Agents"
+        "Machine Learning"
       ],
-      "url": "https://arxiv.org/abs/2610.33311"
+      "url": "https://arxiv.org/abs/2610.32075"
+    },
+    {
+      "id": "ce766c65d943bee9ef4fb8f07e27e925ce8f6d4708978e5ee649585903eddeb9",
+      "image_url": null,
+      "published_at": "2026-10-27T04:00:00Z",
+      "source": "arXiv Machine Learning",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "status": "failed"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kolibri is a 78.1\u2011billion\u2011parameter English\u2011German mixture\u2011of\u2011experts transformer (uses specialized sub\u2011models) that uses only 3.46 billion active parameters per token, released under Apache 2.0.",
+            "Trained on 24 trillion tokens, German >20 % of data, plus 2 trillion curated and synthetic German tokens.",
+            "Fine\u2011tuned with reinforcement learning on 1.2 million tasks, it activates 4.4 % of parameters per token and ranks on the Pareto frontier (best quality\u2011cost trade\u2011off)."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "78.1B total parameters, 3.46B active per token, open weights Apache 2.0.",
+            "Trained on 24T tokens, >20% German, 2T curated German, synthetic, supervised fine\u2011tuning + 1.2M RL tasks (reasoning, tool use, code, retrieval).",
+            "Pareto\u2011frontier quality vs serving cost in English/German, built on Kolibri Origin, Model Factory pipeline."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Kolibri: A Sovereign European Model on the Pareto Frontier",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.31945"
     },
     {
       "id": "e11faf2f31ca56eddb02478eb7c11f92a849f003ea5d769d41afdeacb594175b",
@@ -211,82 +533,46 @@
       "url": "https://arxiv.org/abs/2610.33352"
     },
     {
-      "id": "ce766c65d943bee9ef4fb8f07e27e925ce8f6d4708978e5ee649585903eddeb9",
+      "id": "ef51b778727bac9022dbe27c482a75618112a5a488c7c9bae0fdb8316610dc2c",
       "image_url": null,
       "published_at": "2026-10-27T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [],
-          "status": "failed"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Kolibri is a 78.1\u2011billion\u2011parameter English\u2011German mixture\u2011of\u2011experts transformer (uses specialized sub\u2011models) that uses only 3.46 billion active parameters per token, released under Apache 2.0.",
-            "Trained on 24 trillion tokens, German >20 % of data, plus 2 trillion curated and synthetic German tokens.",
-            "Fine\u2011tuned with reinforcement learning on 1.2 million tasks, it activates 4.4 % of parameters per token and ranks on the Pareto frontier (best quality\u2011cost trade\u2011off)."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "78.1B total parameters, 3.46B active per token, open weights Apache 2.0.",
-            "Trained on 24T tokens, >20% German, 2T curated German, synthetic, supervised fine\u2011tuning + 1.2M RL tasks (reasoning, tool use, code, retrieval).",
-            "Pareto\u2011frontier quality vs serving cost in English/German, built on Kolibri Origin, Model Factory pipeline."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Kolibri: A Sovereign European Model on the Pareto Frontier",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.31945"
-    },
-    {
-      "id": "6b771939fc11946c99e7d69a9cde11aee758d3562d2a86b59b826c5864fd6f1d",
-      "image_url": null,
-      "published_at": "2026-10-27T04:00:00Z",
-      "source": "arXiv Machine Learning",
+      "source": "arXiv cs.AI",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
           "bullets": [
-            "RADIANT is an object-centric transformer that models global illumination without optimization, using 32 surface-patch tokens per object to keep attention length independent of mesh resolution.",
-            "The architecture employs invariant form-factor attention, embedding geometric distances and orientations into SE(3)-invariant query-key products, avoiding O(N^2) bias matrices.",
-            "A single network combines an inter-object scene transformer and a view decoder, rendering images from point inputs while cross-attending scene tokens for visibility."
+            "Study examines how pre\u2011trained model size affects causal learning, using two Qwen 2.5\u2011based systems: CausalLLM for scalar outcomes and CausalGen for treatment\u2011conditioned generation.",
+            "Backbone growth 0.5B\u21921.5B gives mixed scalar results on IHDP but raises CodeGen pass@1 from 0.267 to 0.575 and treatment\u2011effect score from 0.231 to 0.515.",
+            "Narrative inputs reduce CausalLLM error (1.842\u21921.780) and improve over tabular by 3.4%, but small backbones, varied data, and no intermediate tests limit conclusions."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "RADIANT is a neural renderer (a network that creates images) that predicts realistic lighting for new 3D scenes without per-scene tuning or slow ray tracing.",
-            "It represents each object with 32 surface tokens, keeping the model\u2019s attention size constant no matter how many mesh triangles exist.",
-            "The transformer (a sequence network) learns how light moves between objects using geometry\u2011aware attention, then a decoder turns the results into images from camera angle."
+            "Pre-trained model size (capacity) affects causal learning performance, but results vary across tasks.",
+            "Larger backbones improve code generation accuracy and treatment-effect scoring, but scalar outcome estimates show mixed gains.",
+            "Input format matters: narrative inputs slightly lower error compared to tabular, showing representation and format influence beyond model size."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "RADIANT uses 32 surface-patch tokens per object, decoupling attention length from mesh resolution for feed\u2011forward global illumination.",
-            "An inter\u2011object transformer models 3D radiative exchange; invariant form\u2011factor attention embeds SE(3)-invariant geometry into query\u2011key dot products weighted by learned area/material gains.",
-            "A view decoder renders images from target camera poses, with camera rays cross\u2011attending scene tokens guided by depth\u2011tested point splats, avoiding per\u2011scene optimization."
+            "CausalLLM uses Qwen 2.5 backbones (0.5B\u20131.5B) with treatment\u2011specific heads to estimate scalar potential outcomes; 0.5B model sees 3.4% PEHE drop with narrative inputs.",
+            "CausalGen uses soft\u2011prefix SFT and preference alignment to generate treatment\u2011conditioned code; 1.5B backbone raises CodeGen pass@1 0.267\u21920.575 and treatment\u2011effect 0.231\u21920.515.",
+            "On IHDP, scaling from 0.5B to 1.5B yields mixed scalar\u2011estimation gains, supporting a capacity\u2011adaptation alignment hypothesis rather than a universal scaling law."
           ],
           "status": "ok"
         }
       },
-      "title": "RADIANT: Object-Centric Feed-Forward Global Illumination",
+      "title": "When Does Pre-Trained Capacity Help Causal Learning? From Scalar Prediction to Counterfactual Post-Training",
       "topics": [
         "LLMs",
         "Backend",
         "System Design",
-        "Machine Learning"
+        "Machine Learning",
+        "AI Agents"
       ],
-      "url": "https://arxiv.org/abs/2610.32075"
+      "url": "https://arxiv.org/abs/2610.33311"
     },
     {
       "id": "65a328ac4f85deaf37f7ba7e3794700f546eaf5177943293d5e102a0dd064cfe",
@@ -1546,626 +1832,16 @@
         "Productivity"
       ],
       "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
-    },
-    {
-      "id": "ebf3022769d5aa3354983f9685a3ac07e18373ecdd4bfd815a8e0aab59f2765f",
-      "image_url": null,
-      "published_at": "2026-10-21T10:51:00Z",
-      "source": "Martin Fowler",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Gergely Orosz criticizes contest entrants who used AI, claiming any AI presence may lead to the assumption of full AI authorship.",
-            "The piece examines AI detection challenges, the benefits of AI for people with disabilities or language barriers, and questions of fairness.",
-            "It also notes disappointment over the cancellation of the Grace Hopper Celebration, an event supporting women and non-binary technologists."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Gergely Orosz is upset that people used AI in his \u201cNo AI\u201d essay contest, fearing that any AI use makes the whole work seem AI.",
-            "He worries AI detection is hard, so people may think all content is AI; a \u201csecond brain\u201d for Parkinson\u2019s patients or translate for non\u2011English speakers.",
-            "The article also notes disappointment that the Grace Hopper Celebration, an event for women and non\u2011binary tech workers, was cancelled this year."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Orosz complains about AI in essay contest, warns that any AI use may be assumed 100% AI, discouraging human effort.",
-            "Discusses challenges of AI detection, neural net accuracy, and human communication blending AI elements.",
-            "Notes valid AI uses (e.g., Jim Highsmith's second brain for Parkinson's, translation aid) and mentions Grace Hopper Celebration cancellation."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Fragments: October 21",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://martinfowler.com/fragments/2026-10-21.html"
-    },
-    {
-      "id": "64ddfb139fec8a1cb4597ec213ad7265ff7b827324c2efbb180615bde9f68d90",
-      "image_url": null,
-      "published_at": "2026-10-21T04:50:00Z",
-      "source": "OpenAI News",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Thousands of AI agents were deployed to analyze massive brain-cell datasets, revealing new research leads.",
-            "The collaboration involved OpenAI, PerturbAI, and Scripps Research, leveraging distributed AI to process millions of cells.",
-            "The approach demonstrates how AI can accelerate biological discovery by efficiently mining large-scale cellular data."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Thousands of autonomous AI agents, software programs that act on their own, were deployed to sift through millions of brain cell data points.",
-            "The collaboration between OpenAI, PerturbAI, and Scripps Research combined their expertise to guide the agents toward promising research leads.",
-            "These leads help scientists understand brain function and could inform future treatments for neurological disorders."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Thousands of distributed AI agents deployed by OpenAI, PerturbAI, and Scripps Research to analyze millions of brain cell datasets.",
-            "The agents collaboratively identify promising research leads within the massive neural data.",
-            "This approach demonstrates scalable, multi\u2011institution AI collaboration for biological discovery."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Using thousands of AI agents to uncover new leads in biological data",
-      "topics": [
-        "AI Agents",
-        "System Design",
-        "LLMs"
-      ],
-      "url": "https://openai.com/index/scaling-ai-research-for-complex-biological-data"
-    },
-    {
-      "id": "15a0583029b9da74a9de932531504a3a598c6b6ff7161a9c5585a66233077e0d",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LEAF is a LUT-aware transformer for FPGAs achieving nanosecond-scale inference.",
-            "It converts query/key/value projections and feed-forward layers into FPGA-native layers, tabulating constant matrix-vector multiplications to reduce LUT usage.",
-            "On jet tagging, LEAF improves accuracy by 1.8% and uses 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35 ns latency."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LEAF is a transformer for FPGAs that uses LUTs (lookup tables) efficiently, achieving nanosecond\u2011scale inference.",
-            "It rewrites attention (focus on important parts) and feed\u2011forward layers into FPGA\u2011native forms, tabulating constant matrix\u2011vector multiplications to reduce resource use.",
-            "On jet tagging, it outperforms prior models by 1.8% accuracy, using 2.9\u00d7 fewer LUTs, achieving 80.4% accuracy at 28k LUTs and 35ns."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LEAF: LUT\u2011aware Efficient Attention on FPGAs\u2014first nanosecond\u2011scale transformer converting query/key/value projections and feed\u2011forward into FPGA\u2011native layers via LUT\u2011aware training.",
-            "Attention block\u2019s constant matrix\u2011vector multiplications are tabulated, leaving remaining operations arithmetic, enabling 1.8\u2011point accuracy gain and 2.9\u00d7 LUT savings on jet\u2011tagging benchmark.",
-            "Most efficient LEAF\u2011based linformer with 64 input particles achieves 80.4% accuracy at 28k LUTs and 35 ns latency."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "LEAF: LUT-aware Efficient Attention on FPGAs",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.27078"
-    },
-    {
-      "id": "23675028600476715d5ad9fbc9077584366a308d41b42b8985819d05bf968a83",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "CovNav uses Conformal Prediction to decide when a fast LLM should trigger slow chain-of-thought reasoning for object navigation tasks.",
-            "It treats spatial queries as binary decisions, converting token probabilities into prediction sets and escalating only ambiguous cases.",
-            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by 0.8\u20131.7 percentage points."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "CovNav uses a fast local LLM to guess if a target object is near another object, then checks uncertainty with Conformal Prediction.",
-            "If the prediction is uncertain, CovNav switches to a slow \u201cchain\u2011of\u2011thought\u201d mode, trading speed for better reasoning.",
-            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by up to 1.7 % in success rates."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "CovNav uses Conformal Prediction to decide when a fast LLM should defer to slow chain-of-thought reasoning for object goal navigation queries.",
-            "The system casts spatial queries as binary decisions, converting token probabilities into prediction sets, and escalates only ambiguous cases, keeping calibration tractable.",
-            "Experiments on Gibson and HM3D show CovNav outperforms zero\u2011shot baselines by 0.8\u20131.7 pp, supporting open\u2011set objects via off\u2011the\u2011shelf detectors."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "CovNav: Conformal Prediction-Guided Adaptive Inference for Object Goal Navigation",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "Cloud"
-      ],
-      "url": "https://arxiv.org/abs/2610.27677"
-    },
-    {
-      "id": "2e95c95ea589d2d6070e764cd8128ffdd36d6c8aeaf8be211f9180a872c02dcd",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces Semantic Observability, a multi\u2011agent framework that consolidates heterogeneous logs into a dynamic property graph database linking infrastructure, software, and events.",
-            "Uses directed cyclic graphs to autonomously traverse the graph, applying causal algorithms and temporal back\u2011traversal to isolate anomaly blast radii.",
-            "An LLM reasoning engine interprets the pruned subgraph to produce code\u2011level root\u2011cause analyses and actionable remediations."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Semantic Observability unifies diverse microservice logs into a Property Graph Database, linking infrastructure, software, and events as nodes and directed edges for clearer context.",
-            "A multi\u2011agent system, guided by Directed Cyclic Graphs (DCGs), automatically traverses the graph, uses causal algorithms and time\u2011backtracking to pinpoint the exact anomaly area.",
-            "The resulting subgraph is fed to a Large Language Model (LLM) reasoning engine, which produces code\u2011level Root Cause Analyses (RCAs) and actionable fixes."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces Semantic Observability: autonomous multi\u2011agent framework that consolidates heterogeneous microservice logs into a dynamic, queryable Property Graph Database, modeling topology, dependencies, and events.",
-            "Employs Directed Cyclic Graphs to orchestrate agents that run causal graph algorithms and temporal back\u2011traversal, isolating anomaly blast radius within the graph.",
-            "Uses an LLM reasoning engine on the pruned subgraph to produce code\u2011level Root Cause Analyses and actionable remediations, as presented in arXiv:2610.28611v1."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Semantic Observability for Autonomous Systems Diagnostics",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "DevOps"
-      ],
-      "url": "https://arxiv.org/abs/2610.28611"
-    },
-    {
-      "id": "46178924d1dbab427845a698d30b493bb761701cba0d200717e3053312cabf44",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces RLVR with LLMs for RTL circuit generation from natural language, addressing multi-objective PPA optimization.",
-            "Proposes a generation-based training pipeline and Hypervolume Contribution reward to maximize diversity and quality of Pareto-optimal circuit sets.",
-            "Demonstrates 13.3% improvement on RTLLM v2 benchmark, indicating superior Pareto front coverage compared to prior single-scalar reward methods."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Uses large language models (LLMs) to write RTL code from natural language, aiming for multiple trade\u2011offs (power, speed, area) instead of one best design.",
-            "Adds a loop that generates circuits sequentially, rewarding each by Hypervolume Contribution (HVC), a metric measuring its improvement to the Pareto front of trade\u2011offs.",
-            "On the RTLLM v2 benchmark, the method boosts the diversity and quality of generated designs by 13.3 % compared to earlier single\u2011objective RL approaches."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces RLVR with LLMs for RTL circuit generation, addressing multi-objective PPA optimization beyond single scalar rewards.",
-            "Proposes generation-based training pipeline converting Pareto coverage into sequential generation, and HVC reward measuring each circuit's contribution to Pareto front.",
-            "Evaluated on RTLLM v2 benchmark, achieving +13.3% improvement in reward/diversity over prior methods."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Pareto-Optimal RTL Code Generation via Multi-Objective Reinforcement Learning with Large Language Models",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.26904"
-    },
-    {
-      "id": "4934e32c8ead615ab768065a0a74661d8cab7600849b71f20b913785d8190d6c",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LaLa-World is a language\u2011conditioned latent world model that learns from simulation, robot data, images, and videos across diverse domains.",
-            "It jointly trains a single future predictor using language descriptions of actions and visual changes, built on a language model for interpreting conditions.",
-            "The model outperforms domain\u2011specific LWMs, reduces training cost 6\u00d7, speeds planning 13.9\u00d7, and initializes LaLa\u2011Policy, matching Cosmo performance."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LaLa-World is a language\u2011conditioned latent world model (predicts hidden states) that learns from simulation, robot data, images, and videos.",
-            "It uses language to describe actions and visual changes, enabling joint training across diverse datasets.",
-            "The model outperforms others in planning, costs less training, plans faster, and can initialize a policy model."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LaLa-World is a language\u2011conditioned latent world model that jointly learns from simulation, robot trajectories, images, and videos using a single future predictor.",
-            "Its predictor, built on a language model, interprets textual action descriptions and visual changes, enabling higher MPC planning performance than domain\u2011specific LWMs.",
-            "Compared to an RAEv2 video baseline, LaLa-World matches planning performance with 6\u00d7 less training cost and 13.9\u00d7 faster inference, and pretrains LaLa-Policy for competitive control."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.27851"
-    },
-    {
-      "id": "7d91065606633e7143b40a32ec7668e3e2f52e111273cf6b2433a802020fcadd",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Hybrid framework combining Temporal Fusion Transformer and N-BEATS for multi-horizon PV power forecasting.",
-            "Attention-based fusion learns short-term dynamics via TFT and long-term trends via N-BEATS, enabling simultaneous 30\u2011min to 24\u2011hr predictions.",
-            "Tested on DKASC multi\u2011year data, outperforms baselines with RMSE reductions up to 3540%."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Hybrid model combines Temporal Fusion Transformer (TFT) and N-BEATS to capture short\u2011term and long\u2011term patterns in PV power.",
-            "Attention\u2011based fusion balances the two branches, producing forecasts for 30\u2011min to 24\u2011hr horizons in one pipeline.",
-            "Tested on real data from DKASC, the model outperforms baselines, reducing error by up to 3540%."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Hybrid TFT\u2011N\u2011BEATS model fuses short\u2011term TFT and long\u2011term N\u2011BEATS via adaptive attention, enabling simultaneous 30\u2011min to 24\u2011h PV power forecasts.",
-            "TFT captures dynamic feature importance; N\u2011BEATS decomposes trend/seasonality with interpretable basis functions, improving multi\u2011scale learning.",
-            "On DKASC multi\u2011year data, the framework reduces RMSE to 42.35\u201352.29, outperforming baselines by up to 3540 % reduction."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "A Hybrid TFT-NBEATS Framework for Robust Multi-Horizon Photovoltaic Power Forecasting",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "Cloud"
-      ],
-      "url": "https://arxiv.org/abs/2610.27155"
-    },
-    {
-      "id": "8c69d8b194f3a59980d12712d50fe456eb7cb043a0758fbc186336af871be320",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces Continuum-LM, a continuous-depth language model that reuses pretrained residual transformations as dynamical operators, enabling continuous hidden-state evolution.",
-            "Uses ordinary differential equations with higher-order numerical integration; solver order and step size control computation, allowing stable training across eight scientific tasks.",
-            "Achieves 7.77\u201310.96% higher exact-match accuracy over discrete counterparts at 0.6B and 1.7B scales, outperforming Ouro-style recurrent control under matched budgets."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Introduces Continuum\u2011LM, a continuous\u2011depth (hidden states change continuously) language model that reuses pretrained residual transformations as dynamical operators, evolving via differential equations.",
-            "Uses higher-order numerical integration (more accurate calculation of equations), where solver order and step size control computation, enabling flexible depth without adding parameters.",
-            "Tested on eight scientific tasks, Continuum\u2011LM outperforms discrete models by 7.77\u201310.96% accuracy at 0.6B and 1.7B sizes, showing parameter reuse (same parameters used) boosts performance."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces Continuum\u2011LM, a continuous\u2011depth language model that reuses pretrained residual transformations as dynamical operators, evolving hidden states via an ODE solved with higher\u2011order integration.",
-            "Solver order and step size control computation, enabling stable training and 7.77\u2011point (0.6B) / 10.96\u2011point (1.7B) exact\u2011match accuracy gains over discrete counterparts.",
-            "At 0.6B, Continuum\u2011LM outperforms an Ouro\u2011style recurrent control under matched parameter and residual\u2011function evaluation budgets, proving extensible depth via parameter reuse."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Dynamic System Inspired Continuous Large Language Model for AI4Science Tasks",
-      "topics": [
-        "LLMs",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.26959"
-    },
-    {
-      "id": "8ee03648982651510b20f07b4a73efd57bc71935f9ac697719d7ee94b72d36cc",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LightCRS is a lightweight framework that unifies multi-domain multimodal conversational recommendation by precomputing product representations and using a small query-conditioned module.",
-            "It achieves state\u2011of\u2011the\u2011art HR@1, NDCG@5, and MRR, outperforming baselines by 35.4% HR@1 and reducing latency 266\u00d7.",
-            "The authors introduce MM\u2011R2A\u201125, a 25\u2011domain benchmark of Reddit conversations paired with Amazon listings, demonstrating joint training boosts HR@1 by 15.2%"
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LightCRS is a lightweight system that recommends products across many categories using a single shared model, avoiding separate models for each domain.",
-            "It precomputes product images and text with frozen encoders, then uses a 5.3M\u2011parameter module that fuses queries via cross\u2011attention and compares candidates with a Transformer.",
-            "On a 25\u2011domain benchmark, LightCRS beats baselines by 35% in top\u20111 hits and is 266 times faster per query, while joint training adds 15% accuracy."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LightCRS: lightweight framework using frozen VLM encoders to precompute multimodal product embeddings; online 5.3M-parameter query\u2011conditioned cross\u2011attention fuses evidence across domains.",
-            "Inter\u2011candidate Transformer scores candidates; shared across 25 domains, reducing latency 266\u00d7 and boosting HR@1 by 35.4% over baseline.",
-            "MM\u2011R2A\u201125 pairs Reddit dialogues with Amazon listings; joint multi\u2011domain training improves HR@1 by 15.2% over single\u2011domain models."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "LightCRS: Lightweight Multi-Domain Conversational Recommendation System",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.26948"
-    },
-    {
-      "id": "90066384ad84611d7d68ad6b99b9d9373fd59ec5620960e8a9cabfac18159620",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces a prompt-side structural complexity index scoring prompts on six dimensions, avoiding bias from generated code.",
-            "Evaluated 5,000 Python prompts with 21 models and four LLM judges; composite ICC(2,1)=0.872 indicates strong inter-rater reliability.",
-            "Found a nonmonotone breakpoint at composite 14.0 where pass rates jump from 83.4% to 90.1%; breakpoint persists after adjusting for task type."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Introduces a new Prompt\u2011Side Structural Complexity Index (a score of prompt structure on six dimensions) that avoids bias from broken code.",
-            "Tested on 5,000 Python prompts and 21 models; a composite score of 14.0 marks a breakpoint where pass rates rise from 83% to 90%.",
-            "Higher prompt complexity can lower failures, but the effect differs by model and source; 25% of failures pair high prompt scores with low output complexity."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [],
-          "status": "failed"
-        }
-      },
-      "title": "The Complexity Kink: A Prompt-Side Structural Complexity Index for Code-Generation Reliability",
-      "topics": [
-        "LLMs",
-        "Python",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2609.19616"
-    },
-    {
-      "id": "ba13ede3667f75612ee0c4eb588297d262978572704132208c82cc3e9545fdfa",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Harness optimization boosts language model agent performance by better shaping context, tool use, and workflows without updating weights.",
-            "The study distinguishes elicitation (improving success on existing tasks) from expansion (enabling new solvable tasks) to guide recursive self\u2011improvement.",
-            "Results show that while optimized harnesses improve pass@1, gains can reverse with larger attempt budgets, and aggregate metrics may mask task\u2011specific shortfalls."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Harness optimization tweaks context, tool use, and workflows, boosting language\u2011model agent performance without changing weights.",
-            "The study distinguishes \u201celicitation\u201d (better success on known tasks) from \u201cexpansion\u201d (new tasks solved), key for recursive improvement.",
-            "Results show gains vary with task difficulty and attempt limits; larger budgets can reduce harness benefits compared to scaling or compute."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Harness optimization shapes context, tool use, and workflows to better leverage LM capabilities without weight updates.",
-            "Study distinguishes elicitation (improved success on reachable tasks) vs expansion (broader solvable tasks), using pass@k analysis to compare pre- and post-optimization harnesses.",
-            "Findings show pass@1 gains can reverse at higher attempt budgets, and aggregate improvements mask shortfalls on harder tasks, contrasting with model scaling and compute boosts."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Elicitation or Expansion? Demystifying Gains from Agent Harness Optimization",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.27889"
-    },
-    {
-      "id": "c8d6b2a986c429698973949a4843c8f32538c91ade5ab8e3f65ba07ac276c2de",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "cls fine-tuning outperforms s2s for hallucination detection, creating clear two-cluster geometry and strong class separation.",
-            "cls signal saturates before final layer, revealing an InfoWindow where task information emerges; upper layers become redundant.",
-            "Removing 31% of layers above InfoWindow keeps accuracy on Qwen3-4B/8B while cutting latency 1.4\u00d7."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Fine\u2011tuning a classifier head (CLS) outperforms a sequence\u2011to\u2011sequence (S2S) approach for detecting hallucinations in large language models.",
-            "CLS pushes hidden states into two distinct clusters, giving clear class separation and easy linear decoding, while S2S keeps states near the pretrained backbone.",
-            "Analysis shows a narrow middle layer window where task information appears; removing upper layers beyond this window cuts latency 1.4\u00d7 without losing accuracy."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Classifier\u2011head fine\u2011tuning (cls) outperforms seq\u2011to\u2011seq (s2s) on binary hallucination detection by inducing a two\u2011cluster geometry with strong class separation and linearly decodable labels.",
-            "Cls signal saturates before the final layer, creating an upper\u2011middle InfoWindow where task information emerges, followed by a redundant upper plateau that mirrors this signal.",
-            "Removing layers above the InfoWindow truncates 31% of Qwen3\u20114B/8B, preserving accuracy within seed noise while cutting latency by 1.4\u00d7."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "How Fine-Tuning Objectives Shape Layer-Wise Information in LLM Hallucination Detection",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.27711"
-    },
-    {
-      "id": "e15f5cc6b720ff7e1397bd7962806f60388355e6579517da55a4544ec2ec398b",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LatticeMind transforms natural-language requests into validated DFT workflows, using contracts and deterministic pre-execution checks to ensure correct stages, files, and dependencies before solver runs.",
-            "On a 44-case RESCU benchmark, 119/132 runs succeeded on first plan, with remaining completed after one repair; ablation shows contracts and validation are key.",
-            "The framework also reproduces all reference values on a 19-case VASP benchmark, proving solver-agnostic transferability."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LatticeMind turns natural language into DFT workflows, ensuring each step\u2019s files and dependencies are correct before running the solver. Define DFT: quantum simulation of electrons.",
-            "It uses a workflow contract and validators to catch errors early; if a check fails, a limited repair is attempted, keeping results traceable.",
-            "Tested on 44 RESCU and 19 VASP cases, it matched all reference results, outperforming a simple trial\u2011and\u2011repair approach with fewer tokens."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LatticeMind converts natural\u2011language requests into executable DFT projects via a workflow contract, deterministic validators, and bounded repair before solver launch.",
-            "On a 44\u2011case RESCU benchmark, 119/132 runs succeeded on first validated plan, with remaining passing after one repair cycle.",
-            "Ablation studies show workflow contract and pre\u2011execution validation are key, while the framework reproduces all reference values on a 19\u2011case VASP benchmark, proving solver transferability."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "LatticeMind: A Validation-Gated Agentic Framework for Density Functional Theory Workflows",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Productivity",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.26869"
-    },
-    {
-      "id": "fe5468c76a03c1f066a0678c59cbc17927126caa19ddc2e7a3bcd2ae6cfd8505",
-      "image_url": null,
-      "published_at": "2026-10-21T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Study of ordered layer-state trajectories in transformers shows layer order significantly shapes inference, aligning 1.6\u20132.2\u00d7 more with endpoint than shuffled order.",
-            "Hidden-state coordinates outperform vocabulary readbacks; architecture-specific scaffolds identified across Qwen, Llama, Gemma, with interventions controlling trajectories via local actuators and gating.",
-            "Selective gating achieved 17/87 Qwen closure trajectories to top\u20111 boundary, demonstrating behaviorally consequential process without fine\u2011grained dose assignment."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "The study examines how the sequence of transformer layers (layer-state trajectory: hidden states across layers) shapes the model\u2019s computation during inference.",
-            "Across Qwen, Llama, Gemma, natural layer order aligns 1.6\u20132.2\u00d7 better with final outputs than shuffled orders, highlighting architecture over training.",
-            "Interventions on hidden states and selective gating can steer internal trajectories, improving specific outputs while leaving others unchanged, demonstrating controllable inference dynamics."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Layer-state trajectories in Qwen, Llama, Gemma show 1.60\u20132.24\u00d7 better alignment with endpoint chords than shuffled orders, revealing architecture\u2011compatible scaffolds across random initializations.",
-            "Hidden\u2011state coordinates outperform vocabulary readbacks; task\u2011defined coordinates enable computable candidate competition, while additive interventions fail but local transition actuators selectively steer trajectories.",
-            "A confidence gate and safety\u2011matched action reassignment selectively gate 17/87 Qwen closure paths to top\u20111 boundaries, demonstrating bounded actuator families without fine\u2011grained dose control."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "High-dimensional layer-state trajectories reveal the internal dynamics of transformer inference",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.26866"
     }
   ],
-  "generated_at": "2026-10-27T13:51:49.611060Z",
+  "generated_at": "2026-10-28T14:47:08.714209Z",
   "topic_counts": {
-    "AI Agents": 41,
-    "Backend": 29,
-    "LLMs": 43,
-    "Machine Learning": 38,
-    "Other": 35,
-    "System Design": 34
+    "AI Agents": 38,
+    "Backend": 27,
+    "LLMs": 34,
+    "Machine Learning": 30,
+    "Other": 37,
+    "System Design": 26
   },
   "topics": [
     "AI Agents",
