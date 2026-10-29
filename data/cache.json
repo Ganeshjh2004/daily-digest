@@ -1259,6 +1259,53 @@
       ],
       "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code/"
     },
+    "1cba5a9ca4016b50aa454938e59f6d292bed4d6a9a2fe1499ce4a20668454585": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-10-29T05:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Discussed AI Conformance's evolution from a Kubernetes Working Group to a SIG Architecture subproject, highlighting community collaboration and governance changes.",
+            "Janet Kuo, a long\u2011time Google Kubernetes maintainer, leads SIG Apps and the AI Conformance program, focusing on next\u2011gen workloads.",
+            "Yuan Tang of Red Hat drives AI platform development, founded WG Serving, and steers the AI Conformance initiative, linking projects like Kubeflow and KServe."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AI Conformance in Kubernetes moved from a Working Group (WG) to a SIG Architecture subproject, helping AI workloads run reliably on the platform.",
+            "Janet Kuo, a Google engineer, leads SIG Apps and the AI Conformance program, focusing on next\u2011generation workloads.",
+            "Yuan Tang, a Red Hat engineer, drives AI platform development and upstream strategy, and helped create WG Serving and the AI Conformance program."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AI Conformance evolved from a Working Group to a SIG Architecture subproject, integrating AI workload standards into Kubernetes core.",
+            "Janet Kuo, a 2015 Kubernetes maintainer, authored core workload controllers and now co\u2011chairs SIG Apps, leading the AI Conformance program.",
+            "Yuan Tang, Red Hat senior principal engineer, drives AI platform strategy, collaborates on Kubeflow, Argo, KServe, and founded WG Serving for AI workloads."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "From Working Group to SIG Architecture: spotlight on AI Conformance",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "DevOps",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/"
+    },
     "21d667d4b44d480b6e06f5ac377cab1a4ecedc51d6b892c16abbfcb953a7518e": {
       "image_url": null,
       "last_seen": "2026-10-23T13:03:06.593626Z",
@@ -1432,6 +1479,48 @@
         "Cloud"
       ],
       "url": "https://kubernetes.io/blog/2026/07/14/custom-metrics-exporter-kubernetes/"
+    },
+    "254c7e013b4741cc66e1864770d8a09ed27676d28d6b534fe2b46723c88928ff": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-06-26T18:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AI accelerates patch contributions but maintenance lag.",
+            "Kubernetes created an AI policy to guide responsible use, requiring disclosure in pull requests.",
+            "The policy balances innovation with accountability, ensuring human oversight and maintaining code quality."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AI tools let more people add fixes to open\u2011source projects, speeding patch creation but leaving code maintenance behind.",
+            "Kubernetes created an AI policy that requires contributors to state when AI helped, ensuring reviewers know the context.",
+            "The policy balances innovation with accountability, keeping human oversight while allowing AI to aid development."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes introduces AI policy to guide contributions, balancing innovation and accountability.",
+            "Policy requires PRs to disclose AI assistance, e.g., statement in description, enabling reviewers to apply appropriate scrutiny.",
+            "Emphasizes human oversight, ensuring code quality while acknowledging AI tools as aids."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Open source maintainership in the age of AI",
+      "topics": [
+        "AI Agents",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/06/26/open-source-maintainership-in-the-age-of-ai/"
     },
     "258958982f47942bdfb5d01dbc5ffc66088ef38669f94a7b6dc5ce70c634bf87": {
       "image_url": null,
@@ -2124,6 +2213,48 @@
       ],
       "url": "https://openai.com/index/how-agents-are-transforming-work"
     },
+    "3d9a0ef042809e92cd739c7709ee67c1485417204ad176212d1df7f39aad3ec7": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-06-23T00:00:00Z",
+      "source": "Python Insider",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "API authentication bypass vulnerability identified and fixed on python.org.",
+            "Trail of Bits performed a third\u2011party audit to confirm the fix.",
+            "The fix secures download metadata access, preventing unauthorized data retrieval."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Python.org fixed a security flaw that let attackers bypass API authentication when accessing download metadata.",
+            "The fix stops unauthorized requests from retrieving sensitive download information.",
+            "Trail of Bits performed a third\u2011party audit to confirm the patch\u2019s effectiveness."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Python.org\u2019s download metadata API had an authentication bypass flaw that allowed unauthenticated access to protected data.",
+            "The issue was fixed by tightening authentication checks on the metadata endpoints, ensuring only authorized requests succeed.",
+            "Trail of Bits performed a follow\u2011up audit confirming the patch and validating the absence of residual vulnerabilities."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Mitigated API authentication bypass for python.org download metadata",
+      "topics": [
+        "Python",
+        "Backend"
+      ],
+      "url": "https://blog.python.org/2026/06/mitigated-api-bypass-for-download-metadata-python-dot-org/"
+    },
     "3ed693bf52dd2dcbb855a489dded6ac1af22cfdb0a080428eaffe850732f24d3": {
       "image_url": null,
       "last_seen": "2026-10-23T05:18:06.830843Z",
@@ -2559,6 +2690,49 @@
       ],
       "url": "https://arxiv.org/abs/2610.27851"
     },
+    "49bd957aa3cd1509fccc8b87c6a7c84e721627edddad6c12101529388cca464b": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2018-04-18T07:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Evolved Policy Gradients (EPG) is an experimental meta\u2011learning method that evolves the loss function of learning agents.",
+            "EPG enables agents to train quickly on new tasks, succeeding on unseen scenarios like navigating to objects placed on the opposite side of a room.",
+            "The approach demonstrates that evolving loss functions can generalize learning beyond the training regime, offering potential for rapid adaptation in varied environments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Evolved Policy Gradients (EPG) is an experimental metalearning method that evolves the loss function used by learning agents.",
+            "By changing the loss function, EPG lets agents learn new tasks quickly, even when those tasks differ from what they saw during training.",
+            "For example, agents trained with EPG can navigate to an object on the opposite side of a room, a scenario they were not trained on."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces Evolved Policy Gradients, a metalearning method that evolves agents\u2019 loss functions to accelerate learning on unseen tasks.",
+            "Enables rapid adaptation, allowing agents to navigate to objects placed on opposite sides of a room from training positions.",
+            "Demonstrates success on basic navigation tasks beyond training regimes, highlighting EPG\u2019s generalization capability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Evolved Policy Gradients",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/evolved-policy-gradients"
+    },
     "49db9a6662d2fb5e32de4134c8abfff62b72279ee1027e042f0ce40804aa0549": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -2648,6 +2822,37 @@
         "Productivity"
       ],
       "url": "https://kubernetes.io/blog/2026/05/13/kubernetes-v1-36-advancing-workload-aware-scheduling/"
+    },
+    "4c9c2f788cfedfab4c17904623c5e66d71c947f4b3a955a86d2473c1295ef637": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2018-01-18T08:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "insufficient_content"
+        },
+        "beginner_friendly": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "insufficient_content"
+        },
+        "technical": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "insufficient_content"
+        }
+      },
+      "title": "Scaling Kubernetes to 2,500 nodes",
+      "topics": [
+        "Backend",
+        "DevOps",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/scaling-kubernetes-to-2500-nodes"
     },
     "4cd0d3a23be15a1e655e3f9005f86d90b6563439111869b501c50195289058ae": {
       "image_url": null,
@@ -3044,6 +3249,49 @@
         "Machine Learning"
       ],
       "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
+    },
+    "540b1c17cdd19889882633fa8787c2267267fc502ee5583a2c06661626d99a63": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-10-29T13:50:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Developers wary of agentic development because building differs from production reliability.",
+            "Their hesitation stems from deeper concerns beyond coding passion or job security, rooted in quality and maintainability.",
+            "Emphasis on building the right thing, using continuous integration, testing, delivery, and other practices to ensure software stays useful and robust."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Good developers hesitate with agentic development because they know code that builds may fail in production, so they\u2019re cautious about adopting new agent-based tools.",
+            "Their caution reflects a deep commitment to building the right thing, using practices like continuous integration, automated testing, and continuous delivery.",
+            "The underlying fear is that software must remain useful, maintainable, and reliable\u2014beyond just writing code or job security concerns."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Developers hesitate on agentic development because building differs from production; fear of unreliable code outweighs excitement for new tools.",
+            "The team values \u201cbuild right\u201d: continuous integration, pairing, automated testing, continuous delivery to ensure software remains useful, maintainable, and production\u2011stable.",
+            "Open\u2011space discussions reveal that reluctance stems from a deeper concern: ensuring new agentic approaches meet rigorous quality and maintainability standards."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Why are good developers so wary of agentic development?",
+      "topics": [
+        "AI Agents",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"
     },
     "5543eae6f599212338d1b8c2fcea8b3fcf54ce701c1bca98ff47db9b0ae6bb49": {
       "image_url": null,
@@ -4119,7 +4367,7 @@
     },
     "689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
       "image_url": null,
-      "last_seen": "2026-10-28T14:47:08.714209Z",
+      "last_seen": "2026-10-29T14:52:48.997061Z",
       "published_at": "2026-09-22T00:00:00Z",
       "source": "Hugging Face Blog",
       "source_type": "rss",
@@ -5103,6 +5351,48 @@
       ],
       "url": "https://huggingface.co/blog/skypilot-hf-storage"
     },
+    "815e9f76383a90122a5efa264e464937c82e515631936c699eed9c27b99af25b": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-10-29T14:28:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "The author feels reading LLM-generated prose creates an uncanny valley, reducing interest and causing revulsion.",
+            "Tools claiming to detect LLM writing are skeptical; the author doubts their accuracy and relevance.",
+            "Authors are urged to avoid drafting with LLMs to maintain authentic human voice."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The author feels reading posts like reading AI-generated text, noticing subtle clues that make them uneasy.",
+            "They distrust tools that claim to detect AI writing, fearing inaccuracies and missing the human emotional response.",
+            "They advise writers to avoid letting AI draft their work, urging careful human authorship."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Readers often sense an LLM voice in prose, noticing generic phrasing and modern buzzwords that feel synthetic.",
+            "Tools claiming to detect LLM output are questioned for accuracy, and their use may be too late to change perception.",
+            "Authors are urged to avoid drafting with LLMs, as it can trap them into an uncanny valley of prose."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Bliki: LLM Voice",
+      "topics": [
+        "LLMs",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html"
+    },
     "817be1b64aeefb03765cd8b6046d2a1fae82862b506ec77993fc1d750646fe5f": {
       "image_url": null,
       "last_seen": "2026-10-24T12:25:01.672068Z",
@@ -5583,6 +5873,91 @@
       ],
       "url": "https://arxiv.org/abs/2610.26959"
     },
+    "8c8b67d910ad96cd3cecbfec882bf8be7aa3b3cedc6aa5e9a3d6c5a2a4891bdd": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2018-12-06T08:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "CoinRun is a new training environment that measures an agent\u2019s ability to generalize to novel situations.",
+            "It offers a complexity balance\u2014simpler than classic platformers yet still challenging for state\u2011of\u2011the\u2011art algorithms.",
+            "The release has helped resolve a longstanding reinforcement\u2011learning puzzle by providing a clear generalization metric."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "CoinRun is a new training environment for reinforcement learning, where agents learn by trial and error.",
+            "It measures how well agents transfer experience to new situations, testing their ability to generalize.",
+            "It balances complexity: simpler than Sonic but still challenging for state\u2011of\u2011the\u2011art algorithms."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "CoinRun environment released.",
+            "Provides metric for agent's transfer ability to novel situations.",
+            "Balances complexity: simpler than Sonic but still generalization challenge."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Quantifying generalization in reinforcement learning",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/quantifying-generalization-in-reinforcement-learning"
+    },
+    "8eadf29e9eea5f01350f63332e0dfdf2672d5fc37754d62590008523ef746246": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-06-25T22:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Headlamp, a browser-based Kubernetes UI, now includes a Cluster API plugin that visualizes cluster lifecycle resources and simplifies management.",
+            "The plugin offers a Cluster API section with live cluster overviews, machine visibility, and dashboards showing health, conditions, and provider details.",
+            "Users can monitor control planes, scale MachineDeployments/MachineSets, and trace resource hierarchies directly within Headlamp."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Headlamp Cluster API plugin adds a dedicated section to the UI, showing clusters, machines, and resources with live status.",
+            "It provides dashboards for cluster health, control plane monitoring, and allows scaling MachineDeployments (groups of machines) and MachineSets directly from the browser.",
+            "The plugin visualizes ownership hierarchies (who owns what) and offers remediation guidance, making cluster lifecycle management easier for platform teams."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Adds a Cluster API section to Headlamp, offering live list/detail views for clusters, MachineDeployments, MachineSets, Machines, and MachinePools with status and conditions.",
+            "Provides a Cluster API dashboard showing resource health, active condition issues, provider info, and remediation guidance, plus control\u2011plane monitoring of KubeadmControlPlane replicas and versions.",
+            "Enables UI scaling of MachineDeployments and MachineSets, and traces owned\u2011resource hierarchies for simplified debugging and operations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Introducing the Cluster API plugin for Headlamp",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/"
+    },
     "8ee03648982651510b20f07b4a73efd57bc71935f9ac697719d7ee94b72d36cc": {
       "image_url": null,
       "last_seen": "2026-10-21T16:23:39.970050Z",
@@ -5881,6 +6256,48 @@
       ],
       "url": "https://aws.amazon.com/blogs/aws/introducing-amazon-cloudwatch-omni-ai-powered-observability-for-generative-ai-and-agentic-workloads/"
     },
+    "94430ceaa839cbc65bd3beb50f4a415e11e18e27e79127cc99549442483ed67e": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-10-29T03:33:42Z",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Claude Code architecture sends every background agent\u2019s transcript to its model, enabling real\u2011time context sharing.",
+            "This approach raises concerns about data privacy and potential model overload.",
+            "The article examines community feedback, citing 500 points and 202 comments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Claude Code routinely forwards logs from each background agent to its language model, allowing the model to learn from real\u2011world agent interactions.",
+            "The transcripts are sent regularly, meaning the system continuously updates the model with new data from these agents.",
+            "This practice helps improve the model\u2019s performance but raises privacy concerns, as it may expose sensitive agent data."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Claude Code architecture: background agents continuously transmit their transcripts to the central model for processing.",
+            "The system ensures regular, real\u2011time data flow from each agent to the model, enabling up\u2011to\u2011date context handling.",
+            "Community engagement: article has 500 points and 202 comments on Hacker News."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+      "topics": [
+        "AI Agents",
+        "LLMs"
+      ],
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+    },
     "974b45136755d5958c82865661bc63c040ef1beb3baf9105e1fad3207ceb0764": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -6012,6 +6429,48 @@
         "DevOps"
       ],
       "url": "https://kubernetes.io/blog/2026/09/10/kubernetes-v1-37-scheduler-preemption-for-in-place-pod-resize-alpha/"
+    },
+    "9cc3b14e3b9c7b80270d1a4d66b00d65f8eaf10f3058efb10d6469165b0cdaf1": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-06-29T18:02:48Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces DiScoFormer, a transformer architecture designed to jointly estimate probability density and scoring functions.",
+            "The model operates across multiple data distributions, enabling unified density and score estimation without separate models.",
+            "Demonstrated improvements in tasks such as density estimation, anomaly detection, and generative modeling compared to baseline methods."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "DiScoFormer is a transformer that estimates density (how data points are spread) and score (gradient of log probability) at the same time.",
+            "It works across many data distributions, so it can model different kinds of data without separate models.",
+            "By combining density and score estimation in one architecture, DiScoFormer reduces complexity and improves efficiency."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces DiScoFormer, a single transformer architecture simultaneously modeling density and score functions across diverse probability distributions.",
+            "Combines density estimation and score matching within one network, enabling unified training and inference for tasks like generative modeling and likelihood evaluation.",
+            "Supports multiple distribution families (e.g., Gaussian, mixture models) without separate models, reducing parameter count and improving cross\u2011distribution generalization."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "DiScoFormer: One transformer for density and score, across distributions",
+      "topics": [
+        "LLMs",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/allenai/discoformer"
     },
     "9d8af9008162cc0b8bf040258c5e1e26b6db9127647909247f251d4d28087663": {
       "image_url": null,
@@ -6959,6 +7418,48 @@
       ],
       "url": "https://kubernetes.io/blog/2026/09/21/kubernetes-v1-37-pvc-last-used-time/"
     },
+    "bc75ed686e56f0828cdf2ce79457b8bd8897762095938ce7d57c2e527f4c4624": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-10-28T16:07:40Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "2026 Octoverse shows record growth in commits and pushes across all industries and builder types.",
+            "Developers increasingly use agents, driving higher activity and collaboration.",
+            "The report highlights unprecedented reach and engagement for GitHub in 2026."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "2026 Octoverse shows record growth in code commits and pushes, meaning more code changes and updates shared by developers worldwide.",
+            "The report highlights that growth touched every industry and field, from tech startups to large enterprises, showing widespread adoption.",
+            "Developers are building with 'agents', automated tools that help write, test, and manage code, boosting productivity and collaboration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "2026 Octoverse report shows record growth in commits and pushes across all industries and builder types.",
+            "Developers increasingly use agents to build, driving new highs in code activity.",
+            "Growth spans every field, highlighting widespread adoption of agent-based development."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "topics": [
+        "AI Agents",
+        "Productivity"
+      ],
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+    },
     "bd1136d0fcfd6f1357de280adaee84cea07cc88c30626783f53af728070f9fc3": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -7004,7 +7505,7 @@
     },
     "bd2a7f12ec033efae496309323fbceb5a04f5cd0ef5d7e044fd5193346817f56": {
       "image_url": null,
-      "last_seen": "2026-10-28T14:47:08.714209Z",
+      "last_seen": "2026-10-29T14:52:48.997061Z",
       "published_at": "2020-01-23T08:00:00Z",
       "source": "OpenAI News",
       "source_type": "rss",
@@ -7768,6 +8269,48 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2609.10144"
+    },
+    "d2b47e5ca2b10e4d38ddb26f782d9fb30163ac0b076dcf56cbcff33b5e4a5298": {
+      "image_url": null,
+      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "published_at": "2026-06-30T18:32:50Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "ScarfBench is a benchmark suite designed to evaluate AI agents that assist in migrating enterprise Java applications to newer frameworks.",
+            "It measures agent performance across tasks such as code refactoring, dependency updates, and compatibility checks, providing quantitative metrics for comparison.",
+            "The benchmark supports reproducible experiments, enabling researchers and developers to assess and improve AI-driven migration tools in a standardized environment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "ScarfBench is a benchmark that tests AI agents on migrating enterprise Java frameworks.",
+            "It offers a set of standardized tests and metrics to compare agent performance.",
+            "The benchmark helps developers pick the best AI tool for moving from older to newer Java frameworks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces ScarfBench, a benchmark suite for evaluating AI agents on enterprise Java framework migration tasks.",
+            "Provides standardized test cases, metrics, and version compatibility checks for frameworks like Spring and Java EE.",
+            "Enables comparison of AI agent performance in code transformation, correctness, and migration speed."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "ScarfBench: Benchmarking AI Agents for Enterprise Java Framework Migration",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/ibm-research/scarfbench"
     },
     "d385c9eee6daddf42dcaff32e8b8993a49240227c995483be1d09c233c2ea2c0": {
       "image_url": null,

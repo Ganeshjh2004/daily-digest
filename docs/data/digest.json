@@ -1,6 +1,207 @@
 {
   "articles": [
     {
+      "id": "815e9f76383a90122a5efa264e464937c82e515631936c699eed9c27b99af25b",
+      "image_url": null,
+      "published_at": "2026-10-29T14:28:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "The author feels reading LLM-generated prose creates an uncanny valley, reducing interest and causing revulsion.",
+            "Tools claiming to detect LLM writing are skeptical; the author doubts their accuracy and relevance.",
+            "Authors are urged to avoid drafting with LLMs to maintain authentic human voice."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The author feels reading posts like reading AI-generated text, noticing subtle clues that make them uneasy.",
+            "They distrust tools that claim to detect AI writing, fearing inaccuracies and missing the human emotional response.",
+            "They advise writers to avoid letting AI draft their work, urging careful human authorship."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Readers often sense an LLM voice in prose, noticing generic phrasing and modern buzzwords that feel synthetic.",
+            "Tools claiming to detect LLM output are questioned for accuracy, and their use may be too late to change perception.",
+            "Authors are urged to avoid drafting with LLMs, as it can trap them into an uncanny valley of prose."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Bliki: LLM Voice",
+      "topics": [
+        "LLMs",
+        "System Design"
+      ],
+      "url": "https://martinfowler.com/bliki/LLM-Voice.html"
+    },
+    {
+      "id": "540b1c17cdd19889882633fa8787c2267267fc502ee5583a2c06661626d99a63",
+      "image_url": null,
+      "published_at": "2026-10-29T13:50:00Z",
+      "source": "Martin Fowler",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Developers wary of agentic development because building differs from production reliability.",
+            "Their hesitation stems from deeper concerns beyond coding passion or job security, rooted in quality and maintainability.",
+            "Emphasis on building the right thing, using continuous integration, testing, delivery, and other practices to ensure software stays useful and robust."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Good developers hesitate with agentic development because they know code that builds may fail in production, so they\u2019re cautious about adopting new agent-based tools.",
+            "Their caution reflects a deep commitment to building the right thing, using practices like continuous integration, automated testing, and continuous delivery.",
+            "The underlying fear is that software must remain useful, maintainable, and reliable\u2014beyond just writing code or job security concerns."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Developers hesitate on agentic development because building differs from production; fear of unreliable code outweighs excitement for new tools.",
+            "The team values \u201cbuild right\u201d: continuous integration, pairing, automated testing, continuous delivery to ensure software remains useful, maintainable, and production\u2011stable.",
+            "Open\u2011space discussions reveal that reluctance stems from a deeper concern: ensuring new agentic approaches meet rigorous quality and maintainability standards."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Why are good developers so wary of agentic development?",
+      "topics": [
+        "AI Agents",
+        "System Design",
+        "DevOps"
+      ],
+      "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"
+    },
+    {
+      "id": "1cba5a9ca4016b50aa454938e59f6d292bed4d6a9a2fe1499ce4a20668454585",
+      "image_url": null,
+      "published_at": "2026-10-29T05:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Discussed AI Conformance's evolution from a Kubernetes Working Group to a SIG Architecture subproject, highlighting community collaboration and governance changes.",
+            "Janet Kuo, a long\u2011time Google Kubernetes maintainer, leads SIG Apps and the AI Conformance program, focusing on next\u2011gen workloads.",
+            "Yuan Tang of Red Hat drives AI platform development, founded WG Serving, and steers the AI Conformance initiative, linking projects like Kubeflow and KServe."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "AI Conformance in Kubernetes moved from a Working Group (WG) to a SIG Architecture subproject, helping AI workloads run reliably on the platform.",
+            "Janet Kuo, a Google engineer, leads SIG Apps and the AI Conformance program, focusing on next\u2011generation workloads.",
+            "Yuan Tang, a Red Hat engineer, drives AI platform development and upstream strategy, and helped create WG Serving and the AI Conformance program."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "AI Conformance evolved from a Working Group to a SIG Architecture subproject, integrating AI workload standards into Kubernetes core.",
+            "Janet Kuo, a 2015 Kubernetes maintainer, authored core workload controllers and now co\u2011chairs SIG Apps, leading the AI Conformance program.",
+            "Yuan Tang, Red Hat senior principal engineer, drives AI platform strategy, collaborates on Kubeflow, Argo, KServe, and founded WG Serving for AI workloads."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "From Working Group to SIG Architecture: spotlight on AI Conformance",
+      "topics": [
+        "AI Agents",
+        "Backend",
+        "System Design",
+        "Machine Learning",
+        "DevOps",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/10/29/sig-arch-ai-conformance-2026/"
+    },
+    {
+      "id": "94430ceaa839cbc65bd3beb50f4a415e11e18e27e79127cc99549442483ed67e",
+      "image_url": null,
+      "published_at": "2026-10-29T03:33:42Z",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Claude Code architecture sends every background agent\u2019s transcript to its model, enabling real\u2011time context sharing.",
+            "This approach raises concerns about data privacy and potential model overload.",
+            "The article examines community feedback, citing 500 points and 202 comments."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Claude Code routinely forwards logs from each background agent to its language model, allowing the model to learn from real\u2011world agent interactions.",
+            "The transcripts are sent regularly, meaning the system continuously updates the model with new data from these agents.",
+            "This practice helps improve the model\u2019s performance but raises privacy concerns, as it may expose sensitive agent data."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Claude Code architecture: background agents continuously transmit their transcripts to the central model for processing.",
+            "The system ensures regular, real\u2011time data flow from each agent to the model, enabling up\u2011to\u2011date context handling.",
+            "Community engagement: article has 500 points and 202 comments on Hacker News."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Claude Code regularly sends each background agent\u2019s transcript to its model",
+      "topics": [
+        "AI Agents",
+        "LLMs"
+      ],
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+    },
+    {
+      "id": "bc75ed686e56f0828cdf2ce79457b8bd8897762095938ce7d57c2e527f4c4624",
+      "image_url": null,
+      "published_at": "2026-10-28T16:07:40Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "2026 Octoverse shows record growth in commits and pushes across all industries and builder types.",
+            "Developers increasingly use agents, driving higher activity and collaboration.",
+            "The report highlights unprecedented reach and engagement for GitHub in 2026."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "2026 Octoverse shows record growth in code commits and pushes, meaning more code changes and updates shared by developers worldwide.",
+            "The report highlights that growth touched every industry and field, from tech startups to large enterprises, showing widespread adoption.",
+            "Developers are building with 'agents', automated tools that help write, test, and manage code, boosting productivity and collaboration."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "2026 Octoverse report shows record growth in commits and pushes across all industries and builder types.",
+            "Developers increasingly use agents to build, driving new highs in code activity.",
+            "Growth spans every field, highlighting widespread adoption of agent-based development."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "topics": [
+        "AI Agents",
+        "Productivity"
+      ],
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+    },
+    {
       "id": "f10c14217170b02a480e018fb208a9566f7652215ff3538f230e17e51b01282e",
       "image_url": null,
       "published_at": "2026-10-28T12:55:00Z",
@@ -41,6 +242,47 @@
         "System Design"
       ],
       "url": "https://martinfowler.com/fragments/2026-10-28.html"
+    },
+    {
+      "id": "190913b96a96b9057743dfbae00f88937970599626474104eabe5f00b39e498a",
+      "image_url": null,
+      "published_at": "2026-10-28T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "LM-DSB automates daily safety bulletins (DSBs) in construction using a lightweight multi\u2011agent system on consumer\u2011grade PCs.",
+            "The system combines retrieval\u2011augmented generation with a locally deployable LLM, employing planner, researcher, and writer agents and fine\u2011tuned on 37 HSE documents.",
+            "Validation shows the multi\u2011agent RAG model outperforms alternatives, achieving high lexical alignment, coherence, and expert\u2011rated compliance and factual accuracy."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "LM-DSB automates daily safety bulletins in construction, cutting manual time from 2\u20133 hours to near instant.",
+            "It uses a multi\u2011agent system: planner, researcher, writer, plus retrieval\u2011augmented generation and a fine\u2011tuned local LLM.",
+            "Tests show it outperforms single\u2011agent models, with experts rating compliance 4.20/5 and accuracy 4.10/5."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "LM-DSB uses a hierarchical multi\u2011agent RAG architecture (planner, researcher, writer) with Llama 3\u20118B, fine\u2011tuned on 37 HSE documents, deployable on consumer PCs.",
+            "Phase 1 evaluation shows multi\u2011agent RAG achieves TF\u2011IDF 0.70, BLEU 0.39, ROUGE\u20111 0.66, length ratio 1.01, outperforming single\u2011agent RAG (0.39).",
+            "Phase 2 expert review (N = 40) rates compliance 4.20/5 and factual accuracy 4.10/5, confirming practical acceptability of automated DSBs."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "LM-DSB: A Lightweight Multi-agent System for Automated Daily Safety Bulletin Generation in Construction",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.36433"
     },
     {
       "id": "3f3bdde7c6b12fba843e4ac1445e4cc99e20ed36102200b21859fc87b49c5a93",
@@ -85,48 +327,6 @@
       "url": "https://arxiv.org/abs/2610.33129"
     },
     {
-      "id": "81d50ec6026448b010689635c226044113408486f3deff0746179d265ed8bd9e",
-      "image_url": null,
-      "published_at": "2026-10-28T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Study used 148 PyTorch projects, migrated 10 to TPUs with Claude Code, and evaluated success, numerical behavior, hardware use, goal preservation, and performance.",
-            "Results: 8 projects met goals, average 2.4 human interventions; 76% of 70 execution attempts failed, many silent errors, some performance changes.",
-            "TorchTPU can train 1.86\u00d7 faster and 25% cheaper per run, but failures are common, requiring careful validation and cost analysis."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "We tested 10 PyTorch projects, migrating them from NVIDIA GPUs to Google Cloud TPUs with Claude Code, checking if they run, keep behavior, and perform.",
-            "Only 8 projects met the goal; average 2.4 human tweaks were needed, and 76% of 70 runs failed, often silently due to library changes.",
-            "Some TPUs ran 1.86\u00d7 faster and 25% cheaper than GPUs, but costs varied widely, showing mixed benefits."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Migrated 10 PyTorch projects from NVIDIA GPUs to Google Cloud TPUs via Claude Code; 8 met goals, requiring ~2.4 human interventions each.",
-            "70 execution attempts: 76% failed, 49% silent failures; common issues: repeated compilation, execution inefficiencies, library interactions altering gradients (accuracy drop 1.64%).",
-            "TorchTPU backend achieved 1.86\u00d7 speedup and 25% cost reduction per run compared to GPU, but costs vary widely across workloads."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "From GPU to TPU with Coding Agents: What Works, What Fails, and What It Costs?",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "Machine Learning",
-        "Cloud"
-      ],
-      "url": "https://arxiv.org/abs/2610.34422"
-    },
-    {
       "id": "6d883a1f3620138ca1b271982e4ce882129c90819d6b05bba2efac307a48c659",
       "image_url": null,
       "published_at": "2026-10-28T04:00:00Z",
@@ -168,45 +368,46 @@
       "url": "https://arxiv.org/abs/2610.35942"
     },
     {
-      "id": "190913b96a96b9057743dfbae00f88937970599626474104eabe5f00b39e498a",
+      "id": "81d50ec6026448b010689635c226044113408486f3deff0746179d265ed8bd9e",
       "image_url": null,
       "published_at": "2026-10-28T04:00:00Z",
-      "source": "arXiv cs.AI",
+      "source": "arXiv Machine Learning",
       "source_type": "arxiv",
       "summaries": {
         "balanced": {
           "bullets": [
-            "LM-DSB automates daily safety bulletins (DSBs) in construction using a lightweight multi\u2011agent system on consumer\u2011grade PCs.",
-            "The system combines retrieval\u2011augmented generation with a locally deployable LLM, employing planner, researcher, and writer agents and fine\u2011tuned on 37 HSE documents.",
-            "Validation shows the multi\u2011agent RAG model outperforms alternatives, achieving high lexical alignment, coherence, and expert\u2011rated compliance and factual accuracy."
+            "Study used 148 PyTorch projects, migrated 10 to TPUs with Claude Code, and evaluated success, numerical behavior, hardware use, goal preservation, and performance.",
+            "Results: 8 projects met goals, average 2.4 human interventions; 76% of 70 execution attempts failed, many silent errors, some performance changes.",
+            "TorchTPU can train 1.86\u00d7 faster and 25% cheaper per run, but failures are common, requiring careful validation and cost analysis."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "LM-DSB automates daily safety bulletins in construction, cutting manual time from 2\u20133 hours to near instant.",
-            "It uses a multi\u2011agent system: planner, researcher, writer, plus retrieval\u2011augmented generation and a fine\u2011tuned local LLM.",
-            "Tests show it outperforms single\u2011agent models, with experts rating compliance 4.20/5 and accuracy 4.10/5."
+            "We tested 10 PyTorch projects, migrating them from NVIDIA GPUs to Google Cloud TPUs with Claude Code, checking if they run, keep behavior, and perform.",
+            "Only 8 projects met the goal; average 2.4 human tweaks were needed, and 76% of 70 runs failed, often silently due to library changes.",
+            "Some TPUs ran 1.86\u00d7 faster and 25% cheaper than GPUs, but costs varied widely, showing mixed benefits."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "LM-DSB uses a hierarchical multi\u2011agent RAG architecture (planner, researcher, writer) with Llama 3\u20118B, fine\u2011tuned on 37 HSE documents, deployable on consumer PCs.",
-            "Phase 1 evaluation shows multi\u2011agent RAG achieves TF\u2011IDF 0.70, BLEU 0.39, ROUGE\u20111 0.66, length ratio 1.01, outperforming single\u2011agent RAG (0.39).",
-            "Phase 2 expert review (N = 40) rates compliance 4.20/5 and factual accuracy 4.10/5, confirming practical acceptability of automated DSBs."
+            "Migrated 10 PyTorch projects from NVIDIA GPUs to Google Cloud TPUs via Claude Code; 8 met goals, requiring ~2.4 human interventions each.",
+            "70 execution attempts: 76% failed, 49% silent failures; common issues: repeated compilation, execution inefficiencies, library interactions altering gradients (accuracy drop 1.64%).",
+            "TorchTPU backend achieved 1.86\u00d7 speedup and 25% cost reduction per run compared to GPU, but costs vary widely across workloads."
           ],
           "status": "ok"
         }
       },
-      "title": "LM-DSB: A Lightweight Multi-agent System for Automated Daily Safety Bulletin Generation in Construction",
+      "title": "From GPU to TPU with Coding Agents: What Works, What Fails, and What It Costs?",
       "topics": [
         "AI Agents",
         "LLMs",
-        "System Design",
-        "Productivity"
+        "Backend",
+        "Machine Learning",
+        "Cloud"
       ],
-      "url": "https://arxiv.org/abs/2610.36433"
+      "url": "https://arxiv.org/abs/2610.34422"
     },
     {
       "id": "a9466646661807b3e6eebdf066a1c4cec2d93799ba908285626790ddbaaf72be",
@@ -1509,338 +1710,15 @@
         "Cloud"
       ],
       "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "10f476c8a9f7eae9633e18e9028524f7248ca03a8b7df5caefd54de169cd6f19",
-      "image_url": null,
-      "published_at": "2026-10-22T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LLMs struggle with classical planning; benchmarks rarely separate structural difficulty from semantic interpretability.",
-            "Zero\u2011training delete\u2011relaxation heuristic h_add predicts structural difficulty better than learned models (Spearman 0.931 vs 0.707, 0.657, 0.400).",
-            "Renaming predicates reduces LLM planning success from 67.5% to 40%; hybrid routing depends on LLM calibration, not just structural scores."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LLMs find classical planning hard, but tests rarely separate structural difficulty (problem layout) from semantic difficulty (symbol meanings).",
-            "A zero\u2011training delete\u2011relaxation heuristic, h_add, predicts structural difficulty better than learned models like ridge regression or ARC.",
-            "Renaming predicates reduces LLM success from 67.5% to 40%, showing semantic changes hurt planning; hybrid systems need better semantic modeling."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Zero\u2011training delete\u2011relaxation heuristic h_add predicts structural difficulty with mean Spearman |\u03c1|=0.931, outperforming ridge regression (0.707), object count (0.657), and ARC (0.400).",
-            "Renaming predicates from 0% to 100% drops LLM planning success from 67.5% to 40.0%, while refusals stay at 0%, isolating semantic effects.",
-            "Hybrid routing between an LLM and a symbolic planner relies more on calibrating to the target LLM\u2019s outcomes than on the structural score chosen."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "When Planning Problems Become Hard for LLMs: Separating Structural Complexity from Semantic Interpretability",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.26964"
-    },
-    {
-      "id": "7100a9423b909b319969f6f3d4d8c2faf20067c1d7e918a71dd8df8d23ad9af8",
-      "image_url": null,
-      "published_at": "2026-10-22T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces Gradus, a method that treats an environment as a latent syllabus, extracting guarded behavioral operators to guide task creation.",
-            "Decouples task objectives from concrete tasks, using corpus-level feedback to target missing outcome combinations and calibrate tasks and solutions against execution feedback.",
-            "Demonstrates significant performance gains on benchmarks, boosting 30B model accuracy from 59% to 89% on \u03c4\u00b2-Bench and from 47% to 83% on CAR-Bench."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Gradus creates a curriculum that separates learning goals from specific tasks, using the environment itself as a hidden syllabus to generate harder challenges.",
-            "It extracts guarded behavioral operators\u2014rules linking actions to conditions and outcomes\u2014and composes them into progressively demanding tasks, guided by feedback that keeps difficult examples.",
-            "The approach improves large language models, boosting performance from 59% to 89% on \u03c4\u00b2-Bench and 47% to 83% on CAR-Bench, showing effective coverage-guided exploration."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Gradus decouples teaching objectives from concrete tasks, extracting guarded behavioral operators from a fixed environment\u2019s latent syllabus to model action-condition dependencies and effect propagation.",
-            "It composes operators into graded tasks, using corpus\u2011level feedback to target missing outcome combinations while jointly calibrating tasks and solutions via execution feedback.",
-            "The curriculum boosts a 30B model from 59%\u219289% on \u03c4\u00b2\u2011Bench and 47%\u219283% on CAR\u2011Bench with an Opus 4.5 proposer, preserving hard examples through recovery\u2011based verification."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "GRADUS: Discovering and Recovering Agent Lessons from the Environment's Latent Syllabus",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.27781"
-    },
-    {
-      "id": "7f07b7a2a2a2c7ffe91ed3801fe17925927315def6cba940f268cfe3bd27cfdd",
-      "image_url": null,
-      "published_at": "2026-10-22T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces Bayesian Evolutionary Optimization for designing multi-agent systems, combining evolutionary graph generation with Bayesian selection.",
-            "Uses graph-aware Gaussian Process and Expected Improvement to guide costly evaluations, avoiding LLM-based candidate selection.",
-            "Evaluated on BigCodeBench and TabPFN, achieving top performance in code generation and improved preprocessing on temporal tabular data."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Bayesian Evolutionary Optimization blends evolutionary search with Bayesian methods to automatically design multi-agent system (MAS) topologies, reducing costly evaluations.",
-            "The framework uses a graph\u2011aware Gaussian Process (a statistical model) and Expected Improvement to rank candidate workflows, offering a clear selection rule versus language\u2011model guessing.",
-            "Experiments on BigCodeBench and TabPFN show evolved MAS outperform systems on code generation and improve preprocessing on time\u2011series data while staying competitive on standard datasets."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces Bayesian Evolutionary Optimization combining evolutionary operators and graph\u2011aware Gaussian Process with Expected Improvement to auto\u2011discover MAS topologies.",
-            "Evaluated on BigCodeBench (code generation) and TabPFN preprocessing; evolved MAS outperformed other agents on BigCodeBench and improved temporal tabular results.",
-            "Demonstrates Bayesian selection effectively guides costly evolutionary search, achieving top performance while remaining competitive on IID datasets."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Design and Tuning of Multi-Agent Systems Using Bayesian Evolutionary Optimization",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Productivity",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.29276"
-    },
-    {
-      "id": "a75390adc4db4398d5bca0ca4ebee16d764b6ef47ca6944e4039c237c9bba750",
-      "image_url": null,
-      "published_at": "2026-10-22T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [],
-          "status": "failed"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Edge\u2011deployable AI for radiology report structuring runs on a laptop CPU, uses ~3.3 GB RAM, and finishes in ~31 seconds.",
-            "It supports four imaging types: Chest X\u2011ray, Chest CT, Abdomen CT, and Brain MRI.",
-            "The system uses a small 0.6B\u2011parameter language model in a multi\u2011agent Extract\u2011Ground\u2011Generate pipeline, with speech\u2011driven corrections and no internet needed."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Edge-deployable agentic framework MedPAO-Assist uses a 0.6B parameter Small Language Model, requiring ~3.3 GB RAM and ~31 s latency on a laptop CPU.",
-            "Supports Chest X\u2011ray, Chest CT, Abdomen CT, Brain MRI via an Extract\u2011Ground\u2011Generate pipeline: concept extraction, SNOMED\u2011CT grounding, structured report generation.",
-            "Fully no\u2011touch workflow: voice dictation, asynchronous multi\u2011threaded execution, speech\u2011driven human\u2011in\u2011the\u2011loop correction, no keyboard, no external API, offline operation."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "MedPAO-Assist: Edge-Deployable, Modality-Aware Agentic AI for Radiology Report Structuring",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "Cloud",
-        "Productivity"
-      ],
-      "url": "https://arxiv.org/abs/2610.26913"
-    },
-    {
-      "id": "c6bd955905173ff0249726973c19445fe2d9676e911c64462a7a5ee54cc9006a",
-      "image_url": null,
-      "published_at": "2026-10-22T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Indirect prompt injection (IPI) embeds adversarial instructions in external data, threatening LLM agents; Attention Tracker detects attacks by monitoring attention between user and data tokens.",
-            "Evaluation on AgentDojo shows Attention Tracker's dataset\u2011agnostic claim fails; long structured tool outputs subvert its assumptions, yielding near\u2011chance detection across most model families.",
-            "AttnDA replaces the scalar threshold with a Fisher Linear Discriminant classifier over per\u2011head focus scores, improving detection across benchmarks yet struggling to transfer to AgentDojo."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Indirect prompt injection (IPI) is when harmful instructions are hidden in external data that a language model reads, threatening AI agents.",
-            "Attention Tracker claims to detect IPI by checking where a model focuses its attention, but tests on AgentDojo show it often fails.",
-            "The new AttnDA method replaces a simple threshold with a statistical classifier, improving detection across several tests, though challenges remain."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Attention Tracker monitors attention distribution between user task tokens and data tokens, using a scalar focus score threshold to detect indirect prompt injection (IPI) attacks.",
-            "Evaluation on AgentDojo shows dataset\u2011agnostic claim fails; long structured tool outputs subvert assumptions, yielding near\u2011chance detection across model families.",
-            "AttnDA replaces scalar threshold with Fisher Linear Discriminant Analysis on per\u2011head focus vectors, improving detection on multiple benchmarks but still struggling to transfer to AgentDojo."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Attention-based Classification for Indirect Prompt Injection",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.28988"
-    },
-    {
-      "id": "ffb1232e61c43d9947c07dc558f0931a24667c83b8b1763e3284c0da85ce3150",
-      "image_url": null,
-      "published_at": "2026-10-22T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "SAPD learns from offline trajectories without new environment interactions, using step advantages to refine policy.",
-            "It decomposes multi-turn trajectories into decision contexts for on\u2011policy distillation, preventing catastrophic forgetting seen in supervised fine\u2011tuning.",
-            "Experiments on ALFWorld, WebShop, and Search\u2011based QA show improved performance and 4.7\u00d7 faster training steps than online OPD."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "SAPD learns from recorded agent interactions without needing new environment runs, using step advantage signals to guide policy updates.",
-            "The method splits multi-turn trajectories into single decision contexts, allowing the student model to generate responses based on past history.",
-            "Experiments on ALFWorld, WebShop, and Search-based QA show SAPD outperforms supervised fine-tuning, reduces forgetting, and is 4.7\u00d7 faster per training step."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces SAPD, a policy distillation technique that learns from offline agent trajectories without new environment interactions, using relative step advantage signals.",
-            "Decomposes multi-turn trajectories into individual decision contexts for on\u2011policy distillation, enabling the student to generate responses conditioned on recorded histories.",
-            "Outperforms supervised fine\u2011tuning by reducing catastrophic forgetting, achieves 4.7\u00d7 faster training steps than online OPD, and improves results on ALFWorld, WebShop, and Search\u2011based QA."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "SAPD: Learning from Agent Experience without Environment Interaction",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.27847"
-    },
-    {
-      "id": "5b4e08461387ba3b44832eb32623a231bc98422af2b9c0aa208f73f388840205",
-      "image_url": null,
-      "published_at": "2026-10-21T16:04:43Z",
-      "source": "Hugging Face Blog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Overview of TorchNeuron and its integration with AWS Trainium for machine learning workloads.",
-            "Explanation of system-level profiling techniques used to monitor performance metrics on Trainium hardware.",
-            "Key findings and insights from the first part of the profiling study."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "TorchNeuron is a library that lets PyTorch run on AWS Trainium, a custom chip for machine learning.",
-            "The article is Part 1 of a series that explains how to profile TorchNeuron at the system level on Trainium.",
-            "System-level profiling tracks overall resource use, such as CPU, memory, and network, to optimize performance on Trainium."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces system-level profiling techniques for TorchNeuron models running on AWS Trainium hardware.",
-            "Discusses performance metrics captured, such as compute utilization, memory bandwidth, and inference latency.",
-            "Provides guidance on interpreting profiling data to optimize TorchNeuron deployment on Trainium."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Profiling TorchNeuron (Part 1): System-level profiling on AWS Trainium.",
-      "topics": [
-        "Cloud",
-        "Machine Learning"
-      ],
-      "url": "https://huggingface.co/blog/amazon/profiling-torchneuron-part-1"
-    },
-    {
-      "id": "885fe3c67de05637ce5b9612baa0a6e50e729bbbcf8015191def57f8d564f7ca",
-      "image_url": null,
-      "published_at": "2026-10-21T16:00:00Z",
-      "source": "GitHub Blog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Migrated 99.99999% of GitHub repositories to Azure, creating a near-complete copy of the codebase.",
-            "Introduced per-reference quorums to transfer remaining repositories, ensuring consistency and reliability across the infrastructure.",
-            "Leveraged object storage to allow read operations to scale independently, improving performance and scalability for Git access."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Migrated almost all GitHub repos to Azure, creating a backup in the cloud.",
-            "Uses per-reference quorums to sync the remaining 0.00001% of data, ensuring each repo copy stays consistent.",
-            "Object storage lets read requests scale independently, so many users can fetch code without slowing the system."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Migrated 99.99999% of GitHub repositories to Azure, leaving only a tiny fraction pending.",
-            "Remaining repositories will be transferred using per\u2011reference quorums to ensure consistency and reliability.",
-            "Object storage architecture allows read traffic to scale independently, improving performance for large\u2011scale Git operations."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "The bridge to agent-scale Git infrastructure",
-      "topics": [
-        "AI Agents",
-        "Cloud",
-        "Productivity"
-      ],
-      "url": "https://github.blog/engineering/architecture-optimization/the-bridge-to-agent-scale-git-infrastructure/"
     }
   ],
-  "generated_at": "2026-10-28T14:47:08.714209Z",
+  "generated_at": "2026-10-29T14:52:48.997061Z",
   "topic_counts": {
-    "AI Agents": 38,
-    "Backend": 27,
-    "LLMs": 34,
-    "Machine Learning": 30,
-    "Other": 37,
+    "AI Agents": 35,
+    "Backend": 25,
+    "LLMs": 30,
+    "Machine Learning": 25,
+    "Other": 36,
     "System Design": 26
   },
   "topics": [
