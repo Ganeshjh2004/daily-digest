@@ -606,6 +606,89 @@
       ],
       "url": "https://openai.com/index/scaling-kubernetes-to-7500-nodes"
     },
+    "0d3b5aac153790f53564e16a7c8f96c8248c5778da507c03e30f5bc35e32a965": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-10-30T10:06:15Z",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Article examines five cross-tenant compromises in Azure.",
+            "Highlights Azure's weakest link in security.",
+            "Article has 121 points and 11 comments on Hacker News."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The article explains how Azure\u2019s security can fail, showing five real incidents where attackers moved between tenant accounts.",
+            "It highlights a \u201croot case\u201d where a single compromise allowed full control across multiple tenants.",
+            "The piece urges better isolation and monitoring to prevent such cross\u2011tenant breaches."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Azure\u2019s cross\u2011tenant security model exposed five distinct compromise paths, each allowing attackers to move laterally between tenants.",
+            "The post details the root\u2011cause analysis, highlighting misconfigurations in Azure AD and tenant isolation controls.",
+            "Implications include unauthorized data access, privilege escalation, and potential for widespread tenant compromise across Microsoft\u2019s cloud services."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Azure's Weakest Link \u2013 Five Full Cross-Tenant Compromises",
+      "topics": [
+        "Cloud"
+      ],
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case"
+    },
+    "0f01adb2acab0a67ba71c0b077a856b8d5e6ddb0aecdbfc3051cca05fba1e4d6": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-10-29T09:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI employs layered monitoring to identify misalignment in frontier models.",
+            "The system flags unauthorized agent behavior, enabling early detection.",
+            "Responders can intervene before incidents escalated, preventing harm."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Frontier models are the newest, most powerful AI systems that push the limits of what AI can do.",
+            "Misalignment means the model\u2019s outputs don\u2019t match human values or intended goals.",
+            "Layered monitoring tracks model behavior at multiple levels, letting responders spot and stop unsafe actions before they become serious."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Layered monitoring framework tracks frontier model outputs for misalignment signals.",
+            "Detects unauthorized agent behavior via anomaly detection and policy checks.",
+            "Enables responders to intervene before incidents fully materialize."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How we detect frontier model misalignment",
+      "topics": [
+        "AI Agents",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+    },
     "0fe3432110402a0f01edeff1331dfe425c00b4d53b3db7033a6b8239e2e99e52": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -1568,6 +1651,48 @@
       ],
       "url": "https://netflixtechblog.com/running-apache-spark-experiments-in-my-sleep-and-on-a-plane-588816b6b5f8?source=rss----2615bd06b42e---4"
     },
+    "270262b3426624723b51ff5760e91f4a55412e047aa006cb9ffdf1cdd31b5bc8": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-06-17T10:18:05Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Explores how Hugging Face Hub models can be deployed onto robotic platforms.",
+            "Highlights Strands Agents as a framework for orchestrating AI services in robotics.",
+            "Demonstrates integration of LeRobot hardware with AI agents for real\u2011time robotic control."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Explains how AI models from Hugging Face Hub can be deployed on robots. (Hugging Face Hub: a library for sharing AI models)",
+            "Introduces Strands Agents, software that orchestrates AI services on edge devices. (Strands Agents: lightweight AI task managers)",
+            "Describes LeRobot, a modular robot platform that runs these agents for real\u2011world tasks. (LeRobot: hardware kit for building robots)"
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Connects Hugging Face Hub models to robotic agents using Strands Agents framework.",
+            "LeRobot hardware platform serves as the execution environment for these agents.",
+            "Workflow enables end\u2011to\u2011end deployment from model repository to physical robot control."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "From the Hugging Face Hub to robot hardware with Strands Agents and LeRobot",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/amazon/strands-lerobot-hub-to-hardware"
+    },
     "275cffd3230161900f0cb7d13cb3949a095fd8f2119c574ecb08373ca2507eec": {
       "image_url": null,
       "last_seen": "2026-10-20T04:59:56.829209Z",
@@ -1825,6 +1950,90 @@
       ],
       "url": "https://openai.com/index/netomi"
     },
+    "2e297cf400e7d42e20feb31fc2281917e65c50f0836a4469d905d343ea72d7f7": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-06-23T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "The article examines the Cross-Origin Storage API within the Transformers.js framework, focusing on its integration and potential benefits for cross-origin data handling.",
+            "It details experimental setups, including test cases and performance metrics, to evaluate the API\u2019s reliability and ease of use.",
+            "The findings highlight both strengths and limitations, offering guidance for developers considering the API for cross-origin storage solutions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Cross-Origin Storage API lets web apps store data on servers from other domains, improving privacy and performance.",
+            "Transformers.js, a JavaScript library for machine learning models, integrates this API to manage model weights across origins.",
+            "The experiment shows the API works, but developers should watch for browser support and security limits."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Explores the Cross-Origin Storage API integration within Transformers.js, detailing setup and API usage.",
+            "Highlights technical specifics of the API, including storage scopes and cross-origin policies.",
+            "Provides preliminary results and potential use cases for the experimental implementation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Experimenting with the proposed Cross-Origin Storage API in Transformers.js",
+      "topics": [
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/cross-origin-storage"
+    },
+    "2e65ac828a3127f2ebe2ff32f9ef89456a98068ea7e0c8dc8759ee16aa5c9058": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-05-08T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.36 marks volume group snapshots\u2019 transition to General Availability after Alpha and two Beta stages.",
+            "The feature uses extension APIs to create crash\u2011consistent snapshots of multiple PersistentVolumeClaims via label selectors.",
+            "It supports CSI drivers, enabling restoration of grouped volumes to new or existing storage for consistent recovery points."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Volume group snapshots, a feature that captures multiple storage volumes at once, moved from Alpha (v1.27) to Beta (v1.32, v1.34) and now GA in v1.36.",
+            "The feature uses extension APIs and label selectors to group PersistentVolumeClaim objects, enabling crash\u2011consistent snapshots that can restore or pre\u2011populate new volumes.",
+            "Only supported for CSI (Container Storage Interface) drivers, this GA release lets workloads recover from crashes by restoring snapshots to new or existing volumes."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36 marks GA for volume group snapshots, following Alpha (v1.27), Beta (v1.32, v1.34).",
+            "Extension APIs enable crash\u2011consistent snapshots of multiple PVCs, using label selectors to group volumes for snapshotting and later restoration.",
+            "Feature supports only CSI volume drivers, allowing rehydration of new volumes or restoration of existing ones from group snapshots."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: Moving Volume Group Snapshots to GA",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/08/kubernetes-v1-36-volume-group-snapshot-ga/"
+    },
     "2e95c95ea589d2d6070e764cd8128ffdd36d6c8aeaf8be211f9180a872c02dcd": {
       "image_url": null,
       "last_seen": "2026-10-21T13:25:33.193295Z",
@@ -1869,6 +2078,90 @@
         "DevOps"
       ],
       "url": "https://arxiv.org/abs/2610.28611"
+    },
+    "2eb5bcc3ad88b97ec36616da4492f783e0b7188871f20dd0ee456f000c78f604": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-06-18T18:13:13Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "MosaicLeaks investigates whether research agents can maintain confidentiality in their operations.",
+            "The article questions the ability of automated agents to keep sensitive information private.",
+            "It explores potential vulnerabilities and the broader implications for data security."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "MosaicLeaks is a system that exposes hidden data from AI research agents, showing how they can unintentionally reveal private information.",
+            "The article questions whether AI agents can truly keep secrets, highlighting risks of data leakage during training and inference.",
+            "It discusses safeguards like data anonymization and secure protocols, but notes that no method guarantees absolute secrecy in complex AI systems."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "MosaicLeaks examines whether AI research agents can securely store and handle confidential data.",
+            "The study highlights potential vulnerabilities in agent memory and data retrieval mechanisms.",
+            "Recommendations focus on encryption, access controls, and audit trails to mitigate leakage risks."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "MosaicLeaks: Can your research agent keep a secret?",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks"
+    },
+    "34530008bba44b6a710617e7107e899ce15dcff2cb5eaa6141e856c2c75c6bc2": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-05-06T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.36 adds server\u2011side sharded list/watch to reduce per\u2011replica load when controllers watch large resources.",
+            "The API server now filters events by hash range, sending only relevant objects to each controller replica, cutting network, CPU, and memory usage.",
+            "Client\u2011side sharding still streams full events; server\u2011side filtering eliminates waste, enabling horizontal scaling without multiplying data traffic."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes v1.36 adds server\u2011side sharded list/watch, letting API server filter events so each controller replica only receives its own data slice.",
+            "Client\u2011side sharding still sends full event streams to every replica, wasting CPU, memory, and network bandwidth; scaling multiplies the cost rather than reducing it.",
+            "With server\u2011side sharding, each replica tells the API server its hash range, and the server only streams matching events, cutting unnecessary data and improving scalability."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes v1.36 introduces alpha server\u2011side sharded list/watch (KEP\u20115866) to reduce per\u2011replica load on high\u2011cardinality resources.",
+            "Client\u2011side sharding still streams full event set to each replica, wasting CPU, memory, and bandwidth; scaling multiplies cost.",
+            "Server\u2011side filtering lets each replica request a hash range; API server sends only matching events, cutting network traffic and deserialization overhead."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: Server-Side Sharded List and Watch",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/06/kubernetes-v1-36-server-side-sharded-list-and-watch/"
     },
     "353217afc4f706b5339de407629065a4820f98bc0f70c28c174d08c10ec6ab52": {
       "image_url": null,
@@ -2825,7 +3118,7 @@
     },
     "4c9c2f788cfedfab4c17904623c5e66d71c947f4b3a955a86d2473c1295ef637": {
       "image_url": null,
-      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "last_seen": "2026-10-30T14:45:57.799349Z",
       "published_at": "2018-01-18T08:00:00Z",
       "source": "OpenAI News",
       "source_type": "rss",
@@ -4057,6 +4350,47 @@
       ],
       "url": "https://kubernetes.io/blog/2026/07/13/introducing-headlamp-plugin-for-kubeflow/"
     },
+    "6300099f83ab9ce2e594c2309f8add9d2dcc5cdf116ce6ca95a3d069caabc1ff": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-10-30T10:22:51Z",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Backdoor discovered in Claude Code VS Code extension on Cursor marketplace.",
+            "Attack delivered a remote access trojan to Anthropic developers worldwide.",
+            "Article discussed on Hacker News, receiving 386 points and 85 comments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "A malicious VS Code extension named \"Claude Code\" was published on the Cursor marketplace.",
+            "The extension contains a backdoor that lets attackers install a remote\u2011access trojan on developers\u2019 laptops.",
+            "The hack was reported by DoublePulsar, with 386 points and 85 comments on Hacker News."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Backdoor discovered in Claude Code VS Code extension on Cursor marketplace, enabling remote access trojan delivery to developers' laptops worldwide.",
+            "Attack leverages compromised extension to install malicious code, bypassing normal security checks in VS Code environment.",
+            "Incident highlighted on doublepulsar.com; discussion garnered 386 points and 85 comments on Hacker News."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
+      "topics": [
+        "LLMs"
+      ],
+      "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2"
+    },
     "6314aebbd61e4ee70f730fca697e46e95b19c2b72eab963a0293dd706631d02b": {
       "image_url": null,
       "last_seen": "2026-10-20T13:13:12.391645Z",
@@ -4367,7 +4701,7 @@
     },
     "689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
       "image_url": null,
-      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "last_seen": "2026-10-30T14:45:57.799349Z",
       "published_at": "2026-09-22T00:00:00Z",
       "source": "Hugging Face Blog",
       "source_type": "rss",
@@ -5223,6 +5557,49 @@
       ],
       "url": "https://arxiv.org/abs/2610.27155"
     },
+    "7e4bda609cfe4368df86a8ce871de1ad100fe5317bc219aa9200da2096ade6e0": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2017-08-16T07:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Self\u2011play training elevates Dota 2 AI from below human to superhuman with enough compute.",
+            "Within a month, the system progressed from matching high\u2011rank players to defeating top pros.",
+            "Unlike supervised learning, self\u2011play continually expands its dataset as the agent improves."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Self\u2011play can boost machine learning from below human to superhuman with enough compute.",
+            "In a month, the system went from matching a high\u2011ranked player to beating top pros.",
+            "Supervised deep learning is limited by its training data, while self\u2011play automatically expands data as the agent improves."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Self\u2011play training propelled a Dota 2 AI from below\u2011human to superhuman in one month, surpassing top professional players with ample compute.",
+            "The system\u2019s performance rose from matching a high\u2011ranked human to defeating pros, continuing to improve thereafter.",
+            "Unlike supervised models limited by static datasets, self\u2011play continually expands training data as the agent learns."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "More on Dota 2",
+      "topics": [
+        "AI Agents",
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/more-on-dota-2"
+    },
     "7f07b7a2a2a2c7ffe91ed3801fe17925927315def6cba940f268cfe3bd27cfdd": {
       "image_url": null,
       "last_seen": "2026-10-22T13:24:32.434324Z",
@@ -5266,6 +5643,48 @@
         "Machine Learning"
       ],
       "url": "https://arxiv.org/abs/2610.29276"
+    },
+    "7ff50da84c51387be77c0618291207bc0b2b1efc2f8174b870b585a3163e7133": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-06-01T18:00:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes Dashboard archived; Headlamp continues its legacy with a visual interface for cluster inspection and resource management.",
+            "Headlamp adds multi\u2011cluster visibility, application\u2011centric views, plugin extensibility, and flexible deployment options for in\u2011cluster or desktop use.",
+            "The guide maps familiar Dashboard workflows to Headlamp, highlighting unchanged features and improvements to help users transition confidently."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes Dashboard, once the first visual tool for Kubernetes, is archived; Headlamp replaces it with a modern UI that still shows cluster resources.",
+            "Headlamp adds multi\u2011cluster view, app\u2011centric dashboards, plugin extensibility, and flexible deployment (in\u2011cluster or desktop) while keeping the familiar look of Dashboard.",
+            "The guide explains how Dashboard workflows map to Headlamp, what stays the same, and how to migrate confidently, honoring the user\u2011centered legacy."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Kubernetes Dashboard archived; Headlamp preserves its visual interface while extending functionality.",
+            "Headlamp offers multi\u2011cluster visibility, application\u2011centric views, plugin extensibility, and flexible in\u2011cluster or desktop deployment.",
+            "The guide maps familiar Dashboard workflows, shows unchanged features, and details improvements for confident migration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "From Kubernetes Dashboard to Headlamp: Understanding the Transition",
+      "topics": [
+        "DevOps",
+        "Productivity"
+      ],
+      "url": "https://kubernetes.io/blog/2026/06/01/dashboard-to-headlamp/"
     },
     "8088c1dfd69d52169d26c3ad98d416ee06b8c8b567835bffc63d0babec849503": {
       "image_url": null,
@@ -7505,7 +7924,7 @@
     },
     "bd2a7f12ec033efae496309323fbceb5a04f5cd0ef5d7e044fd5193346817f56": {
       "image_url": null,
-      "last_seen": "2026-10-29T14:52:48.997061Z",
+      "last_seen": "2026-10-30T14:45:57.799349Z",
       "published_at": "2020-01-23T08:00:00Z",
       "source": "OpenAI News",
       "source_type": "rss",
@@ -8225,6 +8644,48 @@
       ],
       "url": "https://huggingface.co/blog/inferentia-llama2"
     },
+    "cfee38c25797a9a1dea16d5f568104f88dd6afee6881a8021fb72287405c1e12": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-10-29T23:25:46Z",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Author repurposed DOOM game mechanics to build a transformer model named DOOMFORMER, leveraging DOOM's Turing-complete nature for computational tasks.",
+            "DOOMFORMER can classify MNIST digits, generate spoken-like responses, and play DOOM, enabling thousands of game instances on modest hardware.",
+            "The project invites collaboration to scale training on GPUs like the T4 and explore broader applications."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Created DOOMFORMER, a transformer model built inside the DOOM video game engine, using its mechanics as computational operations.",
+            "It can recognize handwritten digits on a game map, generate simple speech, and play DOOM by making decisions like a human.",
+            "The project is slow (about 65,000\u00d7 slower than NumPy) but can run on modest hardware like a T4 GPU, and invites collaboration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "DOOMFORMER: a transformer built from DOOM game mechanics and voodoo dolls, acting as a 65,000\u00d7 slower NumPy alternative.",
+            "Capabilities include MNIST digit classification, rudimentary speech, decision-making, and autonomous DOOM gameplay on maps generated by the model.",
+            "Training and scaling possible on modest hardware (e.g., a single T4 GPU), enabling large\u2011scale experiments with thousands of DOOM instances."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Show HN: I Turned DOOM into a Transformer",
+      "topics": [
+        "LLMs",
+        "Machine Learning"
+      ],
+      "url": "https://github.com/mottopanikeiku/doomformer"
+    },
     "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5": {
       "image_url": null,
       "last_seen": "2026-10-23T05:18:06.830843Z",
@@ -8439,6 +8900,48 @@
         "DevOps"
       ],
       "url": "https://kubernetes.io/blog/2026/09/01/kubernetes-v1-37-etcd-range-stream/"
+    },
+    "d4e1dfd85eba56345cb69882841a5ba20651c3d0de3088594c582b25d4751b47": {
+      "image_url": null,
+      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "published_at": "2026-05-04T18:35:00Z",
+      "source": "Kubernetes Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Kubernetes v1.36 introduces alpha manifest-based admission control, loading webhooks and CEL policies from disk at startup to avoid bootstrap gaps.",
+            "This approach prevents privileged users from deleting policies, as they are not API objects but static files read before serving requests.",
+            "It addresses limitations of API\u2011based policies, such as bootstrap windows and self\u2011protection issues with webhook configurations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Kubernetes admission policies are API objects (data items stored in Kubernetes) that can be deleted by privileged users, causing a security gap during cluster startup.",
+            "v1.36 introduces manifest-based admission control, loading policies from disk at startup to enforce rules before any requests are served.",
+            "Webhooks (hooks that run code during events) can't intercept changes to their own configuration, preventing circular dependencies but leaving a self-protection issue."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "v1.36 introduces alpha manifest\u2011based admission control, loading webhooks and CEL policies from disk at API server startup, eliminating bootstrap gaps and deletion risk.",
+            "Traditional API\u2011created ValidatingAdmissionPolicy or webhook configs can be deleted by privileged users, creating a window during cluster bootstrap where policies are inactive.",
+            "Kubernetes skips invoking webhooks on types like ValidatingWebhookConfiguration to avoid circular dependencies, so policies cannot intercept changes to their own configuration."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Kubernetes v1.36: Admission Policies That Can't Be Deleted",
+      "topics": [
+        "Backend",
+        "DevOps"
+      ],
+      "url": "https://kubernetes.io/blog/2026/05/04/kubernetes-v1-36-manifest-based-admission-control/"
     },
     "d57f5928adacdd34268d71f2d7fa5e93a473bc3137ae06919fc2c939058afa17": {
       "image_url": null,

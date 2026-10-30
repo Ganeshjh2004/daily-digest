@@ -1,6 +1,121 @@
 {
   "articles": [
     {
+      "id": "6300099f83ab9ce2e594c2309f8add9d2dcc5cdf116ce6ca95a3d069caabc1ff",
+      "image_url": null,
+      "published_at": "2026-10-30T10:22:51Z",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Backdoor discovered in Claude Code VS Code extension on Cursor marketplace.",
+            "Attack delivered a remote access trojan to Anthropic developers worldwide.",
+            "Article discussed on Hacker News, receiving 386 points and 85 comments."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "A malicious VS Code extension named \"Claude Code\" was published on the Cursor marketplace.",
+            "The extension contains a backdoor that lets attackers install a remote\u2011access trojan on developers\u2019 laptops.",
+            "The hack was reported by DoublePulsar, with 386 points and 85 comments on Hacker News."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Backdoor discovered in Claude Code VS Code extension on Cursor marketplace, enabling remote access trojan delivery to developers' laptops worldwide.",
+            "Attack leverages compromised extension to install malicious code, bypassing normal security checks in VS Code environment.",
+            "Incident highlighted on doublepulsar.com; discussion garnered 386 points and 85 comments on Hacker News."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Claude Code VS Code extension with backdoor released on Cursor marketplace",
+      "topics": [
+        "LLMs"
+      ],
+      "url": "https://doublepulsar.com/anthropic-hacked-to-deliver-remote-access-trojan-to-claude-developer-laptops-worldwide-1148a92baae2"
+    },
+    {
+      "id": "0d3b5aac153790f53564e16a7c8f96c8248c5778da507c03e30f5bc35e32a965",
+      "image_url": null,
+      "published_at": "2026-10-30T10:06:15Z",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Article examines five cross-tenant compromises in Azure.",
+            "Highlights Azure's weakest link in security.",
+            "Article has 121 points and 11 comments on Hacker News."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The article explains how Azure\u2019s security can fail, showing five real incidents where attackers moved between tenant accounts.",
+            "It highlights a \u201croot case\u201d where a single compromise allowed full control across multiple tenants.",
+            "The piece urges better isolation and monitoring to prevent such cross\u2011tenant breaches."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Azure\u2019s cross\u2011tenant security model exposed five distinct compromise paths, each allowing attackers to move laterally between tenants.",
+            "The post details the root\u2011cause analysis, highlighting misconfigurations in Azure AD and tenant isolation controls.",
+            "Implications include unauthorized data access, privilege escalation, and potential for widespread tenant compromise across Microsoft\u2019s cloud services."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Azure's Weakest Link \u2013 Five Full Cross-Tenant Compromises",
+      "topics": [
+        "Cloud"
+      ],
+      "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case"
+    },
+    {
+      "id": "cfee38c25797a9a1dea16d5f568104f88dd6afee6881a8021fb72287405c1e12",
+      "image_url": null,
+      "published_at": "2026-10-29T23:25:46Z",
+      "source": "Hacker News",
+      "source_type": "hn",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Author repurposed DOOM game mechanics to build a transformer model named DOOMFORMER, leveraging DOOM's Turing-complete nature for computational tasks.",
+            "DOOMFORMER can classify MNIST digits, generate spoken-like responses, and play DOOM, enabling thousands of game instances on modest hardware.",
+            "The project invites collaboration to scale training on GPUs like the T4 and explore broader applications."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Created DOOMFORMER, a transformer model built inside the DOOM video game engine, using its mechanics as computational operations.",
+            "It can recognize handwritten digits on a game map, generate simple speech, and play DOOM by making decisions like a human.",
+            "The project is slow (about 65,000\u00d7 slower than NumPy) but can run on modest hardware like a T4 GPU, and invites collaboration."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "DOOMFORMER: a transformer built from DOOM game mechanics and voodoo dolls, acting as a 65,000\u00d7 slower NumPy alternative.",
+            "Capabilities include MNIST digit classification, rudimentary speech, decision-making, and autonomous DOOM gameplay on maps generated by the model.",
+            "Training and scaling possible on modest hardware (e.g., a single T4 GPU), enabling large\u2011scale experiments with thousands of DOOM instances."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Show HN: I Turned DOOM into a Transformer",
+      "topics": [
+        "LLMs",
+        "Machine Learning"
+      ],
+      "url": "https://github.com/mottopanikeiku/doomformer"
+    },
+    {
       "id": "815e9f76383a90122a5efa264e464937c82e515631936c699eed9c27b99af25b",
       "image_url": null,
       "published_at": "2026-10-29T14:28:00Z",
@@ -78,6 +193,45 @@
         "DevOps"
       ],
       "url": "https://martinfowler.com/rachels-ramblings/good-devs-wary.html"
+    },
+    {
+      "id": "0f01adb2acab0a67ba71c0b077a856b8d5e6ddb0aecdbfc3051cca05fba1e4d6",
+      "image_url": null,
+      "published_at": "2026-10-29T09:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI employs layered monitoring to identify misalignment in frontier models.",
+            "The system flags unauthorized agent behavior, enabling early detection.",
+            "Responders can intervene before incidents escalated, preventing harm."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Frontier models are the newest, most powerful AI systems that push the limits of what AI can do.",
+            "Misalignment means the model\u2019s outputs don\u2019t match human values or intended goals.",
+            "Layered monitoring tracks model behavior at multiple levels, letting responders spot and stop unsafe actions before they become serious."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Layered monitoring framework tracks frontier model outputs for misalignment signals.",
+            "Detects unauthorized agent behavior via anomaly detection and policy checks.",
+            "Enables responders to intervene before incidents fully materialize."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "How we detect frontier model misalignment",
+      "topics": [
+        "AI Agents",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
     },
     {
       "id": "1cba5a9ca4016b50aa454938e59f6d292bed4d6a9a2fe1499ce4a20668454585",
@@ -1109,617 +1263,16 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
-    },
-    {
-      "id": "071ab93645637197f5569a5c9478c6c8afa5b1691c9e5f78d13fcb2963264902",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces SpecEvo, a multi-LLM framework that uses lightweight models for parallel speculation and an Advisor to consolidate evidence, reserving expensive frontier models for strategic interventions.",
-            "The workflow alternates speculative generation and evidence consolidation, enabling cost\u2011efficient exploration while maintaining high performance across 176 scientific and algorithmic tasks.",
-            "SpecEvo reduces API cost by up to 80%, improves evaluation efficiency 1.5\u00d7 on equation discovery, and outperforms CO\u2011Bench baselines by 3.8%."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "SpecEvo uses many small LLMs (Speculators) to generate and tweak program ideas, while a lightweight Advisor learns from successes and failures to guide future searches.",
-            "A powerful frontier LLM (Navigator) checks the population at checkpoints, making big changes like combining ideas, fine\u2011tuning, or re\u2011framing when progress stalls.",
-            "Across 176 tasks, SpecEvo cuts API costs by up to 80%, speeds up evaluations 1.5\u00d7, and outperforms strong baselines, showing cost\u2011efficient scientific discovery."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "SpecEvo: multi-LLM framework using lightweight Speculators and Advisor for candidate generation and evidence consolidation, with frontier Navigator for strategic interventions.",
-            "Workflow: speculate-then-consolidate delegates routine exploration to inexpensive models, reserving frontier reasoning for sparse checkpoints, reducing API cost up to 80%.",
-            "Performance: on 176 tasks across four domains, matches/outperforms frontier baselines, 1.5\u00d7 evaluation efficiency on equation discovery, 3.8% improvement over CO-Bench."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "SpecEvo: Speculative Evolution with Large Language Models for Cost-Efficient Scientific Discovery",
-      "topics": [
-        "LLMs",
-        "Backend",
-        "Productivity",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.28706"
-    },
-    {
-      "id": "44e5cf64b54640ce0656c6690eeb0701463bd31a3ff3414621a51b8fec153c10",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces First Passage Attention (FPA) as a new attention mechanism that replaces path summation with path extrema to selectively erase intermediate context.",
-            "FPA generalizes Forgetting Transformer, forming a stack of alive keys via a shared learned walk, enabling constant-dimension heads to realize any subset of keys.",
-            "Experiments show one-layer FPA outperforms softmax and FoX baselines, matching FoX perplexity and achieving perfect passkey retrieval at 8\u00d7 training length with compressed cache."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "First Passage Attention (FPA) replaces cumulative decay in attention with a path\u2011extrema rule that can selectively erase intermediate tokens while keeping older ones.",
-            "FPA generalizes the Forgetting Transformer; its constant\u2011size head can keep any chosen keys, unlike softmax heads that need size proportional to key count.",
-            "In tests, a single\u2011layer FPA matches FoX (forgetting transformer) on perplexity and retrieves passkeys 8\u00d7 longer than training, even with a 25% compressed cache."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "FPA replaces softmax path summation with path extrema, lowering a key\u2019s logit by the deepest dip of a learned scalar field over the span.",
-            "Shared learned walk makes alive keys stack; a constant\u2011dimension head can realize any subset, whereas softmax heads require linear size.",
-            "Synthetic tests show one\u2011layer FPA converges to target key sets; 110M model matches FoX perplexity and retrieves 8\u00d7 longer passkeys with 25% cache compression."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "First Passage Attention",
-      "topics": [
-        "LLMs",
-        "Backend",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.22714"
-    },
-    {
-      "id": "48eb2c61541658acf567cbf6e500900fdf3d3a4220b783ca096af7e3cd4b2d4d",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "HiddenLens is a six-layer BERT-LLM pipeline that detects, classifies, questions, and resolves hidden assumptions in natural-language software requirements.",
-            "The framework localizes unresolved spans, articulates assumptions with risk, classifies them into six NFR categories, and generates ranked clarification options.",
-            "A new HiddenLens Corpus contains 312 requirements annotated with 847 hidden assumptions, supporting training and evaluation of the framework."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "HiddenLens is a six-layer BERT-LLM pipeline that finds hidden assumptions in software requirements, not just vague language.",
-            "Layers 1\u20136 locate unclear spans, explain assumptions, classify into six non\u2011functional categories, suggest clarifications, let humans edit, then rewrite explicit, testable requirements.",
-            "HiddenLens Corpus contains 312 requirements with 847 annotated hidden assumptions across performance, security, scalability, usability, reliability, and domain, aiding future research."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [],
-          "status": "failed"
-        }
-      },
-      "title": "HiddenLens: A Multi-Layer LLM Framework for Detecting and Resolving Hidden Assumptions in Software Requirements",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.29996"
-    },
-    {
-      "id": "4cd0d3a23be15a1e655e3f9005f86d90b6563439111869b501c50195289058ae",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "PerMIT protects LLM agents by enforcing explicit trust on user inputs and gate-confirmed values, mediating untrusted environment data via a finite memory interface.",
-            "Two machine-checked integrity theorems in Lean 4 guarantee that only gate\u2011approved memory can influence sensitive actions, reducing attacks to a single auditable decision.",
-            "Community endorsements accumulate, and simulations show that as the community grows, poisoning risks drop while per\u2011user verification effort stays low."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "PerMIT is a memory architecture that protects persistent memory from injection attacks by only trusting user inputs and values confirmed at a gate.",
-            "It uses a finite memory interface and two machine\u2011checked integrity theorems (Lean 4) to ensure environment data reaches sensitive actions only after gate confirmation.",
-            "Community endorsements accumulate; once enough users confirm, items become community\u2011confirmed, reducing verification effort while lowering poisoning and false\u2011eviction risks."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "PerMIT enforces integrity of persistent memory by trusting only user-typed inputs confirmed at a gate, mediating untrusted values via a finite interface.",
-            "Two machine\u2011checked (Lean 4) integrity theorems guarantee that environment\u2011derived data reaches sensitive actions only after gate confirmation and influences agents solely through gate display.",
-            "Community endorsements log exact content; once sufficiently endorsed, items become community\u2011confirmed, reducing per\u2011user verification effort and lowering poisoning risk as the community scales."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "PerMIT: Securing Persistent Memory for LLM Agents via Machine-Checked Integrity Theorems and Scalable Community Trust",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design"
-      ],
-      "url": "https://arxiv.org/abs/2610.28987"
-    },
-    {
-      "id": "5d193cc1f396c8e39b220f8d1dbe6e508d25f4e743cec875d7aba3418f269cc6",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [],
-          "status": "failed"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Handshake: initial exchange where agents find each other, learn abilities, and set up a session; measured across three protocols (MCP, A2A, ACP).",
-            "Round\u2011trip count dominates cost: legacy MCP needs 3 round trips (~230 ms at 50 ms RTT), A2A only 1 (~61 ms).",
-            "Handshake also scales with capability inventory: each capability costs 24\u2013107 tokens; a 200\u2011capability agent uses 11% of a 200k\u2011token context before reading its own task."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [],
-          "status": "failed"
-        }
-      },
-      "title": "The Cost of Saying Hello: An Empirical Study of Handshake Overhead in AI Agent Communication Protocols",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.30151"
-    },
-    {
-      "id": "6ba2d9f839023a805615ba690add02c086b84a0d007fc6331fd2f8d94463e8bb",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Gandalf reduces KV cache writes by prioritizing full-attention data for SSD offloading, extending SSD lifetime without lowering cache hit rate.",
-            "The system uses historical access patterns and attention type to decide which KV cache entries to write to SSD.",
-            "Evaluation shows Gandalf extends SSD lifetime by 7.3\u00d7 on average, maintaining negligible impact on LLM serving cost."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "KV caching speeds LLM serving but uses too much memory; SSDs expand capacity, yet heavy writes shrink SSD life from years to months.",
-            "Traditional gating of writes based on past access patterns hurts cache hit rate because different attention types share patterns but need different future data.",
-            "Gandalf prioritizes full-attention KV cache writes to SSD, extending lifetime 7.3\u00d7 while keeping hit rate unchanged; it uses attention type info to guide writes."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Gandalf offloads KV cache to SSD, prioritizing full\u2011attention entries over others to reduce write amplification while preserving hit rates.",
-            "Uses access\u2011pattern gating combined with attention\u2011type awareness to limit SSD writes, extending lifetime by ~7.3\u00d7 without cost increase.",
-            "Evaluation shows negligible hit\u2011rate drop, achieving 7.3X SSD longevity gain in multi\u2011round LLM serving workloads."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Gandalf: Flash Shall Not Die! Increasing Flash Storage Lifetime for KV Cache Offloading in LLM Serving",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.30791"
-    },
-    {
-      "id": "897ee53c8693109a84df74a94849379792d89f8d5959208865bf9d810999f05e",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces VeriEvolve, an evaluator-first evolution framework that builds an executable evaluator before optimizing agents for realistic stateful tasks.",
-            "Synthesizes instruction-grounded challenge states and freezes the evaluator as fitness signal, then refines it using counterfactual test cases from strong/weak runs.",
-            "Applied to 30 MCPMark filesystem tasks, it raises success rates for GLM\u20115.2 and Claude, proving evaluators guide search when observability and verification exist."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "VeriEvolve builds an evaluator first, creating test states from instructions and a program that checks them, giving agents a clear success signal.",
-            "In 30 tasks, it built 30 evaluators, 141 states, raising agent success from 6/30 to 18/30 for one model and 27/30 to 30/30 for another.",
-            "Tests on PostgreSQL, Playwright, Notion, GitHub show limits in observing results, state representation, and search, proving evaluators help when success can be seen."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "VeriEvolve constructs evaluator\u2011first evolution, synthesizing instruction\u2011grounded challenge states and an executable evaluator that serves as a frozen fitness signal during each workflow round.",
-            "Between rounds, the evaluator is revised by converting strong and weak run end states into counterfactual test pairs, refining 30 evaluators across 30 MCPMark tasks.",
-            "Results: 141/141 agreement on generated suites, 113/122 on held\u2011out states, raising GLM\u20115.2 success 6/30\u219218/30 and Claude 27/30\u219230/30; cross\u2011environment tests on PostgreSQL, Playwright, Notion, GitHub."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "VeriEvolve: Evaluator-First Evolution for Tool-Using Agents",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "DevOps",
-        "Productivity"
-      ],
-      "url": "https://arxiv.org/abs/2610.29005"
-    },
-    {
-      "id": "a974bc695170ebbc67bbcd54218136f71f3107a5d2166364f707d6c5dfec511d",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "LLMSeg is a training-free pipeline that turns a vision-capable LLM into a text-prompted image segmenter without extra segmentation heads or training.",
-            "It uses three LLM-driven stages: detection and coarse description, B-spline tracing within bounding boxes, and iterative refinement with focus boxes until mask stabilizes.",
-            "Evaluated on ten referring and reasoning segmentation splits, open-vocabulary instance and semantic segmentation, and zero-shot detection, it matches or surpasses specialist SAM models using Gemini-3.7-Flash."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "LLMSeg is a training\u2011free pipeline that turns a multimodal large language model into a text\u2011prompted image segmenter, eliminating extra segmentation heads.",
-            "It performs segmentation in three LLM\u2011driven stages: detect instances, trace boundaries with closed B\u2011splines, and iteratively refine until masks stabilize.",
-            "Across ten referring and reasoning splits, plus open\u2011vocabulary datasets, LLMSeg matches or surpasses the specialist SAM model using only a Gemini\u20113.7\u2011Flash backend."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "LLMSeg is a training\u2011free, text\u2011prompted segmentation pipeline that uses a vision\u2011capable LLM (Gemini\u20113.7\u2011Flash) to detect, describe, and segment instances via B\u2011splines.",
-            "It runs three stages: detect & describe instances; trace each with periodic B\u2011splines inside boxes; refine via focus boxes until mask stabilizes or budget ends.",
-            "Evaluate on ten ReasonSeg/RefCOCO splits, LVIS, COCO, SA\u2011Co, zero\u2011shot detection; matches or surpasses SAM 3 on identical instances."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "LLMSeg: Training-Free Text-Prompted Image Segmentation with B-Splines",
-      "topics": [
-        "LLMs",
-        "Backend",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.29409"
-    },
-    {
-      "id": "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Kernel-managed shared memory lets agents tag structured memories; the kernel handles retrieval, privacy, and prompt injection.",
-            "Evaluation on AIOS with GPT\u20114o, Llama\u20113.1, Qwen\u20112.5 shows 2.4\u20114.0 point personalization gains over unmanaged Mem0, significant at p < 10\u207b\u00b9\u2078.",
-            "Compared to full context concatenation, kernel\u2011managed injection matches performance on two models, reduces prompt length, latency 15\u201161% lower, and cuts token usage."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Kernel\u2011managed shared memory lets agents tag memories; the kernel retrieves, enforces privacy, and injects prompts, acting as the system\u2019s core controller.",
-            "On AIOS, we tested GPT\u20114o, Llama\u20113.1, and Qwen\u20112.5 across 1,800 trials, gaining 2.4\u20134.0 points over unmanaged memory (p < 10\u207b\u00b9\u2078).",
-            "Compared to full context concatenation, kernel\u2011managed injection matches two models, slightly lags one, yet uses 15\u201361% fewer tokens, lower latency, and cheaper inference."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Introduces kernel-managed shared memory: agents write structured, tagged memories; kernel handles retrieval, privacy, prompt injection.",
-            "Implemented on AIOS; evaluated against Mem0, standard retrieval-augmented injection, and full context concatenation across GPT-4o, Llama-3.1:8B, Qwen-2.5:7B, 1,800 trials.",
-            "Kernel-managed approach improves personalization 2.4-4.0 points, matches or exceeds other methods, reduces latency 15-61%, lowers token usage and cost."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Kernel-Managed Shared Memory for System-Wide Personalization",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Backend",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2609.10144"
-    },
-    {
-      "id": "d7c237cc133940eeccf4595ef5072305dc0a139b9d93bffffbcfaa895d8fa1db",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Introduces spiking ternary GRU (stGRU) combining ternary-weight gated recurrent unit for filtering and resonate-and-fire neurons for binary spike output.",
-            "Enables end\u2011to\u2011end training on LibriSpeech, achieving single\u2011digit WER (6.44% on test\u2011clean) without dense MACs or external language model.",
-            "Also attains 10.88% CER on Aishell\u20111, demonstrating effectiveness on Mandarin speech and depth\u2011graded hierarchical representations."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Introduces spiking ternary GRU (stGRU) that separates filtering and integration, using ternary weights and resonate\u2011and\u2011fire neurons for efficient, event\u2011driven speech processing.",
-            "Trained end\u2011to\u2011end on LibriSpeech, stGRU models reach 6.44% WER on test\u2011clean without language models, the first spiking network to hit single\u2011digit error without dense MACs.",
-            "Also achieves 10.88% character error on Aishell\u20111, showing the architecture works on Mandarin speech and builds a depth\u2011graded hierarchy of representations."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "stGRU combines ternary-weight GRU temporal filtering with downstream Resonate\u2011and\u2011Fire neurons that emit binary spikes, eliminating LIF decay and enabling native event\u2011based training.",
-            "End\u2011to\u2011end training on LibriSpeech\u2011960 yields 6.44% WER (small/medium/large) without external LM, first matrix\u2011MAC\u2011free spiking network achieving single\u2011digit WER.",
-            "The model also reaches 10.88% test CER on Aishell\u20111 (9.28% dev) from scratch, developing a depth\u2011graded hierarchy of representations."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Bio-Inspired Auditory Processing: Coupling Parallel Resonate-and-Fire Dynamics with Ternary Recurrent Networks for Speech Recognition",
-      "topics": [
-        "LLMs",
-        "System Design",
-        "Machine Learning",
-        "AI Agents"
-      ],
-      "url": "https://arxiv.org/abs/2610.29720"
-    },
-    {
-      "id": "e7cca0b9835b81a5aa7162b7194cc615c6f1d6c9b59949ce73cc3a9a1584628c",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv cs.AI",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "MixAgent is an agentic pipeline that emulates audio engineers, grouping tracks, planning effects, and refining mixes guided by a reference song.",
-            "A detector identifies needed corrections, and MixCritic\u2014a dataset of 45,657 repair critiques\u2014trains a critic to propose parameter adjustments, reducing mix error by 19%.",
-            "Human listening tests show MixAgent outperforms Qwen3\u2011Omni, Gemini 3.8 Flash, and GPT\u20114o\u2011audio in quality ratings."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Introduces MixAgent, a step\u2011by\u2011step system that mimics audio engineers by grouping tracks, planning effects, and creating editable mixing plans using a reference song.",
-            "A detector finds problems, and a critic suggests numeric adjustments; trained on 45,657 repair critiques, it is fine\u2011tuned with preference optimization.",
-            "Experiments on MedleyDB show the system reduces mix error by 19% over the initial mix, and human listeners rate it higher than several language models."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "MixAgent pipeline: grouping agent routes tracks into subgroups; planning agent selects and orders audio effects (volume, reverb) for tracks, subgroups, full mix.",
-            "Refinement: detector flags needed corrections; MixCritic (45,657 critiques) trains critic via supervised learning plus preference optimization, cutting mix error 19% (8.4% more with optimization).",
-            "Evaluation: On MedleyDB, MixAgent outperforms Qwen3\u2011Omni, Gemini 3.8 Flash, GPT\u20114o\u2011audio in human listening tests, achieving higher quality ratings."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Agentic Music Post-Production",
-      "topics": [
-        "AI Agents",
-        "LLMs",
-        "Machine Learning",
-        "Productivity"
-      ],
-      "url": "https://arxiv.org/abs/2610.29093"
-    },
-    {
-      "id": "eee6fa42d71dc5a43db82b38ebcb42bd5cd6b1fbf9ca8ec9084a7f57b1974e49",
-      "image_url": null,
-      "published_at": "2026-10-23T04:00:00Z",
-      "source": "arXiv Machine Learning",
-      "source_type": "arxiv",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Architecture uses tools and memory to selectively correct wrist PPG heart rate estimates, addressing motion artifacts.",
-            "Trained on PPG\u2011DaLiA, tested on four datasets; MAE reduced up to 44.5%, with significant error decreases on GalaxyPPG.",
-            "Real\u2011time wearable system implemented; prototype recordings showed MAE drop from 9.09 to 4.45 bpm without extra rejection."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Agent uses tools and memory to improve wrist heart\u2011rate readings from photoplethysmography (PPG) by selecting or correcting estimates based on pulse, motion, and past data.",
-            "Trained on PPG\u2011DaLiA and tested on four datasets, the system cut mean absolute error by up to 44.5%, especially on GalaxyPPG, by reducing harmful corrections.",
-            "Real\u2011time prototype on a smartphone lowered error from 9.09 to 4.45 beats per minute in four recordings, showing practical feasibility without extra data rejection."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Agent architecture uses tools and memory around a fixed heart\u2011rate estimator, generating candidate corrections from pulse, motion, and limited history, then selecting via predicted benefit/harms.",
-            "Risk gate retains, corrects, or rejects outputs; trained on PPG\u2011DaLiA, tested on Wrist Exercise, GalaxyPPG, WildPPG, cutting MAE up to 44.5 %.",
-            "Real\u2011time wearable acquisition, Bluetooth, and smartphone deployment achieved a prototype MAE drop from 9.09 to 4.45 bpm without extra rejection, showing practical feasibility."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "An Agent Architecture with Tools and Memory for Selective Correction of Wrist PPG Heart Rate Estimates",
-      "topics": [
-        "AI Agents",
-        "Backend",
-        "System Design",
-        "Machine Learning"
-      ],
-      "url": "https://arxiv.org/abs/2610.30688"
-    },
-    {
-      "id": "2b3f616d26d343fed7789052f7d45765c10f64079fafbd4a9ee06dcaf0e956ff",
-      "image_url": null,
-      "published_at": "2026-10-23T00:00:00Z",
-      "source": "Hugging Face Blog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "AWS Trainium is a custom chip for machine learning inference and training.",
-            "To determine if a model runs on Trainium, verify framework support and hardware compatibility.",
-            "Use AWS documentation and tools to confirm model deployment on Trainium."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "AWS Trainium is a custom chip designed for machine learning workloads.",
-            "To see if your model runs on Trainium, consult AWS documentation or compatibility guides.",
-            "Compatibility depends on the framework, model size, and supported operations (ops)."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Determine if your model is compatible with AWS Trainium by reviewing AWS documentation.",
-            "Use the \u201cLook It Up\u201d guidance to confirm support for your model\u2019s framework.",
-            "Follow AWS Trainium deployment steps to run the model on the hardware."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Does Your Model Run on AWS Trainium? Look It Up",
-      "topics": [
-        "Cloud",
-        "Machine Learning"
-      ],
-      "url": "https://huggingface.co/blog/torch-neuronx-model-support"
-    },
-    {
-      "id": "51888f116f5b083740bce79640ccacdc80055a08000c769931982fc83218805e",
-      "image_url": null,
-      "published_at": "2026-10-22T22:24:34Z",
-      "source": "Hugging Face Blog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Converts database grading metrics into reinforcement learning reward signals for training agents.",
-            "Employs post\u2011training agents that refine behavior after initial learning.",
-            "Integrates ThinkingBox framework to manage reward shaping and policy evaluation."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Database grading is the process of automatically checking database queries for correctness and performance.",
-            "Reinforcement learning rewards are signals that tell an agent how well it is doing, guiding its future actions.",
-            "ThinkingBox is a tool that lets developers add post\u2011training reinforcement learning to agents, improving their performance after initial training."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Converts database grading metrics into reinforcement learning reward signals for post-training agent fine-tuning.",
-            "Employs ThinkingBox framework to adapt agents after training, enabling dynamic reward shaping.",
-            "Focuses on integrating database evaluation pipelines with RL agents, potentially using version 1.0 of ThinkingBox."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Turning Database Grading into RL Rewards: Post-Training Agents with ThinkingBox",
-      "topics": [
-        "AI Agents",
-        "Backend",
-        "Machine Learning"
-      ],
-      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
-    },
-    {
-      "id": "3ed693bf52dd2dcbb855a489dded6ac1af22cfdb0a080428eaffe850732f24d3",
-      "image_url": null,
-      "published_at": "2026-10-22T22:19:12Z",
-      "source": "Netflix TechBlog",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "Titus is a Kubernetes-based, multi-tenant container platform running millions of containers across thousands of EC2 instances.",
-            "For demanding real\u2011time workloads, single\u2011tenant mode gives each task its own VM while keeping the same API and managed experience.",
-            "The post examines why shared\u2011kernel isolation falls short, how isolation is measured, and the options weighed for stronger isolation."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "Titus is Netflix\u2019s Kubernetes-based container platform that runs millions of containers on EC2, sharing hosts across teams.",
-            "Some real\u2011time workloads need stronger isolation, so single\u2011tenant mode gives each task its own virtual machine while keeping the same API and management.",
-            "The post explains why shared\u2011kernel isolation fails for certain workloads, how isolation is measured, and the options Netflix weighed for stronger isolation."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "Titus is a Kubernetes\u2011based, multi\u2011tenant platform running millions of containers weekly across thousands of EC2 instances with patched control and data planes.",
-            "Single\u2011tenant Titus gives each task its own VM, keeping the same API, deployment path, and managed experience while providing isolation for demanding real\u2011time workloads.",
-            "The team explains why shared\u2011kernel isolation fails, how they measure isolation, and the options considered, such as micro\u2011VMs, to meet strict isolation requirements."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Single-tenant Titus: VM-level isolation on a multi-tenant container platform",
-      "topics": [
-        "Backend",
-        "System Design",
-        "DevOps",
-        "Cloud"
-      ],
-      "url": "https://netflixtechblog.com/single-tenant-titus-vm-level-isolation-on-a-multi-tenant-container-platform-6d8b1909d163?source=rss----2615bd06b42e---4"
     }
   ],
-  "generated_at": "2026-10-29T14:52:48.997061Z",
+  "generated_at": "2026-10-30T14:45:57.799349Z",
   "topic_counts": {
-    "AI Agents": 35,
-    "Backend": 25,
-    "LLMs": 30,
-    "Machine Learning": 25,
-    "Other": 36,
-    "System Design": 26
+    "AI Agents": 23,
+    "Backend": 17,
+    "LLMs": 22,
+    "Machine Learning": 15,
+    "Other": 30,
+    "System Design": 18
   },
   "topics": [
     "AI Agents",
