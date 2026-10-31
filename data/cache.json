@@ -217,6 +217,48 @@
       ],
       "url": "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/"
     },
+    "02b9c90015956d47433b25362b2897ae6416ebf3ff2881365105471cb2e2794c": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-06-08T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Open source community endorses OpenEnv, a platform for agentic reinforcement learning.",
+            "OpenEnv aims to provide open, modular tools for developing agentic RL systems.",
+            "Community backing signals growing interest in collaborative, transparent RL research."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenEnv is an open\u2011source platform that lets developers build and test reinforcement\u2011learning agents.",
+            "The community is backing OpenEnv, showing strong support for shared tools in AI research.",
+            "Agentic RL means agents learn to act independently, making decisions that influence their environment."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Open source community endorses OpenEnv, a new framework designed to support agentic reinforcement learning research.",
+            "OpenEnv offers modular environments, standardized APIs, and versioned datasets to streamline experimentation for agentic RL agents.",
+            "Community backing includes contributions, funding, and collaborative testing, accelerating OpenEnv\u2019s adoption across academic and industrial RL projects."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "The Open Source Community is backing OpenEnv for Agentic RL",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/openenv-agentic-rl"
+    },
     "03e8feb802d3a2648af49067d0b4f75ff9ae6b03ab29fdec8669d796d77dc79d": {
       "image_url": null,
       "last_seen": "2026-10-27T13:51:49.611060Z",
@@ -388,6 +430,47 @@
         "DevOps"
       ],
       "url": "https://kubernetes.io/blog/2026/05/07/kubernetes-v1-36-dra-136-updates/"
+    },
+    "07c54f2501b84418ad43d4890c66b57aed92b5175d25dee7d30321be6674c254": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-26T00:00:00Z",
+      "source": "Python Insider",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16, and 3.11.18 have been released.",
+            "These releases are expedited security updates.",
+            "They distrust the compromised eMudhra intermediate CA keys."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16, and 3.11.18 have been released as security updates.",
+            "These releases address a vulnerability involving compromised eMudhra intermediate CA keys.",
+            "The updates instruct systems to distrust those keys, preventing potential security breaches."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16, and 3.11.18 released as expedited security updates.",
+            "Updates revoke trust in compromised eMudhra intermediate CA keys to mitigate certificate validation risks.",
+            "Users should install these releases promptly to maintain secure SSL/TLS operations."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
+      "topics": [
+        "Python"
+      ],
+      "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/"
     },
     "09d1d26fa19dd694ec40f7bb3bc136d48191abcd2b19156a45d7567a4b7fa32e": {
       "image_url": null,
@@ -2811,6 +2894,48 @@
       ],
       "url": "https://openai.com/index/cloudflare-openai-agent-cloud"
     },
+    "459b888b75db1d6da420b901a80063d4ca676e1b6b2cc62c3a4cddafa1e6f909": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-06-09T10:46:19Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "An autonomous agent combined two Hugging Face Spaces to generate a virtual 3D gallery set in Paris.",
+            "The agent chained the spaces, orchestrating data flow between them to produce realistic 3D visualizations.",
+            "The final output is an interactive 3D Paris gallery showcasing architectural and cultural elements."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "An AI agent combined two Hugging Face Spaces to create a virtual 3D gallery showcasing Paris landmarks.",
+            "The first space generated 3D models of Paris scenes, while the second space rendered them into a navigable gallery.",
+            "This chaining shows how separate AI tools can be linked to build interactive virtual environments."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "An autonomous agent chains two Hugging Face Spaces to construct a 3D Paris gallery.",
+            "The workflow stitches a 3D modeling Space with a scene generation Space, automating asset placement.",
+            "This demonstrates modular Space orchestration for rapid immersive environment prototyping."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "How an Agent Built a 3D Paris Gallery by Chaining Two Hugging Face Spaces",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/mishig/spaces-agents-md"
+    },
     "46178924d1dbab427845a698d30b493bb761701cba0d200717e3053312cabf44": {
       "image_url": null,
       "last_seen": "2026-10-21T13:25:33.193295Z",
@@ -3118,7 +3243,7 @@
     },
     "4c9c2f788cfedfab4c17904623c5e66d71c947f4b3a955a86d2473c1295ef637": {
       "image_url": null,
-      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "last_seen": "2026-10-31T14:07:57.233837Z",
       "published_at": "2018-01-18T08:00:00Z",
       "source": "OpenAI News",
       "source_type": "rss",
@@ -3757,6 +3882,48 @@
       ],
       "url": "https://openai.com/index/philips"
     },
+    "574dbaf7fc8731e405753fdd629edf08113dcd8a86398ab5c6140b68360db244": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-30T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Fair use enables AI training by allowing limited use of copyrighted material.",
+            "Creators, academics, and accessibility advocates highlight its role in fostering innovation.",
+            "Legal experts emphasize its importance for balancing rights and technological progress."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Fair use lets creators, scholars, and accessibility groups argue that using copyrighted material in AI training is legal and promotes new ideas.",
+            "OpenAI cites court briefs showing that fair use protects both artists and developers, encouraging safer, more diverse AI systems.",
+            "The article highlights that fair use balances copyright protection with public benefit, fostering innovation while respecting creators\u2019 rights."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Fair use enables AI training by allowing use of copyrighted text in machine learning datasets.",
+            "Court briefs cited by creators, academics, accessibility advocates, and legal experts illustrate fair use's role in fostering innovation.",
+            "OpenAI shares these excerpts to demonstrate how fair use underpins responsible AI development and protects diverse stakeholder interests."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Fair use benefits everyone",
+      "topics": [
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/fair-use-benefits-everyone"
+    },
     "5890b1cfd4cc38aa3885e02e9fc3010d881da63d5d8b82ee82ae0ed7c4531d58": {
       "image_url": null,
       "last_seen": "2026-10-20T06:36:59.721459Z",
@@ -3886,6 +4053,47 @@
         "DevOps"
       ],
       "url": "https://kubernetes.io/blog/2026/09/02/kubernetes-v1-37-hpa-scale-to-zero-beta/"
+    },
+    "59f92a9af33d7787220cb11b5652970253e8402c5b3f58ecb811ad66129f56a1": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-28T16:09:28Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "GitHub unveiled its 2026 vision, positioning itself as the most comprehensive end-to-end software delivery system.",
+            "The roadmap emphasizes evolving every layer of the stack, from code hosting to deployment and monitoring.",
+            "The announcement was shared on The GitHub Blog, outlining future enhancements across the entire development lifecycle."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "GitHub plans to evolve every layer of the software stack, aiming to become the world\u2019s most comprehensive end\u2011to\u2011end delivery system.",
+            "The vision was announced today on the GitHub Blog, outlining new features and integrations across code, CI/CD, and deployment.",
+            "Key terms: \u201cend\u2011to\u2011end\u201d means covering all steps from coding to production; \u201csoftware stack\u201d refers to layers like code, build, test, and deploy."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "GitHub Universe 2026 outlines a vision to become the world's most comprehensive, end\u2011to\u2011end software delivery system.",
+            "The post emphasizes evolving every layer of the stack, from code hosting to deployment and monitoring.",
+            "It was published on The GitHub Blog, marking a strategic roadmap for future platform enhancements."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "GitHub Universe 2026: Evolving every layer of the stack",
+      "topics": [
+        "Productivity"
+      ],
+      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
     },
     "5a37fac8855312255045a847fb068fdd8c5ff3c1ffd79da7595ec9b4f5cfb1e1": {
       "image_url": null,
@@ -4350,6 +4558,47 @@
       ],
       "url": "https://kubernetes.io/blog/2026/07/13/introducing-headlamp-plugin-for-kubeflow/"
     },
+    "616e5ab543ddbe8e9a8045c456b538ab22d564a56b73163bf945364e08cc76ba": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-31T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces INFRAMIND, a hierarchical policy that adapts multi-agent LLM workflow planning and execution to current serving conditions.",
+            "Planner selects collaboration graph at arrival using task, load, and time budget; executor chooses model and reasoning strategy before agent call with telemetry and time.",
+            "Results show up to 7.6% accuracy gain at low load, 33.8% correct on\u2011time answers on 500 MATH questions, and 54.8% improvement over MasRouter Azure replay."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "INFRAMIND is a two\u2011level system that chooses how agents collaborate and which models to use, based on current server load and time limits.",
+            "It improves accuracy on math problems by up to 7.6 points and boosts on\u2011time correct answers from 20% to 54% in tests with 10\u2011300\u2011second deadlines.",
+            "The system links planning and execution through a shared latency penalty, ensuring that decisions adapt to changing server congestion and keep responses within deadlines."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "model": "openai/gpt-oss-20b",
+          "status": "failed"
+        }
+      },
+      "title": "INFRAMIND: Infrastructure-Aware Multi-Agent Orchestration",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2606.11440"
+    },
     "6300099f83ab9ce2e594c2309f8add9d2dcc5cdf116ce6ca95a3d069caabc1ff": {
       "image_url": null,
       "last_seen": "2026-10-30T14:45:57.799349Z",
@@ -4701,7 +4950,7 @@
     },
     "689d78c6e007ab8e2c4f1996bb4d798c0801548871029acd469c087e5a6afc90": {
       "image_url": null,
-      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "last_seen": "2026-10-31T14:07:57.233837Z",
       "published_at": "2026-09-22T00:00:00Z",
       "source": "Hugging Face Blog",
       "source_type": "rss",
@@ -4991,6 +5240,50 @@
         "Cloud"
       ],
       "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-gpt-6-sol-and-luna-claude-opus-5-5-on-amazon-bedrock-strands-harness-and-more-september-28-2026/"
+    },
+    "6c4df3fa24e47b4fd2b49713a8f0069eccebed83bc4bd780417078b2348a1251": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-31T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "ILE benchmark tests AI equity research by freezing information and evaluating research quality, forecast accuracy, and simulated investment performance.",
+            "It includes a versioned financial database, structured market data, a task taxonomy, and expert scoring linked to financial dependency graphs.",
+            "State\u2011of\u2011the\u2011art models score high overall but poorly on forecasting, showing a gap between research capability and predictive performance."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces Investor's Last Exam (ILE), a benchmark for equity research created by experienced investors, using a frozen data set and expert scoring.",
+            "ILE includes a large versioned financial database, a taxonomy of analyst tasks, and a framework linking scores to data, calculations, and assumptions.",
+            "Top AI models score high overall but poorly on forecasting, showing current AI struggles to turn research into accurate predictions."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "ILE benchmark: versioned financial database (3.43M document versions, 9 source categories), structured market data, validated timestamps for retrieval and computation.",
+            "Task taxonomy aligned with professional analyst deliverables; expert\u2011led framework links scoring criteria to sources, calculations, assumptions via financial dependency graphs.",
+            "86 assignments evaluated; GPT\u20116 Astra 68.1, Claude Opus 5.5 66.9 overall; Astra 52.5 on Forecast & Model, revealing research\u2011to\u2011prediction gap."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.38342"
     },
     "6d883a1f3620138ca1b271982e4ce882129c90819d6b05bba2efac307a48c659": {
       "image_url": null,
@@ -5942,6 +6235,48 @@
         "System Design"
       ],
       "url": "https://openai.com/index/gpt-5-1-for-developers"
+    },
+    "84abd1857de5dfd951d90dcfdd8cecc910571c46b00c6ecbe7661909d42cb5b5": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-30T09:30:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI will respect a shared robots.txt signal to convey AI training preferences from website operators to participating providers.",
+            "This approach simplifies how sites communicate data usage limits for AI training.",
+            "It enhances transparency and control for website owners over their content in AI models."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI will honor a shared robots.txt signal, a file that tells web crawlers what to do.",
+            "This signal helps website operators communicate AI training preferences.",
+            "Participating providers will respect those preferences."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI will honor a shared robots.txt signal that lets sites specify AI training preferences.",
+            "The signal enables website operators to communicate which content can be used for training.",
+            "Participating AI providers will respect these preferences when crawling and training on the web."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Making it easier for websites to express AI training preferences",
+      "topics": [
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences"
     },
     "85ae60baefcbcf5cc062bfce52911d7300326c4796ff56b904e647dc97384eaa": {
       "image_url": null,
@@ -7489,6 +7824,50 @@
       ],
       "url": "https://huggingface.co/blog/allenai/benchmirt"
     },
+    "ada7f241f614974bc57b6aac8d044e21a9b5509ce5e7d99070b479baab14a37c": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-31T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Rubricon automates rubric creation without human labels, sampling and refining criteria via LLM self\u2011critique and pass\u2011rate feedback.",
+            "Across five benchmarks, Rubricon rubrics align 9% better with expert\u2011authored rubrics than leading synthetic generators.",
+            "Training Qwen3.5\u20119B on HealthBench with Rubricon rubrics yields 4.5% higher performance versus the best alternative synthetic generator."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Rubricon automatically creates evaluation rubrics for language models, avoiding the need for human preference labels or manual rubric creation.",
+            "It samples many rubric options, selects the most discriminative, adds missing criteria, prunes shallow ones, and uses self\u2011critique and pass rates to refine.",
+            "Across five LLM benchmarks, Rubricon\u2019s rubrics align 9% better with expert rubrics and boost a Qwen3.5\u20119B model\u2019s HealthBench score by 4.5%."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Pipeline uses any LLM to sample multiple rubrics, selects the most discriminative, adds criteria, prunes misaligned ones, guided by observed pass rates.",
+            "Across five benchmarks, Rubricon rubrics score 9% higher alignment with expert rubrics than best synthetic methods (RRD, QSRG, OpenRubrics, agentic harnesses).",
+            "Training Qwen3.5-9B on HealthBench with Rubricon rubrics improves performance by 4.5% over training with RRD-generated rubrics."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Rubricon: Automated Rubric Generation and Refinement for LLM Evaluation and Training",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.38220"
+    },
     "ae10eb4597fe2dea3b838512ee33b4589fb7c90fcb34260eaf8654f1a2d9895d": {
       "image_url": null,
       "last_seen": "2026-10-23T05:18:06.830843Z",
@@ -7660,6 +8039,48 @@
         "LLMs"
       ],
       "url": "https://openai.com/index/introducing-the-agents-api"
+    },
+    "b59b3271b775356f43c3e1f39bde513ae65d2b95652fdc4a2521e0f6b11ad45d": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-06-17T00:00:00Z",
+      "source": "Hugging Face Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Explores how autonomous agents can autonomously discover and acquire resources in dynamic environments.",
+            "Highlights methods for agents to identify, evaluate, and secure resources without human intervention.",
+            "Discusses potential applications and challenges in implementing agentic resource discovery systems."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Agentic means self\u2011directed; agents can autonomously search for resources.",
+            "Resource discovery is the process of finding useful items or data.",
+            "Let agents search reduces human workload and speeds up finding needed resources."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Introduces agentic resource discovery, enabling autonomous agents to locate and retrieve resources.",
+            "Emphasizes agent-driven search processes over manual or centralized methods.",
+            "Highlights potential applications in distributed systems and AI-driven resource management."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Agentic Resource Discovery: Let agents search",
+      "topics": [
+        "AI Agents",
+        "Machine Learning"
+      ],
+      "url": "https://huggingface.co/blog/agentic-resource-discovery-launch"
     },
     "ba0a9a99818db13bcbf97218debbb454a8b0f2ca52ffa57b36f557140c9a8ca0": {
       "image_url": null,
@@ -7924,7 +8345,7 @@
     },
     "bd2a7f12ec033efae496309323fbceb5a04f5cd0ef5d7e044fd5193346817f56": {
       "image_url": null,
-      "last_seen": "2026-10-30T14:45:57.799349Z",
+      "last_seen": "2026-10-31T14:07:57.233837Z",
       "published_at": "2020-01-23T08:00:00Z",
       "source": "OpenAI News",
       "source_type": "rss",
@@ -8388,6 +8809,50 @@
       ],
       "url": "https://arxiv.org/abs/2610.27711"
     },
+    "c96e60615b776091ec7141e856d68be24dccfdb15dc790f96d4c92c401db982d": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-31T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "ATP is a cross\u2011organization agent communication protocol that uses domain\u2011mediated architecture to maintain stable addresses and message entries.",
+            "Domain servers sign messages and store them for offline instances, enabling verification and retrieval after disconnection.",
+            "Prototype evaluation shows ATP supports continuous collaboration, reliable message delivery, and integrity checks in LLM agent workflows."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The Agentic Web lets software agents from different organizations work together over many tasks, even when some are offline.",
+            "ATP (Agent Transfer Protocol) uses a domain\u2011mediated design: each organization\u2019s server keeps a stable address for its agents and stores messages for later reading.",
+            "Messages are signed by the sending domain; the receiving agent can verify source and content with the domain\u2019s public key, even after the connection ends."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "ATP is a domain\u2011mediated protocol enabling cross\u2011organization agent communication, with administrative domains providing stable logical agent addresses and persistent message queues.",
+            "Sending domains sign full message envelopes; receiving domains verify signatures, store messages, and allow offline instances to re\u2011verify integrity using the original public key.",
+            "A prototype was built and tested on a cross\u2011organization LLM workflow, demonstrating correct mechanism operation and acceptable latency (v1 release)."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "Agent Transfer Protocol: Server-Mediated Agent-to-Agent Communication Architecture for the Agentic Web",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.38398"
+    },
     "ccd5eb86c6d0c95e615d0a5c2c900a43d21b554ac18cc03b2fed57dc687f18c7": {
       "image_url": null,
       "last_seen": "2026-10-19T10:43:41.374358Z",
@@ -8685,6 +9150,47 @@
         "Machine Learning"
       ],
       "url": "https://github.com/mottopanikeiku/doomformer"
+    },
+    "d00cc4039a1692280a1a8f721cdaed9840fa332a723f2b13f7a0b88aa09afbf6": {
+      "image_url": null,
+      "last_seen": "2026-10-31T14:07:57.233837Z",
+      "published_at": "2026-10-26T15:02:24Z",
+      "source": "AWS News Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AWS Weekly Roundup highlights new Amazon Polly generative engine, TorchNeuron for Trainium, and additional services released on Oct 26 2026.",
+            "The author presented generative AI applications to Brazilian agribusiness leaders, covering its role across all operational stages.",
+            "Emphasis was placed on how traditional markets can integrate generative AI to enhance efficiency and innovation."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Amazon Polly now offers a generative engine, expanding text-to-speech with AI\u2011generated voices for more natural, customizable audio output.",
+            "TorchNeuron for Trainium is a new tool that speeds up machine\u2011learning training on AWS\u2019s custom chips, making AI models faster and cheaper.",
+            "The speaker highlighted how generative AI can improve every stage of Brazilian agribusiness, from planning to marketing, showing its broad industry impact."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Amazon Polly introduces a generative engine, enhancing text-to-speech with AI-driven voice synthesis, released in the October 26, 2026 AWS Weekly Roundup.",
+            "AWS unveils TorchNeuron for Trainium, a deep learning compiler that optimizes neural network training on Trainium chips, boosting performance and reducing costs.",
+            "The author discussed generative AI\u2019s role across agribusiness stages, emphasizing its impact on traditional markets and operational efficiency in Brazil."
+          ],
+          "model": "openai/gpt-oss-20b",
+          "status": "ok"
+        }
+      },
+      "title": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",
+      "topics": [
+        "Cloud"
+      ],
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/"
     },
     "d1e4560aa8b75851db04ccf3bd5eec988f6b88c9837a850c9e8ea7d8058fd7e5": {
       "image_url": null,

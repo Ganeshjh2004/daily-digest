@@ -1,6 +1,167 @@
 {
   "articles": [
     {
+      "id": "616e5ab543ddbe8e9a8045c456b538ab22d564a56b73163bf945364e08cc76ba",
+      "image_url": null,
+      "published_at": "2026-10-31T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Introduces INFRAMIND, a hierarchical policy that adapts multi-agent LLM workflow planning and execution to current serving conditions.",
+            "Planner selects collaboration graph at arrival using task, load, and time budget; executor chooses model and reasoning strategy before agent call with telemetry and time.",
+            "Results show up to 7.6% accuracy gain at low load, 33.8% correct on\u2011time answers on 500 MATH questions, and 54.8% improvement over MasRouter Azure replay."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "INFRAMIND is a two\u2011level system that chooses how agents collaborate and which models to use, based on current server load and time limits.",
+            "It improves accuracy on math problems by up to 7.6 points and boosts on\u2011time correct answers from 20% to 54% in tests with 10\u2011300\u2011second deadlines.",
+            "The system links planning and execution through a shared latency penalty, ensuring that decisions adapt to changing server congestion and keep responses within deadlines."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [],
+          "status": "failed"
+        }
+      },
+      "title": "INFRAMIND: Infrastructure-Aware Multi-Agent Orchestration",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Cloud",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2606.11440"
+    },
+    {
+      "id": "ada7f241f614974bc57b6aac8d044e21a9b5509ce5e7d99070b479baab14a37c",
+      "image_url": null,
+      "published_at": "2026-10-31T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Rubricon automates rubric creation without human labels, sampling and refining criteria via LLM self\u2011critique and pass\u2011rate feedback.",
+            "Across five benchmarks, Rubricon rubrics align 9% better with expert\u2011authored rubrics than leading synthetic generators.",
+            "Training Qwen3.5\u20119B on HealthBench with Rubricon rubrics yields 4.5% higher performance versus the best alternative synthetic generator."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Rubricon automatically creates evaluation rubrics for language models, avoiding the need for human preference labels or manual rubric creation.",
+            "It samples many rubric options, selects the most discriminative, adds missing criteria, prunes shallow ones, and uses self\u2011critique and pass rates to refine.",
+            "Across five LLM benchmarks, Rubricon\u2019s rubrics align 9% better with expert rubrics and boost a Qwen3.5\u20119B model\u2019s HealthBench score by 4.5%."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Pipeline uses any LLM to sample multiple rubrics, selects the most discriminative, adds criteria, prunes misaligned ones, guided by observed pass rates.",
+            "Across five benchmarks, Rubricon rubrics score 9% higher alignment with expert rubrics than best synthetic methods (RRD, QSRG, OpenRubrics, agentic harnesses).",
+            "Training Qwen3.5-9B on HealthBench with Rubricon rubrics improves performance by 4.5% over training with RRD-generated rubrics."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Rubricon: Automated Rubric Generation and Refinement for LLM Evaluation and Training",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.38220"
+    },
+    {
+      "id": "6c4df3fa24e47b4fd2b49713a8f0069eccebed83bc4bd780417078b2348a1251",
+      "image_url": null,
+      "published_at": "2026-10-31T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "ILE benchmark tests AI equity research by freezing information and evaluating research quality, forecast accuracy, and simulated investment performance.",
+            "It includes a versioned financial database, structured market data, a task taxonomy, and expert scoring linked to financial dependency graphs.",
+            "State\u2011of\u2011the\u2011art models score high overall but poorly on forecasting, showing a gap between research capability and predictive performance."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Introduces Investor's Last Exam (ILE), a benchmark for equity research created by experienced investors, using a frozen data set and expert scoring.",
+            "ILE includes a large versioned financial database, a taxonomy of analyst tasks, and a framework linking scores to data, calculations, and assumptions.",
+            "Top AI models score high overall but poorly on forecasting, showing current AI struggles to turn research into accurate predictions."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "ILE benchmark: versioned financial database (3.43M document versions, 9 source categories), structured market data, validated timestamps for retrieval and computation.",
+            "Task taxonomy aligned with professional analyst deliverables; expert\u2011led framework links scoring criteria to sources, calculations, assumptions via financial dependency graphs.",
+            "86 assignments evaluated; GPT\u20116 Astra 68.1, Claude Opus 5.5 66.9 overall; Astra 52.5 on Forecast & Model, revealing research\u2011to\u2011prediction gap."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Investor's Last Exam: Can AI Agents Do Equity Investment Without Seeing the Future?",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "Backend",
+        "Machine Learning"
+      ],
+      "url": "https://arxiv.org/abs/2610.38342"
+    },
+    {
+      "id": "c96e60615b776091ec7141e856d68be24dccfdb15dc790f96d4c92c401db982d",
+      "image_url": null,
+      "published_at": "2026-10-31T04:00:00Z",
+      "source": "arXiv cs.AI",
+      "source_type": "arxiv",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "ATP is a cross\u2011organization agent communication protocol that uses domain\u2011mediated architecture to maintain stable addresses and message entries.",
+            "Domain servers sign messages and store them for offline instances, enabling verification and retrieval after disconnection.",
+            "Prototype evaluation shows ATP supports continuous collaboration, reliable message delivery, and integrity checks in LLM agent workflows."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "The Agentic Web lets software agents from different organizations work together over many tasks, even when some are offline.",
+            "ATP (Agent Transfer Protocol) uses a domain\u2011mediated design: each organization\u2019s server keeps a stable address for its agents and stores messages for later reading.",
+            "Messages are signed by the sending domain; the receiving agent can verify source and content with the domain\u2019s public key, even after the connection ends."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "ATP is a domain\u2011mediated protocol enabling cross\u2011organization agent communication, with administrative domains providing stable logical agent addresses and persistent message queues.",
+            "Sending domains sign full message envelopes; receiving domains verify signatures, store messages, and allow offline instances to re\u2011verify integrity using the original public key.",
+            "A prototype was built and tested on a cross\u2011organization LLM workflow, demonstrating correct mechanism operation and acceptable latency (v1 release)."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Agent Transfer Protocol: Server-Mediated Agent-to-Agent Communication Architecture for the Agentic Web",
+      "topics": [
+        "AI Agents",
+        "LLMs",
+        "System Design",
+        "Productivity"
+      ],
+      "url": "https://arxiv.org/abs/2610.38398"
+    },
+    {
       "id": "6300099f83ab9ce2e594c2309f8add9d2dcc5cdf116ce6ca95a3d069caabc1ff",
       "image_url": null,
       "published_at": "2026-10-30T10:22:51Z",
@@ -75,6 +236,84 @@
         "Cloud"
       ],
       "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case"
+    },
+    {
+      "id": "84abd1857de5dfd951d90dcfdd8cecc910571c46b00c6ecbe7661909d42cb5b5",
+      "image_url": null,
+      "published_at": "2026-10-30T09:30:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "OpenAI will respect a shared robots.txt signal to convey AI training preferences from website operators to participating providers.",
+            "This approach simplifies how sites communicate data usage limits for AI training.",
+            "It enhances transparency and control for website owners over their content in AI models."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "OpenAI will honor a shared robots.txt signal, a file that tells web crawlers what to do.",
+            "This signal helps website operators communicate AI training preferences.",
+            "Participating providers will respect those preferences."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "OpenAI will honor a shared robots.txt signal that lets sites specify AI training preferences.",
+            "The signal enables website operators to communicate which content can be used for training.",
+            "Participating AI providers will respect these preferences when crawling and training on the web."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Making it easier for websites to express AI training preferences",
+      "topics": [
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences"
+    },
+    {
+      "id": "574dbaf7fc8731e405753fdd629edf08113dcd8a86398ab5c6140b68360db244",
+      "image_url": null,
+      "published_at": "2026-10-30T00:00:00Z",
+      "source": "OpenAI News",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "Fair use enables AI training by allowing limited use of copyrighted material.",
+            "Creators, academics, and accessibility advocates highlight its role in fostering innovation.",
+            "Legal experts emphasize its importance for balancing rights and technological progress."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Fair use lets creators, scholars, and accessibility groups argue that using copyrighted material in AI training is legal and promotes new ideas.",
+            "OpenAI cites court briefs showing that fair use protects both artists and developers, encouraging safer, more diverse AI systems.",
+            "The article highlights that fair use balances copyright protection with public benefit, fostering innovation while respecting creators\u2019 rights."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Fair use enables AI training by allowing use of copyrighted text in machine learning datasets.",
+            "Court briefs cited by creators, academics, accessibility advocates, and legal experts illustrate fair use's role in fostering innovation.",
+            "OpenAI shares these excerpts to demonstrate how fair use underpins responsible AI development and protects diverse stakeholder interests."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "Fair use benefits everyone",
+      "topics": [
+        "Machine Learning",
+        "LLMs"
+      ],
+      "url": "https://openai.com/index/fair-use-benefits-everyone"
     },
     {
       "id": "cfee38c25797a9a1dea16d5f568104f88dd6afee6881a8021fb72287405c1e12",
@@ -315,6 +554,44 @@
         "LLMs"
       ],
       "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+    },
+    {
+      "id": "59f92a9af33d7787220cb11b5652970253e8402c5b3f58ecb811ad66129f56a1",
+      "image_url": null,
+      "published_at": "2026-10-28T16:09:28Z",
+      "source": "GitHub Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "GitHub unveiled its 2026 vision, positioning itself as the most comprehensive end-to-end software delivery system.",
+            "The roadmap emphasizes evolving every layer of the stack, from code hosting to deployment and monitoring.",
+            "The announcement was shared on The GitHub Blog, outlining future enhancements across the entire development lifecycle."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "GitHub plans to evolve every layer of the software stack, aiming to become the world\u2019s most comprehensive end\u2011to\u2011end delivery system.",
+            "The vision was announced today on the GitHub Blog, outlining new features and integrations across code, CI/CD, and deployment.",
+            "Key terms: \u201cend\u2011to\u2011end\u201d means covering all steps from coding to production; \u201csoftware stack\u201d refers to layers like code, build, test, and deploy."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "GitHub Universe 2026 outlines a vision to become the world's most comprehensive, end\u2011to\u2011end software delivery system.",
+            "The post emphasizes evolving every layer of the stack, from code hosting to deployment and monitoring.",
+            "It was published on The GitHub Blog, marking a strategic roadmap for future platform enhancements."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "GitHub Universe 2026: Evolving every layer of the stack",
+      "topics": [
+        "Productivity"
+      ],
+      "url": "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
     },
     {
       "id": "bc75ed686e56f0828cdf2ce79457b8bd8897762095938ce7d57c2e527f4c4624",
@@ -1013,6 +1290,44 @@
       "url": "https://netflixtechblog.com/multi-ratio-video-resizing-for-mobile-feed-and-marketing-2e6b42810f49?source=rss----2615bd06b42e---4"
     },
     {
+      "id": "d00cc4039a1692280a1a8f721cdaed9840fa332a723f2b13f7a0b88aa09afbf6",
+      "image_url": null,
+      "published_at": "2026-10-26T15:02:24Z",
+      "source": "AWS News Blog",
+      "source_type": "rss",
+      "summaries": {
+        "balanced": {
+          "bullets": [
+            "AWS Weekly Roundup highlights new Amazon Polly generative engine, TorchNeuron for Trainium, and additional services released on Oct 26 2026.",
+            "The author presented generative AI applications to Brazilian agribusiness leaders, covering its role across all operational stages.",
+            "Emphasis was placed on how traditional markets can integrate generative AI to enhance efficiency and innovation."
+          ],
+          "status": "ok"
+        },
+        "beginner_friendly": {
+          "bullets": [
+            "Amazon Polly now offers a generative engine, expanding text-to-speech with AI\u2011generated voices for more natural, customizable audio output.",
+            "TorchNeuron for Trainium is a new tool that speeds up machine\u2011learning training on AWS\u2019s custom chips, making AI models faster and cheaper.",
+            "The speaker highlighted how generative AI can improve every stage of Brazilian agribusiness, from planning to marketing, showing its broad industry impact."
+          ],
+          "status": "ok"
+        },
+        "technical": {
+          "bullets": [
+            "Amazon Polly introduces a generative engine, enhancing text-to-speech with AI-driven voice synthesis, released in the October 26, 2026 AWS Weekly Roundup.",
+            "AWS unveils TorchNeuron for Trainium, a deep learning compiler that optimizes neural network training on Trainium chips, boosting performance and reducing costs.",
+            "The author discussed generative AI\u2019s role across agribusiness stages, emphasizing its impact on traditional markets and operational efficiency in Brazil."
+          ],
+          "status": "ok"
+        }
+      },
+      "title": "AWS Weekly Roundup: Amazon Polly Generative engine, TorchNeuron for Trainium, and more (October 26, 2026)",
+      "topics": [
+        "Cloud"
+      ],
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-polly-generative-engine-torchneuron-for-trainium-and-more-october-26-2026/"
+    },
+    {
       "id": "17593d61de4e8fbb37de2227f03fd45a057b279591262a2b782c3207f392be13",
       "image_url": null,
       "published_at": "2026-10-26T04:00:00Z",
@@ -1182,96 +1497,51 @@
       "url": "https://arxiv.org/abs/2610.31722"
     },
     {
-      "id": "0ae783437195bedecfa6bd931a03b285ae0ec65b5b42164626419c011d62422d",
+      "id": "07c54f2501b84418ad43d4890c66b57aed92b5175d25dee7d30321be6674c254",
       "image_url": null,
-      "published_at": "2026-10-23T18:32:51Z",
-      "source": "Netflix TechBlog",
+      "published_at": "2026-10-26T00:00:00Z",
+      "source": "Python Insider",
       "source_type": "rss",
       "summaries": {
         "balanced": {
           "bullets": [
-            "Quasar links proposed API changes to actual consumer references, giving producers concrete evidence for release decisions.",
-            "It highlights the challenge of assessing downstream impact when a library change originates in one repo but affects many others.",
-            "The tool aids both producers and coding agents by revealing which consumers still rely on changed symbols, informing migration strategies."
+            "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16, and 3.11.18 have been released.",
+            "These releases are expedited security updates.",
+            "They distrust the compromised eMudhra intermediate CA keys."
           ],
           "status": "ok"
         },
         "beginner_friendly": {
           "bullets": [
-            "Quasar links a library\u2019s API change to actual usage in other projects, showing how many consumers still rely on the altered code.",
-            "This visibility helps producers decide whether to remove or keep a deprecated method, by revealing its \u201cblast radius\u201d \u2013 the spread of affected projects.",
-            "The tool also informs automated coding agents, giving them cross\u2011repository context to assess downstream risk and plan safe migrations."
+            "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16, and 3.11.18 have been released as security updates.",
+            "These releases address a vulnerability involving compromised eMudhra intermediate CA keys.",
+            "The updates instruct systems to distrust those keys, preventing potential security breaches."
           ],
           "status": "ok"
         },
         "technical": {
           "bullets": [
-            "Quasar links proposed API changes to observed consumer references across Netflix's shared Java libraries, giving producers concrete evidence of downstream impact.",
-            "The tool tracks API diffs, identifies remaining calls to deprecated methods, and maps consumer versions, enabling producers to assess risk before removal.",
-            "By exposing blast radius, Quasar supports automated agents in planning migrations and testing, reducing manual effort in large, independently evolving repository ecosystems."
+            "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16, and 3.11.18 released as expedited security updates.",
+            "Updates revoke trust in compromised eMudhra intermediate CA keys to mitigate certificate validation risks.",
+            "Users should install these releases promptly to maintain secure SSL/TLS operations."
           ],
           "status": "ok"
         }
       },
-      "title": "Beyond API Compatibility: Building a Tool to Measure the Blast Radius of Library Changes",
+      "title": "Python 3.15.2, 3.14.10, 3.13.18, 3.12.16 and 3.11.18 are out",
       "topics": [
-        "AI Agents",
-        "Python",
-        "Backend",
-        "System Design",
-        "Productivity"
+        "Python"
       ],
-      "url": "https://netflixtechblog.com/beyond-api-compatibility-building-a-tool-to-measure-the-blast-radius-of-library-changes-9474f2fd4f90?source=rss----2615bd06b42e---4"
-    },
-    {
-      "id": "ee4c22366ef7e7abd786b0a4bc8d65774ddf350a3208b6c38568ae822ed0b9b0",
-      "image_url": null,
-      "published_at": "2026-10-23T17:00:00Z",
-      "source": "OpenAI News",
-      "source_type": "rss",
-      "summaries": {
-        "balanced": {
-          "bullets": [
-            "OpenAI scaled Habitat to support over 1 billion ChatGPT users by implementing reliable multi\u2011tenancy across its storage system.",
-            "Global caching was added to reduce latency, enabling faster data access for users worldwide.",
-            "Integration with Azure Cosmos DB delivered a 12\u00d7 speed\u2011up in read operations, improving overall performance."
-          ],
-          "status": "ok"
-        },
-        "beginner_friendly": {
-          "bullets": [
-            "OpenAI expanded Habitat to support over 1 billion ChatGPT users by adding reliable multi\u2011tenancy, letting many users share the same storage safely.",
-            "They used global caching and Azure Cosmos DB, a cloud database that stores data in many regions, to keep data fast and available worldwide.",
-            "These changes made read operations 12 times faster, improving ChatGPT\u2019s response speed for millions of users."
-          ],
-          "status": "ok"
-        },
-        "technical": {
-          "bullets": [
-            "OpenAI scaled Habitat to support >1B ChatGPT users, focusing on reliable multi\u2011tenancy for isolated data access.",
-            "Implemented global caching across regions, reducing latency and improving read performance.",
-            "Leveraged Azure Cosmos DB, achieving 12\u00d7 faster reads and consistent scalability."
-          ],
-          "status": "ok"
-        }
-      },
-      "title": "Rapidly scaling online storage to serve over 1 billion ChatGPT users (Part II)",
-      "topics": [
-        "Backend",
-        "System Design",
-        "Cloud",
-        "LLMs"
-      ],
-      "url": "https://openai.com/index/scaling-storage-one-billion-users-part-two"
+      "url": "https://blog.python.org/2026/10/python-3152-31410-31318-31216-31118/"
     }
   ],
-  "generated_at": "2026-10-30T14:45:57.799349Z",
+  "generated_at": "2026-10-31T14:07:57.233837Z",
   "topic_counts": {
-    "AI Agents": 23,
+    "AI Agents": 26,
     "Backend": 17,
-    "LLMs": 22,
-    "Machine Learning": 15,
-    "Other": 30,
+    "LLMs": 27,
+    "Machine Learning": 19,
+    "Other": 33,
     "System Design": 18
   },
   "topics": [
